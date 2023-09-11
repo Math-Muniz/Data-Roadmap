@@ -1,5 +1,5 @@
 # Estatística
-
+### Vamos começar nosso Roadmap por uma das Hard Skills mais importante: A Estatística.
 
 # Tabela de conteúdos
 =================
@@ -8,4 +8,10 @@
        * [Média](#Média)
        * [Moda](#Moda)
        * [Mediana](#Mediana)
+   * [2. Medidas de Dispersão](#Medidas de Dispersão)
+      * [Amplitude](#)
+      * [Desvio-Médio](#)
+      * [Desvio-Padrão](#)
+      * [Variância](#)
+      * [Erro-Padrão](#)
 <!--te-->
