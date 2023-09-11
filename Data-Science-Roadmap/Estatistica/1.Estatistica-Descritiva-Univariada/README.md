@@ -6,109 +6,109 @@
 
 # Média 
 
-Conhecida como média aritmética simples, é a operação em que todos os dados de um determinado conjunto são somados e divididos pelo valor total de membros encontrados, ou seja:
+<p>Conhecida como média aritmética simples, é a operação em que todos os dados de um determinado conjunto são somados e divididos pelo valor total de membros encontrados, ou seja:</p>
 
-M = (x1 + x2 + x3 + … + xn) /n
+<p>M = (x1 + x2 + x3 + … + xn) /n</p>
 
-Sendo,
+<p>Sendo,</p>
 
-• M: média
-• x: os valores quantitativos
-• n: quantidade de elementos do conjunto
+<p>• M: média</p>
+<p>• x: os valores quantitativos</p>
+<p>• n: quantidade de elementos do conjunto</p>
 
-A média entre {8, 11, 14, 20, 27}, por exemplo, é feita da seguinte maneira:
+<p>A média entre {8, 11, 14, 20, 27}, por exemplo, é feita da seguinte maneira:</p>
 
-• x1: 8
+<p>• x1: 8</p>
 
-• x2: 11
+<p>• x2: 11</p>
 
-• x3: 14
+<p>• x3: 14</p>
 
-• x4: 20
+<p>• x4: 20</p>
 
-• x5: 27
+<p>• x5: 27</p>
 
-• n: 5, pois são cinco componentes dentro do conjunto.
+<p>• n: 5, pois são cinco componentes dentro do conjunto.</p>
 
-Substituindo na fórmula, teremos:
+<p>Substituindo na fórmula, teremos:</p>
 
-M = (x1 + x2 + x3 + … + xn) /n
+<p>M = (x1 + x2 + x3 + … + xn) /n</p>
 
-M = (8+11+14+20 +27) / 5
+<p>M = (8+11+14+20 +27) / 5</p>
 
-M = 80/5 = 16
+<p>M = 80/5 = 16</p>
 
-Percebe-se que o quociente da média aritmética não integra os elementos do conjunto. Isso acontece porque o cálculo serve para encontrar a medida de centralidade, que reúne valores baixos e altos. 
+<p>Percebe-se que o quociente da média aritmética não integra os elementos do conjunto. Isso acontece porque o cálculo serve para encontrar a medida de centralidade, que reúne valores baixos e altos. </p>
 
-Além disso, a soma da média com os componentes do conjunto deve resultar em zero. A comprovação dessa regra é dada por: 
+<p>Além disso, a soma da média com os componentes do conjunto deve resultar em zero. A comprovação dessa regra é dada por: </p>
 
-(x1 – M) + (x2 – M) + (x3 – M) + (x4 – M) + (x5 – M) = 
+<p>(x1 – M) + (x2 – M) + (x3 – M) + (x4 – M) + (x5 – M) = </p>
 
-( 8 – 16) + (11 – 16 ) + (14 – 16 ) + (20 – 16) + (27 – 16) = 
+<p>( 8 – 16) + (11 – 16 ) + (14 – 16 ) + (20 – 16) + (27 – 16) = </p>
 
-( - 8) + ( - 5) + ( - 2) + 4 + 11 =
+<p>( - 8) + ( - 5) + ( - 2) + 4 + 11 = </p>
 
-(- 15) + 15 = 0
+<p>(- 15) + 15 = 0 </p>
 
 # Moda
 
-A Moda (Mo) é o valor que mais aparece dentro de um conjunto quantitativo. Com isso, para identificá-la, é necessário encontrar a frequência de determinados dados.
+<p>A Moda (Mo) é o valor que mais aparece dentro de um conjunto quantitativo. Com isso, para identificá-la, é necessário encontrar a frequência de determinados dados.</p>
 
-Entre as medidas de centralidade, a moda é uma das poucas que podem ser aplicadas em variados conjuntos (estimativas com nomes, cores, roupas, etc.). Para tal, basta calcular o termo de maior presença.
+<p>Entre as medidas de centralidade, a moda é uma das poucas que podem ser aplicadas em variados conjuntos (estimativas com nomes, cores, roupas, etc.). Para tal, basta calcular o termo de maior presença.</p>
 
-Exemplo:
+<p>Exemplo: </p>
 
-Supondo que os dados são as idades de um time de futebol, o levantamento deu origem as conjunto: {18, 19, 19, 20, 21, 21, 21 ,23, 25, 26, 27}.
+<p>Supondo que os dados são as idades de um time de futebol, o levantamento deu origem as conjunto: {18, 19, 19, 20, 21, 21, 21 ,23, 25, 26, 27}.</p>
 
-Como a sequência acima já apresenta formato crescente, o próximo passo é identificar a idade de maior frequência: 2 jogadores têm 19 anos, outros 2 têm 23 anos e 3 deles apresentam 21 anos.
+<p>Como a sequência acima já apresenta formato crescente, o próximo passo é identificar a idade de maior frequência: 2 jogadores têm 19 anos, outros 2 têm 23 anos e 3 deles apresentam 21 anos.</p>
 
-Portanto, a moda do time de futebol é 21 anos (Mo = 21).
+<p>Portanto, a moda do time de futebol é 21 anos (Mo = 21).</p>
 
 # Mediana
 
-A Mediana (Md) significa a medida central de um conjunto de dados. O seu cálculo depende de certas regras. Confira:
+<p>A Mediana (Md) significa a medida central de um conjunto de dados. O seu cálculo depende de certas regras. Confira:</p>
 
 
-• Os valores quantitativos devem ser arrumados em ordem crescente.
-• Quando a quantidade de elementos forma um conjunto par, a mediana é o resultado da soma de duas medidas centrais divididas por dois, isto, é: (xm + xn) / 2.
-• Quando a quantidade de elementos forma um conjunto ímpar, a mediana é o valor que separa os lados maiores e menores do próprio conjunto.
+<p>• Os valores quantitativos devem ser arrumados em ordem crescente.</p>
+<p>• Quando a quantidade de elementos forma um conjunto par, a mediana é o resultado da soma de duas medidas centrais divididas por dois, isto, é: (xm + xn) / 2.</p>
+<p>• Quando a quantidade de elementos forma um conjunto ímpar, a mediana é o valor que separa os lados maiores e menores do próprio conjunto.</p>
 
-Exemplos:
+<p>Exemplos:</p>
 
-Dado os conjuntos:
+<p>Dado os conjuntos:</p>
 
-T = {10, 1, 4, 12, 15, 6, 8}
+<p>T = {10, 1, 4, 12, 15, 6, 8}</p>
 
-C = {5, 11, 2, 17,14, 20}
+<p>C = {5, 11, 2, 17,14, 20}</p>
 
 
-1° passo: colocar os valores em ordem crescente:
+<p>1° passo: colocar os valores em ordem crescente:</p>
 
-T = {1,4,6,8,10,12,15}
+<p>T = {1,4,6,8,10,12,15}</p>
 
-C = {2,5,11,14,17,20}
+<p>C = {2,5,11,14,17,20}</p>
 
-Observa-se que o conjunto T é formado por 7 componentes, ou seja, um número ímpar. Com isso, a mediana será o 4° elemento, uma vez que separa as partes maiores e menores do conjunto. 
+<p>Observa-se que o conjunto T é formado por 7 componentes, ou seja, um número ímpar. Com isso, a mediana será o 4° elemento, uma vez que separa as partes maiores e menores do conjunto.</p>
 
-Logo, Md = 8
+<p>Logo, Md = 8</p>
 
-Já o conjunto C apresenta 6 membros, ou seja, um número par. Assim, a mediana será a razão entre a soma de duas medidas centrais (3° e 4° elementos):
+<p>Já o conjunto C apresenta 6 membros, ou seja, um número par. Assim, a mediana será a razão entre a soma de duas medidas centrais (3° e 4° elementos):</p>
 
-Md = 11 +14 / 2 
+<p>Md = 11 +14 / 2</p>
 
-Md = 25/2 = 12,5
+<p>Md = 25/2 = 12,5</p>
 
-Confirma-se que os dois elementos da esquerda (2 e 5) são realmente menores que a mediana calculada, e os da direita são maiores (17 e 20).
+<p>Confirma-se que os dois elementos da esquerda (2 e 5) são realmente menores que a mediana calculada, e os da direita são maiores (17 e 20).</p>
 
-Média, Moda e Mediana: valor ponderado
+# Média, Moda e Mediana: valor ponderado
 
-Através da média aritmética simples é possível determinar a média ponderada (Mp) – método que inclui os pesos dos valores quantitativos.
+<p>Através da média aritmética simples é possível determinar a média ponderada (Mp) – método que inclui os pesos dos valores quantitativos.</p>
 
-O cálculo matemático é dado pela soma dos produtos da multiplicação de uma medida com o seu respectivo peso e, em seguida, a divisão do resultado pela soma dos pesos.
+<p>O cálculo matemático é dado pela soma dos produtos da multiplicação de uma medida com o seu respectivo peso e, em seguida, a divisão do resultado pela soma dos pesos.</p>
 
-Exemplo:
+<p>Exemplo:</p>
 
-A tabela abaixo mostra uma relação de notas. Então, a média ponderada será:
+<p>A tabela abaixo mostra uma relação de notas. Então, a média ponderada será:</p>
 
 |   | Notas | Pesos |
 | --- | --- | --- |
@@ -116,10 +116,10 @@ A tabela abaixo mostra uma relação de notas. Então, a média ponderada será:
 | Prova 2  | 7,3  | 2  |
 | Prova 3  | 9  | 2  |
 
-Mp = (6.3) + (7,3. 2) + (9.2) / 3+2+2
+<p>Mp = (6.3) + (7,3. 2) + (9.2) / 3+2+2 </p>
 
-Mp = 18 + 14,6 + 18 / 7 
-Mp = 50,6/ 7 = 7, 23
+<p>Mp = 18 + 14,6 + 18 / 7 </p>
+<p>Mp = 50,6/ 7 = 7, 23 </p>
 
 # Referencias:
 https://www.educamaisbrasil.com.br/enem/matematica/media-moda-e-mediana
