@@ -21,7 +21,7 @@
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/3.Medidas-de-Assimetria-e-Curtose/README.md">Assimetria(Skewness) e Curtose(Kurtosis)</a></li>
        </ul>
    </li>
-   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/4.Medidas-de-Associacao-entre-Variaveis-Quantitativas">4. Medidas de Associação entre Variáveis Quantitativa</a>
+   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/4.Medidas-de-Associacao-entre-Variaveis-Quantitativas">4. Medidas de Associação entre Variáveis Quantitativas</a>
        <ul>
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/4.Medidas-de-Associacao-entre-Variaveis-Quantitativas/README.md">Diagrama de dispersão, Covâriancia, Correlação</a></li>
        </ul>
