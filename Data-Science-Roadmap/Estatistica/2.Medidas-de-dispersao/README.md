@@ -27,7 +27,7 @@
 <h2>Exemplo</h2>
 <p>Érica adora postar as fotos de seu gato na internet. Cada uma de suas 6 últimas fotos receberam o seguinte número de "curtidas":</p>
 <p>10, 15, 15, 17, 18, 21</p>
-<p><b>Calcule o desvio médio absoluto.</b></p>
+<h3><b>Calcule o desvio médio absoluto.</b></h3>
 <p><b>Etapa 1:</b> calcule a média.</p>
 <p>A soma de todos os dados totaliza 96 "curtidas" e há 6 fotos.</p>
 <p>média = 96/6 = 16</p>
@@ -120,7 +120,24 @@
 <p><b>8° ano: 8,75 ± 2,63 alunos acima da média por bimestre;</b></p>
 <p><b>9° ano: 8,50 ± 3,70 alunos acima da média por bimestre;</b></p>
 <h1>Erro-Padrão</h1>
+<p>Ao se obter uma amostra qualquer de tamanho n, calcula-se a média aritmética amostral. Provavelmente, se uma nova amostra aleatória for realizada, a média aritmética obtida será diferente daquela da primeira amostra. A variabilidade das médias é estimada pelo seu erro padrão. Assim, o erro padrão avalia a precisão do cálculo da média populacional. O erro padrão é dado pela fórmula:</p>
+<img src"erro-padrao.png">
+<p>Onde, </p>
+<p>Sx → é o erro padrão</p>
+<p>s → é o desvio padrão</p>
+<p>n → é o tamanho da amostra</p>
+<p>Observação: quanto melhor a precisão no cálculo da média populacional, menor será o erro padrão.</p>
+<p><b>Exemplo 1.</b> Numa população obteve-se desvio padrão de 2,64 com uma amostra aleatória de 60 elementos. Qual o provável erro padrão?</p>
+<p>Solução: </p>
+<p>Sx = 2,64/√60 = 0,3408</p>
+<p>Isso indica que a média pode variar 0,3408 para mais ou para menos.</p>
+<p><b>Exemplo 2.</b> Numa população obteve-se desvio padrão de 1,32 com uma amostra aleatória de 121 elementos. Sabendo que para essa mesma amostra obteve-se uma média de 6,25, determine o valor mais provável para a média dos dados.</p>
+<p>Solução: Para determinarmos o valor mais provável da média dos dados devemos calcular o erro padrão da estimativa. Assim, teremos:</p>
+<p>Sx = 1,32/√121 = 0,12</p>
+<p>Finalizando, o valor mais provável para a média dos dados obtidos pode ser representado por:</p>
+<p>x̅ =  6,25 ± 0,12</p>
 <h3>Referências:</h3>
 <p>https://blog.betrybe.com/medidas-de-dispersao/#:~:text=medidas%20de%20dispers%C3%A3o!-,O%20que%20s%C3%A3o%20as%20medidas%20de%20dispers%C3%A3o%3F,em%20considera%C3%A7%C3%A3o%20a%20sua%20m%C3%A9dia.</p>
 <p>https://pt.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/other-measures-of-spread/a/mean-absolute-deviation-mad-review</p>
 <p>https://brasilescola.uol.com.br/matematica/medidas-dispersao-variancia-desvio-padrao.htm</p>
+<p>https://brasilescola.uol.com.br/matematica/erro-padrao-estimativa.htm</p>
