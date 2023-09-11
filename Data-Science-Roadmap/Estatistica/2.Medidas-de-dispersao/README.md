@@ -7,15 +7,15 @@
 <h2>Quais são as medidas de dispersão?</h2>
 <p>As medidas de dispersão são divididas para garantir uma melhor colocação dos cálculos. Além disso, cada uma delas possui uma função diferente, visando chegar a um resultado desejado. Por isso, antes mesmo de começar a calcular, é preciso ficar atento a qual das fórmulas vai se enquadrar na situação.</p>
 
-<h2>Amplitude</h2>
+<h1>Amplitude</h1>
 <p>A amplitude será aplicada em casos em que <b>há a necessidade de fazer uma comparação primária.</b> Isso quer dizer que seu cálculo é menos complexo. De uma forma mais geral, dá para enxergá-la como a diferença entre o índice maior e o menor. Para que a amplitude seja encontrada, é só subtrair o menor valor do mais alto.</p>
-<h3>Como calcular a amplitude? Exemplo prático!</h3>
+<h2>Como calcular a amplitude? Exemplo prático!</h2>
 <p>Para compreender melhor quais são as medidas de dispersão, é importante focar em um exemplo. Levando em consideração alguns estudantes de Ensino Fundamental e suas notas, precisamos calcular sua amplitude. A média final da escola é 7 e, portanto, precisa ser atingida.</p>
 <p>Márcia tirou as seguintes notas: 9,0 – 7,0 – 8,0 – 6,0</p>
 <p>Eduardo tirou as seguintes notas: 5,0 – 5,0 – 9,0 – 10,0</p>
 <p>Com relação à nota de Márcia, a amplitude foi de 9,0 (maior nota) – 6 (menor nota) = 2. Sendo assim, a amplitude de Eduardo foi de 10 (maior nota) – 5 (menor nota) = 6. No entanto, levando em consideração esse índice, não é possível dizer quem teve o melhor desempenho.</p>
 
-<h2>Desvio Absoluto Médio (DAM)</h2>
+<h1>Desvio Absoluto Médio (DAM)</h1>
 <p>O Desvio Absoluto Médio (DAM) de um conjunto de dados é a média das distâncias entre cada dado e a média. Ele nos dá uma noção da variabilidade em um conjunto de dados.</p>
 <p>O desvio absoluto médio é calculado assim:</p>
 <p><b>Etapa 1:</b> calcule a média.</p>
@@ -24,7 +24,7 @@
 <p><b>Etapa 4:</b> divida a soma pelo número de dados.</p>
 <p>Seguir estas etapas no exemplo abaixo é provavelmente a melhor maneira de aprender sobre desvio absoluto médio, mas existe uma maneira mais formal de escrever estas etapas em uma fórmula:.</p>
 <img src="DAM.png">
-<h3>Exemplo</h3>
+<h2>Exemplo</h2>
 <p>Érica adora postar as fotos de seu gato na internet. Cada uma de suas 6 últimas fotos receberam o seguinte número de "curtidas":</p>
 <p>10, 15, 15, 17, 18, 21</p>
 <p><b>Calcule o desvio médio absoluto.</b></p>
@@ -60,9 +60,9 @@
 <h2>Desvio-Padrão</h2>
 <p>O desvio padrão é capaz de identificar o “erro” em um conjunto de dados, caso quiséssemos substituir um dos valores coletados pela média aritmética.</p>
 <p>O desvio padrão aparece junto à média aritmética, informando o quão “confiável” é esse valor. Ele é apresentado da seguinte forma:</p>
-<p><b>média aritmética (x) ± desvio padrão (dp)</b></p>
+<h3><b>média aritmética (x) ± desvio padrão (dp)</b></h3>
 <p>O cálculo do desvio padrão é feito a partir da raiz quadrada positiva da variância. Portanto:</p>
-<p><b>dp = √var</b></p>
+<h3><b>dp = √var</b></h3>
 <p>Vamos agora aplicar o calculo da variância e do desvio padrão em um exemplo:</p>
 <p>Em uma escola, a direção decidiu observar a quantidade de alunos que apresentam todas as notas acima da média em todas as disciplinas. Para analisar melhor, a diretora Ana resolveu montar uma tabela com a quantidade de notas “azuis” em uma amostra de quatro turmas ao longo de um ano. Observe a seguir a tabela organizada pela diretora:</p>
 <img src="Table.png">
@@ -73,44 +73,44 @@
 <p>9° ano → x = (8 + 13 + 9 + 4)/4 = 34/4 = 8,50</p>
 <p>Para calcular a variância da quantidade de alunos acima da média em cada turma, utilizamos uma <b>amostra</b>, por isso empregamos a fórmula da <b>variância amostral:</b></p>
 <img src="Var-Amostral.png">
-<h4>6° ano</h4>
+<h3>6° ano</h3>
 <p>6° ano → Var = ((5 – 7,50)² + (8 – 7,50)² + (10 – 7,50)² + (7 – 7,50)²)/4-1</p>
 <p>6° ano → Var = ((– 2,50)² + (0,50)² + (2,50)² + (– 0,50)²)/3</p>
 <p>6° ano → Var = (6,25 + 0,25 + 6,25 + 0,25)/3</p>
 <p>6° ano → Var = 13/3</p>
 <p>6° ano → Var = 4,33</p>
-<h4>7° ano</h4>
+<h3>7° ano</h3>
 <p>7° ano → Var = ((8 – 8,00)² + (6 – 8,00)² + (6 – 8,00)² + (12 – 8,00)²)/4 – 1</p>
 <p>7° ano → Var = ((0)² + (-2,00)² + (-2,00)² + (4,00)²)/3</p>
 <p>7° ano → Var = (0 + 4,00 + 4,00 + 16,00)/3</p>
 <p>7° ano → Var = 24/3</p>
 <p>7° ano → Var = 8,00</p>
-<h4>8° ano</h4>
+<h3>8° ano</h3>
 <p>8° ano → Var = ((11 – 8,75)² + (9 – 8,75)² + (5 – 8,75)² + (10 – 8,75)²)/4-1</p>
 <p>8° ano → Var = ((2,25)² + (0,25)² + (- 3,75)² + (1,25)²)/3</p>
 <p>8° ano → Var = (5,06 + 0,06 + 14,06 + 1,56)/3</p>
 <p>8° ano → Var = (20,74)/3</p>
 <p>8° ano → Var = 6,91</p>
-<h4>9° ano</h4>
+<h3>9° ano</h3>
 <p>9° ano → Var = ((8 – 8,50)² + (13 – 8,50)² + (9 – 8,50)² + (4 – 8,50)²)/4-1</p>
 <p>9° ano → Var = ((– 0,50)² + (4,50)² + (0,50)² + (– 4,50)²)/3</p>
 <p>9° ano → Var = (0,25 + 20,25 + 0,25 + 20,25)/3</p>
 <p>9° ano → Var = 41,00/3</p>
 <p>9° ano → Var = 13,66</p>
 <h4>Conhecida a variância de cada turma, vamos calcular agora o desvio padrão:</h4>
-<h4>6° ano</h4>
+<h3>6° ano</h3>
 <p>dp = √var</p>
 <p>dp = √4,33</p>
 <p>dp ≈ 2,08</p>
-<h4>7° ano</h4>
+<h3>7° ano</h3>
 <p>dp = √var</p>
 <p>dp = √8,00</p>
 <p>dp ≈ 2,83</p>
-<h4>8° ano</h4>
+<h3>8° ano</h3>
 <p>dp = √var</p>
 <p>dp = √2,63</p>
 <p>dp ≈ 2,63</p>
-<h4>9° ano</h4>
+<h3>9° ano</h3>
 <p>dp = √var</p>
 <p>dp = √4,70</p>
 <p>dp ≈ 3,70</p>
@@ -119,7 +119,7 @@
 <p><b>7° ano: 8,00 ± 2,83 alunos acima da média por bimestre;</b></p>
 <p><b>8° ano: 8,75 ± 2,63 alunos acima da média por bimestre;</b></p>
 <p><b>9° ano: 8,50 ± 3,70 alunos acima da média por bimestre;</b></p>
-<h2>Erro-Padrão</h2>
+<h1>Erro-Padrão</h1>
 <h3>Referências:</h3>
 <p>https://blog.betrybe.com/medidas-de-dispersao/#:~:text=medidas%20de%20dispers%C3%A3o!-,O%20que%20s%C3%A3o%20as%20medidas%20de%20dispers%C3%A3o%3F,em%20considera%C3%A7%C3%A3o%20a%20sua%20m%C3%A9dia.</p>
 <p>https://pt.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/other-measures-of-spread/a/mean-absolute-deviation-mad-review</p>
