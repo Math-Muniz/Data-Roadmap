@@ -49,12 +49,18 @@
 <p>DAM = 16/6 ≈ 2,67 "Curtidas"</p>
 <p>Na média, cada foto ficou em torno de 3 "curtidas" distante da média.</p>
 
-<h3>Variância</h3>
+<h2>Variância</h2>
+<p>Dado um conjunto de dados, a variância é uma medida de dispersão que mostra o quão distante cada valor desse conjunto está do valor central (médio).</p>
+<p>Quanto menor é a variância, mais próximos os valores estão da média; mas quanto maior ela é, mais os valores estão distantes da média.</p>
+<p>Considere que <b>x1, x2, …, xn</b> são os <b>n</b> elementos de uma <b>amostra</b> e que <b>x</b> é a média aritmética desses elementos. O cálculo da <b>variância amostral</b> é dado por:</p>
+<img src="Var-Amostral.png">
+<p>Se, em contrapartida, quisermos calcular a <b>variância populacional</b>, consideraremos todos os elementos da população, e não apenas de uma amostra. Nesse caso, o cálculo possui uma pequena diferença. Observe:</p>
+<img src="Var-Populacional.png">
+<h2>Desvio-Padrão</h2>
 
-<h3>Desvio-Padrão</h3>
-
-<h3>Erro-Padrão</h3>
+<h2>Erro-Padrão</h2>
 
 <h3>Referências:</h3>
 <p>https://blog.betrybe.com/medidas-de-dispersao/#:~:text=medidas%20de%20dispers%C3%A3o!-,O%20que%20s%C3%A3o%20as%20medidas%20de%20dispers%C3%A3o%3F,em%20considera%C3%A7%C3%A3o%20a%20sua%20m%C3%A9dia.</p>
 <p>https://pt.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/other-measures-of-spread/a/mean-absolute-deviation-mad-review</p>
+<p>https://brasilescola.uol.com.br/matematica/medidas-dispersao-variancia-desvio-padrao.htm</p>
