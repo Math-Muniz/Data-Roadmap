@@ -56,8 +56,26 @@
 <img src="Var-Amostral.png">
 <p>Se, em contrapartida, quisermos calcular a <b>variância populacional</b>, consideraremos todos os elementos da população, e não apenas de uma amostra. Nesse caso, o cálculo possui uma pequena diferença. Observe:</p>
 <img src="Var-Populacional.png">
-<h2>Desvio-Padrão</h2>
 
+<h2>Desvio-Padrão</h2>
+<p>O desvio padrão é capaz de identificar o “erro” em um conjunto de dados, caso quiséssemos substituir um dos valores coletados pela média aritmética.</p>
+<p>O desvio padrão aparece junto à média aritmética, informando o quão “confiável” é esse valor. Ele é apresentado da seguinte forma:</p>
+<p><b>média aritmética (x) ± desvio padrão (dp)</b></p>
+<p>O cálculo do desvio padrão é feito a partir da raiz quadrada positiva da variância. Portanto:</p>
+<p><b>dp = √var</b></p>
+<p>Vamos agora aplicar o calculo da variância e do desvio padrão em um exemplo:</p>
+<p>Em uma escola, a direção decidiu observar a quantidade de alunos que apresentam todas as notas acima da média em todas as disciplinas. Para analisar melhor, a diretora Ana resolveu montar uma tabela com a quantidade de notas “azuis” em uma amostra de quatro turmas ao longo de um ano. Observe a seguir a tabela organizada pela diretora:</p>
+
+| Turmas | Quantidade de alunos acima da média |
+| --- | --- |
+| 1° Bimestre | 2° Bimestre | 3° Bimestre | 4° Bimestre |
+| 6° Ano | 5 | 8 | 10 | 7 |
+| 7° Ano | 8 | 6 | 6 | 12 |
+| 8° Ano | 11 | 9 | 5 | 10 |
+| 9° Ano | 8 | 13 | 9 | 4 |
+
+<p>Antes de calcular a variância, é necessário verificar a <b>média aritmética (x)</b> da quantidade de alunos acima da média em cada turma:</p>
+<p></p>
 <h2>Erro-Padrão</h2>
 
 <h3>Referências:</h3>
