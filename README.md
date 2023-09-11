@@ -7,6 +7,7 @@
 <!--ts-->
    * [Data Science Roadmap](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap)
        * [Estatística](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica)
+           * [1. Estatística Descritiva Univariada](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/1.Estatistica-Descritiva-Univariada)
 <!--te-->
 
 ## Roadmaps Completos
