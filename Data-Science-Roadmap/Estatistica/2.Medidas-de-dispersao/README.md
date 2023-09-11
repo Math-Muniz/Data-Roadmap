@@ -121,7 +121,7 @@
 <p><b>9° ano: 8,50 ± 3,70 alunos acima da média por bimestre;</b></p>
 <h1>Erro-Padrão</h1>
 <p>Ao se obter uma amostra qualquer de tamanho n, calcula-se a média aritmética amostral. Provavelmente, se uma nova amostra aleatória for realizada, a média aritmética obtida será diferente daquela da primeira amostra. A variabilidade das médias é estimada pelo seu erro padrão. Assim, o erro padrão avalia a precisão do cálculo da média populacional. O erro padrão é dado pela fórmula:</p>
-<img src"erro-padrao.png">
+<img src="Erro-padrao.png">
 <p>Onde, </p>
 <p>Sx → é o erro padrão</p>
 <p>s → é o desvio padrão</p>
