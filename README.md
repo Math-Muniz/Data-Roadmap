@@ -6,7 +6,7 @@
 # Tabela de conteúdos
 =================
 <!--ts-->
-   * [Data Science Roadmap]([#Sobre](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap))
+   * [Data Science Roadmap](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap)
 <!--te-->
 
 ### Features
