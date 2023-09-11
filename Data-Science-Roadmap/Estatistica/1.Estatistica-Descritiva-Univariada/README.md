@@ -19,16 +19,23 @@ Sendo,
 A média entre {8, 11, 14, 20, 27}, por exemplo, é feita da seguinte maneira:
 
 • x1: 8
+
 • x2: 11
+
 • x3: 14
+
 • x4: 20
+
 • x5: 27
+
 • n: 5, pois são cinco componentes dentro do conjunto.
 
 Substituindo na fórmula, teremos:
 
 M = (x1 + x2 + x3 + … + xn) /n
+
 M = (8+11+14+20 +27) / 5
+
 M = 80/5 = 16
 
 Percebe-se que o quociente da média aritmética não integra os elementos do conjunto. Isso acontece porque o cálculo serve para encontrar a medida de centralidade, que reúne valores baixos e altos. 
@@ -36,8 +43,11 @@ Percebe-se que o quociente da média aritmética não integra os elementos do co
 Além disso, a soma da média com os componentes do conjunto deve resultar em zero. A comprovação dessa regra é dada por: 
 
 (x1 – M) + (x2 – M) + (x3 – M) + (x4 – M) + (x5 – M) = 
+
 ( 8 – 16) + (11 – 16 ) + (14 – 16 ) + (20 – 16) + (27 – 16) = 
+
 ( - 8) + ( - 5) + ( - 2) + 4 + 11 =
+
 (- 15) + 15 = 0
 
 # Moda
@@ -68,12 +78,14 @@ Exemplos:
 Dado os conjuntos:
 
 T = {10, 1, 4, 12, 15, 6, 8}
+
 C = {5, 11, 2, 17,14, 20}
 
 
 1° passo: colocar os valores em ordem crescente:
 
 T = {1,4,6,8,10,12,15}
+
 C = {2,5,11,14,17,20}
 
 Observa-se que o conjunto T é formado por 7 componentes, ou seja, um número ímpar. Com isso, a mediana será o 4° elemento, uma vez que separa as partes maiores e menores do conjunto. 
@@ -83,6 +95,7 @@ Logo, Md = 8
 Já o conjunto C apresenta 6 membros, ou seja, um número par. Assim, a mediana será a razão entre a soma de duas medidas centrais (3° e 4° elementos):
 
 Md = 11 +14 / 2 
+
 Md = 25/2 = 12,5
 
 Confirma-se que os dois elementos da esquerda (2 e 5) são realmente menores que a mediana calculada, e os da direita são maiores (17 e 20).
@@ -104,6 +117,7 @@ A tabela abaixo mostra uma relação de notas. Então, a média ponderada será:
 | Prova 3  | 9  | 2  |
 
 Mp = (6.3) + (7,3. 2) + (9.2) / 3+2+2
+
 Mp = 18 + 14,6 + 18 / 7 
 Mp = 50,6/ 7 = 7, 23
 
