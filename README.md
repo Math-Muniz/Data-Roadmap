@@ -4,7 +4,6 @@
 ### Ao longo do tempo vou focar em criar um Roadmap para cada área (Data Engineer, Data Analysis, Data Science, Machine Learning Engineer...), sempre focando em mostrar o necessário para se estudar em cada área.
 
 # Tabela de conteúdos
-=================
 <!--ts-->
    * [Data Science Roadmap](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap)
        * [Estatística](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica)
