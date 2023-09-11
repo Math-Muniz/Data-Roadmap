@@ -5,6 +5,7 @@
 <p>Abaixo você pode ver os conteúdos disponíveis, caso você clique no capitulo irá ser redirecionado para o repositório aonde contém todos os arquivos para criação daquele capítulo mas caso clique diretamente no conteúdo do capítulo desejado você vai ser redirecionado para o arquivo README.md principal aonde contém o conteúdo desejado.</p>
 
 <h1>Tabela de conteúdos</h1>
+
 <!--ts-->
    * [1. Estatística Descritiva Univariada](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/1.Estatistica-Descritiva-Univariada)
        * [Média, Moda e Mediana](https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/1.Estatistica-Descritiva-Univariada/README.md)
