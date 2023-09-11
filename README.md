@@ -14,7 +14,7 @@
 
 - [ ] Data Science Roadmap
 - [ ] Data Engineer Roadmap
-- [ ] Data Analisys Roadmap
+- [ ] Data Analysis Roadmap
 
 ## Livros
 ### Coloquei aqui alguns livros lidos que gostei que tem a ver com a Área de Dados.
