@@ -9,7 +9,8 @@
        * [Estatística](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica)
            * [1. Estatística Descritiva Univariada: Média, Moda e Mediana](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/1.Estatistica-Descritiva-Univariada)
            * [2. Medidas de Dispersão: Amplitude, Desvio-Médio, Variância, Desvio-padrão, Erro-padrão](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/2.Medidas-de-dispersao)
-   * [Exercícios](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Exercicios)
+           * [3. Medidas de Assimetria(Skewness) e Curtose(Kurtosis)](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/3.Medidas-de-Assimetria-e-Curtose)
+           * [4. Medidas de Associação entre Variáveis Quantitativas: Diagrama de Dispersão, Covâriancia, Correlação](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/4.Medidas-de-Associacao-entre-Variaveis-Quantitativas)
 <!--te-->
 
 ## Roadmaps Completos
