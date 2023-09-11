@@ -123,9 +123,9 @@
 <p>Ao se obter uma amostra qualquer de tamanho n, calcula-se a média aritmética amostral. Provavelmente, se uma nova amostra aleatória for realizada, a média aritmética obtida será diferente daquela da primeira amostra. A variabilidade das médias é estimada pelo seu erro padrão. Assim, o erro padrão avalia a precisão do cálculo da média populacional. O erro padrão é dado pela fórmula:</p>
 <img src="Erro-padrao.png">
 <p>Onde, </p>
-<p>Sx → é o erro padrão</p>
-<p>s → é o desvio padrão</p>
-<p>n → é o tamanho da amostra</p>
+<p><b>Sx → é o erro padrão</b></p>
+<p><b>s → é o desvio padrão</b></p>
+<p><b>n → é o tamanho da amostra</b></p>
 <p>Observação: quanto melhor a precisão no cálculo da média populacional, menor será o erro padrão.</p>
 <p><b>Exemplo 1.</b> Numa população obteve-se desvio padrão de 2,64 com uma amostra aleatória de 60 elementos. Qual o provável erro padrão?</p>
 <p>Solução: </p>
