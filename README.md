@@ -40,7 +40,7 @@
 </ul>
 
 <h2>Livros</h2>
-<h3>Coloquei aqui alguns livros lidos que gostei que tem a ver com a Área de Dados.</h3>
+<h3>Coloquei aqui alguns livros lidos que gostei que tem a ver com a Área de Dados. Caso você clique no link vai ser redirecionado para o link em que comprei o livro.</h3>
 
 <ul>
     <li>[X] <a href="https://www.amazon.com.br/gp/product/8550811769/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1">Data Science do Zero: Noções Fundamentais com Python</a></li>
@@ -49,6 +49,9 @@
     <li>[X] <a href="https://www.amazon.com.br/gp/product/8575228358/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1">Programador Autodidata</a></li>
     <li>[X] <a href="https://www.amazon.com.br/gp/product/8575228374/ref=ppx_yo_dt_b_asin_title_o03_s01?ie=UTF8&psc=1">Cientista da Computação Autodidata</a></li>
     <li>[ ] <a href="https://www.amazon.com.br/gp/product/6586057108/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1">Projetos de Ciência de Dados com Python</a></li>
+    <li>[ ] <a href="https://www.amazon.com.br/gp/product/6586057752/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1">SQL para Análise de Dados: Técnicas Avançadas Para Transformar Dados em Insights</a></li>
+    <li>[ ] <a href="https://www.amazon.com.br/gp/product/8550815489/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1">Mãos à obra: Aprendizado de máquina com Scikit-Learn, Keras & TensorFlow: Conceitos, Ferramentas e Técnicas para a Construção de Sistemas Inteligentes</a></li>
+    <li>[ ] <a href="https://www.amazon.com/gp/product/0578973839/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1">Ace the Data Science Interview: 201 Real Interview Questions Asked By FAANG, Tech Startups, & Wall Street</a></li>
 </ul>
 
 <h2>🚧  Data Roadmap 🚀 Em construção...  🚧</h2>
