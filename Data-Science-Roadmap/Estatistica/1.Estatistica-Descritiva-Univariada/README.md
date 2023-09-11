@@ -1,16 +1,16 @@
-# MÉDIA, MODA E MEDIANA
+<h1>1. Estatística Descritiva Univariada: MÉDIA, MODA E MEDIANA</h1>
 
-### Média, moda e mediana são dados da Estatística usados para simplificar um conjunto de informações em único elemento, que são chamados de medidas de tendência central. Esses números permitem que certos valores quantitativos sejam representados por um dado central e encontrados através de conjuntos finitos e infinitos.
+<h3> Média, moda e mediana são dados da Estatística usados para simplificar um conjunto de informações em único elemento, que são chamados de medidas de tendência central. Esses números permitem que certos valores quantitativos sejam representados por um dado central e encontrados através de conjuntos finitos e infinitos.</h3>
 
 <img src="media-moda-mediana-matematica.jpg">
 
-# Média 
+<h1>Média</h1>
 
 <p>Conhecida como média aritmética simples, é a operação em que todos os dados de um determinado conjunto são somados e divididos pelo valor total de membros encontrados, ou seja:</p>
 
 <p>M = (x1 + x2 + x3 + … + xn) /n</p>
 
-<p>Sendo,</p>
+<p>Sendo, </p>
 
 <p>• M: média</p>
 <p>• x: os valores quantitativos</p>
@@ -50,7 +50,7 @@
 
 <p>(- 15) + 15 = 0 </p>
 
-# Moda
+<h1>Moda</h1>
 
 <p>A Moda (Mo) é o valor que mais aparece dentro de um conjunto quantitativo. Com isso, para identificá-la, é necessário encontrar a frequência de determinados dados.</p>
 
@@ -64,7 +64,7 @@
 
 <p>Portanto, a moda do time de futebol é 21 anos (Mo = 21).</p>
 
-# Mediana
+<h1>Mediana</h1>
 
 <p>A Mediana (Md) significa a medida central de um conjunto de dados. O seu cálculo depende de certas regras. Confira:</p>
 
@@ -100,7 +100,7 @@
 
 <p>Confirma-se que os dois elementos da esquerda (2 e 5) são realmente menores que a mediana calculada, e os da direita são maiores (17 e 20).</p>
 
-# Média, Moda e Mediana: valor ponderado
+<h1>Média, Moda e Mediana: valor ponderado</h1>
 
 <p>Através da média aritmética simples é possível determinar a média ponderada (Mp) – método que inclui os pesos dos valores quantitativos.</p>
 
