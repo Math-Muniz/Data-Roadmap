@@ -36,12 +36,12 @@
 
 | Dado | Distância da Média |
 | --- | --- |
-| 10 | (10 - 16) = 6 |
-| 15 | (15 - 16) = 1 |
-| 15 | (15 - 16) = 1 |
-| 17 | (17 - 16) = 1 |
-| 18 | (18 - 16) = 2 |
-| 21 | (21 - 16) = 5 |
+| 10 | \| 10 - 16 \| = 6 |
+| 15 | \| 15 - 16 \| = 1 |
+| 15 | \| 15 - 16 \| = 1 |
+| 17 | \| 17 - 16 \| = 1 |
+| 18 | \| 18 - 16 \| = 2 |
+| 21 | \| 21 - 16 \| = 5 |
 
 <p><b>Etapa 3:</b> some todas as distâncias.</p>
 <p>6 + 1 + 1 + 1 + 2 + 5 = 16</p>
@@ -67,7 +67,7 @@
 <p>Em uma escola, a direção decidiu observar a quantidade de alunos que apresentam todas as notas acima da média em todas as disciplinas. Para analisar melhor, a diretora Ana resolveu montar uma tabela com a quantidade de notas “azuis” em uma amostra de quatro turmas ao longo de um ano. Observe a seguir a tabela organizada pela diretora:</p>
 
 | Turmas | Quantidade de alunos acima da média |
-| --- | --- |
+| --- | --- | --- | --- |
 | 1° Bimestre | 2° Bimestre | 3° Bimestre | 4° Bimestre |
 | 6° Ano | 5 | 8 | 10 | 7 |
 | 7° Ano | 8 | 6 | 6 | 12 |
