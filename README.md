@@ -7,7 +7,8 @@
 <!--ts-->
    * [Data Science Roadmap](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap)
        * [Estatística](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica)
-           * [1. Estatística Descritiva Univariada](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/1.Estatistica-Descritiva-Univariada)
+           * [1. Estatística Descritiva Univariada: Média, Moda e Mediana](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/1.Estatistica-Descritiva-Univariada)
+           * [2. Medidas de Dispersão: Amplitude, Desvio-Médio, Variância, Desvio-padrão, Erro-padrão](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/2.Medidas-de-dispersao)
    * [Exercícios](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Exercicios)
 <!--te-->
 
