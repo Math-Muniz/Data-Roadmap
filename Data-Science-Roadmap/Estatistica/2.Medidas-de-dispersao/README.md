@@ -65,17 +65,19 @@
 <p><b>dp = √var</b></p>
 <p>Vamos agora aplicar o calculo da variância e do desvio padrão em um exemplo:</p>
 <p>Em uma escola, a direção decidiu observar a quantidade de alunos que apresentam todas as notas acima da média em todas as disciplinas. Para analisar melhor, a diretora Ana resolveu montar uma tabela com a quantidade de notas “azuis” em uma amostra de quatro turmas ao longo de um ano. Observe a seguir a tabela organizada pela diretora:</p>
-<tr><td rowspan="2">Turmas</td><td>Quantidade de alunos acima da média</td><td>| 1° Bimestre | 2° Bimestre | 3° Bimestre | 4° Bimestre |</td></tr>
-| Turmas | Quantidade de alunos acima da média |
-| --- | --- | --- | --- |
-| 1° Bimestre | 2° Bimestre | 3° Bimestre | 4° Bimestre |
-| 6° Ano | 5 | 8 | 10 | 7 |
-| 7° Ano | 8 | 6 | 6 | 12 |
-| 8° Ano | 11 | 9 | 5 | 10 |
-| 9° Ano | 8 | 13 | 9 | 4 |
-
+<img src="Table.png">
 <p>Antes de calcular a variância, é necessário verificar a <b>média aritmética (x)</b> da quantidade de alunos acima da média em cada turma:</p>
-<p></p>
+<p>6° ano → x = (5 + 8 + 10 + 7)/4 = 30/4 = 7,50</p>
+<p>7° ano → x = (8 + 6 + 6 + 12)/4 = 32/4 = 8,00</p>
+<p>8° ano → x = (11 + 9 + 5 + 10)/4 = 35/4 = 8,75</p>
+<p>9° ano → x = (8 + 13 + 9 + 4)/4 = 34/4 = 8,50</p>
+<p>Para calcular a variância da quantidade de alunos acima da média em cada turma, utilizamos uma <b>amostra</b>, por isso empregamos a fórmula da <b>variância amostral:</b></p>
+<img src="Var-Amostral.png">
+<p>6° ano → Var = ((5 – 7,50)² + (8 – 7,50)² + (10 – 7,50)² + (7 – 7,50)²)/4-1</p>
+<p>6° ano → Var = ((– 2,50)² + (0,50)² + (2,50)² + (– 0,50)²)/3</p>
+<p>6° ano → Var = (6,25 + 0,25 + 6,25 + 0,25)/3</p>
+<p>6° ano → Var = 13/3</p>
+<p>6° ano → Var = 4,33</p>
 <h2>Erro-Padrão</h2>
 
 <h3>Referências:</h3>
