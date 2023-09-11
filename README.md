@@ -1,7 +1,8 @@
 # Data Roadmap
 
-### Criei esse repositório com a finalidade de compartilhar tudo que estudei sobre a Área de Dados. Ao longo do tempo vou focar em criar um Roadmap para cada área (Data Engineer, Data Analysis, Data Science, Machine Learning Engineer...), sempre focando em mostrar o necessário para se estudar em cada área. 
-### A pasta Exercícios contém diversos exercícios de Python, SQL e outros...
+### Criei esse repositório com a finalidade de compartilhar tudo que estudei sobre a Área de Dados. Ao longo do tempo vou focar em criar um Roadmap para cada área (Data Engineer, Data Analysis, Data Science, Machine Learning Engineer...), sempre focando em mostrar o necessário para se estudar em cada área.
+### O objetivo deste repositório é ajudar outras pessoas que querem estudar para a Área de Dados, podendo servir de consulta ou até para aprendizado de coisas novas.
+### A pasta Exercícios contém diversos exercícios de vários níveis diferentes feitos em Python, SQL e outros...
 
 # Tabela de conteúdos
 <!--ts-->
@@ -11,6 +12,10 @@
            * [2. Medidas de Dispersão: Amplitude, Desvio-Médio, Variância, Desvio-padrão, Erro-padrão](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/2.Medidas-de-dispersao)
            * [3. Medidas de Assimetria(Skewness) e Curtose(Kurtosis)](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/3.Medidas-de-Assimetria-e-Curtose)
            * [4. Medidas de Associação entre Variáveis Quantitativas: Diagrama de Dispersão, Covâriancia, Correlação](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/4.Medidas-de-Associacao-entre-Variaveis-Quantitativas)
+   * [Exercícios](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Exercicios)
+       * [Python](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Exercicios/Python)
+           * [Easy](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Exercicios/Python/Easy)
+           * [Medium](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Exercicios/Python/Medium)
 <!--te-->
 
 ## Roadmaps Completos
