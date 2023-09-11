@@ -1,4 +1,4 @@
-<h1>Medidas de Dispersão: Amplitude, Desvio Absoluto Médio, Variância, Desvio-padrão, Erro-padrão.</h1>
+<h1>2. Medidas de Dispersão: Amplitude, Desvio Absoluto Médio, Variância, Desvio-padrão, Erro-padrão.</h1>
 <h2>O que são as medidas de dispersão?</h2>
 <p>As medidas de dispersão são aquelas utilizadas para medir um grau de variação. Esse resultado tem como base os elementos que estão presentes em um conjunto numérico. Assim, é possível encontrar o ponto em comum entre elas, levando em consideração a sua média.</p>
 <p>O assunto que leva essas medidas em consideração é a estatística. Ela utiliza a tendência central e as tão conhecidas média, moda e mediana. Isso porque há um desejo de representar todos os valores dentro de um mesmo conjunto numérico. Para que isso seja possível, há a utilização de um único valor inteiro.</p>
