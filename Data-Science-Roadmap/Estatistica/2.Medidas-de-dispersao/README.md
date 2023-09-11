@@ -73,13 +73,53 @@
 <p>9° ano → x = (8 + 13 + 9 + 4)/4 = 34/4 = 8,50</p>
 <p>Para calcular a variância da quantidade de alunos acima da média em cada turma, utilizamos uma <b>amostra</b>, por isso empregamos a fórmula da <b>variância amostral:</b></p>
 <img src="Var-Amostral.png">
+<h4>6° ano</h4>
 <p>6° ano → Var = ((5 – 7,50)² + (8 – 7,50)² + (10 – 7,50)² + (7 – 7,50)²)/4-1</p>
 <p>6° ano → Var = ((– 2,50)² + (0,50)² + (2,50)² + (– 0,50)²)/3</p>
 <p>6° ano → Var = (6,25 + 0,25 + 6,25 + 0,25)/3</p>
 <p>6° ano → Var = 13/3</p>
 <p>6° ano → Var = 4,33</p>
+<h4>7° ano</h4>
+<p>7° ano → Var = ((8 – 8,00)² + (6 – 8,00)² + (6 – 8,00)² + (12 – 8,00)²)/4 – 1</p>
+<p>7° ano → Var = ((0)² + (-2,00)² + (-2,00)² + (4,00)²)/3</p>
+<p>7° ano → Var = (0 + 4,00 + 4,00 + 16,00)/3</p>
+<p>7° ano → Var = 24/3</p>
+<p>7° ano → Var = 8,00</p>
+<h4>8° ano</h4>
+<p>8° ano → Var = ((11 – 8,75)² + (9 – 8,75)² + (5 – 8,75)² + (10 – 8,75)²)/4-1</p>
+<p>8° ano → Var = ((2,25)² + (0,25)² + (- 3,75)² + (1,25)²)/3</p>
+<p>8° ano → Var = (5,06 + 0,06 + 14,06 + 1,56)/3</p>
+<p>8° ano → Var = (20,74)/3</p>
+<p>8° ano → Var = 6,91</p>
+<h4>9° ano</h4>
+<p>9° ano → Var = ((8 – 8,50)² + (13 – 8,50)² + (9 – 8,50)² + (4 – 8,50)²)/4-1</p>
+<p>9° ano → Var = ((– 0,50)² + (4,50)² + (0,50)² + (– 4,50)²)/3</p>
+<p>9° ano → Var = (0,25 + 20,25 + 0,25 + 20,25)/3</p>
+<p>9° ano → Var = 41,00/3</p>
+<p>9° ano → Var = 13,66</p>
+<h4>Conhecida a variância de cada turma, vamos calcular agora o desvio padrão:</h4>
+<h4>6° ano</h4>
+<p>dp = √var</p>
+<p>dp = √4,33</p>
+<p>dp ≈ 2,08</p>
+<h4>7° ano</h4>
+<p>dp = √var</p>
+<p>dp = √8,00</p>
+<p>dp ≈ 2,83</p>
+<h4>8° ano</h4>
+<p>dp = √var</p>
+<p>dp = √2,63</p>
+<p>dp ≈ 2,63</p>
+<h4>9° ano</h4>
+<p>dp = √var</p>
+<p>dp = √4,70</p>
+<p>dp ≈ 3,70</p>
+<p>Para concluir sua análise, a diretora pode apresentar os seguintes valores que indicam a quantidade média de alunos acima da média por turma pesquisada:</p>
+<p><b>6° ano: 7,50 ± 2,08 alunos acima da média por bimestre;</b></p>
+<p><b>7° ano: 8,00 ± 2,83 alunos acima da média por bimestre;</b></p>
+<p><b>8° ano: 8,75 ± 2,63 alunos acima da média por bimestre;</b></p>
+<p><b>9° ano: 8,50 ± 3,70 alunos acima da média por bimestre;</b></p>
 <h2>Erro-Padrão</h2>
-
 <h3>Referências:</h3>
 <p>https://blog.betrybe.com/medidas-de-dispersao/#:~:text=medidas%20de%20dispers%C3%A3o!-,O%20que%20s%C3%A3o%20as%20medidas%20de%20dispers%C3%A3o%3F,em%20considera%C3%A7%C3%A3o%20a%20sua%20m%C3%A9dia.</p>
 <p>https://pt.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/other-measures-of-spread/a/mean-absolute-deviation-mad-review</p>
