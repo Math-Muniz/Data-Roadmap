@@ -65,7 +65,7 @@
 <p><b>dp = √var</b></p>
 <p>Vamos agora aplicar o calculo da variância e do desvio padrão em um exemplo:</p>
 <p>Em uma escola, a direção decidiu observar a quantidade de alunos que apresentam todas as notas acima da média em todas as disciplinas. Para analisar melhor, a diretora Ana resolveu montar uma tabela com a quantidade de notas “azuis” em uma amostra de quatro turmas ao longo de um ano. Observe a seguir a tabela organizada pela diretora:</p>
-
+<tr><td rowspan="2">Turmas</td><td>Quantidade de alunos acima da média</td><td>| 1° Bimestre | 2° Bimestre | 3° Bimestre | 4° Bimestre |</td></tr>
 | Turmas | Quantidade de alunos acima da média |
 | --- | --- | --- | --- |
 | 1° Bimestre | 2° Bimestre | 3° Bimestre | 4° Bimestre |
