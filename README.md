@@ -10,10 +10,20 @@
        * [Estatística](https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica)
 <!--te-->
 
-### Features
+## Roadmaps Completos
 
 - [ ] Data Science Roadmap
 - [ ] Data Engineer Roadmap
-- [ ] Data Analisys
+- [ ] Data Analisys Roadmap
+
+## Livros
+### Coloquei aqui alguns livros lidos que gostei que tem a ver com a Área de Dados.
+
+- [X] [Data Science do Zero: Noções Fundamentais com Python](https://www.amazon.com.br/gp/product/8550811769/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1)
+- [X] [Credit Scoring: Desenvolvimento, Implantação e Acompanhamento](https://www.amazon.com.br/gp/product/8550811769/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1)
+- [X] [Algoritmos E Lógica Da Programação](https://www.amazon.com.br/gp/product/8522128146/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1)
+- [X] [Programador Autodidata](https://www.amazon.com.br/gp/product/8575228358/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
+- [X] [Cientista da Computação Autodidata](https://www.amazon.com.br/gp/product/8575228374/ref=ppx_yo_dt_b_asin_title_o03_s01?ie=UTF8&psc=1)
+- [ ] [Projetos de Ciência de Dados com Python](https://www.amazon.com.br/gp/product/6586057108/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
 
 ## 🚧  Data Roadmap 🚀 Em construção...  🚧
