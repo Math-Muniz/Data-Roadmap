@@ -39,7 +39,7 @@
 </ul>
 
 <h2>Livros</h2>
-<h3>Abaixo listei os livros que estou lendo e outros que já li que podem-lhe ajudar na <b>Área de Dados</b>.</h3>
+<p>Abaixo listei os livros que estou lendo e outros que já li que podem-lhe ajudar na <b>Área de Dados</b>.</p>
 
 <ul>
     <li>[X] <a href="https://www.amazon.com.br/gp/product/8550811769/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1">Data Science do Zero: Noções Fundamentais com Python</a></li>
@@ -55,7 +55,7 @@
 </ul>
 
 <h2>Podcasts</h2>
-<h3>Abaixo coloquei alguns podcasts sobre a <b>Área de Dados</b>.</h3>
+<p>Abaixo coloquei alguns podcasts sobre a <b>Área de Dados</b>.</p>
 <ul>
    <li><a href="https://open.spotify.com/show/0VsNN95jsJVRS424eCFDlg">Let's Data</a></li>
    <li><a href="https://www.datahackers.com.br/podcast">Data Hackers</a></li>
