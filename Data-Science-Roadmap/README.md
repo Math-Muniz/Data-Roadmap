@@ -1,5 +1,5 @@
 <h1>CIÊNCIA DE DADOS</h1>
-<p>Uma das profissões que vamos conhecer por aqui é a Ciência de Dados, uma profissão onde você vai poder trabalhar com machine learning e muitas coisas incríveis. Bora lá que primeiro irei apresentar as principais Hard Skills utilizadas na área de Ciência de Dados(Data Science)?</p>
+<p>Uma das profissões que vamos conhecer por aqui é a Ciência de Dados ou Data Science, essa é uma profissão onde você vai poder trabalhar com machine learning e muitas coisas incríveis. Bora lá que primeiro irei apresentar as principais Hard Skills utilizadas na área de Ciência de Dados, mas pode ficar tranquilo caso não saiba algo pois dentro deste Roadmap iremos incluir tudo de necessário para você aprender o que não souber sobre essa área incrível que é Ciência de Dados.</p>
 <h1>Principais Hard Skills:</h1>
 <p><b>1. Programação. (Python, SQL)</b></p>
 <p><b>2. Estatística.</b></p>
