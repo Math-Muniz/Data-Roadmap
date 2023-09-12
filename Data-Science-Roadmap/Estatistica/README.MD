@@ -26,4 +26,9 @@
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/4.Medidas-de-Associacao-entre-Variaveis-Quantitativas/README.md">Diagrama de dispersão, Covâriancia, Correlação</a></li>
        </ul>
    </li>
+   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/5.Probabilidade">5. Probabilidade</a>
+       <ul>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/5.Probabilidade/README.md">Experimento Aleatório, Espaço Amostral, Eventos, Operações com Eventos, Eventos Mutuamente Excludentes, Eventos Independentes, Probabilidade Condicional, Teorema de Bayes</a></li>
+       </ul>
+   </li>
 </ul>
