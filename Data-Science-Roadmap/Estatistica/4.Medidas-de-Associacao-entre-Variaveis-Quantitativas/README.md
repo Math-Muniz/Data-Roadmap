@@ -60,3 +60,4 @@
 <h3>Referências:</h3>
 <p>https://pt.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/introduction-to-scatterplots/a/scatterplots-and-correlation-review</p>
 <p>https://proeducacional.com/ead/curso-preparatorio-cfg-modulo-i/capitulos/metodos-quantitativos/aulas/covariancia-e-correlacao/</p>
+<p>https://edtisensei.zendesk.com/hc/pt-br/articles/360033866451-Diagrama-de-Dispers%C3%A3o-Defini%C3%A7%C3%A3o</p>
