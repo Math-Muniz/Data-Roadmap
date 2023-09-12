@@ -48,6 +48,7 @@
     <li>[X] <a href="https://www.amazon.com.br/gp/product/8522128146/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1">Algoritmos E Lógica Da Programação</a></li>
     <li>[X] <a href="https://www.amazon.com.br/gp/product/8575228358/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1">Programador Autodidata</a></li>
     <li>[X] <a href="https://www.amazon.com.br/gp/product/8575228374/ref=ppx_yo_dt_b_asin_title_o03_s01?ie=UTF8&psc=1">Cientista da Computação Autodidata</a></li>
+    <li>[X] <a href="https://www.amazon.com.br/gp/product/8575225634/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1">Entendendo Algoritmos: Um Guia Ilustrado Para Programadores e Outros Curiosos</a></li>
     <li>[ ] <a href="https://www.amazon.com.br/gp/product/6586057108/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1">Projetos de Ciência de Dados com Python</a></li>
     <li>[ ] <a href="https://www.amazon.com.br/gp/product/6586057752/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1">SQL para Análise de Dados: Técnicas Avançadas Para Transformar Dados em Insights</a></li>
     <li>[ ] <a href="https://www.amazon.com.br/gp/product/8550815489/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1">Mãos à obra: Aprendizado de máquina com Scikit-Learn, Keras & TensorFlow: Conceitos, Ferramentas e Técnicas para a Construção de Sistemas Inteligentes</a></li>
