@@ -1,10 +1,7 @@
 <h1>Data Roadmap</h1>
 
-<h3>Criei esse repositório com a finalidade de compartilhar tudo que estudei sobre a Área de Dados. Ao longo do tempo vou focar em criar um Roadmap para cada área (Data Engineer, Data Analysis, Data Science, Machine Learning Engineer...), sempre focando em mostrar o necessário para se estudar em cada área.</h3>
+<h3>O Objetivo deste repósitorio é poder ajudar as outras pessoas no estudo para a Área de Dados, podendo também compartilhar meu conhecimento e o que aprendi sobre essa área que é a minha paixão. Vejo que a Área de Dados tem grande parte da sua documentação em inglês, por isso gostaria de criar um repositório aonde que nós brasileiros possamos nos apoiar e ter uma boa documentação sobre a área. Ao longo do tempo vou focar em criar um Roadmap para cada área (Data Engineer, Data Analysis, Data Science, Machine Learning Engineer...), sempre focando em mostrar o necessário para se estudar em cada área.Acrescentei a pasta Exercícios aonde irei colocar diversos exercícios de vários níveis diferentes feitos em Python, SQL e outros...</h3>
 
-<h3>O objetivo deste repositório é ajudar outras pessoas que querem estudar para a Área de Dados, podendo servir de consulta ou até para aprendizado de coisas novas.</h3>
-
-<h3>A pasta Exercícios contém diversos exercícios de vários níveis diferentes feitos em Python, SQL e outros...</h3>
 
 <h1>Tabela de conteúdos</h1>
 <ul>
@@ -34,13 +31,13 @@
 
 <h2>Roadmaps Completos</h2>
 <ul>
-    <li>[ ] Data Science Roadmap</li>
+    <li>[ ] Data Science Roadmap(Em progresso...)</li>
     <li>[ ] Data Engineer Roadmap</li>
     <li>[ ] Data Analysis Roadmap</li>
 </ul>
 
 <h2>Livros</h2>
-<h3>Coloquei aqui alguns livros lidos que gostei que tem a ver com a Área de Dados. Caso você clique no link vai ser redirecionado para o link em que comprei o livro.</h3>
+<h3>Abaixo listei os livros que estou lendo e outros que já li que podem-lhe ajudar na <b>Área de Dados</b>.</h3>
 
 <ul>
     <li>[X] <a href="https://www.amazon.com.br/gp/product/8550811769/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1">Data Science do Zero: Noções Fundamentais com Python</a></li>
@@ -53,6 +50,13 @@
     <li>[ ] <a href="https://www.amazon.com.br/gp/product/6586057752/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1">SQL para Análise de Dados: Técnicas Avançadas Para Transformar Dados em Insights</a></li>
     <li>[ ] <a href="https://www.amazon.com.br/gp/product/8550815489/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1">Mãos à obra: Aprendizado de máquina com Scikit-Learn, Keras & TensorFlow: Conceitos, Ferramentas e Técnicas para a Construção de Sistemas Inteligentes</a></li>
     <li>[ ] <a href="https://www.amazon.com/gp/product/0578973839/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1">Ace the Data Science Interview: 201 Real Interview Questions Asked By FAANG, Tech Startups, & Wall Street</a></li>
+</ul>
+
+<h2>Podcasts</h2>
+<h3>Abaixo coloquei alguns podcasts sobre a <b>Área de Dados</b>.</h3>
+<ul>
+   <li><a href="https://open.spotify.com/show/0VsNN95jsJVRS424eCFDlg">Let's Data</a></li>
+   <li><a href="https://www.datahackers.com.br/podcast">Data Hackers</a></li>
 </ul>
 
 <h2>🚧  Data Roadmap 🚀 Em construção...  🚧</h2>
