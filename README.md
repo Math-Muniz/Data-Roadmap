@@ -1,6 +1,8 @@
 <h1>Data Roadmap</h1>
 
-<h3>O Objetivo deste repósitorio é poder ajudar as outras pessoas no estudo para a Área de Dados, podendo também compartilhar meu conhecimento e o que aprendi sobre essa área que é a minha paixão. Vejo que a Área de Dados tem grande parte da sua documentação em inglês, por isso gostaria de criar um repositório aonde que nós brasileiros possamos nos apoiar e ter uma boa documentação sobre a área. Ao longo do tempo vou focar em criar um Roadmap para cada área (Data Engineer, Data Analysis, Data Science, Machine Learning Engineer...), sempre focando em mostrar o necessário para se estudar em cada área.Acrescentei a pasta Exercícios aonde irei colocar diversos exercícios de vários níveis diferentes feitos em Python, SQL e outros...</h3>
+<p>O Objetivo deste repósitorio é poder ajudar as outras pessoas no estudo para a Área de Dados, podendo também compartilhar meu conhecimento e o que aprendi sobre essa área que é a minha paixão. Vejo que a Área de Dados tem grande parte da sua documentação em inglês, por isso gostaria de criar um repositório aonde que nós brasileiros possamos nos apoiar e ter uma boa documentação sobre a área.</p>
+<p>Ao longo do tempo vou focar em criar um Roadmap para cada área (Data Engineer, Data Analysis, Data Science, Machine Learning Engineer...), sempre focando em mostrar o necessário para se estudar em cada área.</p>
+<p>Acrescentei a pasta Exercícios aonde irei colocar diversos exercícios de vários níveis diferentes feitos em Python, SQL e outros...</p>
 
 
 <h1>Tabela de conteúdos</h1>
