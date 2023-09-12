@@ -36,20 +36,11 @@
 <p><em>r</em> > 0: relação linear positiva</p>
 <p><em>r</em> < 0: relação linear negativa</p>
 <p>A correlação ainda possui uma propriedade adicional: se X e Y forem multiplicados ou divididos pelo mesmo valor, ela não se altera.</p>
-<p><b>Correlação Forte e Positiva.</b></p>
-<img src="Correlation-Strong-and-Positive.png">
-<p><b>Correlação Fraca e Positiva.</b></p>
-<img src="Correlation-Weak-and-Positive.png">
-<p><b>Correlação Não Linear.</b></p>
-<img src="Correlation-Not-Linear.png">
-<p><b>Correlação Fraca e Negativa.</b></p>
-<img src="">
-<p><b>Correlação Forte e Negativa.</b></p>
-<img src="">
+<img src="Correlation.png">
 <h3>Exemplo:</h3>
 <p>Determinado investidor deseja saber se há uma correlação entre a taxa de câmbio (X) e o retorno do ativo Y. Para isso, pegou uma amostra da evolução da taxa de câmbio e do retorno do ativo no decorrer de três períodos.</p>
 <p><b>Evolução da taxa de câmbio.</b></p>
-<img src="">
+<img src="Table1.png">
 <p>Qual o coeficiente de correlação das duas variáveis?</p>
 <h3>Resolução:</h3>
 <p>Média de X e Y:</p>
