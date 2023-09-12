@@ -3,6 +3,6 @@
 <h2> O QUE É CIÊNCIA DE DADOS?</h2>
 <p>A ciência de dados é uma área multidisciplinar que nos permite transformar dados brutos em conhecimento, principalmente através de modelos</p>
 <h1>Hard Skills:</h1>
-<h3>1. Programação (Python, SQL)</h3>
-<h3>2. Estatística</h3>
-<h3>3. Conhecimento da área de aplicação</h3>
+<p><b>1. Programação (Python, SQL)</b></p>
+<p><b>2. Estatística</b></p>
+<p><b>3. Conhecimento da área de aplicação</b></p>
