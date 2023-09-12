@@ -16,13 +16,13 @@
 <h3>Saiba Mais</h3>
 <p>O símbolo que utilizamos acima, E[ ], é o valor esperado, uma propriedade útil de qualquer variável aleatória. Geralmente notado como E(X), o valor esperado pode ser calculado pela somatória dos valores distintos que a variável aleatória pode assumir. O símbolo E(X) é lido como valor esperado de X.</p>
 <p>Por exemplo, uma amostra do conjunto <i>A = 2, 1, 2, 5</i> e do conjunto <i>B = 8, 10, 12, 14</i> possuem covariância de 3,333, pois, aplicando a equação que vimos acima, teremos:</p>
-<img src="">
+<img src="Cov-Calculation.png">
 <p>Quando a covariância é positiva, duas variáveis tendem a variar na mesma direção; isto é, se uma sobe, a outra tende a subir e vice-versa. Quando a covariância é negativa, duas variáveis tendem a variar em direções opostas; isto é, se uma sobe a outra tende a cair e vice-versa. Quanto mais próxima de zero for a covariância, menor a possibilidade de se identificar um comportamento interdependente entre as variáveis.</p>
 <p>Nas finanças, por exemplo, o CDI e a rentabilidade de um fundo em DI possuem covariância positiva. Isso significa que caminham na mesma direção. Diferentemente da taxa de juros e do mercado acionário, que possuem covariância negativa, ou seja, em que o aumento dos juros diminui os investimentos do mercado acionário.</p>
 <h2>Correlação</h2>
 <p>A covariância busca mostrar se há um comportamento de interdependência linear entre duas variáveis, mas é uma medida dimensional, sendo afetada pelas unidades de medida das séries X e Y. Para corrigir esse problema, chegou-se à medida de correlação, uma normalização da covariância representado por um número adimensional que varia entre -1 e 1.</p>
 <p>A correlação (ou coeficiente de correlação linear de Pearson) populacional e amostral é dada pelas fórmulas:</p>
-<img src="">
+<img src="Correlation-Population-and-Sample.png">
 <p>Ou seja, a correlação é a covariância de X e Y (σ<sub>XY</sub> ou s<sub>XY</sub>) dividida pela multiplicação dos desvios padrão de X e Y (σ<sub>X</sub>*σ<sub>Y</sub> ou s<sub>X</sub>*s<sub>Y</sub>). Na parte direita da equação, os termos <em>n </em>ou <em>n-1</em> se cancelam.</p>
 <p>A grande propriedade possuída pelo coeficiente de correlação é que ele varia entre -1 e 1, revelando a magnitude da relação entre os comportamentos de duas variáveis, sem ser afetado pelo problema dimensional presente na covariância, que é incapaz de indicar a força da correlação. A interpretação do coeficiente se dá da seguinte forma:</p>
 <ul>
@@ -37,31 +37,31 @@
 <p><em>r</em> < 0: relação linear negativa</p>
 <p>A correlação ainda possui uma propriedade adicional: se X e Y forem multiplicados ou divididos pelo mesmo valor, ela não se altera.</p>
 <p><b>Correlação Forte e Positiva.</b></p>
-<img src="">
+<img src="Correlation-Strong-and-Positive.png">
 <p><b>Correlação Fraca e Positiva.</b></p>
-<img src="">
+<img src="Correlation-Weak-and-Positive.png">
 <p><b>Correlação Não Linear.</b></p>
-<img src="">
+<img src="Correlation-Not-Linear.png">
 <p><b>Correlação Fraca e Negativa.</b></p>
 <img src="">
 <p><b>Correlação Forte e Negativa.</b></p>
 <img src="">
-<p><b>Exemplo:</b></p>
+<h3>Exemplo:</h3>
 <p>Determinado investidor deseja saber se há uma correlação entre a taxa de câmbio (X) e o retorno do ativo Y. Para isso, pegou uma amostra da evolução da taxa de câmbio e do retorno do ativo no decorrer de três períodos.</p>
 <p><b>Evolução da taxa de câmbio.</b></p>
 <img src="">
 <p>Qual o coeficiente de correlação das duas variáveis?</p>
-<p><b>Resolução:</b></p>
+<h3>Resolução:</h3>
 <p>Média de X e Y:</p>
-<img src="">
+<img src="Mean-x-y.png">
 <p>Covariância de X e Y:</p>
-<img src="">
+<img src="Cov-x-y.png">
 <p>Variância de X e Y:</p>
-<img src="">
+<img src="Var-x-y.png">
 <p>Desvio Padrão de X e Y:</p>
-<img src="">
+<img src="Dp-x-y.png">
 <p>Correlação:</p>
-<img src="">
+<img src="Correlation-x-y.png">
 <p>Assim, há uma correlação de 0,826 entre a taxa de câmbio e o retorno do ativo Y.</p>
 <h2>Coeficiente de Determinação</h2>
 <p>Outra medida importante de associação entre duas variáveis é o coeficiente de determinação, ou R². Definindo uma equação, ou modelo matemático, que relaciona duas variáveis, o R² seria a medida que nos informa o quão capaz esse modelo é de explicar o comportamento de uma variável em relação à outra. Ou seja, se trata de uma medida de ajuste que varia de zero a 1, indicando, em porcentagem, o quanto um modelo matemático consegue explicar os valores observados. Assim, quanto maior o <i>R²</i>, mais explicativo é o modelo e melhor ele se ajusta à amostra. O coeficiente de terminação de um modelo de regressão linear é literalmente o coeficiente <em>r</em>, ou coeficiente de correlação linear de Pearson, visto nessa aula, elevado ao quadrado.</p>
