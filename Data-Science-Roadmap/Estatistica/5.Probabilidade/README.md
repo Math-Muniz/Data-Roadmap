@@ -61,7 +61,7 @@
 <p>Em um pacote, há 3 balas de limão, 3 de morango e 4 de café. Qual é a probabilidade de serem retiradas 3 balas de café sucessivamente sabendo que a cada retirada, a bala sorteada é posta de volta ao pacote?</p>
 <p>Note que o espaço amostral é composto por 10 elementos (balas de todos os sabores) e, como a cada retirada a bala sorteada volta a fazer parte do pacote, o número de elementos do espaço amostral não é alterado. Então, para a primeira escolha temos 4 (são quatro balas de café) chances dentro de 10 possibilidades de conseguir tirar uma bala de café, como a bala retirada volta ao pacote, na segunda escolha também teremos 4 possibilidades em 10, na terceira escolha isso se repete, 4 possibilidades em 10. Perceba, portanto, que a probabilidade de ocorrer o segundo evento (escolha da segunda bala) não depende do primeiro (escolha da primeira bala), assim como a probabilidade de ocorrer o terceiro evento não depende do segundo e assim por diante. Eventos desse tipo, em que a probabilidade de um evento ocorrer não depende do outro e que há reposição de elementos, são denominados <b>eventos independentes.</b></p>
 <p>Resolvendo este problema, teremos o seguinte:</p>
-<img src="calculo.png">
+<img src="Calculo.png">
 <h2 align="center">Probabilidade Condicional</h2>
 <p><b>Probabilidade condicional</b> refere-se à probabilidade de um evento ocorrer com base em um evento anterior. Evidentemente, esses dois eventos precisam ser conjuntos não vazios pertencentes a um espaço amostral finito.</p>
 <p>Em um lançamento simultâneo de dois dados, por exemplo, obtêm-se números em suas faces superiores. Qual é a <b>probabilidade</b> de que a soma desses números seja 8, desde que ambos os resultados sejam ímpares?</p>
@@ -134,7 +134,7 @@
 <p><b>P(B) = ¾</b></p>
 <p><b>P(B|A) = 1</b></p>
 <p><b>Logo, aplicando o Teorema de Bayes:</b></p>
-<img src="Bayes-exemplo.jpg">
+<img src="Bayes-Exemplo.jpg">
 <p align="center"><b>O famoso problema de Monty Hall</b></p>
 <p>Uma das aplicações do Teorema de Bayes é no famoso <b>problema de Monty Hall</b>. Esse problema, ou paradoxo, controverso e contra intuitivo reflete bem essa mudança das probabilidades baseada em um grau de crença.</p>
 <p>O que é esse problema? Bem, <b>trata-se do famoso jogo das portas</b>,comum em muitos game shows, em que o convidado tem que escolher 1 de 3 portas, pois essa contêm um prêmio. Assim que você escolhe, outra porta é aberta revelando estar vazia e, então, é perguntado se você deseja trocar de porta.</p>
@@ -158,7 +158,7 @@
 <p><li>P(B|AC) = probabilidade de o apresentador escolher uma porta vazia dado que o prêmio NÃO está na porta número 1.</li></p>
 <p><li>P(AC) = probabilidade de o prêmio NÃO estar na porta número 1.</li></p>
 <p>Podemos afirmar que probabilidade de o apresentador abrir uma porta vazia (o prêmio estando ou não na porta número 1) é 1, ou seja, P(B|A) = P(B|AC) = 1. Por quê? Porque essa informação foi dada previamente, isto é, o apresentador sempre escolherá uma vazia, pois ele sabe atrás de qual porta se encontra o prêmio.</p>
-<img src="Conta2.png">
+<img src="Calculo2.png">
 <p>Ou seja, se você não mudar de porta, sua chance de ganhar permanece em 1/3, enquanto se você trocar, dobra suas chances para 2/3. Isso não garante que você ganhará o prêmio, pois pode acontecer que você tenha acertado de primeira, mas na maioria das vezes, o prêmio estará atrás da outra porta.</p>
 <p>Um jeito simples de constatar isso é através de uma tabela. Assumindo que você tenha escolhido a porta número 1, temos as seguintes possibilidades:</p>
 <img src="Table.png">
