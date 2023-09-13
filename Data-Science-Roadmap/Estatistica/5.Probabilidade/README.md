@@ -61,7 +61,7 @@
 <p>Em um pacote, há 3 balas de limão, 3 de morango e 4 de café. Qual é a probabilidade de serem retiradas 3 balas de café sucessivamente sabendo que a cada retirada, a bala sorteada é posta de volta ao pacote?</p>
 <p>Note que o espaço amostral é composto por 10 elementos (balas de todos os sabores) e, como a cada retirada a bala sorteada volta a fazer parte do pacote, o número de elementos do espaço amostral não é alterado. Então, para a primeira escolha temos 4 (são quatro balas de café) chances dentro de 10 possibilidades de conseguir tirar uma bala de café, como a bala retirada volta ao pacote, na segunda escolha também teremos 4 possibilidades em 10, na terceira escolha isso se repete, 4 possibilidades em 10. Perceba, portanto, que a probabilidade de ocorrer o segundo evento (escolha da segunda bala) não depende do primeiro (escolha da primeira bala), assim como a probabilidade de ocorrer o terceiro evento não depende do segundo e assim por diante. Eventos desse tipo, em que a probabilidade de um evento ocorrer não depende do outro e que há reposição de elementos, são denominados <b>eventos independentes.</b></p>
 <p>Resolvendo este problema, teremos o seguinte:</p>
-<img src="calculo.png" align="center">
+<img src="calculo.png">
 <h2 align="center">Probabilidade Condicional</h2>
 <p><b>Probabilidade condicional</b> refere-se à probabilidade de um evento ocorrer com base em um evento anterior. Evidentemente, esses dois eventos precisam ser conjuntos não vazios pertencentes a um espaço amostral finito.</p>
 <p>Em um lançamento simultâneo de dois dados, por exemplo, obtêm-se números em suas faces superiores. Qual é a <b>probabilidade</b> de que a soma desses números seja 8, desde que ambos os resultados sejam ímpares?</p>
@@ -93,10 +93,80 @@
 <p align="center">P(A|B) = (2/36).(36/9)</p>
 <p align="center">P(A|B) = 2/9</p>
 <h2 align="center">Teorema de Bayes</h2>
-<p></p>
+<p>Conhecido como o <b>“cálculo que prova milagres”</b>, o Teorema de Bayes é uma regra criada há mais de dois séculos que faz parte da probabilidade estatística. O seu objetivo é calcular as chances de um evento acontecer com base em dados e um conhecimento prévio.</p>
+<p>Sendo desenvolvido por Thomas Bayes, um pastor protestante e matemático inglês, no século XVIII, o Teorema de Bayes está presente nas nossas vidas até os dias atuais, principalmente no ramo da informática.</p>
+<p>E falando especificamente dessa área, <b>o Teorema de Bayes ajudou Alan Turing</b>, considerado atualmente como o pai da computação, a decifrar um código alemão durante a Segunda Guerra Mundial.</p>
+<p>É bastante comum para os estudiosos tentar descrever um determinado fenômeno através do estudo da probabilidade de ocorrência de um evento a ele associado.</p>
+<p>Afinal de contas, é exatamente isso que acontece quando em um projeto Seis Sigma estudamos um processo e tentamos estimar a probabilidade de ocorrência de um determinado tipo de defeito.</p>
+<p>Hoje você aprenderá tudo sobre o Teorema de Bayes, sua origem, como calculá-lo e outras curiosidades.</p>
+<p align="center"><b>O que é o Teorema de Bayes?</b></p>
+<p>O Teorema de Bayes é uma <b>fórmula matemática</b> usada para o cálculo da <b>probabilidade</b> de um evento dado que outro evento já ocorreu, o que é chamado de probabilidade condicional.</p>
+<p>A grande questão do Teorema de Bayes é que eu preciso ter alguma informação anterior, ou seja, preciso saber que um determinado evento já ocorreu e qual a probabilidade desse evento.</p>
+<p>É baseado nessa inferência bayesiana que surge a expressão “grau de crença”, que é essa confiança em algum evento anterior, essa suposição inicial.</p>
+<p>Se você ainda não conseguiu compreender, fique tranquilo, pois com alguns exemplos práticos, tenho certeza de que ficará mais simples.</p>
+<p align="center"><b>Origem do teorema Bayesiano</b></p>
+<p>Como já resumimos na introdução do nosso artigo, as primeiras evidências mostram que o Teorema de Bayes foi criado por <b>Thomas Bayes</b>, um pastor protestante e matemático inglês, no século XVIII.</p>
+<p>Ele foi o responsável por elaborar um cálculo que permitiu que novos eventos colaborassem para a atualização da propabilidade a partir de informações anteriores.</p>
+<p>Contudo, o matemático francês <b>Pierre-Simon Laplace</b> foi a pessoa que formalizou o Teorema de Bayes, reproduzindo e afirmando os resultados obtidos no século XVIII.</p>
+<p align="center"><b>O que é Inferência Bayesiana</b></p>
+<p><b>O Teorema de Bayes possui diversas formas de ser aplicado.</b> Uma delas se dá por meio da inferência bayesiana.</p>
+<p>A inferência bayesiana é uma abordagem da inferência estatística e consiste na avaliação de eventos, ou hipóteses, de acordo com a semelhança dos mesmos e que podem ter diversas interpretações de probabilidade.</p>
+<p><b>Como calcular o Teorema de Bayes?</b></p>
+<p>Para o cálculo da probabilidade de um evento A dado que um evento B ocorreu, “P(A|B)”, pelo Teorema de Bayes temos que:</p>
+<img src="Bayes.jpg">
+<p>Ou seja, precisamos de alguns dados, que são:</p>
+<p><li>P(B|A): probabilidade de B acontecer dado que A ocorreu</li></p>
+<p><li>P(A): probabilidade de A ocorrer</li></p>
+<p><li>P(B): probabilidade de B ocorrer</li></p>
+<p>Para esclarecer mais, nada melhor que um exemplo, não é mesmo?</p>
+<p><b>Exemplo</b></p>
+<p>Imagine que um casal tem dois filhos. Qual a probabilidade dos dois filhos serem meninos dado que um deles é menino?</p>
+<p>Para calcular essa probabilidade, precisamos definir alguns eventos e probabilidades. Vamos definir os eventos:</p>
+<p><li>A: dois filhos meninos (evento desejado)</li></p>
+<p><li>B: um dos filhos é um menino (evento dado)</li></p>
+<p>Definidos os eventos, vamos definir algumas das probabilidades que precisamos para o cálculo:</p>
+<p><li>P(A): probabilidade de que os dois filhos sejam meninos</li></p>
+<p><li>P(B): probabilidade de que um filho seja um menino</li></p>
+<p>Com cálculos simples, chegamos à conclusão de que a probabilidade de que dois filhos sejam meninos é ¼. Assumindo que a probabilidade de que uma criança seja menino é ½, então a probabilidade de que pelo menos um dos filhos do casal seja um menino é ¾.</p>
+<p>Podemos concluir também que P(B|A), ou seja, a probabilidade de que um dos filhos seja menino dado que os dois são meninos é 1.</p>
+<p>Sendo assim, temos:</p>
+<p><b>P(A) = ¼</b></p>
+<p><b>P(B) = ¾</b></p>
+<p><b>P(B|A) = 1</b></p>
+<p><b>Logo, aplicando o Teorema de Bayes:</b></p>
+<img src="Bayes-exemplo.jpg">
+<p align="center"><b>O famoso problema de Monty Hall</b></p>
+<p>Uma das aplicações do Teorema de Bayes é no famoso <b>problema de Monty Hall</b>. Esse problema, ou paradoxo, controverso e contra intuitivo reflete bem essa mudança das probabilidades baseada em um grau de crença.</p>
+<p>O que é esse problema? Bem, <b>trata-se do famoso jogo das portas</b>,comum em muitos game shows, em que o convidado tem que escolher 1 de 3 portas, pois essa contêm um prêmio. Assim que você escolhe, outra porta é aberta revelando estar vazia e, então, é perguntado se você deseja trocar de porta.</p>
+<p>O grau de crença assumido é que o apresentador do programa sabe exatamente onde está o prêmio. Sendo assim, independente se você escolheu a porta certa de primeira, ele abrirá uma porta que está vazia e te perguntará se deseja trocar.</p>
+<p>Partindo-se dessa informação dada, de que o apresentador sabe onde está o prêmio, você deve trocar ou não de porta?</p>
+<p>Já te adianto a resposta: sim! Trocar de porta dobra suas chances de ganhar o prêmio. Talvez você esteja chocado agora, mas calma, a matemática assume daqui em diante.</p>
+<p>Vamos supor que você escolha a porta número 1. O apresentador abre a porta número 2, que está vazia. Lembre-se de que ele sabe onde está o prêmio. Ele então te pergunta se você deseja trocar de porta.</p>
+<p><b>Vamos aos dados:</b></p>
+<p>Quando você escolhe a porta número 1, você tem 1/3 de chance de ganhar, pois temos 3 portas, com somente uma contendo o prêmio. Então, o que acontece com suas chances quando o apresentador abre uma porta vazia? Elas se mantêm na mesma. Como assim?</p>
+<p><b>Definindo os eventos:</b></p>
+<p><li>A = a porta escolhida (nº 1) tem o prêmio</li></p>
+<p><li>B = o apresentador abre uma porta vazia</li></p>
+<p><b>Assim, vamos partir para o Teorema de Bayes:</b></p>
+<img src="Bayes.jpg">
+<p>Sabemos que P(A) = 1/3. Para calcular P(B), precisamos cobrir todas as possibilidades de o apresentador abrir uma porta vazia. Ou seja, quais são as probabilidades de o apresentador abrir uma porta vazia tendo você escolhido ou não a porta certa.</p>
+<p><b>Assim, o Teorema fica dessa forma:</b></p>
+<img src="Teorema-Bayes.png">
+<p><b>Assim, vamos definir as probabilidades:</b></p>
+<p><li>P(A) = probabilidade de o prêmio estar na porta número 1.</li></p>
+<p><li>P(B|A) = probabilidade de o apresentador escolher uma porta vazia dado que o prêmio está na porta número 1.</li></p>
+<p><li>P(B|AC) = probabilidade de o apresentador escolher uma porta vazia dado que o prêmio NÃO está na porta número 1.</li></p>
+<p><li>P(AC) = probabilidade de o prêmio NÃO estar na porta número 1.</li></p>
+<p>Podemos afirmar que probabilidade de o apresentador abrir uma porta vazia (o prêmio estando ou não na porta número 1) é 1, ou seja, P(B|A) = P(B|AC) = 1. Por quê? Porque essa informação foi dada previamente, isto é, o apresentador sempre escolherá uma vazia, pois ele sabe atrás de qual porta se encontra o prêmio.</p>
+<img src="Conta2.png">
+<p>Ou seja, se você não mudar de porta, sua chance de ganhar permanece em 1/3, enquanto se você trocar, dobra suas chances para 2/3. Isso não garante que você ganhará o prêmio, pois pode acontecer que você tenha acertado de primeira, mas na maioria das vezes, o prêmio estará atrás da outra porta.</p>
+<p>Um jeito simples de constatar isso é através de uma tabela. Assumindo que você tenha escolhido a porta número 1, temos as seguintes possibilidades:</p>
+<img src="Table.png">
+<p>Lembrando que o apresentador abrirá uma porta vazia, quando você troca de porta, você ganha em 2 de 3 vezes. Percebeu agora? Embora pareça estranho e nada intuitivo, você logo pode notar que, baseado na informação de que o apresentador sabe onde está o prêmio, trocar é a melhor opção.</p>
 <h3>Referencias</h3>
 <p>https://querobolsa.com.br/enem/matematica/experimento-aleatorio-e-espaco-amostral</p>
 <p>https://mundoeducacao.uol.com.br/matematica/definicoes-basicas-probabilidade.htm</p>
 <p>https://pt.economy-pedia.com/11036070-operations-with-events</p>
 <p>https://resumos.mesalva.com/eventos-mutuamente-excludentes-eventos-independentes/</p>
 <p>https://mundoeducacao.uol.com.br/matematica/probabilidade-condicional.htm#:~:text=Probabilidade%20condicional%20refere%2Dse%20%C3%A0,n%C3%BAmeros%20em%20suas%20faces%20superiores.</p>
+<p>https://www.voitto.com.br/blog/artigo/teorema-de-bayes</p>
