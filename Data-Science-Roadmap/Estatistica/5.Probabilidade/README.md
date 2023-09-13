@@ -11,9 +11,9 @@
 <h2>Espaço Amostral</h2>
 <p>O <b>espaço amostral</b>, denotado pela letra <i><b>S</b></i>, é o conjunto de todos os possíveis resultados de um experimento aleatório.</p>
 <p>Então, no lançamento de um dado e visualização do número da face superior, o espaço amostral é:</p>
-<p style="text-align:center"><i><b>S = {1,2,3,4,5,6}</b></i></p>
+<p align="center"><i><b>S = {1,2,3,4,5,6}</b></i></p>
 <p>Já se o experimento aleatório for o sexo de um bebê, então</p>
-<p style="text-align:center"><i><b>S = { masculino, feminino}</b></i></p>
+<p align="center"><i><b>S = { masculino, feminino}</b></i></p>
 <p>Vamos supor que temos em uma caixa bolas coloridas, podendo uma bola ser ou azul, vermelha, ou branca. O nosso experimento aleatório consiste em retirar uma bola da caixa e verificar sua cor.</p>
 <p>É fácil ver que existem três possíveis resultados para este experimento. Logo, o seu espaço amostral é dado por</p>
 <p align="center"><i><b>S = {azul, vermelha, branca}</b></i></p>
@@ -22,11 +22,11 @@
 <p>São exemplos de eventos:</p>
 <p>a) Sair cara em um lançamento de uma moeda</p>
 <p>O <b>evento</b> é sair cara e possui um único elemento. A representação dos eventos também é feita com notações de conjuntos:</p>
-<p style="text-align:center"><i><b>E = {cara}</b></i></p>
+<p align="center"><i><b>E = {cara}</b></i></p>
 <p>O seu <b>número de elementos</b> é n(E) = 1.</p>
 <p>b) Sair um número par no lançamento de um dado.</p>
 <p>O <b>evento</b> é sair um número par:</p>
-<p style="text-align:center"><i><b>E = {2, 4, 6}</b></i></p>
+<p align="center"><i><b>E = {2, 4, 6}</b></i></p>
 <p>O seu <b>número de elementos</b> é n(E) = 3.</p>
 <p>Os <b>eventos</b> que possuem apenas um elemento (ponto amostral) são chamados de simples. Quando o evento é igual ao <b>espaço amostral</b>, ele é chamado de evento certo e sua <b>probabilidade</b> de ocorrência é de 100%. Quando um evento é igual ao conjunto vazio, ele é chamado de evento impossível e possui 0% de chances de ocorrência.</p>
 
