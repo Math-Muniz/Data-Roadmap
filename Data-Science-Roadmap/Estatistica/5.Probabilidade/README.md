@@ -16,7 +16,7 @@
 <p style="text-align:center"><i><b>S = { masculino, feminino}</b></i></p>
 <p>Vamos supor que temos em uma caixa bolas coloridas, podendo uma bola ser ou azul, vermelha, ou branca. O nosso experimento aleatório consiste em retirar uma bola da caixa e verificar sua cor.</p>
 <p>É fácil ver que existem três possíveis resultados para este experimento. Logo, o seu espaço amostral é dado por</p>
-<p style="text-align:center"><i><b>S = {azul, vermelha, branca}</b></i></p>
+<p align="center"><i><b>S = {azul, vermelha, branca}</b></i></p>
 <h2>Evento</h2>
 <p>Um <b>evento</b> é qualquer subconjunto de um espaço amostral. Ele pode conter nenhum elemento (conjunto vazio) ou todos os elementos de um <b>espaço amostral.</b> O número de elementos do evento é representado da seguinte maneira: n(E), sendo E o evento em questão.</p>
 <p>São exemplos de eventos:</p>
