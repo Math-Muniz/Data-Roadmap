@@ -15,6 +15,7 @@
                    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/2.Medidas-de-dispersao">2. Medidas de Dispersão: Amplitude, Desvio-Médio, Variância, Desvio-padrão, Erro-padrão</a></li>
                    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/3.Medidas-de-Assimetria-e-Curtose">3. Medidas de Assimetria(Skewness) e Curtose(Kurtosis)</a></li>
                    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/4.Medidas-de-Associacao-entre-Variaveis-Quantitativas">4. Medidas de Associação entre Variáveis Quantitativas: Diagrama de Dispersão, Covâriancia, Correlação</a></li>
+                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/5.Probabilidade">5. Probabilidade: Experimento Aleatório, Espaço Amostral, Eventos, Operações com Eventos, Eventos Mutuamento Excludentes, Eventos Independentes, Probabilidade Condicional e Teorema de Bayes</a></li>
                </ul>
            </li>
        </ul>
