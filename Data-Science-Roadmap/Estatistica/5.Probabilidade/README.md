@@ -61,7 +61,7 @@
 <p>Em um pacote, há 3 balas de limão, 3 de morango e 4 de café. Qual é a probabilidade de serem retiradas 3 balas de café sucessivamente sabendo que a cada retirada, a bala sorteada é posta de volta ao pacote?</p>
 <p>Note que o espaço amostral é composto por 10 elementos (balas de todos os sabores) e, como a cada retirada a bala sorteada volta a fazer parte do pacote, o número de elementos do espaço amostral não é alterado. Então, para a primeira escolha temos 4 (são quatro balas de café) chances dentro de 10 possibilidades de conseguir tirar uma bala de café, como a bala retirada volta ao pacote, na segunda escolha também teremos 4 possibilidades em 10, na terceira escolha isso se repete, 4 possibilidades em 10. Perceba, portanto, que a probabilidade de ocorrer o segundo evento (escolha da segunda bala) não depende do primeiro (escolha da primeira bala), assim como a probabilidade de ocorrer o terceiro evento não depende do segundo e assim por diante. Eventos desse tipo, em que a probabilidade de um evento ocorrer não depende do outro e que há reposição de elementos, são denominados <b>eventos independentes.</b></p>
 <p>Resolvendo este problema, teremos o seguinte:</p>
-<img src="calculo.png">
+<img src="calculo.png" align="center">
 <h2 align="center">Probabilidade Condicional</h2>
 <p><b>Probabilidade condicional</b> refere-se à probabilidade de um evento ocorrer com base em um evento anterior. Evidentemente, esses dois eventos precisam ser conjuntos não vazios pertencentes a um espaço amostral finito.</p>
 <p>Em um lançamento simultâneo de dois dados, por exemplo, obtêm-se números em suas faces superiores. Qual é a <b>probabilidade</b> de que a soma desses números seja 8, desde que ambos os resultados sejam ímpares?</p>
@@ -69,7 +69,7 @@
 <p>O novo espaço amostral é composto pelos pares:</p>
 <p align="center"><b>{1,1}; {1,3}; {1,5}; {3,1}; {3,3}; {3,5}; {5,1}; {5,3} e {5,5}</b></p>
 <p>Desses, apenas {3,5} e {5,3} possuem soma 8. Logo, a <b>probabilidade</b> de que se obtenha soma 8 no lançamento de dois dados, dado que os resultados obtidos são ambos ímpares, é de:</p>
-<p>2/9</p>
+<p align="center">2/9</p>
 <p align="center"><b>Fórmula da Probabilidade Condicional:</b></p>
 <p>Seja K um espaço amostral que contém os eventos A e B não vazios. A <b>probabilidade</b> de A acontecer, dado que B já aconteceu, é representada por P(A|B) e é calculada pela seguinte expressão:</p>
 <p align="center"><b>P(A|B) = P(A∩B)/P(B)</b></p>
