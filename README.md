@@ -5,7 +5,7 @@
 <p>Acrescentei a pasta Exercícios aonde irei colocar diversos exercícios de vários níveis diferentes feitos em Python, SQL e outros...</p>
 
 
-<h1>Tabela de conteúdos</h1>
+<h1>Tabela de Conteúdos</h1>
 <ul>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap">Data Science Roadmap</a>
        <ul>
@@ -16,6 +16,8 @@
                    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/3.Medidas-de-Assimetria-e-Curtose">3. Medidas de Assimetria(Skewness) e Curtose(Kurtosis)</a></li>
                    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/4.Medidas-de-Associacao-entre-Variaveis-Quantitativas">4. Medidas de Associação entre Variáveis Quantitativas: Diagrama de Dispersão, Covâriancia, Correlação</a></li>
                   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/5.Probabilidade">5. Probabilidade: Experimento Aleatório, Espaço Amostral, Eventos, Operações com Eventos, Eventos Mutuamento Excludentes, Eventos Independentes, Probabilidade Condicional e Teorema de Bayes</a></li>
+                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/6.Variaveis-Aleatorias-e-Distribuicoes-de-Probabilidade">6. Variáveis Aleatórias e Distribuições de Probabilidade: Esperança Matemática, Variância, Covariância, Coeficiente de Correlação</a></li>
+                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/7.Distribuicoes-Discretas">7. Distribuições Discretas: Distribuição de Bernoulli, Distribuição Binomial, Distribuição de Poisson</a></li>
                </ul>
            </li>
        </ul>
