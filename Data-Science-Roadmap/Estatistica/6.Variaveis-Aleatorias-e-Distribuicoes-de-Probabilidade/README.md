@@ -115,10 +115,10 @@
 <p><b>Aplicações</b></p>
 <p>O coeficiente de correlação pode ser usado em uma variedade de aplicações, incluindo:</p>
 <ul>
-  <li><b>Estatística:** para identificar a relação entre duas variáveis</li>
-  <li><b>Finanças:** para avaliar o risco de um investimento</li>
-  <li><b>Economia:** para analisar a correlação entre dois mercados</li>
-  <li><b>Engenharia:** para prever a falha de um sistema</li>
+  <li><b>Estatística:</b> para identificar a relação entre duas variáveis</li>
+  <li><b>Finanças:</b> para avaliar o risco de um investimento</li>
+  <li><b>Economia:</b> para analisar a correlação entre dois mercados</li>
+  <li><b>Engenharia:</b> para prever a falha de um sistema</li>
 </ul>
 <h2>Referencias:</h2>
 <p>Livro: Probabilidade e Estatística para Engenheiros, 2ª Edição, de Mario Sergio Jorge e João Marcos de Oliveira.</p>
