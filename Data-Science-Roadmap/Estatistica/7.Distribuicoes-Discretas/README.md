@@ -30,6 +30,33 @@
 <p>Nesse caso, temos uma probabilidade de sucesso (o cliente adquirir um produto qualquer) de 0,6 e uma probabilidade de não comprar produto algum de 0,4 (q = 1 – 0,6).</p>
 <p>A repetição de experimentos de Bernoulli independentes dá origem ao modelo Binomial, que você estudará abaixo.</p>
 <h2>Distribuição Binomial</h2>
+<p>Agora vamos estudar uma variável aleatória específica que gera uma distribuição de probabilidade muito utilizada em problemas do dia a dia de qualquer profissional: a distribuição Binomial.</p>
+<p><b>Conceito</b></p>
+<p>Uma distribuição de probabilidade binomial resulta de um experimento que satisfaz os seguintes requisitos:</p>
+<ul>
+  <li>O experimento tem um número finito de tentativas.</li>
+  <li>As tentativas devem ser independentes (o resultado de qualquer tentativa individual não afeta as probabilidades nas outras tentativas).</li>
+  <li>Cada tentativa deve ter todos os resultados classificados em duas categorias (em geral, chamadas de sucesso e fracasso).</li>
+  <li>A probabilidade de sucesso permanece constante em todas as tentativas.</li>
+</ul>
+<p><b>Indo para a prática</b></p>
+<p>Para exemplificar, vamos falar do número de vezes que sai o número 5 no lançamento de dois dados. Observe que nesse caso temos satisfeitos os quatro requisitos da definição de probabilidade binomial:</p>
+<p>O lançamento de dois dados pode ser interpretado como dois (número finito) lançamentos. O resultado do primeiro lançamento do dado não interfere no resultado do segundo lançamento, por isso são classificados como independentes.</p>
+<p>Cada lançamento pode resultar em um sucesso (sair 5) ou em um fracasso (sair um número diferente de 5).</p>
+<p>A probabilidade de sair 5 é sempre igual a 1/6 em cada um dos lançamentos.</p>
+<p>Em qualquer distribuição binomial, a probabilidade de ocorrência de sucessos em um conjunto de tentativas pode ser calculada a partir da expressão seguinte:</p>
+<img src="Binomial.jpeg">
+<p>Sendo,</p>
+<p>p= a probabilidade de sucesso em uma tentativa;</p>
+<p>q= a probabilidade de fracasso em uma tentativa;</p>
+<p>n= o número de tentativas;</p>
+<p>x= a quantidade de sucesso nas n tentativas.</p>
+<p><b>Exemplo</b></p>
+<p>No lançamento de dois dados não viciados, qual é a probabilidade de ocorrência de exatamente UM resultado igual a 5?</p>
+<p>Solução:</p>
+<p>Nesse exemplo, temos que n=2 (dois lançamentos), x=1 (um sucesso), p=1/6 e q= 1 – 1/6 = 5/6.</p>
+<p>Aplicando a equação A, temos:</p>
+<img src="Exemplo.jpeg">
 
 <h2>Referências</h2>
 <p>https://blog.proffernandamaciel.com.br/distribuicao-de-bernoulli/</p>
