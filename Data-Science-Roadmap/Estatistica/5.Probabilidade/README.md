@@ -23,7 +23,7 @@
 <p>a) Sair cara em um lançamento de uma moeda</p>
 <p>O <b>evento</b> é sair cara e possui um único elemento. A representação dos eventos também é feita com notações de conjuntos:</p>
 <p align="center"><i><b>E = {cara}</b></i></p>
-<p>O seu <b>número de elementos</b> é n(E) = 1.</p>
+<p>O seu <b>número de elementos</b> é n(E) = 1</p>
 <p>b) Sair um número par no lançamento de um dado.</p>
 <p>O <b>evento</b> é sair um número par:</p>
 <p align="center"><i><b>E = {2, 4, 6}</b></i></p>
@@ -90,7 +90,7 @@
 <p>Utilizando a fórmula para probabilidade condicional, teremos:</p>
 <p align="center"><b>P(A|B) = P(A∩B)/P(B)</b></p>
 <p align="center">P(A|B) = (2/36)/(9/36)</p>
-<p align="center">P(A|B) = (2/36).(36/9)</p>
+<p align="center">P(A|B) = (2/36)*(36/9)</p>
 <p align="center">P(A|B) = 2/9</p>
 <h2 align="center">Teorema de Bayes</h2>
 <p>Conhecido como o <b>“cálculo que prova milagres”</b>, o Teorema de Bayes é uma regra criada há mais de dois séculos que faz parte da probabilidade estatística. O seu objetivo é calcular as chances de um evento acontecer com base em dados e um conhecimento prévio.</p>
