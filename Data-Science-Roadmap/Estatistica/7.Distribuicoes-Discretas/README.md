@@ -16,7 +16,7 @@
 <p>x = 1, se o resultado for “sucesso”,</p>
 <p>x = 0, se o resultado for “fracasso”.</p>
 <p>Assim, a função de probabilidade da Distribuição de Bernoulli será dada por:</p>
-<img src="Bernoulli.png">
+<img src="Bernoulli.jpeg">
 <p><b>Média e Variância</b></p>
 <p>É importante que você saiba que a média e a variância serão obtidas por:</p>
 <p>Média = p</p>
