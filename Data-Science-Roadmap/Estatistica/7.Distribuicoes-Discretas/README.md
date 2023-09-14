@@ -57,7 +57,32 @@
 <p>Nesse exemplo, temos que n=2 (dois lançamentos), x=1 (um sucesso), p=1/6 e q= 1 – 1/6 = 5/6.</p>
 <p>Aplicando a equação A, temos:</p>
 <img src="Exemplo.jpeg">
-
+<h2>Distribuição de Poisson</h2>
+<p>Hoje veremos uma clássica distribuição: a Distribuição de Poisson.</p>
+<p><b>Conceito</b></p>
+<p>A distribuição de Poisson é uma distribuição de probabilidade discreta que se aplica a ocorrências de eventos ao longo de intervalos especificados. A variável aleatória x é o número de ocorrências do evento no intervalo. O intervalo pode ser de tempo, distância, área, volume ou alguma unidade simular. A probabilidade de ocorrência de x vezes em um intervalo é dada pela fórmula:</p>
+<img src="Poisson.jpeg">
+<p>Em que e≃2,7182.</p>
+<p>Para que a fórmula anterior possa ser aplicada, devemos trabalhar com um evento situado em algum intervalo, além de garantir que cada ocorrência seja aleatória, independente e uniformemente distribuída nesse intervalo.</p>
+<p><b>Aplicações</b></p>
+<p>Já falamos sobre as condições de usar a fórmula, mas para deixar mais claro, vamos reforçar as aplicações dessa distribuição. As distribuições de Poisson são comumente usadas para dois propósitos principais:</p>
+<p>Prevendo quantas vezes um evento ocorrerá dentro de um período de tempo escolhido. Essa técnica pode ser usada para diferentes aplicações de análise de risco, como estimativa de preço de seguro residencial.</p>
+<p>Estimar a probabilidade de ocorrência de um evento, dada a frequência com que aconteceu no passado (por exemplo, a probabilidade de haver um corte de energia nos próximos dois meses).</p>
+<p>As distribuições de Poisson nos permitem confiar no tempo médio entre a ocorrência de diferentes eventos. Eles não podem, no entanto, nos dizer o momento exato em que um evento pode ocorrer.</p>
+<p><b>Características</b></p>
+<p>As principais características que descrevem os processos de Poisson são:</p>
+<ul>
+  <li>Dois eventos não podem ocorrer simultaneamente.</li>
+  <li>A taxa média entre a ocorrência do evento é constante geral.</li>
+  <li>Os eventos são independentes um do outro (se um acontecer, isso não tem nenhuma influência sobre a probabilidade de outro evento ocorrer).</li>
+  <li>Os eventos podem ocorrer em qualquer número de vezes (dentro do período considerado).</li>
+</ul>
+<p><b>Exemplo</b></p>
+<p>Na construção de um prédio residencial, ocorreram, nos últimos 42 dias, 17 acidentes de trabalho. Selecionando-se ao acaso um determinado dia, dentre os 42 avaliados, qual é a probabilidade de ter ocorrido 3 acidentes nesse dia?</p>
+<p>Para responder a essa pergunta, considere uma distribuição de Poisson com média igual a:</p>
+<p>λ=17/42=0,4048 acidentes.</p>
+<p>Sendo assim,</p>
+<img src="Exemplo2.jpeg">
 <h2>Referências</h2>
 <p>https://blog.proffernandamaciel.com.br/distribuicao-de-bernoulli/</p>
 <p>https://blog.proffernandamaciel.com.br/distribuicao-de-probabilidade-binomial/</p>
