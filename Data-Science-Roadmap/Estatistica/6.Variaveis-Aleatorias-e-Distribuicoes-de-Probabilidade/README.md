@@ -88,18 +88,38 @@
 <p>Ou seja, as duas variáveis são independentes, pois não há tendência de uma variar com a outra.</p>
 <p>Suponha que você jogue um dado e ganhe R$ 2 se sair 6, R$ 1 se sair 5 ou 4, e R$ 0 se sair qualquer outro número. A covariância entre as duas variáveis aleatórias X (ganhar R$ 2) e Y (sair 6) é:</p>
 <pre align="center"><b>Cov(X, Y) = (2 - 1,5)(6 - 1,5) * 1/6 + (1 - 1,5)(5 - 1,5) * 2/6 + (1 - 1,5)(4 - 1,5) * 2/6 = 0,25</b></pre>
-<p>Ou seja, as duas variáveis têm uma associação positiva, pois tendem a variar juntas.</p><
+<p>Ou seja, as duas variáveis têm uma associação positiva, pois tendem a variar juntas.</p>
 <p><b>Aplicações:</b></p>
 <p>A covariância pode ser usada em uma variedade de aplicações, incluindo:</p>
 <li><b>Estatística:</b> para estimar a relação entre duas variáveis</li>
 <li><b>Finanças:</b> para avaliar o risco de um investimento</li>
 <li><b>Economia:</b> para analisar a correlação entre dois mercados</li>
 <li><b>Engenharia:</b> para prever a falha de um sistema</li>
-
-
-
-
-
+<h2 align="center">Coeficiente de Correlação</h2>
+<p>O coeficiente de correlação é uma medida de associação linear entre duas variáveis aleatórias. Ele é definido como a razão entre a covariância das duas variáveis e o produto dos desvios padrão das duas variáveis.</p>
+<p><b>Definição</b></p>
+<p>O coeficiente de correlação é calculado pela seguinte fórmula:</p>
+<pre align="center"><b>r(X, Y) = \frac{Cov(X, Y)}{\sigma_X \sigma_Y}</b></pre>
+<p>onde:</p>
+<ul>
+  <li>r(X, Y) é o coeficiente de correlação entre X e Y</li>
+  <li>Cov(X, Y) é a covariância entre X e Y</li>
+  <li>σ_X é o desvio padrão de X</li>
+  <li>σ_Y é o desvio padrão de Y</li>
+</ul>
+<p><b>Significado</b></p>
+<p>O coeficiente de correlação pode assumir valores entre -1 e 1. Um coeficiente de correlação de +1 indica uma associação linear positiva perfeita, o que significa que as duas variáveis aumentam ou diminuem juntas. Um coeficiente de correlação de -1 indica uma associação linear negativa perfeita, o que significa que as duas variáveis aumentam ou diminuem em direções opostas. Um coeficiente de correlação de 0 indica que não há associação linear entre as duas variáveis.</p>
+<p><b>Exemplos</b></p>
+<p>Suponha que você tenha dados sobre o peso e a altura de um grupo de pessoas. O coeficiente de correlação entre o peso e a altura será positivo, pois as pessoas geralmente são mais altas quanto mais pesadas forem.</p>
+<p>Suponha que você tenha dados sobre o preço de ações de duas empresas. O coeficiente de correlação entre os preços das ações pode ser positivo, negativo ou nulo, dependendo das empresas.</p>
+<p><b>Aplicações</b></p>
+<p>O coeficiente de correlação pode ser usado em uma variedade de aplicações, incluindo:</p>
+<ul>
+  <li><b>Estatística:** para identificar a relação entre duas variáveis</li>
+  <li><b>Finanças:** para avaliar o risco de um investimento</li>
+  <li><b>Economia:** para analisar a correlação entre dois mercados</li>
+  <li><b>Engenharia:** para prever a falha de um sistema</li>
+</ul>
 <h2>Referencias:</h2>
 <p>Livro: Probabilidade e Estatística para Engenheiros, 2ª Edição, de Mario Sergio Jorge e João Marcos de Oliveira.</p>
 <p>Artigo: Esperança Matemática, de João Marcos de Oliveira.</p>
