@@ -35,7 +35,7 @@
 Probabilidade</a>
        <ul>
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/6.Variaveis-Aleatorias-e-Distribuicoes-de-Probabilidade/README.md">Esperança Matemática, Variância, Covariância,
-Coeficiente de correlação</a></li>
+Coeficiente de Correlação</a></li>
        </ul>
    </li>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/7.Distribuicoes-Discretas">7. Distribuições Discretas</a>
