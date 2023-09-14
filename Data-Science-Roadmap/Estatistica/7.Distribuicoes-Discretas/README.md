@@ -10,7 +10,7 @@
   <li>Uma peça fabricada por uma indústria pode ser perfeita ou defeituosa;</li>
   <li>Um consumidor pode devolver ou não um produto comprado;</li>
   <li>Um exame médico pode ter como resultado positivo ou negativo.</li>
-<ul>
+</ul>
 <p><b>Função de Probabilidade</b></p>
 <p>Associando uma variável aleatória x aos possíveis resultados de um determinado experimento, ficaremos com:</p>
 <p>x = 1, se o resultado for “sucesso”,</p>
