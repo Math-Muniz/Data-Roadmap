@@ -11,22 +11,22 @@
 <h2 align="center">Espaço Amostral</h2>
 <p>O <b>espaço amostral</b>, denotado pela letra <i><b>S</b></i>, é o conjunto de todos os possíveis resultados de um experimento aleatório.</p>
 <p>Então, no lançamento de um dado e visualização do número da face superior, o espaço amostral é:</p>
-<p align="center"><i><b>S = {1,2,3,4,5,6}</b></i></p>
+<pre align="center"><i><b>S = {1,2,3,4,5,6}</b></i></pre>
 <p>Já se o experimento aleatório for o sexo de um bebê, então:</p>
-<p align="center"><i><b>S = {masculino, feminino}</b></i></p>
+<pre align="center"><i><b>S = {masculino, feminino}</b></i></pre>
 <p>Vamos supor que temos em uma caixa bolas coloridas, podendo uma bola ser ou azul, vermelha, ou branca. O nosso experimento aleatório consiste em retirar uma bola da caixa e verificar sua cor.</p>
 <p>É fácil ver que existem três possíveis resultados para este experimento. Logo, o seu espaço amostral é dado por:</p>
-<p align="center"><i><b>S = {azul, vermelha, branca}</b></i></p>
+<pre align="center"><i><b>S = {azul, vermelha, branca}</b></i></pre>
 <h2 align="center">Evento</h2>
 <p>Um <b>evento</b> é qualquer subconjunto de um espaço amostral. Ele pode conter nenhum elemento (conjunto vazio) ou todos os elementos de um <b>espaço amostral.</b> O número de elementos do evento é representado da seguinte maneira: n(E), sendo E o evento em questão.</p>
 <p>São exemplos de eventos:</p>
 <p>a) Sair cara em um lançamento de uma moeda</p>
 <p>O <b>evento</b> é sair cara e possui um único elemento. A representação dos eventos também é feita com notações de conjuntos:</p>
-<p align="center"><i><b>E = {cara}</b></i></p>
+<pre align="center"><i><b>E = {cara}</b></i></pre>
 <p>O seu <b>número de elementos</b> é n(E) = 1</p>
 <p>b) Sair um número par no lançamento de um dado.</p>
 <p>O <b>evento</b> é sair um número par:</p>
-<p align="center"><i><b>E = {2, 4, 6}</b></i></p>
+<pre align="center"><i><b>E = {2, 4, 6}</b></i></pre>
 <p>O seu <b>número de elementos</b> é n(E) = 3.</p>
 <p>Os <b>eventos</b> que possuem apenas um elemento (ponto amostral) são chamados de simples. Quando o evento é igual ao <b>espaço amostral</b>, ele é chamado de evento certo e sua <b>probabilidade</b> de ocorrência é de 100%. Quando um evento é igual ao conjunto vazio, ele é chamado de evento impossível e possui 0% de chances de ocorrência.</p>
 <h2 align="center">Operaçõees com Eventos</h2>
@@ -39,20 +39,20 @@
 <p>Cada uma dessas operações possui algumas propriedades. É importante conhecer essas propriedades para ter uma base estatística que nos permita aprender conceitos mais avançados.</p>
 <p>Uma vez que cada conceito é desenvolvido individualmente, a seguir iremos simplesmente dar um exemplo com seu resultado. Ou seja, para ver a explicação recomenda-se acessar cada conceito:</p>
 <p>Temos três eventos: A, B e C. Cada um deles tem uma probabilidade de acontecer que é mostrada a seguir:</p>
-<p align="center"><b>P (A):</b> 0,5 <b>P (B):</b> 0,6 <b>P (C):</b> 0,1</p>
-<p align="center"><b>P (A U C):</b> 0.3 e <b>P (A ∩ B):</b> 0,2</p>
+<pre align="center"><b>P (A):</b> 0,5 <b>P (B):</b> 0,6 <b>P (C):</b> 0,1</pre>
+<pre align="center"><b>P (A U C):</b> 0.3 e <b>P (A ∩ B):</b> 0,2</pre>
 <p>Vamos denotar o complemento de B por <b>B*</b></p>
 <p>Levando em consideração que A e B não são disjuntos, qual é a probabilidade de união?</p>
-<p align="center">P (A U B) = P (A) + P (B) - P (A ∩ B)</p>
-<p align="center">P (A U B) = 0,5 + 0,6 - 0,2 = 0,9</p>
+<pre align="center">P (A U B) = P (A) + P (B) - P (A ∩ B)</pre>
+<pre align="center">P (A U B) = 0,5 + 0,6 - 0,2 = 0,9</pre>
 <p>A probabilidade de união de A e B é de 0,9. Ou dito em porcentagem, a probabilidade é de 90%.</p>
 <p>Agora, vamos dar uma olhada em um exemplo de interseção de eventos. Levando em consideração que A e C não são eventos disjuntos, qual é a probabilidade da interseção de A e C?</p>
-<p align="center">P (A ∩ C) = P (A) + P (B) - P (A U C)</p>
-<p align="center">P (A ∩ C) = 0,5 + 0,6 - 0,3 = 0,8</p>
+<pre align="center">P (A ∩ C) = P (A) + P (B) - P (A U C)</pre>
+<pre align="center">P (A ∩ C) = 0,5 + 0,6 - 0,3 = 0,8</pre>
 <p>A probabilidade da interseção entre A e C ocorrer é de 0,8. Ou seja, a probabilidade de que A e C ocorram ao mesmo tempo é de 80%.</p>
 <p>Por fim, veremos um exemplo de diferença normal de eventos. Qual é a probabilidade de que A ocorra e de que B não ocorra?</p>
-<p align="center">P (A - B) = P (A ∩ B* ) = P (A) - P (A ∩ B)</p>
-<p align="center">P (A - B) = 0,5 - 0,2 = 0,3</p>
+<pre align="center">P (A - B) = P (A ∩ B* ) = P (A) - P (A ∩ B)</pre>
+<pre align="center">P (A - B) = 0,5 - 0,2 = 0,3</pre>
 <p>A probabilidade da diferença dos eventos A e B (nessa ordem) é 0,3. Ou seja, a probabilidade de que A ocorra e B não ocorra é de 30%.</p>
 <h2 align="center">Eventos Mutuamente Excludentes</h2>
 <p>Qual é a probabilidade de conseguirmos, em <b>um único</b> lançamento de uma moeda, obter cara e coroa <b>simultaneamente?</b></p>
@@ -67,31 +67,31 @@
 <p>Em um lançamento simultâneo de dois dados, por exemplo, obtêm-se números em suas faces superiores. Qual é a <b>probabilidade</b> de que a soma desses números seja 8, desde que ambos os resultados sejam ímpares?</p>
 <p>Veja que a <b>probabilidade</b> de a soma desses números ser 8 está <b>condicionada</b> a resultados ímpares nos dois dados. Logo, lançamentos que apresentam um ou dois números pares na face superior podem ser descartados e, por isso, há uma redução no espaço amostral.</p>
 <p>O novo espaço amostral é composto pelos pares:</p>
-<p align="center"><b>{1,1}; {1,3}; {1,5}; {3,1}; {3,3}; {3,5}; {5,1}; {5,3} e {5,5}</b></p>
+<pre align="center"><b>{1,1}; {1,3}; {1,5}; {3,1}; {3,3}; {3,5}; {5,1}; {5,3} e {5,5}</b></pre>
 <p>Desses, apenas {3,5} e {5,3} possuem soma 8. Logo, a <b>probabilidade</b> de que se obtenha soma 8 no lançamento de dois dados, dado que os resultados obtidos são ambos ímpares, é de:</p>
-<p align="center">2/9</p>
+<pre align="center">2/9</pre>
 <p align="center"><b>Fórmula da Probabilidade Condicional:</b></p>
 <p>Seja K um espaço amostral que contém os eventos A e B não vazios. A <b>probabilidade</b> de A acontecer, dado que B já aconteceu, é representada por P(A|B) e é calculada pela seguinte expressão:</p>
-<p align="center"><b>P(A|B) = P(A∩B)/P(B)</b></p>
+<pre align="center"><b>P(A|B) = P(A∩B)/P(B)</b></pre>
 <p>Caso seja necessário calcular a <b>probabilidade</b> da intersecção entre dois eventos, pode-se utilizar a seguinte expressão:</p>
-<p align="center"><b>P(A∩B) = P(A|B)·P(B)</b></p>
+<pre align="center"><b>P(A∩B) = P(A|B)·P(B)</b></pre>
 <p><b>Exemplos</b></p>
 <p><b>Calcule a probabilidade de obter soma 8 no lançamento de dois dados em que o resultado do lançamento foi dois números ímpares.</b></p>
 <p><b>Solução:</b></p>
 <p>Seja A = Obter soma 8 e B = Obter dois números ímpares.</p>
 <p>P(A∩B) é a probabilidade de se obter apenas números ímpares que somam 8 no lançamento de dois dados. As únicas combinações das 36 possíveis são:</p>
-<p align="center">{3,5} e {5,3}</p>
+<pre align="center">{3,5} e {5,3}</pre>
 <p>Portanto,</p>
-<p align="center">P(A∩B) = 2/36</p>
+<pre align="center">P(A∩B) = 2/36</pre>
 <p>Já P(B) é a probabilidade de obter somente números ímpares no lançamento de dois dados. As únicas combinações dentro das 36 possíveis são:</p>
-<p align="center">{1,1}; {1,3}; {1,5}; {3,1}; {3,3}; {3,5}; {5,1}; {5,3} e {5,5}</p>
+<pre align="center">{1,1}; {1,3}; {1,5}; {3,1}; {3,3}; {3,5}; {5,1}; {5,3} e {5,5}</pre>
 <p>Logo,</p>
-<p align="center">P(B) = 9/36</p>
+<pre align="center">P(B) = 9/36</pre>
 <p>Utilizando a fórmula para probabilidade condicional, teremos:</p>
-<p align="center"><b>P(A|B) = P(A∩B)/P(B)</b></p>
-<p align="center">P(A|B) = (2/36)/(9/36)</p>
-<p align="center">P(A|B) = (2/36)*(36/9)</p>
-<p align="center">P(A|B) = 2/9</p>
+<pre align="center"><b>P(A|B) = P(A∩B)/P(B)</b></pre>
+<pre align="center">P(A|B) = (2/36)/(9/36)</pre>
+<pre align="center">P(A|B) = (2/36)*(36/9)</pre>
+<pre align="center">P(A|B) = 2/9</pre>
 <h2 align="center">Teorema de Bayes</h2>
 <p>Conhecido como o <b>“cálculo que prova milagres”</b>, o Teorema de Bayes é uma regra criada há mais de dois séculos que faz parte da probabilidade estatística. O seu objetivo é calcular as chances de um evento acontecer com base em dados e um conhecimento prévio.</p>
 <p>Sendo desenvolvido por Thomas Bayes, um pastor protestante e matemático inglês, no século XVIII, o Teorema de Bayes está presente nas nossas vidas até os dias atuais, principalmente no ramo da informática.</p>
