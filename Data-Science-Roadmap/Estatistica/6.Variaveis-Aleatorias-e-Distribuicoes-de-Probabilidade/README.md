@@ -99,7 +99,7 @@
 <p>O coeficiente de correlação é uma medida de associação linear entre duas variáveis aleatórias. Ele é definido como a razão entre a covariância das duas variáveis e o produto dos desvios padrão das duas variáveis.</p>
 <p><b>Definição</b></p>
 <p>O coeficiente de correlação é calculado pela seguinte fórmula:</p>
-<pre align="center"><b>r(X, Y) = \frac{Cov(X, Y)}{\sigma_X \sigma_Y}</b></pre>
+<img src="https://latex.codecogs.com/svg.latex?r(X,%20Y)%20=%20\frac{Cov(X,%20Y)}{\sigma_X%20\sigma_Y}" alt="Coeficiente de Correlação">
 <p>onde:</p>
 <ul>
   <li>r(X, Y) é o coeficiente de correlação entre X e Y</li>
