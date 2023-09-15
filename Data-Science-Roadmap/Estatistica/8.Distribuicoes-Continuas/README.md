@@ -70,15 +70,26 @@
 </ul>
 <p><b>Resolução</b></p>
 <ul>
-  <li>Qual é a probabilidade de uma cirurgia ACL, em um hospital com alto volume de cirurgias, requerer um tempo maior do que dois desvios-padrão acima da média?/li>
+  <li>Qual é a probabilidade de uma cirurgia ACL, em um hospital com alto volume de cirurgias, requerer um tempo maior do que dois desvios-padrão acima da média?</li>
   <pre align="center">1−P(Z<2)=1−ϕ(2)=0.0228</pre>
-  <li>Qual é a probabilidade de uma cirurgia ACL, em um hospital com alto volume de cirurgias ser completada em menos de 100 minutos? Seja X o tempo, onde X∼N(129,14)</li>
+  <li>Qual é a probabilidade de uma cirurgia ACL, em um hospital com alto volume de cirurgias ser completada em menos de 100 minutos?</li>
   <pre align="center">Seja X o tempo, onde X∼N(129,14)</pre>
 </ul>
 <img src="Exemplo2.jpeg">
 <h2 align="center">Distribuição Log-Normal</h2>
-
+<p>Uma variável aleatória X tem distribuição log-normal se sua função densidade de probabilidade for dada por:</p>
+<img src="Formula-Log-Normal.png">
+<p>em que μ ∈ ℝ é a média do logaritmo do tempo de falha e σ > 0 é o desvio-padrão.</p>
+<img src="Distribuicao-Log-Normal.png">
+<p>Assim como a distribuição normal aparece quando as variáveis são somadas (pelo teorema do limite central), a distribuição log-normal aparece quando as variáveis (positivas) são multiplicadas.</p>
+<p>Na modelagem de preço de ativos, o preço de uma ação no futuro pode ser modelado como o efeito de vários pequenos ajustes independentes, ou seja:</p>
+<img src="Modelagem.png">
+<p>Ou seja, aplicando o log, tem-se que <b><i>log P</i></b> é a soma de várias variáveis aleatórias independentes, ou seja, pode ser aproximado por uma distribuição normal. Nesse sentido, <i>P</i> pode ser aproximado por uma log-normal.</p>
+<p><b>Utilização da distribuição log-normal na modelagem de preços de ativos</b></p>
+<p>A distribuição log-normal é uma distribuição flexível relacionada com a distribuição normal, e que é bastante útil para modelar dados que são mais ou menos simétricos ou assimétricos à direita. É um modelo que geralmente é utilizado para aplicações de alta tecnologia. Sua distribuição é baseada no modelo de crescimento multiplicativo. Como as variáveis aleatórias log-normais assumem apenas valores positivos, são úteis para modelar preços e cotações em geral.</p>
+<p>Na modelagem dos retornos de ações, é utilizado o log-retorno, ou retorno geométrico. Hull (2009) fornece um modelo para o comportamento de preço das ações. O modelo é basicamente um processo estocástico de Markov do tipo <em>dS = μSdt + σSdz</em>.</p>
+<p>Esse processo é também conhecido como movimento browniano geométrico, que resumidamente significa que tanto o percentual esperado da ação bem como a volatilidade do retorno percentual é constante e independe do valor absoluto do preço. Dessa forma, considerando que uma ação esteja precificada a R$ 20,00 ou R$40,00, o retorno percentual esperado e a volatilidade deste retorno são os mesmos nos dois casos, <i>ceteris paribus</i>. Considerando assim, que sejam suposições verdadeiras, o retorno dos preços obedeceria a uma distribuição log-normal (log-retornos dos preços seguem uma distribuição normal).</p>
 <h2>Referências</h2>
 <p>https://www.bertolo.pro.br/FinEst/Estatistica/EstatisticaNosNegocios/l6.html</p>
 <p>https://blog.proffernandamaciel.com.br/distribuicao-normal/</p>
-<p></p>
+<p>https://proeducacional.com/ead/curso-preparatorio-cfg-modulo-i/capitulos/metodos-quantitativos/aulas/distribuicao-de-probabilidades-distribuicoes-uniforme-log-normal-binomial-e-t-de-student/</p>
