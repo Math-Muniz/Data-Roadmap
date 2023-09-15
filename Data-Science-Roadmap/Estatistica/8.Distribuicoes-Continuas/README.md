@@ -14,11 +14,11 @@
 <img src="Exemplo1.jpg">
 <p>Note que para distribuições contínuas, a probabilidade é calculada encontrando-se a área sob a função num determinado intervalo específico. Em outras palavras, para distribuições contínuas, não há probabilidade em um dado ponto. A probabilidade de X>= b ou de X<= a é zero porque não há área acima de b ou abaixo de a, e a área entre a e b é igual a 1, ver figura 1.</p>
 <p>A probabilidade das variáveis caírem entre quaisquer dois pontos, tal como c e d na figura 2, são calculadas como segue:</p>
-<pre><b>P (c <= x <=d) = c*[1/(b - a)] = ?</b></pre>
+<pre align="center"><b>P (c <= x <=d) = c*[1/(b - a)] = ?</b></pre>
 <p>Neste exemplo c=a=150, d=160, e b=200, portanto:</p>
-<pre>Média = (a + b)/2 = (150 + 200)/2 = 175 milímetros.</pre>
-<pre>O desvio padrão é igual a 14,43 milímetros</pre>
-<pre>P(c <= x <=d) = [(160-150)/(200-150)] = "1/5"</pre>
+<pre align="center">Média = (a + b)/2 = (150 + 200)/2 = 175 milímetros.</pre>
+<pre align="center">O desvio padrão é igual a 14,43 milímetros</pre>
+<pre align="center">P(c <= x <=d) = [(160-150)/(200-150)] = "1/5"</pre>
 <p>Assim, de todas as folhas feitas por esta máquina, 20% da produção deve ser descartada).</p>
 <h2 align="center">Distribuição Normal</h2>
 <p>Dizemos que é uma distribuição normal se puder ser descrita pela função (considerando um conjunto de dados que possui média μ e desvio-padrão σ):</p>
@@ -70,8 +70,10 @@
 </ul>
 <p><b>Resolução</b></p>
 <ul>
-  <li>Qual é a probabilidade de uma cirurgia ACL, em um hospital com alto volume de cirurgias, requerer um tempo maior do que dois desvios-padrão acima da média? 1−P(Z<2)=1−ϕ(2)=0.0228</li>
+  <li>Qual é a probabilidade de uma cirurgia ACL, em um hospital com alto volume de cirurgias, requerer um tempo maior do que dois desvios-padrão acima da média?/li>
+  <pre align="center">1−P(Z<2)=1−ϕ(2)=0.0228</pre>
   <li>Qual é a probabilidade de uma cirurgia ACL, em um hospital com alto volume de cirurgias ser completada em menos de 100 minutos? Seja X o tempo, onde X∼N(129,14)</li>
+  <pre align="center">Seja X o tempo, onde X∼N(129,14)</pre>
 </ul>
 <img src="Exemplo2.jpeg">
 <h2 align="center">Distribuição Log-Normal</h2>
