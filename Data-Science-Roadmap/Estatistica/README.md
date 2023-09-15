@@ -23,7 +23,7 @@
    </li>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/4.Medidas-de-Associacao-entre-Variaveis-Quantitativas">4. Medidas de Associação entre Variáveis Quantitativas</a>
        <ul>
-           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/4.Medidas-de-Associacao-entre-Variaveis-Quantitativas/README.md">Diagrama de dispersão, Covâriancia, Correlação</a></li>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/4.Medidas-de-Associacao-entre-Variaveis-Quantitativas/README.md">Diagrama de Dispersão, Covâriancia, Correlação</a></li>
        </ul>
    </li>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/5.Probabilidade">5. Probabilidade</a>
@@ -43,7 +43,7 @@
    </li>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/8.Distribuicoes-Continuas">8. Distribuições Contínuas</a>
        <ul>
-           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/8.Distribuicoes-Continuas/README.md">Distribuição uniforme, Distribuição normal, Distribuição Log-normal</a></li>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/8.Distribuicoes-Continuas/README.md">Distribuição Uniforme, Distribuição Normal, Distribuição Log-Normal</a></li>
        </ul>
    </li>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/9.Distribuicoes-de-Probabilidade-Conjunta">9. Distribuições de Probabilidade Conjunta</a>
@@ -53,7 +53,7 @@
    </li>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/10.Inferencia-Estatistica-e-Principais-Teoremas-de-Probabilidade">10. Inferência Estatística e Principais Teoremas de Probabilidade</a>
        <ul>
-           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/10.Inferencia-Estatistica-e-Principais-Teoremas-de-Probabilidade/README.md">Teorema de Tchebycheff, Lei dos grandes números, Teorema Central do Limite, Intervalo de confiança, Testes de hipóteses</a></li>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/10.Inferencia-Estatistica-e-Principais-Teoremas-de-Probabilidade/README.md">Teorema de Tchebycheff, Lei dos Grandes Números, Teorema Central do Limite, Intervalo de Confiança, Testes de Hipóteses</a></li>
        </ul>
    </li>
 </ul>
