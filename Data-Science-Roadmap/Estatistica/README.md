@@ -31,17 +31,29 @@
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/5.Probabilidade/README.md">Experimento Aleatório, Espaço Amostral, Eventos, Operações com Eventos, Eventos Mutuamente Excludentes, Eventos Independentes, Probabilidade Condicional, Teorema de Bayes</a></li>
        </ul>
    </li>
-   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/6.Variaveis-Aleatorias-e-Distribuicoes-de-Probabilidade">6. Variáveis Aleatórias e Distribuições de
-Probabilidade</a>
+   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/6.Variaveis-Aleatorias-e-Distribuicoes-de-Probabilidade">6. Variáveis Aleatórias e Distribuições de Probabilidade</a>
        <ul>
-           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/6.Variaveis-Aleatorias-e-Distribuicoes-de-Probabilidade/README.md">Esperança Matemática, Variância, Covariância,
-Coeficiente de Correlação</a></li>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/6.Variaveis-Aleatorias-e-Distribuicoes-de-Probabilidade/README.md">Esperança Matemática, Variância, Covariância, Coeficiente de Correlação</a></li>
        </ul>
    </li>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/7.Distribuicoes-Discretas">7. Distribuições Discretas</a>
        <ul>
-           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/7.Distribuicoes-Discretas/README.md">Distribuição de Bernoulli, Distribuição Binomial,
-Distribuição de Poisson</a></li>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/7.Distribuicoes-Discretas/README.md">Distribuição de Bernoulli, Distribuição Binomial, Distribuição de Poisson</a></li>
+       </ul>
+   </li>
+   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/8.Distribuicoes-Continuas">8. Distribuições Contínuas</a>
+       <ul>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/8.Distribuicoes-Continuas/README.md">Distribuição uniforme, Distribuição normal, Distribuição Log-normal</a></li>
+       </ul>
+   </li>
+   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/9.Distribuicoes-de-Probabilidade-Conjunta">9. Distribuições de Probabilidade Conjunta</a>
+       <ul>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/9.Distribuicoes-de-Probabilidade-Conjunta/README.md">Distribuição Conjunta de Variáveis Discretas, Distribuição Conjunta de Variáveis Contínuas.</a></li>
+       </ul>
+   </li>
+   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/10.Inferencia-Estatistica-e-Principais-Teoremas-de-Probabilidade">10. Inferência Estatística e Principais Teoremas de Probabilidade</a>
+       <ul>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/10.Inferencia-Estatistica-e-Principais-Teoremas-de-Probabilidade/README.md">Teorema de Tchebycheff, Lei dos grandes números, Teorema Central do Limite, Intervalo de confiança, Testes de hipóteses</a></li>
        </ul>
    </li>
 </ul>
