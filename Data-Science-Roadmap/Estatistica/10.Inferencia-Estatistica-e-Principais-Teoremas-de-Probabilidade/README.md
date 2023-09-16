@@ -142,8 +142,68 @@
 <p>Diante disso, é possível utilizar diversos níveis distintos, dependendo da necessidade de cada situação, sendo os mais utilizados os níveis de confiança de 90%, de 95% e o de  99%.</p>
 <p>Ou seja, o <b>nível de confiança</b> indica a <b>porcentagem</b> da confiança do <b>intervalo</b> possuir o parâmetro a ser estudado.</p>
 <h2 align="center">Testes de Hipóteses</h2>
+<p>Testes de hipóteses correspondem a procedimentos estatísticos que se baseiam na análise de uma amostra a partir da teoria de probabilidades e que buscam avaliar parâmetros desconhecidos de uma população. Assim, são formuladas duas hipóteses:</p>
+<ul>
+  <li><b>Hipótese Nula</b> (H<sub>0</sub>): hipótese que representa a ausência do efeito que se deseja verificar;</li>
+  <li><b>Hipótese Alternativa</b> (H<sub>1</sub>): hipótese que o investigador deseja verificar.</li>
+</ul>
+<p>O teste <i>t</i> nada mais é que um teste de hipóteses que utiliza conceitos estatísticos para que se rejeite ou não uma hipótese nula. É normalmente utilizado quando a variância da população é desconhecida e a estatística do teste segue uma distribuição normal. Se o objetivo é testar se a média da amostra x̅ é estatisticamente diferente, menor ou maior que uma média especificada sob a hipótese nula, μ<sub>0</sub>, constrói-se o teste utilizando uma ou duas caudas da distribuição <i>t-Student</i>:</p>
+<ul>
+  <li>Se a hipótese nula for x̅ =< μ<sub>0</sub> e a hipótese alternativa  x̅ > μ<sub>0</sub>, então devemos usar o teste unicaudal;</li>
+  <li>Se a hipótese nula for x̅ = μ<sub>0</sub> e a hipótese alternativa != μ<sub>0</sub>, e devemos usar o teste bicaudal.</li>
+</ul>
+<p>Assim, no teste bicaudal é preciso considerar as áreas abaixo da curva para valores superiores a <i>t</i> e inferiores a <i>-t</i>, ou seja, as duas caudas. Vale ressaltar que a vantagem de um teste unicaudal sobre um bicaudal é que este teste de uma cauda amplia a região de rejeição, tornando mais fácil rejeitar <i>H<sub>0</sub></i> (mais robusto)</p>
+<p>É importante salientar que, em testes de hipóteses, pretendemos aceitar ou rejeitar uma hipótese sobre a <b>média</b> da distribuição. Assim, devemos utilizar o desvio padrão amostral da média, s/√n. A fórmula do teste <i>t</i> é:</p>
+<img src="Formula-Teste-T.png">
+<p>Em que x̅ é a média da amostra, μ<sub>0</sub> é a média sob a hipótese nula, <i>s</i> o desvio padrão amostral, <i>n</i> é o tamanho da amostra e s/√n é o desvio padrão amostral da média.</p>
+<p>Rejeita-se a hipótese nula caso a média amostral for estatisticamente diferente da média da hipótese nula, dado uma confiança desejada. Assim, caso o <i>t</i> calculado seja maior do que o valor <i>t</i> de referência (na tabela) da distribuição, rejeita-se a hipótese nula.</p>
+<p>Pode-se dizer que o <i>t</i> calculado é a diferença, em desvios padrão, entre a média amostral e a média sob a hipótese nula. Quanto maior for o <i>t</i>, mais confiante estamos em rejeitar a hipótese nula.</p>
+<img src="Teste-de-Hipotese.png">
+<p>Se o teste for bicaudal e a amostra for suficientemente grande, o valor crítico de <em>t</em> para 5% de significância (ou 95% de confiança) será <i><em>t</em><sub><em>α</em>/2</sub> = 1,96</i> à direita e – <i><em>t</em><sub><em>α</em>/2</sub> = 1,96</i> à esquerda, enquanto que se o teste for unicaudal, o valor crítico para 5% será <i><em>t</em><sub><em>α</em></sub>= 1,65</i> à direita ou – <i><em>t</em><sub><em>α</em></sub>= 1,65</i> à esquerda</p>
+<p><b>Premissas do Teste de Hipóteses:</b></p>
+<ul>
+  <li>A amostra é aleatória (randômica): isso atesta que sujeitos, casos ou eventos de uma determinada população têm a mesma chance de serem selecionados para a pesquisa ou amostra;</li>
+  <li>Variáveis independentes (independência local): dois eventos não têm nada a ver um com o outro, assim a escolha de um não afeta a escolha do outro;</li>
+  <li>A distribuição do que está sendo testado é normal: formato de sino, unimodal e simétrica em relação a sua média.</li>
+</ul>
+<p><b>Erros do Tipo I e Tipo II</b></p>
+<p>Um erro do tipo I consiste em rejeitar uma hipótese nula que é verdadeira, ou seja, encontrar um resultado que tenha significância estatística por acidente. Já um erro do tipo II representa uma falha na rejeição de uma hipótese nula inválida. A taxa de erro tipo I é afetada por α: quanto menor for o nível α, menor será a taxa de erro tipo I. Vale ressaltar que α não é a probabilidade de um erro de tipo I; α é a probabilidade de um erro de Tipo I contanto que a hipótese nula seja verdadeira. Caso a hipótese nula seja falsa, então é impossível fazer um erro de tipo I.</p>
+<p>O erro tipo II é o de não rejeitar uma falsa hipótese nula. Diferentemente de um erro de tipo I, um erro de tipo II não é realmente um erro. Quando um teste estatístico não é significativo, isso significa que os dados não fornecem uma forte evidência de que a hipótese nula seja falsa.</p>
+<p>A falta de significância não sustenta a conclusão de que a hipótese nula seja verdadeira. Portanto, um pesquisador não deve cometer o erro de concluir incorretamente que a hipótese nula é verdadeira quando um teste estatístico não era significativo. Em vez disso, o pesquisador deve considerar o teste como inconclusivo. Contraste isso com um erro de tipo I no qual o pesquisador conclui erroneamente que a hipótese nula é falsa quando, de fato, é verdadeira. Um erro de tipo II só pode ocorrer se a hipótese nula for falsa. Se a hipótese nula for falsa, a probabilidade de um erro de tipo II é denominada β. A probabilidade de se rejeitar corretamente uma hipótese nula falsa é igual a 1-β.</p>
+<p>O quadro abaixo elenca os possíveis cenários:</p>
+<img src="Condicao-Verdadeira.png">
+<p>Lembrando que: β é o símbolo da probabilidade de um erro do tipo II, assim o poder de um teste estatístico é definido como 1-β. Se realizarmos um teste com alta sensitividade, teremos menos erros do tipo II; porém, se diminui a probabilidade do erro tipo II, aumenta a suscetibilidade do tipo I.</p>
+<p>Assim, um nível de significância <em>α</em> de 0,05 (que usualmente é considerado como o patamar para avaliar a hipótese nula) indica que existe uma probabilidade de 5% de rejeitarmos uma hipótese nula quando ela é verdadeira.</p>
+<p><b>Valor-p</b></p>
+<p>O <b>Valor-p</b> é a probabilidade de se obter uma estatística do teste (por exemplo, média) que seja igual ou mais extrema que a estatística encontrada na amostra observada, sob a suposição que a hipótese nula é verdadeira. Graficamente, representa a área embaixo da curva após o t calculado.</p>
+<p>Se o <b>Valor-p</b> é menor que o nível de significância <em>α</em>, rejeita-se a hipótese nula.</p>
+<p>Se o <b>Valor-p</b> é maior que o nível de significância <em>α</em>, não podemos rejeitar a hipótese nula.</p>
+<p><b>Análise de Variância (ANOVA)</b></p>
+<p>Trata-se de um teste estatístico que se propõe a verificar se existe uma diferença significativa entre as médias, ou seja:</p>
+<pre>H<sub>0</sub>: <em>μ<sub>1</sub> = μ<sub>1</sub> = … = μ<sub>k</sub></em>;</pre>
+<pre>H<sub>1</sub>: As médias não são iguais.</pre>
+<p>No caso, existem dois grupos para se calcular a variância: entre grupos (Média quadrada dos grupos – MQG) e dentro dos grupos (Média quadrada dos erros – MQR). A MQG mede a variância das médias, enquanto a MQR mede a variância que existe dentro dos grupos individuais de dados. Dessa forma, são calculados esses dois componentes de variância; caso MQG seja maior que MQR, temos o indicativo de uma diferença significativa entre os grupos.</p>
+<p>A ANOVA pode resolver dois problemas: a níveis fixos ou a níveis aleatórios (isso é determinado pela aleatoriedade e, na maioria dos casos, trata-se de níveis fixos).</p>
+<img src="Tabela-Anova.png">
+<pre>SQT = SQG + SQR (mensura a variação de todas as observações)</pre>
+<pre>SQT: Soma dos quadrados totais</pre>
+<pre>SQG: Soma dos quadrados dos grupos</pre>
+<pre>SQR: Soma dos quadrados dos erros</pre>
+<pre>MQG: Média quadrada dos grupos</pre>
+<pre>MQR: Média quadrada dos erros</pre>
+<pre>SQG e MQG: Medem a variação total das médias</pre>
+<pre>SQR e MQR: Medem a variação das observações de cada grupo</pre>
+<p>Dessa forma, temos:</p>
+<img src="Anova.png">
+<p>Assim, a hipótese nula será rejeitada quando o <i>F</i> calculado for maior que o valor tabelado, que acontece se a razão entre MQG e MQR seja estatisticamente significante. Por exemplo, se o <em>F</em> tabelado para um intervalo de confiança de 95% for menor que o <em>F</em> calculado, conclui-se que pelo menos uma das médias <em>μ</em> é diferente das outras, e a H<sub>0</sub> é rejeitada com <em>α</em> = 0,05.</p>
+<p><b>Simulação de Monte Carlo</b></p>
+<p>A principal ideia por trás da simulação de Monte Carlo é que os resultados são calculados com base em uma amostragem aleatória repetidas vezes, isto é, esse método é uma experimentação aleatória. As simulações de Monte Carlo são caracterizadas por uma grande quantidade de parâmetros desconhecidos e, além disso, alguns poderiam ser difíceis de se obter experimentalmente. Os métodos de simulação de Monte Carlo nem sempre requerem números verdadeiramente aleatórios para serem úteis. Algumas das técnicas mais úteis utilizam sequências deterministas que facilitam a prova e a conferência das simulações com posteriores contraprovas.</p>
+<p>Uma simulação do tipo Monte Carlo de qualidade deveria ser capaz de gerar números pseudoaleatórios. Esses valores precisam passar em testes de aleatoriedade, que são comumente disponíveis em diversos <i>softwares</i> de estatística. É preciso utilizar um número de amostras suficientemente grande para que se garanta resultados precisos. Além disso, é necessário que sejam utilizadas técnicas de amostragem adequadas, de modo que o algoritmo usado consiga modelar e simular o fenômeno em estudo.</p>
+<p>As simulações de Monte Carlo têm sido utilizadas em diversas áreas da ciência, desde a teoria dos jogos até a biologia computacional. Mas é talvez em finanças que esse método tenha uma de suas maiores aplicações. Ele é comumente usado para avaliar o risco e a incerteza que afetariam o resultado de diferentes opções de mercado, dúvidas sobre investimentos etc. É possível, por exemplo, simplesmente por meio da instalação de uma extensão no Microsoft Excel, realizar simulações de Monte Carlo e, desse modo, permitir que o analista de risco empresarial incorpore os efeitos totais de incerteza, como variáveis incertas do tipo volume de vendas, commodities e preços do trabalho, juros e taxas de câmbio – para o trimestre ou ano seguinte. Simular vários cenários e ver qual seria a situação no futuro para cada um dos cenários fictícios, estipulando, assim, status como “otimista”, “neutro” ou “pessimista”. Além disso, o método é frequentemente usado para avaliar investimentos em projetos em uma unidade de negócios ou a nível corporativo. Sua utilização também é comum para avaliar derivativos financeiros. Uma das utilizações mais comuns do método de Monte Carlo é calcular o preço das opções incorporando análises de risco para diferentes cenários.</p>
+<p>A limitação mais importante é o tempo necessário para calcular o grande número de histórias necessárias a fim de reduzir as incertezas estatísticas. Observa-se ainda a necessidade de grande capacidade computacional.</p>
 <h2 align="center">Referências</h2>
 <p>https://pt.economy-pedia.com/11039359-chebyshev-inequality</p>
 <p>https://pt.economy-pedia.com/11038376-law-of-the-big-numbers</p>
 <p>https://blog.proffernandamaciel.com.br/teorema_central_limite/</p>
 <p>https://www.voitto.com.br/blog/artigo/o-que-e-intervalo-de-confianca</p>
+<p>https://proeducacional.com/ead/curso-preparatorio-cfg-modulo-i/capitulos/metodos-quantitativos/aulas/teste-de-hipoteses/</p>
