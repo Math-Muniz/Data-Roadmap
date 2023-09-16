@@ -180,19 +180,19 @@
 <p>Se o <b>Valor-p</b> é maior que o nível de significância <em>α</em>, não podemos rejeitar a hipótese nula.</p>
 <p><b>Análise de Variância (ANOVA)</b></p>
 <p>Trata-se de um teste estatístico que se propõe a verificar se existe uma diferença significativa entre as médias, ou seja:</p>
-<pre>H<sub>0</sub>: <em>μ<sub>1</sub> = μ<sub>1</sub> = … = μ<sub>k</sub></em>;</pre>
-<pre>H<sub>1</sub>: As médias não são iguais.</pre>
+<pre align="center">H<sub>0</sub>: <em>μ<sub>1</sub> = μ<sub>1</sub> = … = μ<sub>k</sub></em>;</pre>
+<pre align="center">H<sub>1</sub>: As médias não são iguais.</pre>
 <p>No caso, existem dois grupos para se calcular a variância: entre grupos (Média quadrada dos grupos – MQG) e dentro dos grupos (Média quadrada dos erros – MQR). A MQG mede a variância das médias, enquanto a MQR mede a variância que existe dentro dos grupos individuais de dados. Dessa forma, são calculados esses dois componentes de variância; caso MQG seja maior que MQR, temos o indicativo de uma diferença significativa entre os grupos.</p>
 <p>A ANOVA pode resolver dois problemas: a níveis fixos ou a níveis aleatórios (isso é determinado pela aleatoriedade e, na maioria dos casos, trata-se de níveis fixos).</p>
 <img src="Tabela-Anova.png">
-<pre>SQT = SQG + SQR (mensura a variação de todas as observações)</pre>
-<pre>SQT: Soma dos quadrados totais</pre>
-<pre>SQG: Soma dos quadrados dos grupos</pre>
-<pre>SQR: Soma dos quadrados dos erros</pre>
-<pre>MQG: Média quadrada dos grupos</pre>
-<pre>MQR: Média quadrada dos erros</pre>
-<pre>SQG e MQG: Medem a variação total das médias</pre>
-<pre>SQR e MQR: Medem a variação das observações de cada grupo</pre>
+<pre align="center">SQT = SQG + SQR (mensura a variação de todas as observações)</pre>
+<pre align="center">SQT: Soma dos quadrados totais</pre>
+<pre align="center">SQG: Soma dos quadrados dos grupos</pre>
+<pre align="center">SQR: Soma dos quadrados dos erros</pre>
+<pre align="center">MQG: Média quadrada dos grupos</pre>
+<pre align="center">MQR: Média quadrada dos erros</pre>
+<pre align="center">SQG e MQG: Medem a variação total das médias</pre>
+<pre align="center">SQR e MQR: Medem a variação das observações de cada grupo</pre>
 <p>Dessa forma, temos:</p>
 <img src="Anova.png">
 <p>Assim, a hipótese nula será rejeitada quando o <i>F</i> calculado for maior que o valor tabelado, que acontece se a razão entre MQG e MQR seja estatisticamente significante. Por exemplo, se o <em>F</em> tabelado para um intervalo de confiança de 95% for menor que o <em>F</em> calculado, conclui-se que pelo menos uma das médias <em>μ</em> é diferente das outras, e a H<sub>0</sub> é rejeitada com <em>α</em> = 0,05.</p>
