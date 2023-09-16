@@ -20,7 +20,7 @@
                   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/7.Distribuicoes-Discretas">7. Distribuições Discretas: Distribuição de Bernoulli, Distribuição Binomial, Distribuição de Poisson</a></li>
                   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/8.Distribuicoes-Continuas">8. Distribuições Contínuas: Distribuição Uniforme, Distribuição Normal, Distribuição Log-Normal</a></li>
                   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/9.Distribuicoes-de-Probabilidade-Conjunta">9. Distribuições de Probabilidade Conjunta: Distribuição Conjunta de Variáveis Discretas, Distribuição Conjunta de Variáveis Contínuas.</a></li>
-                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/10.Inferencia-Estatistica-e-Principais-Teoremas-de-Probabilidade">10. Inferência Estatística e Principais Teoremas de Probabilidade: Teorema de Tchebycheff, Lei dos Grandes Números, Teorema Central do Limite, Intervalo de Confiança, Testes de Hipóteses</a></li>
+                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/10.Inferencia-Estatistica-e-Principais-Teoremas-de-Probabilidade">10. Inferência Estatística e Principais Teoremas de Probabilidade: Teorema de Chebyshev, Lei dos Grandes Números, Teorema Central do Limite, Intervalo de Confiança, Testes de Hipóteses</a></li>
                </ul>
            </li>
        </ul>
