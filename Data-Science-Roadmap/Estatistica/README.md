@@ -53,7 +53,7 @@
    </li>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/10.Inferencia-Estatistica-e-Principais-Teoremas-de-Probabilidade">10. Inferência Estatística e Principais Teoremas de Probabilidade</a>
        <ul>
-           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/10.Inferencia-Estatistica-e-Principais-Teoremas-de-Probabilidade/README.md">Teorema de Tchebycheff, Lei dos Grandes Números, Teorema Central do Limite, Intervalo de Confiança, Testes de Hipóteses</a></li>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Estatistica/10.Inferencia-Estatistica-e-Principais-Teoremas-de-Probabilidade/README.md">Teorema de Chebyshev, Lei dos Grandes Números, Teorema Central do Limite, Intervalo de Confiança, Testes de Hipóteses</a></li>
        </ul>
    </li>
 </ul>
