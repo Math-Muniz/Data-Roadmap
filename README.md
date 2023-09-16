@@ -23,6 +23,12 @@
                   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/10.Inferencia-Estatistica-e-Principais-Teoremas-de-Probabilidade">10. Inferência Estatística e Principais Teoremas de Probabilidade: Teorema de Chebyshev, Lei dos Grandes Números, Teorema Central do Limite, Intervalo de Confiança, Testes de Hipóteses</a></li>
                </ul>
            </li>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python">Python</a>
+              <ul>
+                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/1.Variaveis">1. Variáveis</a></li>
+                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/2.Operadores">2. Operadores</a></li>
+              </ul>
+           </li>
        </ul>
    </li>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Exercicios">Exercícios</a>
