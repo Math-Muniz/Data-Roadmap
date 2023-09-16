@@ -30,7 +30,51 @@
     <td>1/36</td>
     <td>1/36</td>
   </tr>
-  <!-- Adicione outras linhas da tabela conforme necessário -->
+  <tr>
+    <td>2</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+    <td>1/36</td>
+  </tr>
 </table>
 <h2 align="center">Distribuição Conjunta de Variáveis Contínuas</h2>
 <p>A Distribuição Conjunta de Variáveis Contínuas é usada quando temos duas ou mais variáveis aleatórias contínuas, ou seja, aquelas cujos valores podem assumir qualquer valor em um intervalo contínuo. Ela descreve a probabilidade conjunta de eventos em uma faixa contínua.</p>
@@ -43,7 +87,7 @@
 </ul>
 <p><strong>Exemplo com Resolução:</strong></p>
 <p>Suponha que temos duas variáveis aleatórias contínuas X e Y com a seguinte função de densidade conjunta:</p>
-<pre>f(x, y) = kxy, onde 0 < x < 1, 0 < y < 1, e k é uma constante de normalização.</pre>
+<pre align="center">f(x, y) = kxy, onde 0 < x < 1, 0 < y < 1, e k é uma constante de normalização.</pre>
 <p>Para encontrar o valor de k, integramos essa função sobre o intervalo de interesse:</p>
 <!-- Insira a integral aqui -->
 <p>Resolvendo a integral, obtemos:</p>
