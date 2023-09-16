@@ -43,8 +43,49 @@
 <p>O lançamento de um dado é um evento independente e, portanto, quando um certo número aparece, este resultado não afeta o próximo lançamento. Somente depois de milhares de repetições seremos capazes de verificar que a lei dos grandes números existe e que a frequência relativa de obtenção de um número (em nosso exemplo 1) será de 1/6.</p>
 <p>A má interpretação da teoria pode levar as pessoas (especialmente os jogadores) a perder dinheiro e tempo.</p>
 <h2 align="center">Teorema Central do Limite</h2>
+<p>Acompanhe o texto a seguir para conhecer o Teorema Central do Limite (TCL) e entender sua importância para a análise estatística!Porém, antes de abordar o Teorema em si, é necessário entender o que é uma distribuição amostral.</p>
+<p><b>Distribuição Amostral</b></p>
+<p>Sabemos que geralmente não temos acesso à população de interesse que estamos estudando e por isso, utilizamos amostras.</p>
+<p>Ao retirar amostras <b>com reposição</b>, muito provavelmente elas irão ser diferentes entre si, em maior ou menor magnitude. Assim, se tivermos 5 amostras (de mesmo tamanho), cada uma terá a sua própria média, chamada de <b>média amostral</b>.</p>
+<p>Nesse exemplo, teremos então um conjunto de 5 médias amostrais, como mostrado na figura abaixo, em que o retângulo representa a população, e os círculos as amostras:</p>
+<img src="Distribuicao-Amostral.png">
+<p>Ao <b>repetir o processo de amostragem várias vezes</b>, poderemos agrupar todas as médias amostrais possíveis em uma distribuição de probabilidade ou de frequência:</p>
+<img src="Distribuicao-Amostral-das-Medias.png">
+<p>O gráfico acima é  chamado de <b>distribuição amostral das médias</b> e terá o formato de uma curva normal se certas condições forem verdadeiras como veremos mais adiante.</p>
+<p>Tal como qualquer distribuição, podemos calcular a sua média e o desvio-padrão:</p>
+<ul>
+  <li>A média da distribuição amostral das médias  <b>(μx̅), será sempre a verdadeira média da população (μ);</b></li>
+  <li>E o seu desvio-padrão (conhecido como <b>erro padrão</b> ) será o desvio padrão populacional (σ)  dividido pela raiz quadrada do tamanho da amostra (n).</li>
+</ul>
+<p>Lembre-se que: a distribuição amostral será obtida sempre a partir de uma  <b>estatística da amostra</b>, como a <b>média, a proporção e a variância</b>.</p>
+<p><b>O que diz o Teorema Central do Limite (TCL) ?</b></p>
+<p>Agora que estamos familiarizados com o conceito de distribuição amostral, podemos abordar o TCL. O uso do Teorema dependerá de <b>como é a forma da distribuição populacional</b> dos nossos dados. Nesse caso há duas situações possíveis:</p>
+<p><b>a) A população é normalmente distribuída</b></p>
+<p>Imagine que estamos analisando variáveis cuja população já é conhecida por ter uma  distribuição normal, como altura, peso, frequência cardíaca, etc.</p>
+<p>Nesse caso, vamos observar que depois de fazer a amostragem com reposição, a distribuição amostral das médias obtida <b>também será normal.</b> E isso não é uma coincidência!<b> Sempre que a população for normal, a distribuição das médias também será normalmente distribuída, independentemente do tamanho da amostra.</b></p>
+<p>Esse cenário é o ‘melhor’ que podemos encontrar e <b>nesse caso o Teorema Central do Limite não é necessário.</b></p>
+<img src="Populacao-Normal.png">
+<p><b>b) A população não é normalmente distribuída ou não sei como é a distribuição populacional</b></p>
+<p>É muito comum, porém, que sequer saibamos qual é a forma da distribuição populacional que estamos lidando ou que os dados não são normalmente distribuídos. Então é aqui que o Teorema Central do Limite se aplica! </p>
+<p>O Teorema nos explica que se a distribuição da população de origem for desconhecida ou assimétrica, uniforme, etc, ao retirarmos amostras suficientemente grandes – acima de 30 elementos : n >=30 –  a distribuição amostral das médias será aproximadamente normal.</p>
+<p>Assim, podemos dizer que o Teorema “funciona” em geral, se tivermos amostras de tamanho mínimo igual a  30 elementos. Entretanto, vale mencionar que em alguns casos, esse número pode ser diferente dependendo da forma da distribuição populacional que estamos lidando.</p>
+<p>Por exemplo:</p>
+<ul>
+  <li>Em distribuições em que  quase não há outliers (de cauda ‘leve’), amostras com 20 elementos já podem ser o suficiente para que o Teorema seja observado;</li>
+  <li>De forma contrária, em distribuição de cauda ‘pesada’, isto é, com muitos valores atípicos (grande assimetria), amostras com 100 elementos podem ser necessárias para que o Teorema comece a ser observado. </li>
+</ul>
+<img src="Populacao-Nao-Normal.png">
+<p>De forma geral, <b>quanto maior for a amostra, mais próxima da normal a distribuição amostral das médias será.</b></p>
+<p>No esquema abaixo, na primeira imagem temos uma distribuição populacional assimétrica à direita. Suponha que inicialmente foram retiradas 5.000 amostras, cada uma com <b>5 elementos.</b> Em seguida foram calculadas as médias e como resultado, obtemos uma distribuição amostral das médias ainda ligeiramente assimétrica.</p>
+<p>Mas se retirássemos as mesmas 5.000 amostras, porém cada qual com <b>30 elementos</b>, percebemos que a distribuição das médias se torna perfeitamente simétrica e normal. E se retirássemos 5.000 amostras, cada qual com <b>100 elementos</b>, a distribuição das médias é normal e ainda menos dispersa (mais concentrada em torno da média).</p>
+<img src="Amostras.jpg">
+<p><b>Se quiser fazer suas propróprias simulações e visualizar o TCL para diferentes distribuições populacionais, acesse sites como Seeing Theory e Stat Crunch.</b></p>
+<p><b>Qual a importância do TCL?</b></p>
+<p>Ao utilizarmos amostras, nosso objetivo final é fazer <b>inferências a respeito dos reais parâmetros da população.</b> Para isso, usamos ferramentas como intervalos de confiança e teste de hipóteses que partem da suposição da normalidade dos dados.</p>
+<p>Desse modo, mesmo que os nossos dados sejam de uma população com distribuição desconhecida ou que não seja normalmente distribuída, ainda assim poderemos fazer tais análises uma vez que o Teorema Central do Limite é verdadeiro.</p>
 <h2 align="center">Intervalo de Confiança</h2>
 <h2 align="center">Testes de Hipóteses</h2>
 <h2 align="center">Referências</h2>
 <p>https://pt.economy-pedia.com/11039359-chebyshev-inequality</p>
 <p>https://pt.economy-pedia.com/11038376-law-of-the-big-numbers</p>
+<p>https://blog.proffernandamaciel.com.br/teorema_central_limite/</p>
