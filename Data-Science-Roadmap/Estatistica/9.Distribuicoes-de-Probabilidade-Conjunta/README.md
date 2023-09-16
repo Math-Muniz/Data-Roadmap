@@ -47,10 +47,10 @@
 <p>Para encontrar o valor de k, integramos essa função sobre o intervalo de interesse:</p>
 <!-- Insira a integral aqui -->
 <p>Resolvendo a integral, obtemos:</p>
-<pre>k * (1/2) * (1/2) = 1</pre>
-<pre>k = 4</pre>
+<pre align="center">k * (1/2) * (1/2) = 1</pre>
+<pre align="center">k = 4</pre>
 <p>Portanto, a função de densidade de probabilidade conjunta é:</p>
-<pre>f(x, y) = 4xy, onde 0 < x < 1, 0 < y < 1.</pre>
+<pre align="center">f(x, y) = 4xy, onde 0 < x < 1, 0 < y < 1.</pre>
 <p><strong>Referências:</strong></p>
 <ul>
   <li>Livro: "Probability and Statistics for Engineers and Scientists" de Sheldon M. Ross.</li>
