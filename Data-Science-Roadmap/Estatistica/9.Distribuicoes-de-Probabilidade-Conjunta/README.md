@@ -87,14 +87,14 @@
 </ul>
 <p><strong>Exemplo com Resolução:</strong></p>
 <p>Suponha que temos duas variáveis aleatórias contínuas X e Y com a seguinte função de densidade conjunta:</p>
-<pre align="center">f(x, y) = kxy, onde 0 < x < 1, 0 < y < 1, e k é uma constante de normalização.</pre>
+<pre align="center"><b>f(x, y) = kxy, onde 0 < x < 1, 0 < y < 1, e k é uma constante de normalização.</b></pre>
 <p>Para encontrar o valor de k, integramos essa função sobre o intervalo de interesse:</p>
 <!-- Insira a integral aqui -->
 <p>Resolvendo a integral, obtemos:</p>
-<pre align="center">k * (1/2) * (1/2) = 1</pre>
-<pre align="center">k = 4</pre>
+<pre align="center"><b>k * (1/2) * (1/2) = 1</b></pre>
+<pre align="center"><b>k = 4</b></pre>
 <p>Portanto, a função de densidade de probabilidade conjunta é:</p>
-<pre align="center">f(x, y) = 4xy, onde 0 < x < 1, 0 < y < 1.</pre>
+<pre align="center"><b>f(x, y) = 4xy, onde (0 < x < 1) e (0 < y < 1)</b></pre>
 <p><strong>Referências:</strong></p>
 <ul>
   <li>Livro: "Probability and Statistics for Engineers and Scientists" de Sheldon M. Ross.</li>
