@@ -18,6 +18,7 @@
 numero_1 = 5
 numero_2 = 2
 
+
 soma = numero_1 + numero_2
 subtracao = numero_1 - numero_2
 multiplicacao = numero_1 * numero_2
@@ -34,5 +35,6 @@ print(divisao_inteira) # 2
 print(modulo)  # 1
 print(exponenciacao) # 25
 </pre>
+<p></p>
 <h2>Referências</h2>
 <p>https://www.devmedia.com.br/operadores-no-python/40693</p>
