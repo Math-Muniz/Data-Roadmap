@@ -9,11 +9,11 @@
 <p>Nesse trecho foram feitas três atribuições. Na linha 1 foi atribuída uma string para uma nova variável chamada mensagem. Na linha 2 foi atribuído o valor inteiro 25 para n e na terceira linha foi atribuído um valor decimal para a variável pi.</p>
 <p>Observe que não foi necessário fazer uma declaração explícita de cada variável, indicando o tipo ao qual ela pertence, pois isso é definido pelo valor que ela armazena, conforme vemos no código abaixo:</p>
 <pre>type (mensagem)</pre>
-<pre># <class 'str'></pre>
+<pre># (class 'str')</pre>
 <pre>type (n)</pre>
-<pre># <class 'int'></pre>
+<pre># (class 'int')</pre>
 <pre>type (pi)</pre>
-<pre># <class 'float'></pre>
+<pre># (class 'float')</pre>
 <p>Nesse código, a linha 2 indica que a variável pertence à classe string. A linha 4 indica que a variável representa a classe de inteiros. Por sua vez, a sexta linha indica que a variável pi é do tipo float.</p>
 <p>Para exibir o conteúdo dessas variáveis utilizamos o comando de impressão print, da seguinte forma:</p>
 <pre>print(mensagem)</pre>
