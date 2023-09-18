@@ -124,7 +124,7 @@ else:
 <p>No <b>Código 6</b> temos um exemplo do operador is no Python. Com ele, o que está sendo verificado é se as variáveis apontam para o mesmo objeto. Quando declaramos uma string no Python, o seu valor é guardado num local especial da memória. Assim, quando usamos esse valor repetidas vezes como nas linhas 1 e 3, o Python pode utilizar o mesmo objeto em cada uma delas. Por esse motivo is dirá que time_carlos e time_fabricia apontam para o mesmo objeto, enquanto que time_luciano aponta para um objeto diferente.</p>
 <p align="center"><b>Operadores de Associação</b></p>
 <p>Os operadores de associação são utilizados para verificar se uma sequência contém um objeto. Na Tabela 6 temos os exemplos.</p>
-<img src="Operadores-Associacao">
+<img src="Operadores-Associacao.png">
 <p>No <b>Código 7</b>, vamos ver um exemplo usando os operadores de associação.</p>
 <pre>
 frutas = ["banana","laranja","uva","ameixa"]
