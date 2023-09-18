@@ -66,9 +66,9 @@ numero_2 = 4
 soma = numero_1 + numero_2
 
 if soma < 10:
-    print("soma não é maior que 10")
+&nbsp;&nbsp;print("soma não é maior que 10")
 else:
-    print("soma é maior ou igual a 10")
+&nbsp;&nbsp;print("soma é maior ou igual a 10")
 </pre>
 <p>Como podemos ver no <b>Código 3</b>, duas variáveis são somadas e esse resultado é atribuído à variável soma. Na linha 6, fazemos uma comparação dessa variável verificando se ela é menor do que 10. Vejamos a seguir, uma operação que faz comparação de igualdade entre duas variáveis:</p>
 <pre>
@@ -76,9 +76,9 @@ soma_1 = 7 + 8
 soma_2 = 10 + 5
 
 if soma_1 == soma_2:
-    print("Os resultados são iguais")
+&nbsp;&nbsp;print("Os resultados são iguais")
 else:
-    print("Os resultados são diferentes")
+&nbsp;&nbsp;print("Os resultados são diferentes")
 </pre>
 <p>No <b>Código 4</b>, criamos duas variáveis e comparamos seus valores, o que pode resultar em dois resultados distintos. Dessa forma, podemos criar estruturas condicionais com o auxílio desses operadores.</p>
 <h2 align="center">Operadores Lógicos</h2>
@@ -91,15 +91,15 @@ idade_carolina = 19
 
 # OPERADOR OR
 if idade_lucas >= 18 or idade_carolina >= 18:
-    print("Pelo menos um dos dois é maior de idade")
+&nbsp;&nbsp;print("Pelo menos um dos dois é maior de idade")
 else:
-    print("Lucas e Carolina não são maiores de idade")
+&nbsp;&nbsp;print("Lucas e Carolina não são maiores de idade")
 
 # OPERADOR AND
 if idade_lucas >= 18 and idade_carolina >= 18:
-    print("Lucas e Carolina são maiores de idade")
+&nbsp;&nbsp;print("Lucas e Carolina são maiores de idade")
 else:
-    print("Pelo menos um dos dois não é maior de idade")
+&nbsp;&nbsp;print("Pelo menos um dos dois não é maior de idade")
 </pre>
 <p>No <b>Código 5</b> temos um exemplo no qual usamos os operadores or e and. Com o operador or, apenas uma das condições precisa ser verificadas. Já no operador and, todas as condições precisam ser satisfeitas. Com a execução do código teremos a impressão das mensages “Lucas e Carolina são maiores de idade” e "Pelo menos um dos dois é maior de idade".</p>
 <h2 align="center">Operadores de Identidade</h2>
@@ -112,9 +112,9 @@ time_luciano = 'Flamengo'
 time_fabricia = 'Botafogo'
 
 if time_carlos is time_luciano:
-    print("time_carlos - time_luciano = mesmo objeto")
+&nbsp;&nbsp;print("time_carlos - time_luciano = mesmo objeto")
 else:
-    print("time_carlos - time_luciano = objetos diferentes")
+&nbsp;&nbsp;print("time_carlos - time_luciano = objetos diferentes")
 
 if time_carlos is time_fabricia:
 &nbsp;&nbsp;print("time_carlos - time_fabricia = mesmo objeto")
