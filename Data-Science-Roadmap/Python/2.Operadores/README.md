@@ -1,4 +1,4 @@
-<h1>Operadores</h1>
+<h1 align="center">Operadores</h1>
 <p>Os operadores são usados na construção de expressões, as quais contém um número variado de operandos. Por exemplo, na expressão a + b, temos o operador de aritmético + e operandos são as variáveis a e b.</p>
 <p>Na linguagem Python temos a seguinte separação entre os diferentes tipos de operadores:</p>
 <ul>
