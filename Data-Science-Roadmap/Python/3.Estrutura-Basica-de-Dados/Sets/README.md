@@ -81,3 +81,5 @@ Diferença Simétrica
 <p>Na Interseção ( & ), apenas os elementos que estiverem nos dois sets restarão.</p>
 <p>Já na diferença ( - ), restarão apenas os elementos que estiverem em um dos set, mas não no segundo.</p>
 <p>Por fim, na diferença simétrica ( ^ ), apenas os elementos que estiverem nos dois sets, porém que não se repitam, serão exibidos.</p>
+<h2>Referências:</h2>
+<p>https://www.treinaweb.com.br/blog/manipulando-sets-no-python/</p>
