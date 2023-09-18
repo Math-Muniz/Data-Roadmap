@@ -117,9 +117,9 @@ else:
     print("time_carlos - time_luciano = objetos diferentes")
 
 if time_carlos is time_fabricia:
-    print("time_carlos - time_fabricia = mesmo objeto")
+&nbsp;&nbsp;print("time_carlos - time_fabricia = mesmo objeto")
 else:
-    print("time_carlos - time_fabricia = objetos diferentes") 
+&nbsp;&nbsp;print("time_carlos - time_fabricia = objetos diferentes") 
 </pre>
 <p>No <b>Código 6</b> temos um exemplo do operador is no Python. Com ele, o que está sendo verificado é se as variáveis apontam para o mesmo objeto. Quando declaramos uma string no Python, o seu valor é guardado num local especial da memória. Assim, quando usamos esse valor repetidas vezes como nas linhas 1 e 3, o Python pode utilizar o mesmo objeto em cada uma delas. Por esse motivo is dirá que time_carlos e time_fabricia apontam para o mesmo objeto, enquanto que time_luciano aponta para um objeto diferente.</p>
 <h2 align="center">Operadores de Associação</h2>
