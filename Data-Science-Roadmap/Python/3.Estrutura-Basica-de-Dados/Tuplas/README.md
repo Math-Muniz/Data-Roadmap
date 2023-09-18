@@ -32,7 +32,7 @@ print(nome_da_tupla1.count(1))
 <h2 align="center">Exibir o Índice de um Determinado Elemento</h2>
 <p>Para retornar o índice de um determinado elemento em uma tupla, utilizamos o método <b>index()</b>, enviando o valor que queremos pesquisar como parâmetro:</p>
 <pre>
-nome_da_tupla1 = (1, 2, 3) /#tupla de inteiros
+nome_da_tupla1 = (1, 2, 3) #tupla de inteiros
 
 print(nome_da_tupla1.index(3))
 </pre>
@@ -43,7 +43,7 @@ print(nome_da_tupla1.index(3))
 <h2 align="center">Verificar a Existência de um Elemento na Tupla</h2>
 <p>Um outro recurso muito utilizado em tuplas é a verificação da existência de um determinado elemento. Para isso, utilizamos o <b>in</b> do Python, como podemos ver abaixo:</p>
 <pre>
-nome_da_tupla1 = (1, 2, 3) /#tupla de inteiros
+nome_da_tupla1 = (1, 2, 3) #tupla de inteiros
 
 print(2 in nome_da_tupla1)
 print(22 in nome_da_tupla1)
