@@ -1,4 +1,4 @@
-<h1 align="center">Listas<h1>
+<h1 align="center">Listas</h1>
 <p>Uma lista é a estrutura de dados mais básica do Python e armazena os dados em sequência, onde cada elemento possui sua posição na lista, denominada de índice. O primeiro elemento é sempre o índice zero e a cada elemento inserido na lista esse valor é incrementado.</p>
 <p>No Python, uma lista pode armazenar qualquer tipo de dado primitivo (string, inteiro, float, etc).</p>
 <h2 align="center">Declarando Listas</h2>
