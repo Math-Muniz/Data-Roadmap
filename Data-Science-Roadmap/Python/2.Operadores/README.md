@@ -10,7 +10,7 @@
   <li>Operadores de associação</li>
 </ul>
 <p>A seguir veremos cada um deles.</p>
-<p align="center"><b>Operadores Aritméticos</b></p>
+<h2 align="center">Operadores Aritméticos</h2>
 <p>Os operadores aritméticos são utilizados na execução de operações matemáticas, tais como a soma e a subtração, por exemplo. Vejamos na <b>Tabela 1</b> a lista deles.</p>
 <img src="Operadores-Aritmeticos.png">
 <p>O <b>Código 1</b> mostra um exemplo com os operadores aritméticos usados no Python.</p>
@@ -43,7 +43,7 @@ print(exponenciacao) # 25
 <pre>print(5 * 3 + 8) # O resultado será 23</pre>
 <p>4. Ordem de precedência é avaliada da esquerda para a direita. Portanto, após os operadores anteriores, a sequência da execução será da esquerda para a direita. Ex.:</p>
 <pre>print(8 + 5 - 10) # O resultado será 3</pre>
-<p align="center"><b>Operadores de Atribuição</b></p>
+<h2 align="center">Operadores de Atribuição</h2>
 <p>Os operadores de atribuição atribuem valor a uma variável. Na <b>Tabela 2</b> temos uma lista desses operadores.</p>
 <img src="Operadores-Atribuicao.png">
 <p>No <b>Código 2</b> temos um exemplo do uso de operadores de atribuição.</p>
@@ -55,7 +55,7 @@ numero_1 += 5
 print(numero_1) # O resultado será 10
 </pre>
 <p>Acima, vemos que a variável numero_1 recebe na linha 3 o valor dela mesmo somado a 5. Isso fará com que o resultado impresso na linha 5 seja igual a 10.</p>
-<p align="center"><b>Operadores de Comparação</b></p>
+<h2 align="center">Operadores de Comparação</h2>
 <p>Os operadores de comparação são usados para comparar valores, o que vai retornar True ou False, dependendo da condição. A seguir, na <b>Tabela 3</b> temos exemplos de alguns usados no Python.</p>
 <img src="Operadores-Comparacao.png">
 <p>Usando a comparação que é feita com esses operadores, podemos criar condições para os códigos. No exemplo abaixo, vemos como isso acontece na prática:</p>
@@ -81,7 +81,7 @@ else:
     print("Os resultados são diferentes")
 </pre>
 <p>No <b>Código 4</b>, criamos duas variáveis e comparamos seus valores, o que pode resultar em dois resultados distintos. Dessa forma, podemos criar estruturas condicionais com o auxílio desses operadores.</p>
-<p><b>Operadores Lógicos</b></p>
+<h2 align="center">Operadores Lógicos</h2>
 <p>Os operadores lógicos são usados para unir duas ou mais expressões condicionais. Isso é feito por meio de conectivos, como podemos ver na <b>Tabela 4</b>.</p>
 <img src="Operadores-Logicos.png">
 <p>Vejamos a seguir, um exemplo que utiliza os operadores lógicos:</p>
@@ -102,7 +102,7 @@ else:
     print("Pelo menos um dos dois não é maior de idade")
 </pre>
 <p>No <b>Código 5</b> temos um exemplo no qual usamos os operadores or e and. Com o operador or, apenas uma das condições precisa ser verificadas. Já no operador and, todas as condições precisam ser satisfeitas. Com a execução do código teremos a impressão das mensages “Lucas e Carolina são maiores de idade” e "Pelo menos um dos dois é maior de idade".</p>
-<p align="center"><b>Operadores de Identidade</b></p>
+<h2 align="center">Operadores de Identidade</h2>
 <p>Os operadores de identidade servem para a comparação de objetos. Nessa comparação é verificado se eles ocupam a mesma posição na memória, o que significará que se trata do mesmo objeto, como vemos isso na <b>Tabela 5</b>.</p>
 <img src="Operadores-Identidade.png">
 <p>Vejamos com mais detalhes o uso dos operadores de identidade:</p>
@@ -122,7 +122,7 @@ else:
     print("time_carlos - time_fabricia = objetos diferentes") 
 </pre>
 <p>No <b>Código 6</b> temos um exemplo do operador is no Python. Com ele, o que está sendo verificado é se as variáveis apontam para o mesmo objeto. Quando declaramos uma string no Python, o seu valor é guardado num local especial da memória. Assim, quando usamos esse valor repetidas vezes como nas linhas 1 e 3, o Python pode utilizar o mesmo objeto em cada uma delas. Por esse motivo is dirá que time_carlos e time_fabricia apontam para o mesmo objeto, enquanto que time_luciano aponta para um objeto diferente.</p>
-<p align="center"><b>Operadores de Associação</b></p>
+<h2 align="center">Operadores de Associação</h2>
 <p>Os operadores de associação são utilizados para verificar se uma sequência contém um objeto. Na Tabela 6 temos os exemplos.</p>
 <img src="Operadores-Associacao.png">
 <p>No <b>Código 7</b>, vamos ver um exemplo usando os operadores de associação.</p>
@@ -136,7 +136,7 @@ print(fruta_1 in frutas) # True
 print(fruta_2 in frutas) # False
 </pre>
 <p>O exemplo acima verifica a existência de variáveis dentro de uma lista. Na linha 6 estamos checando se fruta_1 está contido em frutas. Da mesma forma, fazemos isso na linha 7, só que dessa vez com fruta_2.</p>
-<p align="center"><b>Conclusão</b></p>
+<h2 align="center">Conclusão</h2>
 <p>Ao usar os operadores no Python, podemos atribuir valores a variáveis, criar condições, fazer comparações etc. Essas características fazem parte dos princípios básicos para montar algoritmos nessa linguagem. É importante dominar esses conceitos sobre os operadores, pois eles são amplamente usados no dia a dia do desenvolvedor.</p>
 <h2>Referências</h2>
 <p>https://www.devmedia.com.br/operadores-no-python/40693</p>
