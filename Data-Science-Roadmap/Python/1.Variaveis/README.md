@@ -1,7 +1,7 @@
-<h1>Variáveis</h1>
+<h1 align="center">Variáveis</h1>
 <p><b>Variáveis são um dos recursos mais básicos das linguagens de programação.</b>Utilizadas para armazenar valores em memória, elas nos permitem gravar e ler esses dados com facilidade a partir de um nome definido por nós.</p>
 <p>Neste documento aprenderemos a declarar e atribuir valores a<b> variáveis em Python.</b></p>
-<p align="center"><b>Declaração e Atribuição</b></p>
+<h2 align="center">Declaração e Atribuição</h2>
 <p>Assim como em outras linguagens, <b>o Python pode manipular variáveis básicas como strings</b> (palavras ou cadeias de caracteres), inteiros e reais (float). Para criá-las, basta utilizar um comando de atribuição, que define seu tipo e seu valor, conforme vemos no código abaixo:</p>
 <pre>mensagem = 'Exemplo de mensagem!'</pre>
 <pre>n = 25</pre>
@@ -22,7 +22,7 @@
 <pre># 25</pre>
 <pre>print (pi)</pre>
 <pre># 3.141592653589931</pre>
-<p><b>Nomeando Variáveis</b></p>
+<h2 align="center">Nomeando Variáveis</h2>
 <p>As variáveis podem ser nomeadas conforme a vontade do programador, com nomes longos, contendo letras e números. No entanto, elas devem necessariamente começar com letras minúsculas.</p>
 <p>Além dessa regra é importante também estar atento às palavras reservadas da linguagem <b>(Figura 1)</b>, que não podem ser utilizadas para nomear variáveis.</p>
 <img src="Palavras_Reservadas.png">
