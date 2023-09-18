@@ -53,5 +53,7 @@ print(22 in nome_da_tupla1)
 True
 False
 </pre>
+<p><b>Considerações Finais</b></p>
+<p>Assim como as listas, as tuplas são ótimas formas para armazenamento de elementos, principalmente se você não quer permitir que estes elementos sejam alterados. Neste artigo vimos algumas das principais funcionalidades das tuplas e suas aplicações.</p>
 <h2>Referências:</h2>
 <p>https://www.treinaweb.com.br/blog/manipulando-tuplas-no-python/</p>
