@@ -73,7 +73,8 @@ soma_2 = 10 + 5
 if soma_1 == soma_2:
     print("Os resultados são iguais")
 else:
-    print("Os resultados são diferentes")</pre>
+    print("Os resultados são diferentes")
+</pre>
 <p>No <b>Código 4</b>, criamos duas variáveis e comparamos seus valores, o que pode resultar em dois resultados distintos. Dessa forma, podemos criar estruturas condicionais com o auxílio desses operadores.</p>
 <p><b>Operadores Lógicos</b></p>
 <h2>Referências</h2>
