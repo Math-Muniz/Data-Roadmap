@@ -373,7 +373,7 @@ Variável i = 6
 Final do loop while!
 '''
 </pre>
-<p>Perceba que a instrução <b>print()</b> no comando <b>else só foi executada após a variável <b>“i”</b> ter o valor igual a 6. Vale ressaltar que, se ao executarmos o teste pela primeira vez e a condição <b>for</b> falsa, as instruções do comando <b>else</b> serão executadas. Veja o código abaixo:</p>
+<p>Perceba que a instrução <b>print()</b> no comando <b>else</b> só foi executada após a variável <b>“i”</b> ter o valor igual a 6. Vale ressaltar que, se ao executarmos o teste pela primeira vez e a condição <b>for</b> falsa, as instruções do comando <b>else</b> serão executadas. Veja o código abaixo:</p>
 <pre>
 i = 6
 while i <= 5:
