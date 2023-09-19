@@ -307,11 +307,24 @@ Resultado:
 5
 '''
 </pre>
-<p>Perceba que utilizamos a variável <b>“i”</b>, que funciona como um contador e é usada para controlar a repetição do loop <b>while</b>. Veja também que incrementamos essa variável dentro das instruções do loop. Isso faz com que a condição de avaliação encontre o ponto de parada e encerre o loop.</p>
-<p>Vale ressaltar que <b>é fundamental indicarmos o ponto de parada na instrução while.</b>Caso contrário,teremos uma falha que faz com que o programa fique em “loop infinito”, ou seja, repetindo o bloco de código sem parar. Existem diferentes formas de fazer isso, mas você pode conferir algumas delas a seguir.</p>
+<p>Perceba que utilizamos a variável <b>i</b>, que funciona como um contador e é usada para controlar a repetição do loop <b>while</b>. Veja também que incrementamos essa variável dentro das instruções do loop. Isso faz com que a condição de avaliação encontre o ponto de parada e encerre o loop.</p>
+<p>Vale ressaltar que <b>é fundamental indicarmos o ponto de parada na instrução while</b>. Caso contrário,teremos uma falha que faz com que o programa fique em “loop infinito”, ou seja, repetindo o bloco de código sem parar. Existem diferentes formas de fazer isso, mas você pode conferir algumas delas a seguir.</p>
 <h2 align="center">Definindo onde o loop deve parar: break</h2>
-<p></p>
-  
+<p>A instrução <b>break</b> indica um ponto de parada para o loop <b>while</b>. Entretanto, ela deve ser utilizada em conjunto com uma estrutura condicional, como o comando <b>if</b>. Dessa forma, é possível avaliar uma determinada condição dentro do loop, que servirá como um ponto de interrupção da repetição. Veja um código de exemplo:</p>
+<pre>
+dias_semana = ['segunda-feira', 'terça-feira', 'quarta-feira']
+i = 0
+while dias_semana:
+&emsp;&emsp;if i == 1:
+&emsp;&emsp;&emsp;&emsp;print("O dia da semana que corresponde a posição", i, "da lista dias_semana é:", dias_semana[i])
+&emsp;&emsp;&emsp;&emsp;break
+&emsp;&emsp;i += 1
+'''
+Resultado:
+O dia da semana que corresponde a posição 1 da lista dias_semana é: terça-feira
+</pre>
+<p>No código acima, utilizamos uma lista com três dias da semana e criamos a variável “i” para acessarmos os elementos. Perceba que utilizamos o comando “while dias_semana”. Como essa variável é uma lista, o compilador entende que deverá percorrer todos os elementos existentes nela. Portanto, é como se disséssemos a ele: enquanto houver elementos na lista, faça alguma coisa.</p>
+<p>Perceba que utilizamos a estrutura condicional if para identificarmos o índice da lista igual a 1 e acessamos o elemento de acordo com índice correspondente. Por utilizar a instrução break, o loop será encerrado quando a variável i for igual a 1.</p>
 <h2>Referencias</h2>
 <p>https://blog.betrybe.com/python/python-for/</p>
 <p>https://blog.betrybe.com/python/python-while/#:~:text=A%20instru%C3%A7%C3%A3o%20Python%20while%20%C3%A9,programadoras%20no%20desenvolvimento%20de%20aplica%C3%A7%C3%B5es.</p>
