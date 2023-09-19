@@ -19,15 +19,15 @@ for number in numbers:
 5
 </pre>
 <p>Aqui, a instrução <b>print(number)</b> é executada enquanto houver números restantes na lista. O fluxograma que descreve o processo é o seguinte: </p>
-<img src="">
+<img src="Estrutura.webp">
 <h2 align="center">O que é Iteração?</h2>
 <p>A iteração é um processo de repetição que executa o mesmo bloco de código até o <b>for loop</b> chegar no final da iteração, ou seja, no último valor. De outro modo, a iteração pode chegar ao fim quando tem a sua condição falsa.</p>
 <h2 align="center">O que é Iteração Definida?</h2>
-<img src="">
+<img src="Iteracao-Definida.png">
 <p>A iteração definida é uma repetição que tem como base um objeto iterável, por exemplo, uma <b>lista</b>, um <b>objeto</b>, uma <b>Collection</b>, um <b>Iterator</b>, etc. Nessa iteração, realizamos as operações de um bloco de código do início ao fim do objeto iterável.</p>
 <p>Essa iteração pode ser utilizada de diversas formas, conseguimos ler os valores individuais, editá-los e até mesmo usá-los para realizar alguma operação única. No Python, o <b>for loop</b> é o único capaz de realizar essa lógica.</p>
 <h2 align="center">O que é Iteração Indefinida?</h2>
-<img src="">
+<img src="Iteracao-Indefinida.png">
 <p>A iteração indefinida realiza operações repetitivas com base em uma condicional, semelhante a declaração <b>if e else</b>.</p>
 <p>Essa iteração pode ser muito perigosa já que se a condicional não tiver o valor falso, o loop não se fechará e poderá até mesmo travar o processamento da aplicação. Aqui, o <b>while loop</b> é o único capaz de realizar essa lógica no Python.</p>
 <p>É importante entender o conceito de <b>iterável</b> em Python. Basicamente, um objeto iterável é aquele que tem a capacidade de retornar cada um de seus elementos de forma individual. Uma forma de identificar se um objeto é iterável é conferir se ele implementa os métodos <b>__iter__()</b>, que obtém um objeto iterador e o <b>__next__()</b>, que faz a passagem para o próximo elemento.</p>
