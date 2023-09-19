@@ -8,7 +8,7 @@
 <pre>
 numbers = [1, 2, 3, 4, 5]
 for number in numbers:
-&emsp;print(number)
+&emsp;&emsp;print(number)
 </pre>
 <p><b>Resultado:</b></p>
 <pre>
@@ -38,14 +38,14 @@ for number in numbers:
 <p>Em algumas linguagens de programação, como em C, JavaScript etc, o for loop é utilizado com uma variável do tipo inteiro, que funciona como um índice e serve para controlar a quantidade de vezes que a repetição será feita. É algo como:</p>
 <pre>
 for i = 1 to 10
-&emsp;print(i)
+&emsp;&emsp;print(i)
 </pre>
 <p><b>O for loop não funciona dessa maneira em Python. O código feito como o do exemplo acima retorna um erro de execução, pois a estrutura de repetição for só funciona com os tipos de dados que permitem iterações e o tipo numérico não tem essa característica.</b></p>
 <h2 align="center">Qual a sintaxe básica do Python for loop?</h2>
 <p>A sintaxe básica da estrutura de repetição for em Python é diferente. Veja a seguir:</p>
 <pre>
 for (item) in (conjunto_de_itens):
-&emsp;(bloco_de_codigo)
+&emsp;&emsp;(bloco_de_codigo)
 </pre>
 <p>No qual:</p>
 <ul>
@@ -56,7 +56,7 @@ for (item) in (conjunto_de_itens):
 <pre>
 frutas = ['Abacaxi', 'Morango', 'Uva']
 for fruta in frutas:
-&emsp;print(fruta)
+&emsp;&emsp;print(fruta)
 # Resultado
 Abacaxi
 Morango
@@ -65,7 +65,7 @@ Uva
 <p>No código fonte acima utilizamos uma lista, que é um tipo de dados em Python que permite iterações. Perceba que a variável “frutas” foi declarada anteriormente no código para que o laço de repetição funcione. Outra opção seria escrever a lista diretamente na instrução, como mostramos abaixo:</p>
 <pre>
 for fruta in ['Abacaxi', 'Morango', 'Uva']:
-&emsp;print(fruta)
+&emsp;&emsp;print(fruta)
 '''
 Resultado:
 Abacaxi
@@ -109,23 +109,23 @@ n
 <p>Devemos utilizar a instrução <b>break</b> em conjunto com uma estrutura condicional, como a <b>if/else</b> ou até mesmo com outro laço de repetição <b>for</b>. Veja como fica a sintaxe da estrutura de repetição quando utilizamos o break:</p>
 <pre>
 for (item) in (conjunto_de_itens):
-&emsp;(bloco_de_codigo)
-&emsp;if (condicao_verdadeira):
-&emsp;&emsp;(outras_instrucoes)
-&emsp;&emsp;break
+&emsp;&emsp;(bloco_de_codigo)
+&emsp;&emsp;if (condicao_verdadeira):
+&emsp;&emsp;&emsp;(outras_instrucoes)
+&emsp;&emsp;&emsp;break
 </pre>
 <p>Veja em um exemplo prático:</p>
 <pre>
 pessoas = [({'nome': 'João', 'cidade': 'Belo Horizonte'}),
-&emsp;&emsp;&emsp;({'nome': 'Maria', 'cidade': 'São Paulo'}),
-&emsp;&emsp;&emsp;({'nome': 'Pedro', 'cidade': 'Curitiba'})]
+&emsp;&emsp;&emsp;&emsp;({'nome': 'Maria', 'cidade': 'São Paulo'}),
+&emsp;&emsp;&emsp;&emsp;({'nome': 'Pedro', 'cidade': 'Curitiba'})]
 contador = 0
 for pessoa in pessoas:
-&emsp;contador += 1
-&emsp;print(contador)
-&emsp;if pessoa['nome'] == 'Maria':
-&emsp;&emsp;print(pessoa['nome'], "mora em", pessoa['cidade'])
-&emsp;&emsp;break
+&emsp;&emsp;contador += 1
+&emsp;&emsp;print(contador)
+&emsp;&emsp;if pessoa['nome'] == 'Maria':
+&emsp;&emsp;&emsp;print(pessoa['nome'], "mora em", pessoa['cidade'])
+&emsp;&emsp;&emsp;break
 '''
 Resultado:
 1
@@ -140,15 +140,15 @@ Maria mora em São Paulo
 <p>Assim como podemos interromper a execução da estrutura de repetição, também podemos pular para o próximo item. Isso é feito por meio da instrução <b>continue</b> em conjunto com uma validação, que pode ser feita com uma estrutura condicional ou outro laço de repetição. Veja o exemplo abaixo:</p>
 <pre>
 pessoas = [({'nome': 'João', 'cidade': 'Belo Horizonte'}),
-&emsp;&emsp;&emsp;({'nome': 'Maria', 'cidade': 'São Paulo'}),
-&emsp;&emsp;&emsp;({'nome': 'Pedro', 'cidade': 'Curitiba'})]
+&emsp;&emsp;&emsp;&emsp;({'nome': 'Maria', 'cidade': 'São Paulo'}),
+&emsp;&emsp;&emsp;&emsp;({'nome': 'Pedro', 'cidade': 'Curitiba'})]
 contador = 0
 for pessoa in pessoas:
-&emsp;contador += 1
-&emsp;if pessoa['nome'] == 'Maria':
-&emsp;&emsp;continue
-&emsp;print(contador)
-&emsp;print(pessoa['nome'], "mora em", pessoa['cidade'])
+&emsp;&emsp;contador += 1
+&emsp;&emsp;if pessoa['nome'] == 'Maria':
+&emsp;&emsp;&emsp;continue
+&emsp;&emsp;print(contador)
+&emsp;&emsp;print(pessoa['nome'], "mora em", pessoa['cidade'])
 '''
 Resultado:
 1
@@ -173,8 +173,8 @@ range(início, parada, incremento)
 <p>A função <b>range()</b> é utilizada na estrutura de repetição for para executarmos um determinado conjunto de instruções pela quantidade de vezes indicadas na função. Veja um exemplo:</p>
 <pre>
 for numero in range(10):
-&emsp;if numero % 2 == 0:
-&emsp;&emsp;print("O número", numero, "é par")
+&emsp;&emsp;if numero % 2 == 0:
+&emsp;&emsp;&emsp;print("O número", numero, "é par")
 '''
 Resultado:
 O número 0 é par
@@ -188,8 +188,8 @@ O número 8 é par
 <p>Portanto, se quiséssemos considerar o número 10 nesse código, teríamos que adequar o valor da função para range(11). Também podemos definir um escopo diferente para o range. Veja o código a seguir:</p>
 <pre>
 for numero in range(10, 21):
-&emsp;if numero % 2 == 0:
-&emsp;&emsp;print("O número", numero, "é par")
+&emsp;&emsp;if numero % 2 == 0:
+&emsp;&emsp;&emsp;print("O número", numero, "é par")
 Resultado:
 O número 10 é par
 O número 12 é par
@@ -204,17 +204,17 @@ O número 20 é par
 <p>A estrutura de repetição <b>for</b> também pode ser utilizada com a cláusula <b>else</b>. Na prática, ela funciona quando o loop é encerrado sem nenhuma interrupção, como se utilizássemos a instrução <b>break</b>. É importante dizer que a cláusula <b>else</b> na estrutura de repetição <b>for</b> é opcional. Veja a sintaxe do loop <b>for</b> com a instrução <b>else</b>:</p>
 <pre>
 for (item) in (conjunto_de_itens):
-&emsp;(bloco_de_codigo)
+&emsp;&emsp;(bloco_de_codigo)
 else:
-&emsp;(novo_bloco_de_codigo)
+&emsp;&emsp;(novo_bloco_de_codigo)
 </pre>
 <p>Veja um pequeno exemplo:</p>
 <pre>
 frutas = ['Abacaxi', 'Morango', 'Uva']
 for fruta in frutas:
-&emsp;print(fruta)
+&emsp;&emsp;print(fruta)
 else:
-&emsp;print("Laço de repetição finalizado.")
+&emsp;&emsp;print("Laço de repetição finalizado.")
 '''
 Resultado:
 Abacaxi
@@ -227,9 +227,9 @@ Laço de repetição finalizado.
 <p>Existem situações em que precisamos percorrer outra variável iterável dentro de uma estrutura de repetição. Para isso, utilizamos um loop dentro do outro. Vale ressaltar que é importante ter cuidado com esse tipo de implementação para não criar códigos com muitas repetições aninhadas, pois ele se torna confuso e de difícil manutenção. Entretanto, é preciso entender como utilizar laços aninhados. Veja um exemplo:</p>
 <pre>
 for numero_coluna1 in range(2, 5):
-&emsp;print("Tabuada do ", numero_coluna1)
-&emsp;for numero_coluna2 in range(11):
-&emsp;&emsp;print(numero_coluna1, "x", numero_coluna2, " = ", numero_coluna1 * numero_coluna2)
+&emsp;&emsp;print("Tabuada do ", numero_coluna1)
+&emsp;&emsp;for numero_coluna2 in range(11):
+&emsp;&emsp;&emsp;print(numero_coluna1, "x", numero_coluna2, " = ", numero_coluna1 * numero_coluna2)
 '''
  Resultado:
  Tabuada do 2
@@ -276,8 +276,42 @@ for numero_coluna1 in range(2, 5):
 <p>Uma forma de fazer isso é por meio da instrução <b>pass</b>. Na prática, ela permite a criação da instrução sem que nenhuma ação seja executada. Veja um exemplo:</p>
 <pre>
 for numero in range(10):
-&emsp;pass
+&emsp;&emsp;pass
 </pre>
-<p>A estrutura de repetição Python <b>for é usada com objetos iteráveis para repetirmos uma ou várias instruções com cada item de uma sequência. Ela contém características próprias da linguagem, como a utilização das declarações <b>break, continue, else e pass</b>, além do uso da função <b>range()</b>, que permite determinar a quantidade de repetições.</p>
+<p>A estrutura de repetição Python <b>for</b> é usada com objetos iteráveis para repetirmos uma ou várias instruções com cada item de uma sequência. Ela contém características próprias da linguagem, como a utilização das declarações <b>break, continue, else e pass</b>, além do uso da função <b>range()</b>, que permite determinar a quantidade de repetições.</p>
+<h2 align="center">While</h2>
+<p>A instrução Python <b>while</b> é uma das estruturas de repetição disponíveis na linguagem Python, que permite executar um bloco de códigos enquanto uma determinada condição for verdadeira. Esse é um comando muito utilizado pelas pessoas programadoras no desenvolvimento de aplicações.</p>
+<p>Apesar desse ser um comando comum nas linguagens de programação, cada uma delas contém suas particularidades e isso não é diferente em Python. Para demonstrar as principais características desse recurso, preparamos este post com os seguintes tópicos:</p>
+<h2 align="center">O que é o laço Python while e para que serve?</h2>
+<p>O laço <b>while</b> executa um ou mais comandos até que uma condição seja verdadeira. Na prática, a instrução contém uma expressão logo no início, que é avaliada a cada loop, e um bloco de códigos que é executado enquanto a condição <b>for</b> verdadeira. Veja a sintaxe do comando:</p>
+<pre>
+while (condição):
+   (executar_instruções)
+else:  
+   (executar_outras_instruções)
+</pre>
+<p>Geralmente, o laço <b>while</b> é utilizado para repetir uma ou várias instruções por determinado número de vezes. Para isso, usamos uma variável com a função de contador para controlar o número de repetições dos comandos, ou uma expressão para determinar quando a condição <b>for</b> verdadeira ou falsa.</p>
+<h2 align="center">Como usar o laço while em Python?</h2>
+<p>Como mencionamos, para utilizar o laço <b>while</b>, precisamos de uma expressão de controle, que utiliza uma variável de apoio para indicar o ponto de parada da estrutura de repetição. Veja um exemplo:</p>
+<pre>
+i = 1
+while (i <= 5):
+&emsp;&emsp;print(i)
+&emsp;&emsp;i += 1
+'''
+Resultado:
+1
+2
+3
+4
+5
+'''
+</pre>
+<p>Perceba que utilizamos a variável <b>“i”</b>, que funciona como um contador e é usada para controlar a repetição do loop <b>while</b>. Veja também que incrementamos essa variável dentro das instruções do loop. Isso faz com que a condição de avaliação encontre o ponto de parada e encerre o loop.</p>
+<p>Vale ressaltar que <b>é fundamental indicarmos o ponto de parada na instrução while.</b>Caso contrário,teremos uma falha que faz com que o programa fique em “loop infinito”, ou seja, repetindo o bloco de código sem parar. Existem diferentes formas de fazer isso, mas você pode conferir algumas delas a seguir.</p>
+<h2 align="center">Definindo onde o loop deve parar: break</h2>
+<p></p>
+  
 <h2>Referencias</h2>
 <p>https://blog.betrybe.com/python/python-for/</p>
+<p>https://blog.betrybe.com/python/python-while/#:~:text=A%20instru%C3%A7%C3%A3o%20Python%20while%20%C3%A9,programadoras%20no%20desenvolvimento%20de%20aplica%C3%A7%C3%B5es.</p>
