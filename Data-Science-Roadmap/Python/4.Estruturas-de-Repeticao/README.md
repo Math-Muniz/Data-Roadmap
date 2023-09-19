@@ -325,6 +325,70 @@ O dia da semana que corresponde a posição 1 da lista dias_semana é: terça-fe
 </pre>
 <p>No código acima, utilizamos uma lista com três dias da semana e criamos a variável “i” para acessarmos os elementos. Perceba que utilizamos o comando “while dias_semana”. Como essa variável é uma lista, o compilador entende que deverá percorrer todos os elementos existentes nela. Portanto, é como se disséssemos a ele: enquanto houver elementos na lista, faça alguma coisa.</p>
 <p>Perceba que utilizamos a estrutura condicional if para identificarmos o índice da lista igual a 1 e acessamos o elemento de acordo com índice correspondente. Por utilizar a instrução break, o loop será encerrado quando a variável i for igual a 1.</p>
+<h2 align="center">Interrompendo o loop e continuando no próximo objeto: continue</h2>
+<p>A instrução <b>continue</b> é utilizada no comando <b>while</b> para continuar a execução do loop após avaliar uma determinada condição e executar ou não um bloco de códigos. Assim como o <b>break</b>, ela deve ser usada em conjunto com uma estrutura condicional, como o <b>if</b>. Veja o código fonte abaixo:</p>
+<pre>
+dias_semana = ['segunda-feira', 'terça-feira', 'quarta-feira']
+i = -1
+while dias_semana:
+&emsp;&emsp;i += 1
+&emsp;&emsp;if i == 0:
+&emsp;&emsp;&emsp;&emsp;print("O dia da semana da posição", i, "é :", dias_semana[i])
+&emsp;&emsp;&emsp;&emsp;continue
+&emsp;&emsp;if i == 1:
+&emsp;&emsp;&emsp;&emsp;print("O dia da semana da posição", i, "é :", dias_semana[i])
+&emsp;&emsp;if i == 2:
+&emsp;&emsp;&emsp;&emsp;print("O dia da semana da posição", i, "é :", dias_semana[i])
+&emsp;&emsp;&emsp;&emsp;break
+&emsp;&emsp;print("Índice =", i)
+'''
+Resultado:
+O dia da semana da posição 0 é : segunda-feira
+O dia da semana da posição 1 é : terça-feira
+Índice = 1
+O dia da semana da posição 2 é : quarta-feira
+'''
+</pre>
+<p>Nesse exemplo, modificamos um pouco o código anterior. Perceba que inicializamos a variável <b>“i”</b> com o valor <b>“-1”</b> e fizemos a incrementação da variável logo no início do loop. Isso foi feito para evitarmos a duplicação do comando de incremento <b>(i += 1)</b> em cada estrutura condicional <b>if</b>, pois, ao encontrar a instrução <b>continue</b>, o loop retorna para o próximo elemento.</p>
+<p>Portanto, se colocássemos o contador após as estruturas condicionais <b>if</b>, entraríamos em um “loop eterno” logo na primeira condição avaliada. Outra razão para iniciarmos a variável <b>“i”</b> como <b>“-1”</b> é porque precisamos acessar a primeira posição da lista, que é representada pelo índice 0.</p>
+<p>Perceba também que inserimos uma instrução <b>print()</b> após todos os comandos <b>if</b> e ela só foi executada quando o índice era igual a 1. Isso porque os pontos de parada <b>break</b> e <b>continue</b> interromperam o fluxo de execução do código, pois o <b>break</b> sai do loop e o <b>continue</b> vai para o próximo elemento.</p>
+<h2 align="center">Executando um código quando a condição é falsa: while else</h2>
+<p>A instrução <b>else</b> é um comando opcional no loop <b>while</b>. Na prática, ela <b>só é executada quando a condição testada no loop não for verdadeira</b>. Veja o algoritmo a seguir:</p>
+<pre>
+i = 1
+while i <= 5:
+&emsp;&emsp;print(i)
+&emsp;&emsp;i += 1
+else:
+&emsp;&emsp;print("Variável i =", i)
+&emsp;&emsp;print("Final do loop while!")
+'''
+Resultado:
+1
+2
+3
+4
+5
+Variável i = 6
+Final do loop while!
+'''
+</pre>
+<p>Perceba que a instrução <b>print()</b> no comando <b>else só foi executada após a variável <b>“i”</b> ter o valor igual a 6. Vale ressaltar que, se ao executarmos o teste pela primeira vez e a condição <b>for</b> falsa, as instruções do comando <b>else</b> serão executadas. Veja o código abaixo:</p>
+<pre>
+i = 6
+while i <= 5:
+&emsp;&emsp;print(i)
+&emsp;&emsp;i += 1
+else:
+&emsp;&emsp;print("Variável i =", i)
+&emsp;&emsp;print("Final do loop while")
+'''
+Resultado:
+Variável i = 6
+Final do loop while
+'''
+</pre>
+<p>O comando Python <b>while</b> é uma estrutura de repetição que podemos utilizar para repetirmos um determinado bloco de códigos por várias vezes. Entretanto, é preciso atenção ao utilizar esse recurso para evitar a repetição infinita. Apesar disso, existem diversas formas de interromper a execução do loop, como o comando <b>break</b>, a instrução <b>continue</b>, além do uso de variáveis de controle.</p>
 <h2>Referencias</h2>
 <p>https://blog.betrybe.com/python/python-for/</p>
 <p>https://blog.betrybe.com/python/python-while/#:~:text=A%20instru%C3%A7%C3%A3o%20Python%20while%20%C3%A9,programadoras%20no%20desenvolvimento%20de%20aplica%C3%A7%C3%B5es.</p>
