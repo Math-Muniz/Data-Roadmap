@@ -21,7 +21,7 @@ funcao()
 Bloco de código
 </pre>
 <h2 align="center">Parâmetros</h2>
-<p>Além de executar código, funções também podem <b>receber</b> e <b>retornar</b> dados.<b></p>
+<p>Além de executar código, funções também podem <b>receber</b> e <b>retornar</b> dados.</p>
 <p>Podemos enviar dados para uma função através de seus parâmetros.</p>
 <p>Observe o exemplo:</p>
 <pre>
