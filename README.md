@@ -35,6 +35,7 @@
                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/8.Bibliotecas-Basicas-Numpy-Math-Scipy">8. Bibliotecas Básicas: Numpy, Math, SciPy</a></li>
               </ul>
            </li>
+          <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados-com-Python">Manipulação de Dados com Python</a>
        </ul>
    </li>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Exercicios">Exercícios</a>
