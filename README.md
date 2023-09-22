@@ -59,4 +59,4 @@
    <li><a href="https://www.datahackers.com.br/podcast">Data Hackers</a></li>
 </ul>
 
-<h2 align="center">>🚧  Data Roadmap 🚀 Em construção...  🚧</h2>
+<h2 align="center">🚧  Data Roadmap 🚀 Em construção...  🚧</h2>
