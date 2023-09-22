@@ -5,7 +5,7 @@
 <p>Acrescentei a pasta Exercícios aonde irei colocar diversos exercícios de vários níveis diferentes feitos em Python, SQL e outros...</p>
 
 
-<h1 align="center">Caminho Sugerido para o RoadMap:</h1>
+<h1 align="center">Caminho Sugerido para cada RoadMap:</h1>
 <ul>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap">Data Science Roadmap (Em progresso...)</a>
        <ul>
@@ -31,7 +31,7 @@
 
 <h2 align="center">Roadmaps Completos</h2>
 <ul>
-    <li>[ ] Data Science Roadmap(Em progresso...)</li>
+    <li>[ ] Data Science Roadmap (Em progresso...)</li>
     <li>[ ] Data Engineer Roadmap</li>
     <li>[ ] Data Analysis Roadmap</li>
 </ul>
