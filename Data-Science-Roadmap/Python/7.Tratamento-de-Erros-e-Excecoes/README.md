@@ -57,7 +57,7 @@ Exception: O valor de a deve ser maior que 2!
 <p>Nos exemplos anteriores vimos a diferença de erros e exceções e como emitir uma exceção, porém quando isso ocorre o programa acaba se encerrando, para evitar isso que veremos formas de lidar com as exceções.</p>
 <h2 align="center">Executando o Código Apenas Caso o Ambiente Permita (AssertionError)</h2>
 <p>Uma das formas de lidar com erros é evitar que o programa execute em determinadas situações.</p>
-<p>Por exemplo, caso o programa só funcione em Linux, independentemente do motivo, podemos fazer uma verificação e caso não esteja em um ambiente Linux encerramos o programa avisando o motivo para o usuário.</p>
+<p>Por exemplo, caso o programa só funcione em <b>Linux</b>, independentemente do motivo, podemos fazer uma verificação e caso não esteja em um ambiente <b>Linux</b> encerramos o programa avisando o motivo para o usuário.</p>
 <p>O <b>Assert</b> significa literalmente uma afirmação, ele afirma que determinada declaração é verdadeira, e caso não seja o programa é encerrado com a mensagem definida, como no exemplo abaixo:</p>
 <pre>
 import sys  
@@ -66,14 +66,14 @@ assert ('linux' in sys.platform), "Este programa só pode ser executado em um am
   
 print("Data Roadmap")
 </pre>
-<p>Executando o código no Windows, teremos a seguinte saída:</p>
+<p>Executando o código no <b>Windows</b>, teremos a seguinte saída:</p>
 <pre>
 Traceback (most recent call last):
 &emsp;&emsp;File "teste.py", line 3, in <module>
 &emsp;&emsp;&emsp;&emsp;assert ('linux' in sys.platform), "Este programa só pode ser executado em um ambiente Linux!"
 AssertionError: Este programa só pode ser executado em um ambiente Linux!
 </pre>
-<p>Agora caso executemos esse código no Linux, teremos a seguinte saída:</p>
+<p>Agora caso executemos esse código no <b>Linux</b>, teremos a seguinte saída:</p>
 <pre>
 Data Roadmap
 </pre>
@@ -96,16 +96,16 @@ except:
 &emsp;&emsp;&emsp;&emsp;...
 </pre>
 <p>Nesse exemplo, temos algumas saídas possíveis.</p>
-<p>Caso execute em uma máquina Linux:</p>
+<p>Caso execute em uma máquina <b>Linux</b>:</p>
 <pre>
 Data Roadmap
 </pre>
-<p>Caso execute em uma máquina Windows:</p>
+<p>Caso execute em uma máquina <b>Windows</b>:</p>
 <pre>
 
 </pre>
 <p>A maneira como foi lidado com o erro foi não fazendo nada caso ele acontessesse(... não executa nada).</p>
-<p>Por isso quando executamos o código no Windows temos uma saída vazia, porém o programa não foi encerrado.</p>
+<p>Por isso quando executamos o código no <b>Windows</b> temos uma saída vazia, porém o programa não foi encerrado.</p>
 <p>Podemos exibir uma mensagem caso ocorra a exceção, alertando o usário de algo por exemplo.</p>
 <pre>
 import sys  
@@ -121,11 +121,11 @@ except:
 &emsp;&emsp;&emsp;&emsp;print("funcao não foi executado pois não se encontra em um ambiente Linux!")
 </pre>
 <p>Agora, executando novamente ainda teremos duas saídas possíveis.</p>
-<p>Caso execute em uma máquina Linux:</p>
+<p>Caso execute em uma máquina <b>Linux</b>:</p>
 <pre>
 Data Roadmap
 </pre>
-<p>Caso execute em uma máquina Windows:</p>
+<p>Caso execute em uma máquina <b>Windows</b>:</p>
 <pre>
 funcao não foi executado pois não se encontra em um ambiente Linux!
 </pre>
@@ -145,13 +145,13 @@ except AssertionError as error:
 &emsp;&emsp;&emsp;&emsp;print(error)
 </pre>
 <p>Agora, executando novamente continuamos tendo duas saídas possíveis.</p>
-<p>Caso execute em uma máquina Linux:</p>
+<p>Caso execute em uma máquina <b>Linux</b>:</p>
 <pre>
 Data Roadmap
 </pre>
-<p>Caso execute em uma máquina Windows:</p>
+<p>Caso execute em uma máquina <b>Windows</b>:</p>
 <pre>
-Este programa só pode ser executado em um ambiente Linux!
+Este programa só pode ser executado em um ambiente <b>Linux</b>!
 </pre>
 <p>No exemplo anterior, você chamou uma função que você mesmo escreveu.</p>
 <p>Quando você executou a função, você capturou o AssertionError e imprimiu na tela.</p>
@@ -198,15 +198,15 @@ except AssertionError as error:
 except FileNotFoundError as fnf_error:
 &emsp;&emsp;&emsp;&emsp;print(fnf_error)
 </pre>
-<p>Se o arquivo não existir, e este código for executado em uma máquina Windows, a saída será:</p>
+<p>Se o arquivo não existir, e este código for executado em uma máquina <b>Windows</b>, a saída será:</p>
 <pre>
 Este programa só pode ser executado em um ambiente Linux!
 </pre>
-<p>Agora se o arquivo não existir, e este código for executado em uma máquina Linux, a saída será:</p>
+<p>Agora se o arquivo não existir, e este código for executado em uma máquina <b>Linux</b>, a saída será:</p>
 <pre>
 [Errno 2] No such file or directory: 'file.log'
 </pre>
-<p>Caso o arquivo existir, e este código for executado em uma máquina Linux, a saída será:</p>
+<p>Caso o arquivo existir, e este código for executado em uma máquina <b>Linux</b>, a saída será:</p>
 <pre>
 Data Roadmap
 </pre>
@@ -239,15 +239,15 @@ except FileNotFoundError as fnf_error:
 else:
 &emsp;&emsp;print("Nenhum erro ocorreu!")
 </pre>
-<p>Se o arquivo não existir, e este código for executado em uma máquina Windows, a saída será:</p>
+<p>Se o arquivo não existir, e este código for executado em uma máquina <b>Windows</b>, a saída será:</p>
 <pre>
 Este programa só pode ser executado em um ambiente Linux!
 </pre>
-<p>Agora se o arquivo não existir, e este código for executado em uma máquina Linux, a saída será:</p>
+<p>Agora se o arquivo não existir, e este código for executado em uma máquina <b>Linux</b>, a saída será:</p>
 <pre>
 [Errno 2] No such file or directory: 'file.log'
 </pre>
-<p>Caso o arquivo existir, e este código for executado em uma máquina Linux, a saída será:</p>
+<p>Caso o arquivo existir, e este código for executado em uma máquina <b>Linux</b>, a saída será:</p>
 <pre>
 Data Roadmap
 Nenhum erro ocorreu!
@@ -277,17 +277,17 @@ else:
 finally:
 &emsp;&emsp;print("Encerrando o bloco!")
 </pre>
-<p>Se o arquivo não existir, e este código for executado em uma máquina Windows, a saída será:</p>
+<p>Se o arquivo não existir, e este código for executado em uma máquina <b>Windows</b>, a saída será:</p>
 <pre>
 Este programa só pode ser executado em um ambiente Linux!
 Encerrando o bloco!
 </pre>
-<p>Agora se o arquivo não existir, e este código for executado em uma máquina Linux, a saída será:</p>
+<p>Agora se o arquivo não existir, e este código for executado em uma máquina <b>Linux</b>, a saída será:</p>
 <pre>
 [Errno 2] No such file or directory: 'file.log'
 Encerrando o bloco!
 </pre>
-<p>Caso o arquivo existir, e este código for executado em uma máquina Linux, a saída será:</p>
+<p>Caso o arquivo existir, e este código for executado em uma máquina <b>Linux</b>, a saída será:</p>
 <pre>
 Data Roadmap
 Nenhum erro ocorreu!
