@@ -1,9 +1,5 @@
 <h1 align="center">CIÊNCIA DE DADOS</h1>
 <p>Uma das profissões que vamos conhecer por aqui é a Ciência de Dados ou Data Science, essa é uma profissão onde você vai poder trabalhar com machine learning e muitas coisas incríveis. Bora lá que primeiro irei apresentar as principais Hard Skills utilizadas na área de Ciência de Dados, mas pode ficar tranquilo caso não saiba algo pois dentro deste Roadmap iremos incluir tudo de necessário para você aprender o que não souber sobre essa área incrível que é Ciência de Dados.</p>
-<h1 align="center">Principais Hard Skills:</h1>
-<p><b>1. Programação. (Python, SQL)</b></p>
-<p><b>2. Estatística.</b></p>
-<p><b>3. Conhecimento da área de Aplicação.</b></p>
 <h1 align="center">Caminho Sugerido para o RoadMap:</h1>
 <ul>
   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python">1. Python</a></li>
@@ -13,6 +9,10 @@
   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados">5. Visualização de Dados com Python</a></li>
   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Modelagem-de-Dados">6. Modelagem de Dados com Python</a></li>
 </ul>
+<h1 align="center">Principais Hard Skills:</h1>
+<p><b>1. Programação. (Python, SQL)</b></p>
+<p><b>2. Estatística.</b></p>
+<p><b>3. Conhecimento da área de Aplicação.</b></p>
 <h2 align="center"> O QUE É CIÊNCIA DE DADOS?</h2>
 <p>A Ciência de Dados é um campo interdisciplinar que utiliza métodos, algoritmos, processos e sistemas científicos para extrair conhecimento e insights a partir de dados, sejam eles estruturados (como tabelas de bancos de dados) ou não estruturados (como texto, áudio e imagens). Ela combina elementos da estatística, da matemática, da programação, da ciência da computação e do conhecimento especializado em um domínio específico para resolver problemas complexos relacionados a dados.</p>
 <p>Principais componentes da Ciência de Dados incluem:</p>
