@@ -29,14 +29,14 @@
    </li>
 </ul>
 
-<h2 align="center">>Roadmaps Completos</h2>
+<h2 align="center">Roadmaps Completos</h2>
 <ul>
     <li>[ ] Data Science Roadmap(Em progresso...)</li>
     <li>[ ] Data Engineer Roadmap</li>
     <li>[ ] Data Analysis Roadmap</li>
 </ul>
 
-<h2 align="center">>Livros</h2>
+<h2 align="center">Livros</h2>
 <p>Abaixo listei os livros que estou lendo e outros que já li que podem-lhe ajudar na <b>Área de Dados</b>.</p>
 
 <ul>
@@ -52,7 +52,7 @@
     <li>[ ] <a href="https://www.amazon.com/gp/product/0578973839/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1">Ace the Data Science Interview: 201 Real Interview Questions Asked By FAANG, Tech Startups, & Wall Street</a></li>
 </ul>
 
-<h2 align="center">>Podcasts</h2>
+<h2 align="center">Podcasts</h2>
 <p>Abaixo coloquei alguns podcasts sobre a <b>Área de Dados</b>.</p>
 <ul>
    <li><a href="https://open.spotify.com/show/0VsNN95jsJVRS424eCFDlg">Let's Data</a></li>
