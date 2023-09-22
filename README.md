@@ -35,9 +35,21 @@
                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/8.Bibliotecas-Basicas-Numpy-Math-Scipy">8. Bibliotecas Básicas: Numpy, Math, SciPy</a></li>
               </ul>
            </li>
-          <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados-com-Python">Manipulação de Dados com Python</a>
+          <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados">Manipulação de Dados com Python</a>
              <ul>
-                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados-com-Python/Pandas">1. Biblioteca: Pandas</a></li>
+                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados/Pandas">1. Biblioteca: Pandas</a></li>
+             </ul>
+          </li>
+          <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados-com-Python">Visualização de Dados com Python</a>
+             <ul>
+                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados/Matplotlib">1. Biblioteca: Matplotlib</a></li>
+                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados/Seaborn">2. Biblioteca: Seaborn</a></li>
+             </ul>
+          </li>
+          <li><a href="#">Modelagem de Dados com Python</a>
+             <ul>
+                 <li><a href="#">1. Regressão Linear: Simples</a></li>
+                 <li><a href="#">2. Regressão Linear: Múltipla</a></li>
              </ul>
           </li>
        </ul>
