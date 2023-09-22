@@ -10,7 +10,7 @@
   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/SQL">2. SQL</a></li>
   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados">3. Manipulação de Dados com Python</a></li>
   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica">4. Estatística</a></li>
-  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados">5. Visualizção de Dados com Python</a></li>
+  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados">5. Visualização de Dados com Python</a></li>
   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Modelagem-de-Dados">6. Modelagem de Dados com Python</a></li>
 </ul>
 <h2 align="center"> O QUE É CIÊNCIA DE DADOS?</h2>
