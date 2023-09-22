@@ -31,8 +31,8 @@
                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/4.Estruturas-de-Repeticao">4. Estruturas de Repetição</a></li>
                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/5.Estruturas-Condicionais">5. Estruturas Condicionais</a></li>
                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/6.Funcoes">6. Funções</a></li>
-                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/7.Bibliotecas-Basicas-Numpy-Math-Scipy">7. Bibliotecas básicas: numpy, math, SciPy</a></li>
-                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/8.Tratamento-de-Erros">8. Tratamento de Erros</a></li>
+                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/7.Tratamento-de-Erros-e-Excecoes">7. Tratamento de Erros e Exceções</a></li>
+                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/8.Bibliotecas-Basicas-Numpy-Math-Scipy">8. Bibliotecas Básicas: Numpy, Math, SciPy</a></li>
               </ul>
            </li>
        </ul>
