@@ -1,58 +1,21 @@
-<h1>Data Roadmap</h1>
+<h1 align="center">Data Roadmap</h1>
 
 <p>O Objetivo deste repósitorio é poder ajudar as outras pessoas no estudo para a Área de Dados, podendo também compartilhar meu conhecimento e o que aprendi sobre essa área que é a minha paixão. Vejo que a Área de Dados tem grande parte da sua documentação em inglês, por isso gostaria de criar um repositório aonde que nós brasileiros possamos nos apoiar e ter uma boa documentação sobre a área.</p>
 <p>Ao longo do tempo vou focar em criar um Roadmap para cada área (Data Engineer, Data Analysis, Data Science, Machine Learning Engineer...), sempre focando em mostrar o necessário para se estudar em cada área.</p>
 <p>Acrescentei a pasta Exercícios aonde irei colocar diversos exercícios de vários níveis diferentes feitos em Python, SQL e outros...</p>
 
 
-<h1>Tabela de Conteúdos</h1>
+<h1 align="center">Caminho Sugerido para o RoadMap:</h1>
 <ul>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap">Data Science Roadmap</a>
        <ul>
-           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica">Estatística</a>
-               <ul>
-                   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/1.Estatistica-Descritiva-Univariada">1. Estatística Descritiva Univariada: Média, Moda e Mediana</a></li>
-                   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/2.Medidas-de-dispersao">2. Medidas de Dispersão: Amplitude, Desvio-Médio, Variância, Desvio-padrão, Erro-padrão</a></li>
-                   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/3.Medidas-de-Assimetria-e-Curtose">3. Medidas de Assimetria(Skewness) e Curtose(Kurtosis)</a></li>
-                   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/4.Medidas-de-Associacao-entre-Variaveis-Quantitativas">4. Medidas de Associação entre Variáveis Quantitativas: Diagrama de Dispersão, Covâriancia, Correlação</a></li>
-                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/5.Probabilidade">5. Probabilidade: Experimento Aleatório, Espaço Amostral, Eventos, Operações com Eventos, Eventos Mutuamento Excludentes, Eventos Independentes, Probabilidade Condicional e Teorema de Bayes</a></li>
-                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/6.Variaveis-Aleatorias-e-Distribuicoes-de-Probabilidade">6. Variáveis Aleatórias e Distribuições de Probabilidade: Esperança Matemática, Variância, Covariância, Coeficiente de Correlação</a></li>
-                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/7.Distribuicoes-Discretas">7. Distribuições Discretas: Distribuição de Bernoulli, Distribuição Binomial, Distribuição de Poisson</a></li>
-                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/8.Distribuicoes-Continuas">8. Distribuições Contínuas: Distribuição Uniforme, Distribuição Normal, Distribuição Log-Normal</a></li>
-                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/9.Distribuicoes-de-Probabilidade-Conjunta">9. Distribuições de Probabilidade Conjunta: Distribuição Conjunta de Variáveis Discretas, Distribuição Conjunta de Variáveis Contínuas.</a></li>
-                  <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/10.Inferencia-Estatistica-e-Principais-Teoremas-de-Probabilidade">10. Inferência Estatística e Principais Teoremas de Probabilidade: Teorema de Chebyshev, Lei dos Grandes Números, Teorema Central do Limite, Intervalo de Confiança, Testes de Hipóteses</a></li>
-               </ul>
-           </li>
-           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python">Python</a>
-              <ul>
-                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/1.Variaveis">1. Variáveis</a></li>
-                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/2.Operadores">2. Operadores</a></li>
-                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/3.Estrutura-Basica-de-Dados">3. Estrutura Básica de Dados</a></li>
-                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/4.Estruturas-de-Repeticao">4. Estruturas de Repetição</a></li>
-                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/5.Estruturas-Condicionais">5. Estruturas Condicionais</a></li>
-                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/6.Funcoes">6. Funções</a></li>
-                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/7.Tratamento-de-Erros-e-Excecoes">7. Tratamento de Erros e Exceções</a></li>
-                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/8.Bibliotecas-Basicas-Numpy-Math-Scipy">8. Bibliotecas Básicas: Numpy, Math, SciPy</a></li>
-              </ul>
-           </li>
-          <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados">Manipulação de Dados com Python</a>
-             <ul>
-                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados/Pandas">1. Biblioteca: Pandas</a></li>
-             </ul>
-          </li>
-          <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados-com-Python">Visualização de Dados com Python</a>
-             <ul>
-                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados/Matplotlib">1. Biblioteca: Matplotlib</a></li>
-                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados/Seaborn">2. Biblioteca: Seaborn</a></li>
-             </ul>
-          </li>
-          <li><a href="#">Modelagem de Dados com Python</a>
-             <ul>
-                 <li><a href="#">1. Regressão Linear: Simples</a></li>
-                 <li><a href="#">2. Regressão Linear: Múltipla</a></li>
-             </ul>
-          </li>
-       </ul>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python">1. Python</a></li>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/SQL">2. SQL</a></li>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados">3. Manipulação de Dados com Python</a></li>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica">4. Estatística</a></li>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados">5. Visualização de Dados com Python</a></li>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Modelagem-de-Dados">6. Modelagem de Dados com Python</a></li>
+      </ul>
    </li>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Exercicios">Exercícios</a>
        <ul>
