@@ -36,6 +36,10 @@
               </ul>
            </li>
           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados-com-Python">Manipulação de Dados com Python</a>
+             <ul>
+                 <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados-com-Python/Pandas">1. Biblioteca: Pandas</a></li>
+             </ul>
+          </li>
        </ul>
    </li>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Exercicios">Exercícios</a>
