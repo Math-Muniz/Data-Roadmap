@@ -7,7 +7,7 @@
   <li><b>Processamento de Imagem e Computação Gráfica:</b> O NumPy fornece algumas excelentes funções de biblioteca para rápida manipulação de imagens. Alguns exemplos são o espelhamento de uma imagem, a rotação de uma imagem por um determinado ângulo etc.</li>
   <li><b>Tarefas matemáticas:</b> NumPy é bastante útil para executar várias tarefas matemáticas como integração numérica, diferenciação, interpolação, extrapolação e muitas outras. O NumPy possui também funções incorporadas para álgebra linear e geração de números aleatórios. É uma biblioteca que pode ser usada em conjuto do SciPy e Mat-plotlib. Substituindo o MATLAB quando se trata de tarefas matemáticas.</li>
 </ul>
-<img src="">
+<img src="Python-Core.webp">
 <h2 align="center">Instalação da biblioteca NumPy</h2>
 <p>O único pré-requisito para instalar o NumPy é ter instalado o próprio Python em sua máquina. Se você ainda não possui o Python, e deseja uma maneira simples e prática de começar, recomendo usar a Distribuição Anaconda, ela inclui Python, NumPy e muitos outros pacotes comumente usados ​​para computação científica e ciência de dados. Disponível para Windows, Mac OS e Linux.</p>
 <p>O NumPy pode ser instalado com pip, no comando no shell:</p>
@@ -18,7 +18,7 @@ pip install numpy
 <p>No núcleo do pacote NumPy, está o objeto ndarray . Isso encapsula arrays n -dimensionais de tipos de dados homogêneos, com muitas operações sendo executadas em código compilado para desempenho. Existem várias diferenças importantes entre os arrays NumPy e as sequências padrão do Python. Mas não vamos nos aprofundar tanto nesses detalhes.</p>
 <p>Na matemática e na física, a dimensão refere-se as coordenadas mínimas de um espaço matemático ou objeto definido de um forma informal para especificar qualquer ponto dentro dele.</p>
 <p>Mas em Numpy, as dimensões são chamadas de eixos. O número de eixos é classificado. Em termos mais simples, quando você tem mais de uma matriz unidimensional, então o conceito do eixo surge. Por exemplo, a matriz 2-D tem 2 eixos.</p>
-<img src="">
+<img src="Array.webp">
 <p>Dessa forma, como mostrado na imagem acima, o eixo 0 atuará em todas as LINHAS de cada COLUNA. E o eixo 1 atuará em todas as COLUNAS de cada LINHA.</p>
 <p>Outro exemplo, as coordenadas de um ponto no espaço 3D [1,2,1] têm um eixo. Esse eixo tem 3 elementos, então dizemos que ele tem um comprimento de 3. No exemplo mostrado abaixo, a Array tem 2 eixos. O primeiro eixo tem um comprimento de 2, o segundo eixo tem um comprimento de 3:</p>
 <pre>
@@ -26,7 +26,7 @@ pip install numpy
 [ 0., 1., 2.]]
 </pre>
 <p>Exemplificando, vamos imaginar que os eixos seja como uma tabela que fazemos no Excel por exemplo, onde temos linhas e colunas. No exemplo acima, temos 2 linhas e 3 colunas por assim dizer.</p>
-<img src="">
+<img src="Table.webp">
 <p>Ou seja, no exemplo da estrutura de elementos que visualizamos anteriormente tem o primeiro eixo com o comprimento de 2, sendo essas as linhas. O segundo eixo com o comprimento de 3 sendo assim as colunas. Olhando dessa maneira e mentalizando essa ideia, fica bem mais simples de aplica um ‘slicing’ ou fatiamento em uma Array Numpy.</p>
 <p>Um Array NumPy é uma extensão de um Array Python, que lida apenas com Arrays Unidimensionais e oferece menos funcionalidade. Os Arrays NumPy são equipados com um grande número de funções e operadores que ajudam a escrever rapidamente códigos de alto desempenho para vários tipos de cálculos que discutimos acima. Vamos ver a seguir como podemos definir rapidamente um Array NumPy Unidimensional.</p>
 <h2 align="center">Arrays NumPy Unidimensional</h2>
