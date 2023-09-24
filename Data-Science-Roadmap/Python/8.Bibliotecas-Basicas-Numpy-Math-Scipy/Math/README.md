@@ -74,7 +74,7 @@ else:
 &emsp;&emsp;print(numero, "não é primo")
 </pre>
 <p>Nesse exemplo, utilizamos a função is_prime para verificar se o número é primo. Caso seja, a mensagem "é primo" é exibida, caso contrário, a mensagem "não é primo" é exibida.</p>
-<h2 align="center">Dicas e boas práticas ao utilizar a biblioteca math do Python</h2>
+<h2 align="center">Mais dicas e boas práticas ao utilizar a biblioteca math do Python</h2>
 <p>Ao utilizar a biblioteca math do Python em seus projetos, existem algumas dicas e boas práticas que podem ser úteis:</p>
 <ul>
   <li>Importe somente o necessário: A biblioteca math possui uma vasta quantidade de funções, porém, nem sempre é necessário importar todas elas. Importe apenas as funções que você irá utilizar em seu código para evitar desperdício de memória.</li>
