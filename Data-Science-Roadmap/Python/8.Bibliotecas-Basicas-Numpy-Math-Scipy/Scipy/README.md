@@ -262,7 +262,7 @@ print(constants.pound_force)     #4.4482216152605
 print(constants.kgf)             #9.80665
 print(constants.kilogram_force)  #9.80665
 </pre>
-<h2 align="center">Otimizadores noScipy</h2>
+<h2 align="center">Otimizadores no Scipy</h2>
 <p>Otimizadores são um conjunto de procedimentos definidos no SciPy que encontram o valor mínimo de uma função ou a raiz de uma equação.</p>
 <h3 align="center">Otimizando funções</h3>
 <p>Essencialmente, todos os algoritmos do Machine Learning nada mais são do que uma equação complexa que precisa ser minimizada com a ajuda de dados fornecidos.</p>
