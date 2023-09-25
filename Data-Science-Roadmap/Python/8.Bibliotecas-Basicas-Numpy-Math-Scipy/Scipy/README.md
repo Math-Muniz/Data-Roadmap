@@ -745,6 +745,159 @@ print(res)
 <pre>
 0,66666666667
 </pre>
+<h2 align="center">SciPy Matlab Arrays</h2>
+<h3 align="center">Trabalhando com matlab matrays</h3>
+<p>Sabemos que o NumPy nos fornece métodos para persistir os dados em formatos legíveis para Python. Mas o SciPy também nos fornece interoperabilidade com o Matlab.</p>
+<p>O SciPy nos fornece o módulo scipy.io, que tem funções para trabalhar com Matlab matrays.</p>
+<h3 align="center">Exportando dados no formato Matlab</h3>
+<p>O savemat() função nos permite exportar dados em Formato Matlab.</p>
+<p>O método usa os seguintes parâmetros:</p>
+<ul>
+  <li><b>nome do arquivo</b> - o nome do arquivo para salvar dados.</li>
+  <li><b>mdict</b> - um dicionário contendo os dados.</li>
+  <li><b>compressão</b> - um valor booleano que especifica se deve comprimir o resultado ou não. Falso padrão.</li>
+</ul>
+<p><b>Exemplo</b></p>
+<p>Exporte a seguinte matriz como nome de variável "vec" para um arquivo mat:</p>
+<pre>
+from scipy import io
+import numpy as np
+
+arr = np.arange(10)
+
+io.savemat('arr.mat', {"vec": arr})
+</pre>
+<h3 align="center">Importar dados do formato Matlab</h3>
+<p>O loadmat() função nos permite importar dados de um Arquivo Matlab.</p>
+<p>A função usa um parâmetro necessário:</p>
+<p><b>nome do arquivo</b> - o nome do arquivo dos dados salvos.</p>
+<p>Ele retornará uma matriz estruturada cujas chaves são os nomes das variáveis e os valores correspondentes são os valores das variáveis.</p>
+<p><b>Exemplo</b></p>
+<p>Importe a matriz do seguinte arquivo mat.:</p>
+<pre>
+from scipy import io
+import numpy as np
+
+arr = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9,])
+
+#Export:
+io.savemat('arr.mat', {"vec": arr})
+
+#Import:
+mydata = io.loadmat('arr.mat')
+
+print(mydata)
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+{
+&emsp;&emsp;'__header__': b'MATLAB 5.0 MAT-file Plataforma: nt, Criado em: Ter 22 de setembro 13:12:32 2020',
+&emsp;&emsp;'__version__': '1.0',
+&emsp;&emsp;'__globals__': [ ],
+&emsp;&emsp;'vec': matriz ( [ [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ] ] )
+ }
+</pre>
+<p>Use o nome da variável "vec" para exibir apenas a matriz dos dados do matlab:</p>
+<p><b>Exemplo</b></p>
+<pre>
+...
+
+print(mydata['vec'])
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+[ [ 0 1 2 3 4 5 6 7 8 9 ] ]
+</pre>
+<p><b>Nota:</b> Podemos ver que a matriz originalmente era 1D, mas na extração aumentou uma dimensão.</p>
+<p>Para resolver isso, podemos passar um argumento adicional squeeze_me=True:</p>
+<p><b>Exemplo</b></p>
+<pre>
+#Import:
+mydata = io.loadmat('arr.mat', squeeze_me=True)
+
+print(mydata['vec'])
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+[ 0 1 2 3 4 5 6 7 8 9 ]
+</pre>
+<h2 align="center">Interpolação no SciPy</h2>
+<h3 align="center">O que é a interpolação?</h3>
+<p>A interpolação é um método para gerar pontos entre determinados pontos.</p>
+<p>Por exemplo: para os pontos 1 e 2, podemos interpolar e encontrar os pontos 1.33 e 1.66.</p>
+<p>A interpolação tem muito uso, no Machine Learning, geralmente lidamos com dados ausentes em um conjunto de dados, a interpolação é frequentemente usada para substituir esses valores.</p>
+<p>Esse método de preenchimento de valores é chamado imputação.</p>
+<p>Além da imputação, a interpolação é frequentemente usada onde precisamos suavizar os pontos discretos em um conjunto de dados.</p>
+<h3 align="center">Como implementá-lo no SciPy?</h3>
+<p>O SciPy nos fornece um módulo chamado scipy.interpolate que tem muitas funções para lidar com a interpolação:</p>
+<h3 align="center">Interpolação 1D</h3>
+<p>A função interp1d() é usado para interpolar uma distribuição com 1 variável.</p>
+<p>Leva x e y pontos e retornos uma função exigível que pode ser chamada com novo x e retorna correspondente y.</p>
+<p><b>Exemplo</b></p>
+<p>Para valores interpolados de xs e ys fornecidos de 2.1, 2.2 ... a 2.9:</p>
+<pre>
+from scipy.interpolate import interp1d
+import numpy as np
+
+xs = np.arange(10)
+ys = 2*xs + 1
+
+interp_func = interp1d(xs, ys)
+
+newarr = interp_func(np.arange(2.1, 3, 0.1))
+
+print(newarr)
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+[ 5,2 5,4 5,6 5,8 6.   6,2 6,4 6,6 6,8 ]
+</pre>
+<h3 align="center">Interpolação Spline</h3>
+<p>Na interpolação 1D, os pontos são adequados para curva única enquanto na interpolação de Spline os pontos são montados contra um bit a pouco função definida com polinômios chamados splines.</p>
+<p>O UnivariateSpline() função leva xs e ys e produza um funciton exigível que pode ser chamado com novo xs.</p>
+<p><b>Exemplo</b></p>
+<p>Encontre interpolação de spline univariada para 2.1, 2.2... 2.9 para os seguintes pontos não lineares:</p>
+<pre>
+from scipy.interpolate import UnivariateSpline
+import numpy as np
+
+xs = np.arange(10)
+ys = xs**2 + np.sin(xs) + 1
+
+interp_func = UnivariateSpline(xs, ys)
+
+newarr = interp_func(np.arange(2.1, 3, 0.1))
+
+print(newarr)
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+[ 5.62826474 6.03987348 6.47131994 6.92265019 7.3939103 7.88514634
+   8.39640439 8.92773053 9.47917082 ]
+</pre>
+<h3 align="center">Interpolação com função de base radial</h3>
+<p>Função de base radial é uma função definida correspondente a um ponto de referência fixo.</p>
+<p>O Rbf() função também leva xs e ys como argumentos e produz uma função exigível que pode ser chamada com novo xs.</p>
+<p><b>Exemplo</b></p>
+<p>Interpolar após xs e ys usando rbf e encontrar valores para 2.1, 2.2 ... 2.9:</p>
+<pre>
+from scipy.interpolate import Rbf
+import numpy as np
+
+xs = np.arange(10)
+ys = xs**2 + np.sin(xs) + 1
+
+interp_func = Rbf(xs, ys)
+
+newarr = interp_func(np.arange(2.1, 3, 0.1))
+
+print(newarr)
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+[ 6.25748981 6.62190817 7.00310702 7.40121814 7.8161443 8.24773402
+   8.69590519 9.16070828 9.64233874 ]
+</pre>
 <h2>Refêrencias</h2>
 <p>https://www.w3schools.com/python/scipy/scipy_intro.php</p>
 <p>https://www.ferrari.pro.br/home/documents/FFerrari-ecosistema-python.pdf</p>
