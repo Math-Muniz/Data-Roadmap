@@ -262,6 +262,69 @@ print(constants.pound_force)     #4.4482216152605
 print(constants.kgf)             #9.80665
 print(constants.kilogram_force)  #9.80665
 </pre>
+<h2 align="center">Scipy Optimizers</h2>
+<h3 align="center">Otimizadores no SciPy</h3>
+<p>Otimizadores são um conjunto de procedimentos definidos no SciPy que encontram o valor mínimo de uma função ou a raiz de uma equação.</p>
+<h3 align="center">Otimizando funções</h3>
+<p>Essencialmente, todos os algoritmos do Machine Learning nada mais são do que uma equação complexa que precisa ser minimizada com a ajuda de dados fornecidos.</p>
+<h3 align="center">Raízes de uma equação</h3>
+<p>O NumPy é capaz de encontrar raízes para polinômios e equações lineares, mas não consegue encontrar raízes para não equações lineares, como esta:</p>
+<pre>
+x + cos(x)
+</pre>
+<p>Para isso, você pode usar o SciPy's optimze.root função.</p>
+<p>Esta função usa dois argumentos necessários:</p>
+<p><b>Diversão</b> - uma função representando uma equação.</p>
+<p><b>x0</b> - um palpite inicial para a raiz.</p>
+<p>A função retorna um objeto com informações sobre a solução.</p>
+<p>A solução real é fornecida no atributo x do objeto retornado:</p>
+<p><b>Exemplo</b></p>
+<p>Encontre raiz da equação x + cos(x):</p>
+<pre>
+from scipy.optimize import root
+from math import cos
+
+def eqn(x):
+&emsp;&emsp;return x + cos(x)
+
+myroot = root(eqn, 0)
+
+print(myroot.x)
+</pre>
+<p><b>Solução</b></p>
+<pre>
+[-0.73908513]
+</pre>
+<h3 align="center">Minimizando uma função</h3>
+<p>Uma função, neste contexto, representa uma curva, as curvas têm pontos altos e pontos baixos.</p>
+<p>Pontos altos são chamados maxima.</p>
+<p>Pontos baixos são chamados mínimos.</p>
+<p>O ponto mais alto de toda a curva é chamado máximos globais, enquanto o resto deles é chamado maxima local.</p>
+<p>O ponto mais baixo de toda a curva é chamado mínimos globais, enquanto o resto deles é chamado mínimos locais.</p>
+<h3 align="center">Encontrando mínimos</h3>
+<p>Nós podemos usar scipy.optimize.minimize() função para minimizar a função.</p>
+<p>O minimize() A função usa os seguintes argumentos:</p>
+<p><b>Diversão</b> - uma função representando uma equação.</p>
+<p><b>x0</b> - um palpite inicial para a raiz.</p>
+<p><b>Método</b> - nome do método a ser usado. Valores legais:</p>
+<pre>
+'CG'
+'BFGS'
+'Newton-CG'
+'L-BFGS-B'
+'TNC'
+'COBYLA'
+'SLSQP'
+</pre>
+<p><b>Retorno de Chamada</b> - função chamada após cada iteração de otimização.</p>
+<p><b>Opções</b> - um dicionário que define parâmetros extras:</p>
+<pre>
+{
+&emsp;&emsp;&emsp;&emsp;"disp": boolean - print detailed description
+&emsp;&emsp;&emsp;&emsp;"gtol": number - the tolerance of the error
+  }
+</pre>
+
 <h2>Refêrencias</h2>
 <p>https://www.w3schools.com/python/scipy/scipy_intro.php</p>
 <p>https://www.ferrari.pro.br/home/documents/FFerrari-ecosistema-python.pdf</p>
