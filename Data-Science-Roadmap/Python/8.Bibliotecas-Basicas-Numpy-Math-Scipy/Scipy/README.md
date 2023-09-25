@@ -262,8 +262,7 @@ print(constants.pound_force)     #4.4482216152605
 print(constants.kgf)             #9.80665
 print(constants.kilogram_force)  #9.80665
 </pre>
-<h2 align="center">Scipy Optimizers</h2>
-<h3 align="center">Otimizadores no SciPy</h3>
+<h2 align="center">Otimizadores noScipy</h2>
 <p>Otimizadores são um conjunto de procedimentos definidos no SciPy que encontram o valor mínimo de uma função ou a raiz de uma equação.</p>
 <h3 align="center">Otimizando funções</h3>
 <p>Essencialmente, todos os algoritmos do Machine Learning nada mais são do que uma equação complexa que precisa ser minimizada com a ajuda de dados fornecidos.</p>
@@ -324,7 +323,106 @@ print(myroot.x)
 &emsp;&emsp;&emsp;&emsp;"gtol": number - the tolerance of the error
   }
 </pre>
+<h2 align="center">Dados Esparsos no SciPy</h2>
+<h3 align="center">O que são dados esparsos</h3>
+<p>Dados esparsos são dados que têm elementos principalmente não utilizados ( que não transportam nenhuma informação ).</p>
+<p>Pode ser uma matriz como esta:</p>
+<pre>
+[1, 0, 2, 0, 0, 3, 0, 0, 0, 0, 0, 0]
+</pre>
+<ul>
+  <li><b>Dados Esparsos</b>: é um conjunto de dados em que a maioria dos valores do item é zero.</li>
+  <li><b>Matriz Densa</b>: é o oposto de uma matriz esparsa: a maioria dos valores é não zero.</li>
+</ul>
+<p>Na computação científica, quando estamos lidando com derivados parciais na álgebra linear, encontraremos dados esparsos.</p>
+<h3 align="center">Como Trabalhar com Dados Esparsos</h3>
+<p>O SciPy possui um módulo, scipy.sparse que fornece funções para lidar com dados esparsos.</p>
+<p>Existem principalmente dois tipos de matrizes esparsas que usamos:</p>
+<p><b>CSC</b> - coluna esparsa comprimida. Para aritmética eficiente, fatiamento rápido da coluna.</p>
+<p><b>RSE</b> - Linha esparsa comprimida. Para fatiar rapidamente a linha, mais rápido produtos vetoriais matriciais</p>
+<p>Vamos usar o <b>RSE</b> matriz neste tutorial.</p>
+<h3 align="center">Matriz de RSE</h3>
+<p>Podemos criar matriz de CSR passando uma matriz para a função scipy.sparse.csr_matrix().</p>
+<p><b>Exemplo</b></p>
+<p>Crie uma matriz CSR a partir de uma matriz:</p>
+<pre>
+import numpy as np
+from scipy.sparse import csr_matrix
 
+arr = np.array([0, 0, 0, 0, 0, 1, 1, 0, 2])
+
+print(csr_matrix(arr))
+</pre>
+<p>O exemplo acima retorna:</p>
+<pre>
+( 0, 5 ) 1
+( 0, 6 ) 1
+( 0, 8 ) 2
+</pre>
+<p>A partir do resultado, podemos ver que existem 3 itens com valor.</p>
+<p>O item 1. está na linha 0 posição 5 e tem o valor 1.</p>
+<p>O item 2. está na linha 0 posição 6 e tem o valor 1.</p>
+<p>O item 3. está na linha 0 posição 8 e tem o valor 2.</p>
+<h3 align="center">Métodos de Matriz Esparsa</h3>
+<p>Exibindo dados armazenados ( não os itens zero ) com o data propriedade:</p>
+<p><b>Exemplo</b></p>
+<pre>
+import numpy as np
+from scipy.sparse import csr_matrix
+
+arr = np.array([[0, 0, 0], [0, 0, 1], [1, 0, 2]])
+
+print(csr_matrix(arr).data)
+</pre>
+<p>Contando nonzeros com o count_nonzero() método:</p>
+<p><b>Exemplo</b></p>
+<pre>
+import numpy as np
+from scipy.sparse import csr_matrix
+
+arr = np.array([[0, 0, 0], [0, 0, 1], [1, 0, 2]])
+
+print(csr_matrix(arr).count_nonzero())
+</pre>
+<p>Remoção de entradas zero da matriz com a eliminate_zeros() método:</p>
+<p><b>Exemplo</b></p>
+<pre>
+import numpy as np
+from scipy.sparse import csr_matrix
+
+arr = np.array([[0, 0, 0], [0, 0, 1], [1, 0, 2]])
+
+mat = csr_matrix(arr)
+mat.eliminate_zeros()
+
+print(mat)
+</pre>
+<p>Eliminando entradas duplicadas com o sum_duplicates() método:</p>
+<p><b>Exemplo</b></p>
+<p>Eliminando duplicatas adicionando-as:</p>
+<pre>
+import numpy as np
+from scipy.sparse import csr_matrix
+
+arr = np.array([[0, 0, 0], [0, 0, 1], [1, 0, 2]])
+
+mat = csr_matrix(arr)
+mat.sum_duplicates()
+
+print(mat)
+</pre>
+<p>Convertendo de csr para csc com o tocsc() método:</p>
+<p><b>Exemplo</b></p>
+<pre>
+import numpy as np
+from scipy.sparse import csr_matrix
+
+arr = np.array([[0, 0, 0], [0, 0, 1], [1, 0, 2]])
+
+newarr = csr_matrix(arr).tocsc()
+
+print(newarr)
+</pre>
 <h2>Refêrencias</h2>
 <p>https://www.w3schools.com/python/scipy/scipy_intro.php</p>
 <p>https://www.ferrari.pro.br/home/documents/FFerrari-ecosistema-python.pdf</p>
