@@ -47,7 +47,7 @@ from scipy import constants
 
 print(dir(constants))
 </pre>
-<h3 align="center">Categorias de unidade</h3>
+<h3 align="center">Categorias de Unidade</h3>
 <p>As unidades são colocadas nessas categorias:</p>
 <ul>
   <li>Métrica</li>
@@ -264,9 +264,9 @@ print(constants.kilogram_force)  #9.80665
 </pre>
 <h2 align="center">Otimizadores no Scipy</h2>
 <p>Otimizadores são um conjunto de procedimentos definidos no SciPy que encontram o valor mínimo de uma função ou a raiz de uma equação.</p>
-<h3 align="center">Otimizando funções</h3>
+<h3 align="center">Otimizando Funções</h3>
 <p>Essencialmente, todos os algoritmos do Machine Learning nada mais são do que uma equação complexa que precisa ser minimizada com a ajuda de dados fornecidos.</p>
-<h3 align="center">Raízes de uma equação</h3>
+<h3 align="center">Raízes de uma Equação</h3>
 <p>O NumPy é capaz de encontrar raízes para polinômios e equações lineares, mas não consegue encontrar raízes para não equações lineares, como esta:</p>
 <pre>
 x + cos(x)
@@ -294,13 +294,13 @@ print(myroot.x)
 <pre>
 [-0.73908513]
 </pre>
-<h3 align="center">Minimizando uma função</h3>
+<h3 align="center">Minimizando uma Função</h3>
 <p>Uma função, neste contexto, representa uma curva, as curvas têm pontos altos e pontos baixos.</p>
 <p>Pontos altos são chamados maxima.</p>
 <p>Pontos baixos são chamados mínimos.</p>
 <p>O ponto mais alto de toda a curva é chamado máximos globais, enquanto o resto deles é chamado maxima local.</p>
 <p>O ponto mais baixo de toda a curva é chamado mínimos globais, enquanto o resto deles é chamado mínimos locais.</p>
-<h3 align="center">Encontrando mínimos</h3>
+<h3 align="center">Encontrando Mínimos</h3>
 <p>Nós podemos usar scipy.optimize.minimize() função para minimizar a função.</p>
 <p>O minimize() A função usa os seguintes argumentos:</p>
 <p><b>Diversão</b> - uma função representando uma equação.</p>
@@ -424,7 +424,7 @@ newarr = csr_matrix(arr).tocsc()
 print(newarr)
 </pre>
 <h2 align="center">SciPy Gráficos</h2>
-<h3 align="center">Trabalhando com gráficos</h3>
+<h3 align="center">Trabalhando com Gráficos</h3>
 <p>Os gráficos são uma estrutura de dados essencial.</p>
 <p>O SciPy nos fornece o módulo scipy.sparse.csgraph para trabalhar com essas estruturas de dados.</p>
 <h3 align="center">Matriz de Adjacência</h3>
@@ -438,13 +438,13 @@ print(newarr)
 <p>C & B não está conectado.</p>
 <p>A Matriz de Adjência ficaria assim:</p>
 <pre>
-&emsp;&emsp;&emsp;&emsp;A B C
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;A B C
 &emsp;&emsp;A: [ 0 1 2 ]  
 &emsp;&emsp;B: [ 1 0 0 ]
 &emsp;&emsp;C: [ 2 0 0 ]
 </pre>
 <p>Abaixo, seguem alguns dos métodos mais usados para trabalhar com matrizes de adjacência.</p>
-<h3 align="center">Componentes conectados</h3>
+<h3 align="center">Componentes Conectados</h3>
 <p>Encontre todos os componentes conectados com o connected_components() método.</p>
 <p><b>Exemplo</b></p>
 <pre>
@@ -610,7 +610,7 @@ plt.show()
 </pre>
 <p><b>Resultado:</b></p>
 <img src="Triangulacao.png">
-<h3 align="center">Casco convexo</h3>
+<h3 align="center">Casco Convexo</h3>
 <p>Um casco convexo é o menor polígono que cobre todos os pontos indicados.</p>
 <p>Use o ConvexHull() método para criar um casco convexo.</p>
 <p><b>Exemplo</b></p>
@@ -707,7 +707,7 @@ print(res)
 <pre>
 11
 </pre>
-<h3 align="center">Distância do cosseno</h3>
+<h3 align="center">Distância do Cosseno</h3>
 <p>É o valor do ângulo de cosseno entre os dois pontos A e B.</p>
 <p><b>Exemplo</b></p>
 <p>Encontre a distensão do cosseno entre os pontos indicados:</p>
@@ -746,7 +746,7 @@ print(res)
 0,66666666667
 </pre>
 <h2 align="center">SciPy Matlab Arrays</h2>
-<h3 align="center">Trabalhando com matlab matrays</h3>
+<h3 align="center">Trabalhando com Matlab Arrays</h3>
 <p>Sabemos que o NumPy nos fornece métodos para persistir os dados em formatos legíveis para Python. Mas o SciPy também nos fornece interoperabilidade com o Matlab.</p>
 <p>O SciPy nos fornece o módulo scipy.io, que tem funções para trabalhar com Matlab matrays.</p>
 <h3 align="center">Exportando dados no formato Matlab</h3>
@@ -767,7 +767,7 @@ arr = np.arange(10)
 
 io.savemat('arr.mat', {"vec": arr})
 </pre>
-<h3 align="center">Importar dados do formato Matlab</h3>
+<h3 align="center">Importar Dados do Formato Matlab</h3>
 <p>O loadmat() função nos permite importar dados de um Arquivo Matlab.</p>
 <p>A função usa um parâmetro necessário:</p>
 <p><b>nome do arquivo</b> - o nome do arquivo dos dados salvos.</p>
@@ -822,13 +822,13 @@ print(mydata['vec'])
 [ 0 1 2 3 4 5 6 7 8 9 ]
 </pre>
 <h2 align="center">Interpolação no SciPy</h2>
-<h3 align="center">O que é a interpolação?</h3>
+<h3 align="center">O que é a Interpolação?</h3>
 <p>A interpolação é um método para gerar pontos entre determinados pontos.</p>
 <p>Por exemplo: para os pontos 1 e 2, podemos interpolar e encontrar os pontos 1.33 e 1.66.</p>
 <p>A interpolação tem muito uso, no Machine Learning, geralmente lidamos com dados ausentes em um conjunto de dados, a interpolação é frequentemente usada para substituir esses valores.</p>
 <p>Esse método de preenchimento de valores é chamado imputação.</p>
 <p>Além da imputação, a interpolação é frequentemente usada onde precisamos suavizar os pontos discretos em um conjunto de dados.</p>
-<h3 align="center">Como implementá-lo no SciPy?</h3>
+<h3 align="center">Como Implementá-lo no SciPy?</h3>
 <p>O SciPy nos fornece um módulo chamado scipy.interpolate que tem muitas funções para lidar com a interpolação:</p>
 <h3 align="center">Interpolação 1D</h3>
 <p>A função interp1d() é usado para interpolar uma distribuição com 1 variável.</p>
@@ -875,7 +875,7 @@ print(newarr)
 [ 5.62826474 6.03987348 6.47131994 6.92265019 7.3939103 7.88514634
    8.39640439 8.92773053 9.47917082 ]
 </pre>
-<h3 align="center">Interpolação com função de base radial</h3>
+<h3 align="center">Interpolação com Função de Base Radial</h3>
 <p>Função de base radial é uma função definida correspondente a um ponto de referência fixo.</p>
 <p>O Rbf() função também leva xs e ys como argumentos e produz uma função exigível que pode ser chamada com novo xs.</p>
 <p><b>Exemplo</b></p>
@@ -914,14 +914,14 @@ print(newarr)
 <p>Para uma avaliação de um aluno, tomaríamos:</p>
 <p>"estudante é pior que a média" - como hipótese nula, e:</p>
 <p>"estudante é melhor que a média" - como uma hipótese alternativa.</p>
-<h3 align="center">Um teste de cauda</h3>
+<h3 align="center">Um Teste de Cauda</h3>
 <p>Quando nossa hipótese está testando apenas um lado do valor, ela é chamada de "teste de uma cauda".</p>
 <p><b>Exemplo:</b></p>
 <p>Para a hipótese nula:</p>
 <p>"a média é igual a k", podemos ter hipóteses alternativas:</p>
 <p>"a média é menor que k", ou:</p>
 <p>"a média é maior que k"</p>
-<h3 align="center">Teste de duas caudas</h3>
+<h3 align="center">Teste de Duas Caudas</h3>
 <p>Quando nossa hipótese está testando para os dois lados dos valores.</p>
 <p><b>Exemplo:</b></p>
 <p>Para a hipótese nula:</p>
@@ -1026,7 +1026,7 @@ print(res)
   )
 </pre>
 <h3 align="center">Testes de normalidade ( Skewness e Kurtosis )</h3>
-<p>Os testes de normalidade são baseados na inclinação e na kurtosia.</p>
+<p>Os testes de normalidade são baseados na inclinação e na kurtosis.</p>
 <p>O normaltest() função retorna valor p para a hipótese nula:</p>
 <p>"x vem de uma distribuição normal".</p>
 <p><b>Skewness:</b></p>
