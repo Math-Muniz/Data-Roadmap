@@ -40,7 +40,7 @@ print(constants.liter)
 <h3 align="center">Constantes no SciPy</h3>
 <p>Como o SciPy é mais focado em implementações científicas, ele fornece muitas constantes científicas internas.</p>
 <p>Essas constantes podem ser úteis quando você trabalha com a Data Science.</p>
-<h3 align="center">Unidades de constante</h3>
+<h3 align="center">Unidades de Constante</h3>
 <p>Uma lista de todas as unidades no módulo de constantes pode ser vista usando o dir() função.</p>
 <pre>
 from scipy import constants
