@@ -431,7 +431,7 @@ print(newarr)
 <p>Matriz de adjacência é uma nxn matriz onde n é o número de elementos em um gráfico.</p>
 <p>E os valores representam a conexão entre os elementos.</p>
 <p><b>Exemplo:</b></p>
-<img src="">
+<img src="Matriz.png">
 <p>Para um gráfico como este, com os elementos A, B e C, as conexões são:</p>
 <p>A & B estão conectados com o peso 1.</p>
 <p>A & C estão conectados com o peso 2.</p>
