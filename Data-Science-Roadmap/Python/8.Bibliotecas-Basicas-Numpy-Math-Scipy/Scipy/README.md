@@ -898,6 +898,176 @@ print(newarr)
 [ 6.25748981 6.62190817 7.00310702 7.40121814 7.8161443 8.24773402
    8.69590519 9.16070828 9.64233874 ]
 </pre>
+<h2 align="center">Interpolação no SciPy</h2>
+<h3 align="center">O que é o Teste de Significado Estatístico?</h3>
+<p>Nas estatísticas, significância estatística significa que o resultado produzido tem uma razão por trás, não foi produzido aleatoriamente ou por acaso.</p>
+<p>O SciPy nos fornece um módulo chamado scipy.stats, que tem funções para executar testes de significância estatística.</p>
+<p>Aqui estão algumas técnicas e palavras-chave que são importantes ao executar esses testes:</p>
+<h3 align="center">Hipótese em Estatística</h3>
+<p>Hipótese é uma suposição sobre um parâmetro na população.</p>
+<h3 align="center">Hipótese Nula</h3>
+<p>Supõe que a observação não é estatisticamente significativa.</p>
+<h3 align="center">Hipótese Alternativa</h3>
+<p>Ele pressupõe que as observações sejam devidas a algum motivo.</p>
+<p>É alternativo à hipótese nula.</p>
+<p><b>Exemplo:</b></p>
+<p>Para uma avaliação de um aluno, tomaríamos:</p>
+<p>"estudante é pior que a média" - como hipótese nula, e:</p>
+<p>"estudante é melhor que a média" - como uma hipótese alternativa.</p>
+<h3 align="center">Um teste de cauda</h3>
+<p>Quando nossa hipótese está testando apenas um lado do valor, ela é chamada de "teste de uma cauda".</p>
+<p><b>Exemplo:</b></p>
+<p>Para a hipótese nula:</p>
+<p>"a média é igual a k", podemos ter hipóteses alternativas:</p>
+<p>"a média é menor que k", ou:</p>
+<p>"a média é maior que k"</p>
+<h3 align="center">Teste de duas caudas</h3>
+<p>Quando nossa hipótese está testando para os dois lados dos valores.</p>
+<p><b>Exemplo:</b></p>
+<p>Para a hipótese nula:</p>
+<p>"a média é igual a k", podemos ter hipóteses alternativas:</p>
+<p>"a média não é igual a k"</p>
+<p>Nesse caso, a média é menor ou maior que k e os dois lados devem ser verificados.</p>
+<h3 align="center">Valor Alfa</h3>
+<p>O valor alfa é o nível de significância.</p>
+<p><b>Exemplo:</b></p>
+<p>Quão perto dos extremos os dados devem estar para que a hipótese nula seja rejeitada.</p>
+<p>Geralmente é tomado como 0,01, 0,05 ou 0,1.</p>
+<h3 align="center">Valor P</h3>
+<p>O valor P informa o quão perto dos dados são realmente extremos.</p>
+<p>O valor P e os valores alfa são comparados para estabelecer a significância estatística.</p>
+<p>Se o valor de p <= alfa, rejeitamos a hipótese nula e dizemos que os dados são estatisticamente significativos. caso contrário, aceitamos a hipótese nula.</p>
+<h3 align="center">Teste T</h3>
+<p>Testes T são usados para determinar se há deferência significativa entre meios de duas variáveis e nos avise se eles pertencem à mesma distribuição.</p>
+<p>É um teste de duas caudas.</p>
+<p>A função ttest_ind() pega duas amostras do mesmo tamanho e produz uma tupla de t-estatística e valor p.</p>
+<p><b>Exemplo</b></p>
+<p>Encontre se os valores fornecidos v1 e v2 são da mesma distribuição:</p>
+<pre>
+import numpy as np
+from scipy.stats import ttest_ind
+
+v1 = np.random.normal(size=100)
+v2 = np.random.normal(size=100)
+
+res = ttest_ind(v1, v2)
+
+print(res)
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+Ttest_indResult ( estatístico = 0,40833510339674095, valor = 0,68346891833752133 )
+</pre>
+<p>Se você deseja retornar apenas o valor p, use o pvalue propriedade:</p>
+<p><b>Exemplo</b></p>
+<pre>
+...
+res = ttest_ind(v1, v2).pvalue
+
+print(res)
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+0,68346891833752133
+</pre>
+<h3 align="center">Teste KS</h3>
+<p>O teste KS é usado para verificar se determinados valores seguem uma distribuição.</p>
+<p>A função leva o valor a ser testado e o CDF como dois parâmetros.</p>
+<p>A <b>CDF</b> pode ser uma sequência ou uma função exigível que retorna a probabilidade.</p>
+<p>Pode ser usado como um teste de uma cauda ou duas caudas.</p>
+<p>Por padrão, são duas caudas. Podemos passar a alternativa de parâmetro como uma sequência de um dos dois lados, menos ou maior.</p>
+<p><b>Exemplo</b></p>
+<p>Encontre se o valor fornecido segue a distribuição normal:</p>
+<pre>
+import numpy as np
+from scipy.stats import kstest
+
+v = np.random.normal(size=100)
+
+res = kstest(v, 'norm')
+
+print(res)
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+KstestResult ( estatístico = 0,047798701221956841, valor = 0,97630967161777515 )
+</pre>
+<h3 align="center">Descrição Estatística dos Dados</h3>
+<p>Para ver um resumo dos valores em uma matriz, podemos usar o describe() função.</p>
+<p>Retorna a seguinte descrição:</p>
+<ul>
+  <li>número de observações ( nobs )</li>
+  <li>valores mínimos e máximos = minmax</li>
+  <li>mean (média)</li>
+  <li>variance (variância)</li>
+  <li>skewness</li>
+  <li>kurtosis</li>
+</ul>
+<p><b>Exemplo</b></p>
+<p>Mostrar descrição estatística dos valores em uma matriz:</p>
+<pre>
+import numpy as np
+from scipy.stats import describe
+
+v = np.random.normal(size=100)
+res = describe(v)
+
+print(res)
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+  DescreverResult (
+    nobs = 100,
+    minmax = ( -2.0991855456740121, 2.1304142707414964 ),
+    mean = 0,11503747689121079,
+    variance = 0,99418092655064605,
+    skewness = 0,013953400984243667,
+    kurtosis = -0,671060517912661
+  )
+</pre>
+<h3 align="center">Testes de normalidade ( Skewness e Kurtosis )</h3>
+<p>Os testes de normalidade são baseados na inclinação e na kurtosia.</p>
+<p>O normaltest() função retorna valor p para a hipótese nula:</p>
+<p>"x vem de uma distribuição normal".</p>
+<p><b>Skewness:</b></p>
+<p>Uma medida de simetria nos dados.</p>
+<p>Para distribuições normais, é 0.</p>
+<p>Se for negativo, significa que os dados são distorcidos para a esquerda.</p>
+<p>Se for positivo, significa que os dados estão distorcidos corretamente.</p>
+<p><b>Kurtosis:</b></p>
+<p>Uma medida sobre se os dados são pesados ou levemente direcionados para uma distribuição normal.</p>
+<p>Kurtose positiva significa cauda pesada.</p>
+<p>Kurtose negativa significa levemente caudal.</p>
+<p><b>Exemplo</b></p>
+<p>Encontre a inclinação e a kurtosis dos valores em uma matriz:</p>
+<pre>
+import numpy as np
+from scipy.stats import skew, kurtosis
+
+v = np.random.normal(size=100)
+
+print(skew(v))
+print(kurtosis(v))
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+0.11168446328610283
+-0,1879320563260931
+</pre>
+<p><b>Exemplo</b></p>
+<p>Descubra se os dados vêm de uma distribuição normal:</p>
+<pre>
+import numpy as np
+from scipy.stats import normaltest
+
+v = np.random.normal(size=100)
+
+print(normaltest(v))
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+NormaltestResult ( estatístico = 4.4783745697002848, valor = 0.10654505998635538 )
+</pre>
 <h2>Refêrencias</h2>
 <p>https://www.w3schools.com/python/scipy/scipy_intro.php</p>
 <p>https://www.ferrari.pro.br/home/documents/FFerrari-ecosistema-python.pdf</p>
