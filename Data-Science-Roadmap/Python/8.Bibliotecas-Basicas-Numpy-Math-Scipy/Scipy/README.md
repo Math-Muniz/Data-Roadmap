@@ -575,6 +575,176 @@ newarr = csr_matrix(arr)
 
 print(breadth_first_order(newarr, 1))
 </pre>
+<h2 align="center">Dados Espaciais no Scipy</h2>
+<h3 align="center">Trabalhando com dados espaciais</h3>
+<p>Dados espaciais referem-se a dados representados em um espaço geométrico.</p>
+<p>Por exemplo. aponta para um sistema de coordenadas.</p>
+<p>Lidamos com problemas de dados espaciais em muitas tarefas.</p>
+<p>Por exemplo. descobrir se um ponto está dentro de um limite ou não.</p>
+<p>O SciPy nos fornece o módulo scipy.spatial, que tem funções para trabalhar com dados espaciais.</p>
+<h3 align="center">Triangulação</h3>
+<p>Uma triangulação de um polígono é dividir o polígono em múltiplo triângulos com os quais podemos calcular uma área do polígono.</p>
+<p>Uma triangulação com pontos significa criar triângulos compostos por superfície nos quais todos dos pontos dados estão em pelo menos um vértice de qualquer triângulo na superfície.</p>
+<p>Um método para gerar essas triangulações através de pontos é o Delaunay() Triangulação.</p>
+<p><b>Exemplo</b></p>
+<p>Crie uma triangulação a partir dos seguintes pontos:</p>
+<pre>
+import numpy as np
+from scipy.spatial import Delaunay
+import matplotlib.pyplot as plt
+
+points = np.array([
+  [2, 4],
+  [3, 4],
+  [3, 0],
+  [2, 2],
+  [4, 1]
+])
+
+simplices = Delaunay(points).simplices
+
+plt.triplot(points[:, 0], points[:, 1], simplices)
+plt.scatter(points[:, 0], points[:, 1], color='r')
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="Triangulacao.png">
+<h3 align="center">Casco convexo</h3>
+<p>Um casco convexo é o menor polígono que cobre todos os pontos indicados.</p>
+<p>Use o ConvexHull() método para criar um casco convexo.</p>
+<p><b>Exemplo</b></p>
+<p>Crie um casco convexo para os seguintes pontos:</p>
+<pre>
+import numpy as np
+from scipy.spatial import ConvexHull
+import matplotlib.pyplot as plt
+
+points = np.array([
+  [2, 4],
+  [3, 4],
+  [3, 0],
+  [2, 2],
+  [4, 1],
+  [1, 2],
+  [5, 0],
+  [3, 1],
+  [1, 2],
+  [0, 2]
+])
+
+hull = ConvexHull(points)
+hull_points = hull.simplices
+
+plt.scatter(points[:,0], points[:,1])
+for simplex in hull_points:
+&emsp;&emsp;plt.plot(points[simplex,0], points[simplex,1], 'k-')
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="Convexo.png">
+<h3 align="center">KDTrees</h3>
+<p>KDTrees é uma estrutura de dados otimizada para consultas de vizinhos mais próximas.</p>
+<p>Por exemplo. em um conjunto de pontos usando o KDTrees, podemos perguntar com eficiência quais pontos estão mais próximos de um determinado ponto.</p>
+<p>O KDTree() método retorna um objeto KDTree.</p>
+<p>O query() método retorna a distância para o vizinho mais próximo e a localização dos vizinhos.</p>
+<p><b>Exemplo</b></p>
+<p>Encontre o vizinho mais próximo para apontar ( 1,1 ):</p>
+<pre>
+from scipy.spatial import KDTree
+
+points = [(1, -1), (2, 3), (-2, 3), (2, -3)]
+
+kdtree = KDTree(points)
+
+res = kdtree.query((1, 1))
+
+print(res)
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+( 2.0, 0 )
+</pre>
+<h3 align="center">Matriz de Distância</h3>
+<p>Existem muitas métricas de distância usadas para encontrar vários tipos de distâncias entre dois pontos na ciência de dados, distsância euclidiana, distsância de cosseno etc.</p>
+<p>A distância entre dois vetores pode não ser apenas o comprimento da linha reta entre eles, também pode ser o ângulo entre eles desde a origem ou o número de etapas da unidade necessárias etc.</p>
+<p>Muito do desempenho do algoritmo de aprendizado de máquina depende muito das métricas de distância. Por exemplo. "K vizinhos mais próximos" ou "K Means" etc.</p>
+<p>Vejamos alguns dos Métricos de Distância:</p>
+<h3 align="center">Distância Euclidiana</h3>
+<p>Encontre a distância euclidiana entre os pontos indicados.</p>
+<p><b>Exemplo</b></p>
+<pre>
+from scipy.spatial.distance import euclidean
+
+p1 = (1, 0)
+p2 = (10, 2)
+
+res = euclidean(p1, p2)
+
+print(res)
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+ 9.21954445729
+</pre>
+<h3 align="center">Distância do Cityblock ( Distância de Manhattan )</h3>
+<p>A distância é calculada usando 4 graus de movimento.</p>
+<p>Por exemplo. só podemos nos mover: para cima, para baixo, para a direita ou para a esquerda, não na diagonal.</p>
+<p><b>Exemplo</b></p>
+<p>Encontre a distância do bloco da cidade entre os pontos indicados:</p>
+<pre>
+from scipy.spatial.distance import cityblock
+
+p1 = (1, 0)
+p2 = (10, 2)
+
+res = cityblock(p1, p2)
+
+print(res)
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+11
+</pre>
+<h3 align="center">Distância do cosseno</h3>
+<p>É o valor do ângulo de cosseno entre os dois pontos A e B.</p>
+<p><b>Exemplo</b></p>
+<p>Encontre a distensão do cosseno entre os pontos indicados:</p>
+<pre>
+from scipy.spatial.distance import cosine
+
+p1 = (1, 0)
+p2 = (10, 2)
+
+res = cosine(p1, p2)
+
+print(res)
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+0,019419324309079777
+</pre>
+<p></p>
+<h3 align="center">Distância de Hamming</h3>
+<p>É a proporção de bits em que dois bits são diferentes.</p>
+<p>É uma maneira de medir a distância para sequências binárias.</p>
+<p><b>Exemplo</b></p>
+<p>Encontre a distância de presunto entre os pontos indicados:</p>
+<pre>
+from scipy.spatial.distance import hamming
+
+p1 = (True, False, True)
+p2 = (False, True, True)
+
+res = hamming(p1, p2)
+
+print(res)
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+0,66666666667
+</pre>
 <h2>Refêrencias</h2>
 <p>https://www.w3schools.com/python/scipy/scipy_intro.php</p>
 <p>https://www.ferrari.pro.br/home/documents/FFerrari-ecosistema-python.pdf</p>
