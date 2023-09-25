@@ -423,6 +423,158 @@ newarr = csr_matrix(arr).tocsc()
 
 print(newarr)
 </pre>
+<h2 align="center">SciPy Gráficos</h2>
+<h3 align="center">Trabalhando com gráficos</h3>
+<p>Os gráficos são uma estrutura de dados essencial.</p>
+<p>O SciPy nos fornece o módulo scipy.sparse.csgraph para trabalhar com essas estruturas de dados.</p>
+<h3 align="center">Matriz de Adjacência</h3>
+<p>Matriz de adjacência é uma nxn matriz onde n é o número de elementos em um gráfico.</p>
+<p>E os valores representam a conexão entre os elementos.</p>
+<p><b>Exemplo:</b></p>
+<img src="">
+<p>Para um gráfico como este, com os elementos A, B e C, as conexões são:</p>
+<p>A & B estão conectados com o peso 1.</p>
+<p>A & C estão conectados com o peso 2.</p>
+<p>C & B não está conectado.</p>
+<p>A Matriz de Adjência ficaria assim:</p>
+<pre>
+&emsp;&emsp;&emsp;&emsp;A B C
+&emsp;&emsp;A: [ 0 1 2 ]  
+&emsp;&emsp;B: [ 1 0 0 ]
+&emsp;&emsp;C: [ 2 0 0 ]
+</pre>
+<p>Abaixo, seguem alguns dos métodos mais usados para trabalhar com matrizes de adjacência.</p>
+<h3 align="center">Componentes conectados</h3>
+<p>Encontre todos os componentes conectados com o connected_components() método.</p>
+<p><b>Exemplo</b></p>
+<pre>
+import numpy as np
+from scipy.sparse.csgraph import connected_components
+from scipy.sparse import csr_matrix
+
+arr = np.array([
+  [0, 1, 2],
+  [1, 0, 0],
+  [2, 0, 0]
+])
+
+newarr = csr_matrix(arr)
+
+print(connected_components(newarr))
+</pre>
+<h3 align="center">Dijkstra</h3>
+<p>Use o dijkstra método para encontrar o caminho mais curto em um gráfico de um elemento para de outro.</p>
+<p>São necessários os seguintes argumentos:</p>
+<ul>
+  <li>return_predecessors: booleano ( É verdade que retorna todo o caminho do transversal caso contrário, False ).</li>
+  <li>indices: índice do elemento para retornar todos os caminhos apenas desse elemento.</li>
+  <li>limite: peso máximo do caminho.</li>
+</ul>
+<p><b>Exemplo</b></p>
+<p>Encontre o caminho mais curto do elemento 1 para 2:</p>
+<pre>
+import numpy as np
+from scipy.sparse.csgraph import dijkstra
+from scipy.sparse import csr_matrix
+
+arr = np.array([
+  [0, 1, 2],
+  [1, 0, 0],
+  [2, 0, 0]
+])
+
+newarr = csr_matrix(arr)
+
+print(dijkstra(newarr, return_predecessors=True, indices=0))
+</pre>
+<h3 align="center">Floyd Warshall</h3>
+<p>Use o floyd_warshall() método para encontrar o caminho mais curto entre todos os pares de elementos.</p>
+<p><b>Exemplo</b></p>
+<p>Encontre o caminho mais curto entre todos os pares de elementos:</p>
+<pre>
+import numpy as np
+from scipy.sparse.csgraph import floyd_warshall
+from scipy.sparse import csr_matrix
+
+arr = np.array([
+  [0, 1, 2],
+  [1, 0, 0],
+  [2, 0, 0]
+])
+
+newarr = csr_matrix(arr)
+
+print(floyd_warshall(newarr, return_predecessors=True))
+</pre>
+<h3 align="center">Bellman Ford</h3>
+<p>O bellman_ford() O método também pode encontrar o caminho mais curto entre todos os pares de elementos, mas esse método também pode lidar com pesos negativos.</p>
+<p><b>Exemplo</b></p>
+<p>Encontre o caminho mais curto do elemento 1 a 2 com um gráfico fornecido com um peso negativo:</p>
+<pre>
+import numpy as np
+from scipy.sparse.csgraph import bellman_ford
+from scipy.sparse import csr_matrix
+
+arr = np.array([
+  [0, -1, 2],
+  [1, 0, 0],
+  [2, 0, 0]
+])
+
+newarr = csr_matrix(arr)
+
+print(bellman_ford(newarr, return_predecessors=True, indices=0))
+</pre>
+<h3 align="center">Profundidade Primeira Ordem</h3>
+<p>O depth_first_order() método retorna uma profundidade primeiro transversal de um nó.</p>
+<p>Esta função usa os seguintes argumentos:</p>
+<ul>
+  <li>O gráfico.</li>
+  <li>O elemento inicial para atravessar o gráfico de.</li>
+</ul>
+<p><b>Exemplo</b></p>
+<p>Atravesse a profundidade do gráfico primeiro para a matriz de adjacência especificada:</p>
+<pre>
+import numpy as np
+from scipy.sparse.csgraph import depth_first_order
+from scipy.sparse import csr_matrix
+
+arr = np.array([
+  [0, 1, 0, 1],
+  [1, 1, 1, 1],
+  [2, 1, 1, 0],
+  [0, 1, 0, 1]
+])
+
+newarr = csr_matrix(arr)
+
+print(depth_first_order(newarr, 1))
+</pre>
+<h3 align="center">Primeira Ordem da Largura</h3>
+<p>O breadth_first_order() método retorna uma largura primeiro transversal de um nó.</p>
+<p>Esta função usa os seguintes argumentos:</p>
+<ul>
+  <li>O gráfico.</li>
+  <li>O elemento inicial para atravessar o gráfico de.</li>
+</ul>
+<p><b>Exemplo</b></p>
+<p>Atravesse primeiro a largura do gráfico para obter a matriz de adjacência especificada:</p>
+<pre>
+import numpy as np
+from scipy.sparse.csgraph import breadth_first_order
+from scipy.sparse import csr_matrix
+
+arr = np.array([
+  [0, 1, 0, 1],
+  [1, 1, 1, 1],
+  [2, 1, 1, 0],
+  [0, 1, 0, 1]
+])
+
+newarr = csr_matrix(arr)
+
+print(breadth_first_order(newarr, 1))
+</pre>
 <h2>Refêrencias</h2>
 <p>https://www.w3schools.com/python/scipy/scipy_intro.php</p>
 <p>https://www.ferrari.pro.br/home/documents/FFerrari-ecosistema-python.pdf</p>
