@@ -12,7 +12,7 @@
 </ul>
 <p>Tomando como exemplo uma pesquisa eleitoral: cada entrevistado fornece opiniões conforme as suas preferências entre os candidatos, mas essa opinião individual não significa muita coisa no contexto da eleição. A opinião de um entrevistado único é um dado. Porém, depois de ser integrada às opiniões dos demais respondentes, torna-se algo com significado, uma informação.</p>
 <p>Agora, tomando como exemplo um número de telefone: (11) 58899.3587 é um número, mas não carrega significado por si só; é um dado. Já na frase “O número do telefone da Viviane é (11) 58899.3587”, temos uma informação!</p>
-<h2 align="center">A estrutura de um banco de dados</h2>
+<h2 align="center">A Estrutura de um Banco de Dados</h2>
 <p>Agora, conheça a estrutura de um banco de dados, ou seja, como ele funciona. Analise a imagem abaixo:</p>
 <img src="Banco-de-Dados.png">
 <p>Você notou que um banco de dados é composto por dados contidos em campos que são organizados em tabelas? Também percebeu a importância do Sistema Gerenciador do Banco de Dados? Ele é um programa que permite ao usuário interagir com o banco, ou seja, permite que o usuário inclua, manipule e consulte sua base de dados.</p>
