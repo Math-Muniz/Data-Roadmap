@@ -176,13 +176,13 @@ SELECT CODIGO, NOME FROM FUNCIONARIOS
 <h2 align="center">FUNÇÕES DE AGRUPAMENTO</h2>
 <p>Abaixo nós temos as funções básicas de agrupamento:</p>
 <ul>
-  <li>AVG: Retorna a média do campo especificado</li>
-  <li>SELECT AVG(VALOR) FROM PEDIDOS</li>
-  <li>MIN/MAX/SUM: Respectivamente retorna o menor valor, o maior e o somatório de um grupo de registros:</li>
+  <li><b>AVG:</b> Retorna a média do campo especificado</li>
+  <li><b>SELECT AVG(VALOR) FROM PEDIDOS</li>
+  <li><b>MIN/MAX/SUM:</b> Respectivamente retorna o menor valor, o maior e o somatório de um grupo de registros:</li>
   <li>SELECT MIN(VALOR) FROM PEDIDOS</li>
   <li>SELECT MAX(VALOR) FROM PEDIDOS</li>
   <li>SELECT AVG(VALOR) FROM PEDIDOS</li>
-  <li>COUNT: Retorna a quantidade de itens da seleção</li>
+  <li><b>COUNT:</b> Retorna a quantidade de itens da seleção</li>
 </ul>
 <p>Um exemplo de uso é o que pode ser visto abaixo:</p>
 <pre>
