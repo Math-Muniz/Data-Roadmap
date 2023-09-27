@@ -178,10 +178,14 @@ SELECT CODIGO, NOME FROM FUNCIONARIOS
 <ul>
   <li><b>AVG:</b> Retorna a média do campo especificado</li>
   <li>SELECT AVG(VALOR) FROM PEDIDOS</li>
+</ul>
+<ul>
   <li><b>MIN/MAX/SUM:</b> Respectivamente retorna o menor valor, o maior e o somatório de um grupo de registros:</li>
   <li>SELECT MIN(VALOR) FROM PEDIDOS</li>
   <li>SELECT MAX(VALOR) FROM PEDIDOS</li>
   <li>SELECT AVG(VALOR) FROM PEDIDOS</li>
+</ul>
+<ul>
   <li><b>COUNT:</b> Retorna a quantidade de itens da seleção</li>
 </ul>
 <p>Um exemplo de uso é o que pode ser visto abaixo:</p>
