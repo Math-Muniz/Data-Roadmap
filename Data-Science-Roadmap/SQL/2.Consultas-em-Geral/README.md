@@ -4,8 +4,8 @@
 <h2 align="center">SELECT</h2>
 <p>O comando <b>SELECT</b> permite recuperar os dados de um objeto do banco de dados, como uma tabela, view e, em alguns casos, uma stored procedure (alguns bancos de dados permitem a criação de procedimentos que retornam valor). A sintaxe mais básica do comando é:</p>
 <pre>
-SELECT <lista_de_campos>
-FROM <nome_da_tabela></nome_da_tabela></lista_de_campos>
+SELECT (lista_de_campos)
+FROM (nome_da_tabela)(nome_da_tabela)(lista_de_campos)
 </pre>
 <p></p>
 <pre>
