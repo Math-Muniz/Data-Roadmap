@@ -57,7 +57,6 @@ WHERE CONDICOES;
 <p>Como no comando Insert, podemos utilizar diversos tipos de valores e funções dentro da instrução Update. Normalmente utilizamos a instrução Update em conjunto com a cláusula Where, para que apenas uma, ou um conjunto de registros sejam atualizados.</p>
 <p><b>Atenção:</b> Caso a instrução Update seja utilizada sem uma cláusula Where, a atualização ocorrerá em todos os registros armazenados dentro da tabela.</p>
 <p>Você pode utilizar a instrução Where em conjunto com os operadores e palavras chaves para limitar o número de registros a serem atualizados constantes na tabela abaixo:</p>
-<table border="1">
 <thead>
     <tr>
         <th>Expressão</th>
