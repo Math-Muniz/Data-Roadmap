@@ -57,57 +57,59 @@ WHERE CONDICOES;
 <p>Como no comando Insert, podemos utilizar diversos tipos de valores e funções dentro da instrução Update. Normalmente utilizamos a instrução Update em conjunto com a cláusula Where, para que apenas uma, ou um conjunto de registros sejam atualizados.</p>
 <p><b>Atenção:</b> Caso a instrução Update seja utilizada sem uma cláusula Where, a atualização ocorrerá em todos os registros armazenados dentro da tabela.</p>
 <p>Você pode utilizar a instrução Where em conjunto com os operadores e palavras chaves para limitar o número de registros a serem atualizados constantes na tabela abaixo:</p>
-<thead>
-    <tr>
-        <th>Expressão</th>
-        <th>Descrição</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>= Valor</td>
-        <td>Igual a um determinado valor</td>
-    </tr>
-    <tr>
-        <td>&lt; Valor</td>
-        <td>Menor que um determinado valor</td>
-    </tr>
-    <tr>
-        <td>>= Valor</td>
-        <td>Maior ou igual a um determinado valor</td>
-    </tr>
-    <tr>
-        <td>&lt;&gt; Valor</td>
-        <td>Diferente de um determinado valor</td>
-    </tr>
-    <tr>
-        <td>BETWEEN valor1 AND valor2</td>
-        <td>Entre uma faixa de valores informada</td>
-    </tr>
-    <tr>
-        <td>LIKE Valor</td>
-        <td>Que contenha um determinado valor (%)</td>
-    </tr>
-    <tr>
-        <td>IN (valor1, valor2, valor3, ..., valor4)</td>
-        <td>Que contenha um dos elementos da lista</td>
-    </tr>
-    <tr>
-        <td>IS NULL</td>
-        <td>Verifica se o valor da coluna é nulo</td>
-    </tr>
-    <tr>
-        <td>IS NOT NULL</td>
-        <td>Verifica se o valor da coluna não é nulo</td>
-    </tr>
-    <tr>
-        <td>STARTING WITH Valor</td>
-        <td>Que contenha uma string case sensitive</td>
-    </tr>
-    <tr>
-        <td>CONTAINING Valor</td>
-        <td>Que contenha uma string case insensitive</td>
-    </tr>
-</tbody>
+<table border="1">
+  <thead>
+      <tr>
+          <th>Expressão</th>
+          <th>Descrição</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>= Valor</td>
+          <td>Igual a um determinado valor</td>
+      </tr>
+      <tr>
+          <td>&lt; Valor</td>
+          <td>Menor que um determinado valor</td>
+      </tr>
+      <tr>
+          <td>>= Valor</td>
+          <td>Maior ou igual a um determinado valor</td>
+      </tr>
+      <tr>
+          <td>&lt;&gt; Valor</td>
+          <td>Diferente de um determinado valor</td>
+      </tr>
+      <tr>
+          <td>BETWEEN valor1 AND valor2</td>
+          <td>Entre uma faixa de valores informada</td>
+      </tr>
+      <tr>
+          <td>LIKE Valor</td>
+          <td>Que contenha um determinado valor (%)</td>
+      </tr>
+      <tr>
+          <td>IN (valor1, valor2, valor3, ..., valor4)</td>
+          <td>Que contenha um dos elementos da lista</td>
+      </tr>
+      <tr>
+          <td>IS NULL</td>
+          <td>Verifica se o valor da coluna é nulo</td>
+      </tr>
+      <tr>
+          <td>IS NOT NULL</td>
+          <td>Verifica se o valor da coluna não é nulo</td>
+      </tr>
+      <tr>
+          <td>STARTING WITH Valor</td>
+          <td>Que contenha uma string case sensitive</td>
+      </tr>
+      <tr>
+          <td>CONTAINING Valor</td>
+          <td>Que contenha uma string case insensitive</td>
+      </tr>
+  </tbody>
+</table>
 <h2>Referências</h2>
 <p>https://www.devmedia.com.br/10-instrucoes-sql-para-manipulacao-de-dados/4832</p>
