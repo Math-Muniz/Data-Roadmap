@@ -1,5 +1,5 @@
 <h1 align="center">Joins</h1>
-<p>Agora vamos aprofundar ainda mais sobre Joins.</p>
+<p>Agora vamos aprofundar ainda mais sobre Joins, mas antes disso queria avisar que nas referencias abaixo inclui o site https://joins.spathon.com/ que ajuda a visualizarmos melhor os joins.</p>
 <p>Muitos desenvolvedores têm a dificuldade de saber qual resultado é retornado por cada join no SQL e, portanto, quando devem utilizar cada um. Para facilitar esse entendimento, a Figura abaixo traz uma representação gráfica, baseada na Teoria dos Conjuntos, muito conhecida na matemática. Nessa imagem, temos a representação de duas tabelas (A e B) e o resultado esperado por cada tipo de join (a área em vermelho representa os registros retornados pela consulta).</p>
 <img src="SQL_Joins.jpg">
 <p>Nesse artigo analisaremos cada join individualmente, bom base em exemplos, e veremos seus resultados. Assim, podemos comparar seu funcionamento e decidir quando devemos usar cada um.</p>
@@ -113,3 +113,4 @@ WHERE a.Nome is null or b.Nome is null
 <p>As cláusulas JOIN na linguagem SQL são extremamente úteis e utilizadas com muita frequência, portanto, seu conhecimento é fundamental para quem trabalha com bancos de dados relacionais com o <b>SQL Server, o MySQL, o Firebird, etc.</b></p>
 <h2>Referencias</h2>
 <p>https://www.devmedia.com.br/sql-join-entenda-como-funciona-o-retorno-dos-dados/31006</p>
+<p>https://joins.spathon.com/</p>
