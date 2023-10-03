@@ -42,7 +42,7 @@ INNER JOIN TabelaB as B
 <img src="Resultado_Inner.jpg">
 <h2 align="center">Left Join</h2>
 <p>O Left Join, cujo funcinamento é ilustrado na abaixo, tem como resultado todos os registros que estão na tabela A (mesmo que não estejam na tabela B) e os registros da tabela B que são comuns à tabela A.</p>
-<img src="Left_Join.jpg">
+<img src="Left_Join.png">
 <p>Para compreender melhor seu uso, temos um exemplo no script abaixo, cujo resultado é apresentado abaixo de nosso script.</p>
 <pre>
 SELECT a.Nome, b.Nome
