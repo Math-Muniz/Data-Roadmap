@@ -1,4 +1,4 @@
-<h1>Estatística</h1>
+<h1>SQL</h1>
 <p>Agora no nosso Roadmap vamos estudar uma outra Hard Skills importante: O SQL.</p>
 
 <h2>Como usar:</h2>
