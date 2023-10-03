@@ -22,7 +22,8 @@ INSERT INTO TabelaA VALUES('Fernanda')
 INSERT INTO TabelaA VALUES('Josefa')
 INSERT INTO TabelaA VALUES('Luiz')
 INSERT INTO TabelaA VALUES('Fernando')
-
+</pre>
+<pre>
 INSERT INTO TabelaB VALUES('Carlos')
 INSERT INTO TabelaB VALUES('Manoel')
 INSERT INTO TabelaB VALUES('Luiz')
