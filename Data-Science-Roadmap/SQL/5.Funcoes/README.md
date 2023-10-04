@@ -119,7 +119,7 @@ SELECT TRUNC(15.6[,5 ])
 <h3 align="center">VARIANCE(valor)</h3>
 <p>Retorna a variância da amostra de registros não NULL em um grupo. Se todos os registros dentro de um grupo forem NULL, um NULL é retornado.</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Vamos retornar a variância amostral dos valores fornecidos na tabela abaixo, lembrando que o valor NULL vai ser excluido. Portanto, a variação seria calculada apenas para os valores 10, 15, 12 e 14.</p>
 <pre>
 <table>
   <tr>
@@ -153,9 +153,86 @@ SELECT VARIANCE(Valor) FROM exemplo;
 </pre>
 <p><b>Output:</b></p>
 <pre>
-2.25
+≈ 4.92
 </pre>
 <h2 align="center">Funções de Grupos de Valores</h2>
+<h3 align="center">AVG(n)</h3>
+<p>Calcula o valor médio de "n" ignorando os valores nulos.</p>
+<p><b>Exemplo:</b></p>
+<p>Vamos calcular o valor médio (média) da nossa tabela exemplo que está acima.</p>
+<pre>
+SELECT AVG(Valor) FROM exemplo;
+</pre>
+<p><b>Output:</b></p>
+<pre>
+12.75
+</pre>
+<h3 align="center">COUNT (* | Expressão)</h3>
+<p>Conta o número de vezes que a expressão avalia algum dado com valor não nulo. A opção "*" conta todas as filas selecionadas.</p>
+<p><b>Exemplo:</b></p>
+<p>Abaixo vamos usar a função COUNT para avaliar quantos dados não nulos temos na nossa tabela exemplo usando a opção "*" para selecionar tudo para nossa contagem.</p>
+<pre>
+SELECT COUNT(*) FROM exemplo WHERE Valor IS NOT NULL;
+</pre>
+<p><b>Output:</b></p>
+<pre>
+4
+</pre>
+<h3 align="center">MAX (expressão)</h3>
+<p></p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
+<h3 align="center">MIN (expressão)</h3>
+<p></p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
+<h3 align="center">SUM (expressão)</h3>
+<p></p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
+<h3 align="center">GREATEST (valor1, valor2…)</h3>
+<p></p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
+<h3 align="center">LEAST (valor1, valor2…)</h3>
+<p></p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
 <h2 align="center">Funções que Devolvem Valores de Caracteres</h2>
 <h2 align="center">Funções que Devolvem Valores Numéricos</h2>
 <h2 align="center">Funções para o Manejo de Datas</h2>
