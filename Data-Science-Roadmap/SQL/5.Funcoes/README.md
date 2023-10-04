@@ -336,27 +336,39 @@ SELECT RTRIM('Direita espaços    ');
 <h3 align="center">REPLACE (cad, cadeia_busca [, cadeia_substitucao])</h3>
 <p>Substitui um caractere ou caracteres de uma cadeia com 0 ou mais caracteres.</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Neste exemplo, a função REPLACE substitui a cadeia de caracteres 'mundo' pela cadeia 'amigo' na string de entrada.</p>
 <pre>
-
+SELECT REPLACE('Olá, mundo!', 'mundo', 'amigo');
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+'Olá, amigo!'
 </pre>
 <h3 align="center">SUBSTR (cad, m [,n])</h3>
 <p>Obtém parte de uma cadeia.</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Neste exemplo, a função SUBSTR extrai uma substring da string de entrada, começando na posição 6 ('é') e com um comprimento de 7 caracteres ('é uma s').</p>
 <pre>
-
+SELECT SUBSTR('Esta é uma string', 6, 7);
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+'é uma s'
 </pre>
 <h3 align="center">TRANSLATE (cad1, cad2, cad3)</h3>
-<p> Converte caracteres de uma cadeia em caracteres diferentes, segundo um plano de substituição marcado pelo usuário.</p>
+<p>Converte caracteres de uma cadeia em caracteres diferentes, segundo um plano de substituição marcado pelo usuário.</p>
+<p><b>Exemplo:</b></p>
+<p>Neste exemplo, a função TRANSLATE substitui os caracteres da primeira cadeia 'elo' pelos caracteres correspondentes da segunda cadeia '123'.</p>
+<pre>
+SELECT TRANSLATE('Hello', 'elo', '123');
+</pre>
+<p><b>Output:</b></p>
+<pre>
+'H1223'
+</pre>
+<h2 align="center">Funções que Devolvem Valores Numéricos</h2>
+<h3 align="center">ASCII(cad)</h3>
+<p>Devolve o valor ASCII da primeira letra da cadeia "cad".</p>
 <p><b>Exemplo:</b></p>
 <p></p>
 <pre>
@@ -366,9 +378,19 @@ SELECT RTRIM('Direita espaços    ');
 <pre>
 
 </pre>
-<h2 align="center">Funções que Devolvem Valores Numéricos</h2>
-<h3 align="center">TRANSLATE (cad1, cad2, cad3)</h3>
-<p> Converte caracteres de uma cadeia em caracteres diferentes, segundo um plano de substituição marcado pelo usuário.</p>
+<h3 align="center">INSTR (cad1, cad2 [, comeco [,m]])</h3>
+<p>Permite uma busca de um conjunto de caracteres em uma cadeia, mas não suprime nenhum caractere depois.</p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
+<h3 align="center">LENGTH (cad)</h3>
+<p>Devolve o número de caracteres de cad.</p>
 <p><b>Exemplo:</b></p>
 <p></p>
 <pre>
@@ -379,7 +401,95 @@ SELECT RTRIM('Direita espaços    ');
 
 </pre>
 <h2 align="center">Funções para o Manejo de Datas</h2>
+<h3 align="center">SYSDATE</h3>
+<p>Devolve a data do sistema.</p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
+<h3 align="center">ADD_MONTHS (data, n)</h3>
+<p>Devolve a data "data" incrementada em "n" meses.</p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
+<h3 align="center">LASTDAY (data)</h3>
+<p>Devolve a data do último dia do mês que contém "data".</p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
+<h3 align="center">MONTHS_BETWEEN (data1, data2)</h3>
+<p>Devolve a diferença em meses entre as datas "data1" e "data2".</p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
+<h3 align="center">NEXT_DAY (data, cad)</h3>
+<p>Devolve a data do primeiro dia da semana indicado por "cad" depois da data indicada por "data".</p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
 <h2 align="center">Funções de Conversão</h2>
+<h3 align="center">TO_CHAR</h3>
+<p>Transforma um tipo DATE ou NUMBER em uma cadeia de caracteres.</p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
+<h3 align="center">TO_DATE</h3>
+<p>Transforma um tipo NUMBER ou CHAR em DATE.</p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
+<h3 align="center">TO_NUMBER</h3>
+<p>Transforma uma cadeia de caracteres em NUMBER.</p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
 <h2>Referencias</h2>
 <p>https://www.devmedia.com.br/funcoes-sql/4978</p>
 <p>http://sigaceivap.org.br:8080/publicacoesArquivos/publicacoesNovo.filepart</p>
