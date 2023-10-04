@@ -234,8 +234,150 @@ SELECT LEAST(10, 15, 12, 14) FROM exemplo;
 10
 </pre>
 <h2 align="center">Funções que Devolvem Valores de Caracteres</h2>
+<h3 align="center">CHR(n)</h3>
+<p>Devolve o caractere cujo valor em binário é equivalente a "n".</p>
+<p><b>Exemplo:</b></p>
+<p>Suponha que você queira encontrar o caractere cujo valor binário é 65, que corresponde ao caractere "A" na tabela ASCII. Você pode usar a função CHR da seguinte maneira:</p>
+<pre>
+SELECT CHR(65);
+</pre>
+<p><b>Output:</b></p>
+<pre>
+A
+</pre>
+<h3 align="center">CONCAT (cad1, cad2)</h3>
+<p>Devolve "cad1" concatenada com "cad2".</p>
+<p><b>Exemplo:</b></p>
+<p>Vamos concatenar abaixo a palavra 'Olá' com a palavra 'Mundo'.</p>
+<pre>
+SELECT CONCAT('Olá', ' Mundo');
+</pre>
+<p><b>Output:</b></p>
+<pre>
+Olá Mundo
+</pre>
+<h3 align="center">LOWER (cad)</h3>
+<p>Devolve a cadeia "cad" em minúsculas.</p>
+<p><b>Exemplo:</b></p>
+<p>Vamos agora usar nossa função LOWER para transformar nosso as letras do nosso texto abaixo em minúsculas.</p>
+<pre>
+SELECT LOWER('Texto EM Minúsculas');
+</pre>
+<p><b>Output:</b></p>
+<pre>
+texto em minúsculas
+</pre>
+<h3 align="center">UPPER (cad)</h3>
+<p>Devolve a cadeia "cad" em maiúsculas.</p>
+<p><b>Exemplo:</b></p>
+<p>Vamos agora usar nossa função UPPER para transformar nosso as letras do nosso texto abaixo em maiúsculas.</p>
+<pre>
+SELECT UPPER('Texto em Maiúsculas');
+</pre>
+<p><b>Output:</b></p>
+<pre>
+TEXTO EM MAIÚSCULAS
+</pre>
+<h3 align="center">INITCAP (cad)</h3>
+<p>Converte a cadeia "cad" a tipo título.</p>
+<p><b>Exemplo:</b></p>
+<p>Vamos agora usar a função INITCAP para transformar as primeiras letras de cada palavra em maiúsculas ficando num tipo título.</p>
+<pre>
+SELECT INITCAP('isso é um Exemplo de INitCAP');
+</pre>
+<p><b>Output:</b></p>
+<pre>
+Isso É Um Exemplo De Initcap
+</pre>
+<h3 align="center">LPAD (cad1, n[,cad2])</h3>
+<p>Adiciona caracteres à esquerda da cadeia até que tenha uma certa longitude.</p>
+<p><b>Exemplo:</b></p>
+<p>Vamos usar a função LPAD agora para adicionar o '0' a esquerda do '42' até termos '5' caracteres no total.</p>
+<pre>
+SELECT LPAD('42', 5, '0');
+</pre>
+<p><b>Output:</b></p>
+<pre>
+00042
+</pre>
+<h3 align="center">RPAD (cad1, n[,cad2])</h3>
+<p>Adiciona caracteres à direita até que tenha uma certa longitude.</p>
+<p><b>Exemplo:</b></p>
+<p>Vamos agora usar a função RPAD para adicionar '!' a direita do 'Olá' até termos '7' caracteres no total.</p>
+<pre>
+SELECT RPAD('Olá', 7, '!');
+</pre>
+<p><b>Output:</b></p>
+<pre>
+Olá!!!!
+</pre>
+<h3 align="center">LTRIM (cad [,set])</h3>
+<p>Suprime um conjunto de caracteres à esquerda da cadeia.</p>
+<p><b>Exemplo:</b></p>
+<p>Neste exemplo, a função LTRIM remove todos os espaços em branco à esquerda da cadeia de caracteres.</p>
+<pre>
+SELECT LTRIM('   Espaços à esquerda');
+</pre>
+<p><b>Output:</b></p>
+<pre>
+'Espaços à esquerda'
+</pre>
+<h3 align="center">RTRIM (cad [,set])</h3>
+<p>Suprime um conjunto de caracteres à direita da cadeia.</p>
+<p><b>Exemplo:</b></p>
+<p>Neste exemplo, a função RTRIM remove todos os espaços em branco à direita da cadeia de caracteres.</p>
+<pre>
+SELECT RTRIM('Direita espaços    ');
+</pre>
+<p><b>Output:</b></p>
+<pre>
+'Direita espaços'
+</pre>
+<h3 align="center">REPLACE (cad, cadeia_busca [, cadeia_substitucao])</h3>
+<p>Substitui um caractere ou caracteres de uma cadeia com 0 ou mais caracteres.</p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
 
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
+<h3 align="center">SUBSTR (cad, m [,n])</h3>
+<p>Obtém parte de uma cadeia.</p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
+<h3 align="center">TRANSLATE (cad1, cad2, cad3)</h3>
+<p> Converte caracteres de uma cadeia em caracteres diferentes, segundo um plano de substituição marcado pelo usuário.</p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
 <h2 align="center">Funções que Devolvem Valores Numéricos</h2>
+<h3 align="center">TRANSLATE (cad1, cad2, cad3)</h3>
+<p> Converte caracteres de uma cadeia em caracteres diferentes, segundo um plano de substituição marcado pelo usuário.</p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Output:</b></p>
+<pre>
+
+</pre>
 <h2 align="center">Funções para o Manejo de Datas</h2>
 <h2 align="center">Funções de Conversão</h2>
 <h2>Referencias</h2>
