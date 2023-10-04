@@ -179,61 +179,62 @@ SELECT COUNT(*) FROM exemplo WHERE Valor IS NOT NULL;
 4
 </pre>
 <h3 align="center">MAX (expressão)</h3>
-<p></p>
+<p>Calcula o valor máximo.</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Vamos selecionar o valor máximo da nossa tabela exemplo.</p>
 <pre>
-
+SELECT MAX(Valor) FROM exemplo
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+15
 </pre>
 <h3 align="center">MIN (expressão)</h3>
-<p></p>
+<p>Calcula o valor mínimo.</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Vamos selecionar o valor mínimo da nossa tabela exemplo.</p>
 <pre>
-
+SELECT MIN(Valor) FROM exemplo
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+10
 </pre>
 <h3 align="center">SUM (expressão)</h3>
-<p></p>
+<p>Obtém a soma dos valores da expressão.</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Agora vamos usar a função SUM para somarmos os valores da nossa tabela exemplo (10, 12, NULL, 14, 15).</p>
 <pre>
-
+SELECT SUM(Valor) FROM exemplo
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+41
 </pre>
 <h3 align="center">GREATEST (valor1, valor2…)</h3>
-<p></p>
+<p>Obtém o maior valor da lista.</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Vamos usar o GREATEST para tentar encontrar o maior valor entre os valores 10, 15, 12, 14 que usamos na nossa tabela exemplo.</p>
 <pre>
-
+SELECT GREATEST(10, 15, 12, 14) FROM exemplo;
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+15
 </pre>
 <h3 align="center">LEAST (valor1, valor2…)</h3>
-<p></p>
+<p>Obtém o menor valor da lista.</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Vamos usar o LEAST para tentar encontrar o menor valor entre os valores 10, 15, 12, 14 que usamos na nossa tabela exemplo.</p>
 <pre>
-
+SELECT LEAST(10, 15, 12, 14) FROM exemplo;
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+10
 </pre>
 <h2 align="center">Funções que Devolvem Valores de Caracteres</h2>
+
 <h2 align="center">Funções que Devolvem Valores Numéricos</h2>
 <h2 align="center">Funções para o Manejo de Datas</h2>
 <h2 align="center">Funções de Conversão</h2>
