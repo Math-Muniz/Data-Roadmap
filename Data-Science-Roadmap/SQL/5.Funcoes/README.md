@@ -370,91 +370,91 @@ SELECT TRANSLATE('Hello', 'elo', '123');
 <h3 align="center">ASCII(cad)</h3>
 <p>Devolve o valor ASCII da primeira letra da cadeia "cad".</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>No exemplo abaixo, vamos procurar usando a função ASCII para retornar o valor ASCII do caractere 'A', que é 65.</p>
 <pre>
-
+SELECT ASCII('A');
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+65
 </pre>
 <h3 align="center">INSTR (cad1, cad2 [, comeco [,m]])</h3>
 <p>Permite uma busca de um conjunto de caracteres em uma cadeia, mas não suprime nenhum caractere depois.</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Usaremos a função INSTR que retorna a posição da primeira ocorrência da string 'World' dentro da string 'Hello, World', que é 8.</p>
 <pre>
-
+SELECT INSTR('Hello, World', 'World');
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+8
 </pre>
 <h3 align="center">LENGTH (cad)</h3>
 <p>Devolve o número de caracteres de cad.</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Usaremos a função LENGTH retorna o comprimento (número de caracteres) da string 'Database', que é 8.</p>
 <pre>
-
+SELECT LENGTH('Database');
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+8
 </pre>
 <h2 align="center">Funções para o Manejo de Datas</h2>
 <h3 align="center">SYSDATE</h3>
-<p>Devolve a data do sistema.</p>
+<p>Retorna a data e hora atuais do sistema.</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Vamos selecionar a data e hora atual do sistema que estamos usando.</p>
 <pre>
-
+SELECT SYSDATE;
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+2023-10-04 13:27:45
 </pre>
 <h3 align="center">ADD_MONTHS (data, n)</h3>
 <p>Devolve a data "data" incrementada em "n" meses.</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Vamos adicionar 3 meses a nossa data.</p>
 <pre>
-
+SELECT ADD_MONTHS('2023-10-04', 3);
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+2024-01-04
 </pre>
 <h3 align="center">LASTDAY (data)</h3>
 <p>Devolve a data do último dia do mês que contém "data".</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Vamos ver qual o último dia do mês de outubro abaixo.</p>
 <pre>
-
+SELECT LASTDAY('2023-10-04')
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+2023-10-31
 </pre>
 <h3 align="center">MONTHS_BETWEEN (data1, data2)</h3>
 <p>Devolve a diferença em meses entre as datas "data1" e "data2".</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Vamos ver a diferença em meses entre a data '2023-12-31' e '2023-09-12'.</p>
 <pre>
-
+SELECT MONTHS_BETWEEN('2023-12-31', '2023-09-12');
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+3.45161290322581
 </pre>
 <h3 align="center">NEXT_DAY (data, cad)</h3>
 <p>Devolve a data do primeiro dia da semana indicado por "cad" depois da data indicada por "data".</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Vamos ver qual seria a próxima sexta-feira apartir da data '2023-10-04'.</p>
 <pre>
-
+SELECT NEXT_DAY('2023-10-04', 'FRIDAY');
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+2023-10-06
 </pre>
 <h2 align="center">Funções de Conversão</h2>
 <h3 align="center">TO_CHAR</h3>
@@ -462,36 +462,37 @@ SELECT TRANSLATE('Hello', 'elo', '123');
 <p><b>Exemplo:</b></p>
 <p></p>
 <pre>
-
+SELECT TO_CHAR(SYSDATE, 'DD-MM-YYYY HH24:MI:SS');
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+04-10-2023 13:27:45
 </pre>
 <h3 align="center">TO_DATE</h3>
 <p>Transforma um tipo NUMBER ou CHAR em DATE.</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Agora vamos transformar '04-10-2023' colocando o ano na frente, seguido pelo mês e por último o dia.</p>
 <pre>
-
+SELECT TO_DATE('04-10-2023', 'YYYY-MM-DD');
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+2023-10-04
 </pre>
 <h3 align="center">TO_NUMBER</h3>
 <p>Transforma uma cadeia de caracteres em NUMBER.</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Vamos converter a string '42' em um número.</p>
 <pre>
-
+SELECT TO_NUMBER('42');
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+42
 </pre>
 <h2>Referencias</h2>
 <p>https://www.devmedia.com.br/funcoes-sql/4978</p>
 <p>http://sigaceivap.org.br:8080/publicacoesArquivos/publicacoesNovo.filepart</p>
 <p>https://eufacoprogramas.com/sql-funcoes-com-numeros/</p>
 <p>https://acervolima.com/funcao-sign-no-sql-server/</p>
+<p>https://chat.openai.com/</p>
