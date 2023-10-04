@@ -4,7 +4,7 @@
 <h3 align="center">ABS(n)</h3>
 <p>Retorna um valor absoluto (positivo) de (n), ou seja, altera valores negativos para valores positivos.</p>
 <p><b>Exemplo:</b></p>
-<p>Extraindo o valor absoluto (positivo) .7 sobre o número especificado <b>(-0.7)</b>.</p>
+<p>Extraindo o valor absoluto (positivo) .7 sobre o número especificado (-0.7).</p>
 <pre>
 SELECT ABS(-0.7);
 </pre>
@@ -64,7 +64,7 @@ Sales_Data
 <h3 align="center">POWER(m, exponente)</h3>
 <p>Calcula a potência de um número.</p>
 <p><b>Exemplo:</b></p>
-<p>Vamos calcular a potencia de 2(m) elevado ao exponente 4(n)</p>
+<p>Vamos calcular a potencia de 2(m) elevado ao exponente 4(n).</p>
 <pre>
 SELECT POWER(2, 4)
 </pre>
@@ -117,15 +117,43 @@ SELECT TRUNC(15.6[,5 ])
 15.60000
 </pre>
 <h3 align="center">VARIANCE(valor)</h3>
-<p>Às vezes, precisamos calcular a variância padrão da população de uma expressão. A função VARIANCE() também retorna NULL se na expressão fornecida nenhuma linha correspondente for encontrada.</p>
+<p>Retorna a variância da amostra de registros não NULL em um grupo. Se todos os registros dentro de um grupo forem NULL, um NULL é retornado.</p>
 <p><b>Exemplo:</b></p>
 <p></p>
 <pre>
-
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Valor</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>NULL</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>14</td>
+  </tr>
+</table>
+</pre>
+<pre>
+SELECT VARIANCE(Valor) FROM exemplo;
 </pre>
 <p><b>Output:</b></p>
 <pre>
-
+2.25
 </pre>
 <h2 align="center">Funções de Grupos de Valores</h2>
 <h2 align="center">Funções que Devolvem Valores de Caracteres</h2>
