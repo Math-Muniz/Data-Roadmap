@@ -7,7 +7,7 @@
 
 <h1 align="center">Caminho Sugerido para cada RoadMap:</h1>
 <ul>
-   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap">Data Science Roadmap (Em progresso...)</a>
+   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap">Data Science Roadmap</a>
        <ul>
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python">1. Python (Finalizado)</a></li>
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/SQL">2. SQL (Finalizado)</a></li>
