@@ -84,7 +84,7 @@ print(myvar)
 <pre>
 import pandas as pd
 
-print(pd.__version__)
+print(pd.&lowbar;&lowbar;version&lowbar;&lowbar;)
 </pre>
 <h2 align="center">Refêrencias</h2>
 <p>https://www.w3schools.com/python/pandas/pandas_intro.asp</p>
