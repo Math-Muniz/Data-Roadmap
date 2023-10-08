@@ -21,5 +21,7 @@
 <p>Pandas também consegue deletar linhas e colunas que não são relevantes, ou que contenham valores errados, como dados vazios ou nulos. Isso é chamado de Limpeza de Dados.</p>
 <h2 align="center">O que o Pandas pode fazer?</h2>
 <p>O código fonte do Pandas está localizado neste repositório do github https://github.com/pandas-dev/pandas</p>
+<h2 align="center">Cheatsheet</h2>
+<p>Neste link do Github coloquei uma Cheatsheet (Folha de Truques) sobre a biblioteca Pandas: https://github.com/Math-Muniz/Data-Roadmap/blob/main/Data-Science-Roadmap/Manipulacao-de-Dados/Pandas/Pandas_Cheat_Sheet.pdf</p>
 <h2 align="center">Refêrencias</h2>
 <p>https://www.w3schools.com/python/pandas/pandas_intro.asp</p>
