@@ -190,3 +190,6 @@ print(df)
 <h2>Referencias</h2>
 <p>https://www.w3schools.com/python/pandas/pandas_series.asp</p>
 <p>https://www.w3schools.com/python/pandas/pandas_dataframes.asp</p>
+<p>https://www.w3schools.com/python/pandas/pandas_csv.asp</p>
+<p>https://www.w3schools.com/python/pandas/pandas_json.asp</p>
+<p>https://www.w3schools.com/python/pandas/pandas_analyzing.asp</p>
