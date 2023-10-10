@@ -86,6 +86,30 @@ myvar = pd.DataFrame(data)
 print(myvar)
 </pre>
 <h2 align="center">Pandas DataFrames</h2>
+<h3 align="center">O que é DataFrame?</h3>
+<p>Um Pandas DataFrame é uma estrutura de dados bidimensional, como um array bidimensional ou uma tabela com linhas e colunas.</p>
+<p><b>Exemplo:</b></p>
+<p>Criaremos abaixo um Pandas DataFrame simples:</p>
+<pre>
+import pandas as pd
+
+data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+}
+
+#load data into a DataFrame object:
+df = pd.DataFrame(data)
+
+print(df) 
+</pre>
+<p><b>Resultado:</b></p>
+<pre>
+    calories  duration
+0       420        50
+1       380        40
+2       390        45
+</pre>
 <h2>Referencias</h2>
 <p>https://www.w3schools.com/python/pandas/pandas_series.asp</p>
 <p>https://www.w3schools.com/python/pandas/pandas_dataframes.asp</p>
