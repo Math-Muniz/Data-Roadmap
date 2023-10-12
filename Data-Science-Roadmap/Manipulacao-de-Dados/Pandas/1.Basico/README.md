@@ -189,6 +189,10 @@ print(df)
 </pre>
 <h2 align="center">Leitura de CSV com Pandas</h2>
 <h3 align="center">Leia Arquivos em CSV</h3>
+<p>Um jeito simples de armazenar big data sets é usar arquivos CSV.(arquivos separados por vírgula)</p>
+<p>Os arquivos CSV contêm texto simples e são um formato bem conhecido que pode ser lido por todos, incluindo Pandas.</p>
+<p>Nos nossos exemplos iremos usar um arquivo CSV chamado 'data.csv'.</p>
+<p>Download data.csv. ou Open data.csv</p>
 <h2>Referencias</h2>
 <p>https://www.w3schools.com/python/pandas/pandas_series.asp</p>
 <p>https://www.w3schools.com/python/pandas/pandas_dataframes.asp</p>
