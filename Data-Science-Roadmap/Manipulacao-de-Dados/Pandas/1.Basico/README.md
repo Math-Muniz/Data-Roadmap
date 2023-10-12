@@ -187,6 +187,8 @@ df = pd.read_csv('data.csv')
 
 print(df) 
 </pre>
+<h2 align="center">Leitura de CSV com Pandas</h2>
+<h3 align="center">Leia Arquivos em CSV</h3>
 <h2>Referencias</h2>
 <p>https://www.w3schools.com/python/pandas/pandas_series.asp</p>
 <p>https://www.w3schools.com/python/pandas/pandas_dataframes.asp</p>
