@@ -193,6 +193,15 @@ print(df)
 <p>Os arquivos CSV contêm texto simples e são um formato bem conhecido que pode ser lido por todos, incluindo Pandas.</p>
 <p>Nos nossos exemplos iremos usar um arquivo CSV chamado 'data.csv'.</p>
 <p>Download data.csv. ou Open data.csv</p>
+<p><b>Exemplo:</b></p>
+<p>Carregue o arquivo CSV em um DataFrame:</p>
+<pre>
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+print(df.to_string())
+</pre>
 <h2>Referencias</h2>
 <p>https://www.w3schools.com/python/pandas/pandas_series.asp</p>
 <p>https://www.w3schools.com/python/pandas/pandas_dataframes.asp</p>
