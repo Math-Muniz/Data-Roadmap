@@ -202,6 +202,17 @@ df = pd.read_csv('data.csv')
 
 print(df.to_string())
 </pre>
+<p><b>Dica:</b> use to_string() para printar o DataFrame inteiro.</p>
+<p>Se você tiver um DataFrame largo com diversas colunas, Pandas só vai te retornar as primeiras 5 linhas e as últimas 5 linhas:</p>
+<p><b>Exemplo:</b></p>
+<p>Dê print no DataFrame sem o método to_string():</p>
+<pre>
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+print(df)
+</pre>
 <h2>Referencias</h2>
 <p>https://www.w3schools.com/python/pandas/pandas_series.asp</p>
 <p>https://www.w3schools.com/python/pandas/pandas_dataframes.asp</p>
