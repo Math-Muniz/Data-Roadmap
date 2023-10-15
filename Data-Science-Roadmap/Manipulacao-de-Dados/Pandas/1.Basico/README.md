@@ -213,6 +213,16 @@ df = pd.read_csv('data.csv')
 
 print(df)
 </pre>
+<h3 align="center">Função max_rows</h3>
+<p>O número de linhas retornadas é definido nas configurações de opções do Pandas.</p>
+<p>Você pode verificar o número máximo de linhas do seu sistema com a instrução pd.options.display.max_rows.</p>
+<p><b>Exemplo:</b></p>
+<p>Abaixo vamos checar o número máximo de linhas retornadas:</p>
+<pre>
+import pandas as pd
+
+print(pd.options.display.max_rows) 
+</pre>
 <h2>Referencias</h2>
 <p>https://www.w3schools.com/python/pandas/pandas_series.asp</p>
 <p>https://www.w3schools.com/python/pandas/pandas_dataframes.asp</p>
