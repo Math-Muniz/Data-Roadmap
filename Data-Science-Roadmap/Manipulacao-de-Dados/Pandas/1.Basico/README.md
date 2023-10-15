@@ -1,5 +1,5 @@
 <h1 align="center">Básico</h1>
-<p>Vamos começar a estudar agora o Básico do Pandas.</p>
+<p>Vamos começar a estudar agora o Básico da nossa Biblioteca Pandas.</p>
 <h2 align="center">Pandas Series</h2>
 <h3 align="center">O que é Series?</h3>
 <p>A Pandas Series é como uma coluna em uma tabela.</p>
