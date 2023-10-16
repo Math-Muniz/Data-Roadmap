@@ -223,6 +223,19 @@ import pandas as pd
 
 print(pd.options.display.max_rows) 
 </pre>
+<p>No meu sistema o número é 60, o que significa que se o DataFrame contiver mais de 60 linhas, a instrução print(df) retornará apenas os cabeçalhos e as primeiras e últimas 5 linhas.</p>
+<p>Você pode alterar o número máximo de linhas com a mesma instrução.</p>
+<p><b>Exemplo:</b></p>
+<p>Aumente o número máximo de linhas e mostre todo o DataFrame:<p>
+<pre>
+import pandas as pd
+
+pd.options.display.max_rows = 9999
+
+df = pd.read_csv('data.csv')
+
+print(df)
+</pre>
 <h2>Referencias</h2>
 <p>https://www.w3schools.com/python/pandas/pandas_series.asp</p>
 <p>https://www.w3schools.com/python/pandas/pandas_dataframes.asp</p>
