@@ -299,6 +299,58 @@ df = pd.DataFrame(data)
 
 print(df)
 </pre>
+<h2 align="center">Analisando DataFrames com Pandas</h2>
+<h3 align="center">Visualizando os Dados</h3>
+<p>Um dos métodos mais utilizados para obter uma rápida visão geral do DataFrame é o método head().</p>
+<p>O método head() retorna os cabeçalhos e um número específico de linhas, começando do topo.</p>
+<p><b>Exemplo:</b></p>
+<p>Obtenha uma rápida visão geral imprimindo as primeiras 10 linhas do DataFrame:</p>
+<pre>
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+print(df.head(10))
+</pre>
+<p>Em nossos exemplos abaixo estaremos usando um arquivo CSV chamado 'data.csv'</p>
+<p><a href="https://www.w3schools.com/python/pandas/data.csv.txt">open data.csv in your browser</a></p>
+<p><b></b></p>
+<p><b></b></p>
+<p></p>
+<pre>
+
+</pre>
+<p></p>
+<p></p>
+<p><b></b></p>
+<p></p>
+<pre>
+
+</pre>
+<h3 align="center"></h3>
+<p></p>
+<p><b></b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b></b></p>
+<pre>
+
+</pre>
+<h3 align="center"></h3>
+<p></p>
+<pre>
+
+</pre>
+<p></p>
+<pre>
+
+</pre>
+<h3 align="center"></h3>
+<p></p>
+<p></p>
+<p></p>
 <h2>Referencias</h2>
 <p>https://www.w3schools.com/python/pandas/pandas_series.asp</p>
 <p>https://www.w3schools.com/python/pandas/pandas_dataframes.asp</p>
