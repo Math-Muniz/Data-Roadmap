@@ -313,6 +313,8 @@ for x in df.index:
 &emsp;&emsp;if df.loc[x, "Duration"] > 120:
 &emsp;&emsp;&emsp;&emsp;df.drop(x, inplace = True)
 </pre>
+<h1 align="center">Removendo Dados Duplicados com Pandas</h1>
+<h2 align="center">Descobrindo Dados Duplicados</h2>
 <h2 align="center">Referências</h2>
 <p>https://www.w3schools.com/python/pandas/pandas_cleaning.asp</p>
 <p>https://www.w3schools.com/python/pandas/pandas_cleaning_empty_cells.asp</p>
