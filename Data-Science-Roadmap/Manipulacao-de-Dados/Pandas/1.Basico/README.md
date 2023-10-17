@@ -313,7 +313,7 @@ df = pd.read_csv('data.csv')
 print(df.head(10))
 </pre>
 <p>Em nossos exemplos abaixo estaremos usando um arquivo CSV chamado 'data.csv'</p>
-<p><a href="https://www.w3schools.com/python/pandas/data.csv.txt">open data.csv in your browser</a></p>
+<p>open <a href="https://www.w3schools.com/python/pandas/data.csv.txt">data.csv</a> in your browser</p>
 <p><b></b></p>
 <p><b></b></p>
 <p></p>
