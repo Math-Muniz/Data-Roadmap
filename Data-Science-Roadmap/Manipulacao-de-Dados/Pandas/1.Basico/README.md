@@ -314,43 +314,68 @@ print(df.head(10))
 </pre>
 <p>Em nossos exemplos abaixo estaremos usando um arquivo CSV chamado 'data.csv'</p>
 <p>open <a href="https://www.w3schools.com/python/pandas/data.csv.txt">data.csv</a> in your browser</p>
-<p><b></b></p>
-<p><b></b></p>
-<p></p>
+<p><b>Observação:</b> se o número de linhas não for especificado dentro do método head(), então o método irá retornar as primeiras 5 linhas.</p>
+<p><b>Exemplo:</b></p>
+<p>Vamos testar essa observação acima mostrando somente as 5 primeiras linhas do nosso DataFrame:</p>
 <pre>
+import pandas as pd
 
+df = pd.read_csv('data.csv')
+
+print(df.head())
 </pre>
-<p></p>
-<p></p>
-<p><b></b></p>
-<p></p>
+<p>Também temos o método tail() que funciona da mesma forma do nosso método head() porém é usado para visualizarmos as últimas linhas.</p>
+<p>O método tail() retorna os cabeçalhos e um número específico de linhas, começando pelo final.</p>
+<p><b>Exemplo:</b></p>
+<p>Agora vamos printar as útimas 5 linhas do DataFrame usando o método tail():</p>
 <pre>
+import pandas as pd
 
+df = pd.read_csv('data.csv')
+
+print(df.tail())
 </pre>
-<h3 align="center"></h3>
+<h3 align="center">Informações sobre os Dados</h3>
 <p></p>
-<p><b></b></p>
-<p></p>
+<p><b>Exemplo:</b></p>
+<p>Os DataFrames no Python possuem um método chamado info(), que fornece mais informações sobre o conjunto de dados.</p>
 <pre>
-
+print(df.info()) 
 </pre>
-<p><b></b></p>
+<p><b>Resultado:</b></p>
 <pre>
-
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 169 entries, 0 to 168
+Data columns (total 4 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   Duration  169 non-null    int64  
+ 1   Pulse     169 non-null    int64  
+ 2   Maxpulse  169 non-null    int64  
+ 3   Calories  164 non-null    float64
+dtypes: float64(1), int64(3)
+memory usage: 5.4 KB
+None
 </pre>
-<h3 align="center"></h3>
-<p></p>
+<h3 align="center">Resultado Explicado</h3>
+<p>O resultado mostra que temos 169 linhas e 4 colunas:</p>
 <pre>
-
+RangeIndex: 169 entries, 0 to 168
+Data columns (total 4 columns):
 </pre>
-<p></p>
+<p>E o nome de cada coluna com seu determinado tipo:</p>
 <pre>
-
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   Duration  169 non-null    int64  
+ 1   Pulse     169 non-null    int64  
+ 2   Maxpulse  169 non-null    int64  
+ 3   Calories  164 non-null    float64
 </pre>
-<h3 align="center"></h3>
-<p></p>
-<p></p>
-<p></p>
+<h3 align="center">Valores Nulos</h3>
+<p>O método info() também nos diz quantos valores não nulos existem em cada coluna, e em nosso conjunto de dados parece haver 164 de 169 valores não nulos na coluna 'Calories'.</p>
+<p>Isso significa que existem 5 linhas sem nenhum valor na coluna 'Calories', por qualquer motivo.</p>
+<p>Valores vazios, ou valores nulos, podem ser problemáticos ao analisar dados, e você deve considerar a remoção de linhas com valores vazios. Isso é um passo em direção ao que é chamado de limpeza de dados, e você aprenderá mais sobre isso nos próximos capítulos.</p>
 <h2>Referencias</h2>
 <p>https://www.w3schools.com/python/pandas/pandas_series.asp</p>
 <p>https://www.w3schools.com/python/pandas/pandas_dataframes.asp</p>
