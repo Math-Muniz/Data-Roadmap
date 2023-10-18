@@ -40,7 +40,7 @@ Calories  0.922721  0.025120  0.203814  1.000000
 <h2 align="center">Plotagem</h2>
 <p>O Pandas utiliza o método plot() para criar diagramas.</p>
 <p>Podemos usar o Pyplot, um submódulo da biblioteca Matplotlib, para visualizar o diagrama na tela.</p>
-<p>Saiba mais sobre o Matplotlib na sua <a href="https://www.w3schools.com/python/pandas/data.csv.txt">documentação</a>.</p>
+<p>Saiba mais sobre o Matplotlib na sua <a href="https://matplotlib.org/">documentação</a>.</p>
 <p><b>Exemplo:</b></p>
 <p></p>
 <pre>
