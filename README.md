@@ -11,7 +11,7 @@
        <ul>
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python">1. Python (Finalizado)</a></li>
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/SQL">2. SQL (Finalizado)</a></li>
-           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados">3. Manipulação de Dados com Python (Em progresso...)</a></li>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados">3. Manipulação de Dados com Python (Finalizado)</a></li>
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica">4. Estatística (Finalizado)</a></li>
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados">5. Visualização de Dados com Python (Em progresso...)</a></li>
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Modelagem-de-Dados">6. Modelagem de Dados com Python (Em progresso...)</a></li>
