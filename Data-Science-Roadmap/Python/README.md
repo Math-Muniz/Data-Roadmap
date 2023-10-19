@@ -1,10 +1,10 @@
-<h1>Python</h1>
+<h1 align="center">Python</h1>
 <p>Vamos começar nosso Roadmap por uma das Hard Skills mais importante: O Python. </p>
 
-<h2>Como usar:</h2>
+<h2 align="center">Como usar:</h2>
 <p>Abaixo você pode ver os conteúdos disponíveis, caso você clique no capítulo irá ser redirecionado para o repositório aonde contém todos os arquivos para criação daquele capítulo.</p>
 
-<h1>Tabela de Conteúdos</h1>
+<h1 align="center">Tabela de Conteúdos</h1>
 <ul>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/1.Variaveis">1. Variáveis</a></li>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Python/2.Operadores">2. Operadores</a></li>
