@@ -94,19 +94,28 @@ plt.show()
 <img src="matplotlib_plotting4.png">
 <p>Os pontos no eixo x no exemplo acima são [0, 1, 2, 3, 4, 5].</p>
 <h1 align="center">Gráficos de Linha (Line Plots)</h1>
-<h2 align="center">Linestyle</h2>
-<p></p>
+<h2 align="center">Estilo da linha (Linestyle)</h2>
+<p>Você pode usar o argumento de palavra-chave "linestyle" ou a abreviação "ls" para alterar o estilo da linha plotada:</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Use uma linha pontilhada:</p>
 <pre>
+import matplotlib.pyplot as plt
+import numpy as np
 
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, linestyle = 'dotted')
+plt.show()
 </pre>
 <p><b>Resultado:</b></p>
-<img src="matplotlib_plotting3.png">
+<img src="matplotlib_line_dotted.png">
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Use uma linha tracejada:</p>
+<pre>
+plt.plot(ypoints, linestyle = 'dashed')
+</pre>
 <p><b>Resultado:</b></p>
-<img src="matplotlib_plotting3.png">
+<img src="matplotlib_line_dashed.png">
 <p>You can choose any of these styles:</p>
 <table>
   <tr>
@@ -135,23 +144,54 @@ plt.show()
   </tr>
 </table>
 <h2 align="center">Shorter Syntax</h2>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p><b></b></p>
-<p></p>
+<p>O estilo da linha pode ser escrito em uma sintaxe mais curta:</p>
+<p>"linestyle" pode ser escrito como "ls".</p>
+<p>"dotted" pode ser escrito como ":".</p>
+<p>"dashed" pode ser escrito como "--".</p>
+<p><b>Exemplo:</b></p>
+<p>Sintaxe mais curta:</p>
 <pre>
-
+plt.plot(ypoints, ls = ':')
 </pre>
-<p><b></b></p>
-<img src="matplotlib_plotting3.png">
-<h2 align="center">Line Color</h2>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_line_dotted.png">
+<h2 align="center">Cor da Linha (Line Color)</h2>
+<p>Você pode usar o argumento de palavra-chave "color" ou a abreviação "c" para definir a cor da linha:</p>
+<p><b>Exemplo:</b></p>
+<p>Defina a cor da linha como vermelho:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, color = 'r')
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_line_red.png">
+<p>Você também pode usar <a href="https://www.w3schools.com/colors/colors_hexadecimal.asp">valores de cor hexadecimal:</a></p>
+<p><b>Exemplo:</b></p>
+<p>Traçar com uma linda linha verde:</p>
+<pre>
+...
+plt.plot(ypoints, c = '#4CAF50')
+...
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_line_hex.png">
+<p>Ou qualquer um dos <a href="https://www.w3schools.com/colors/colors_names.asp">140 nomes de cores suportados.</a></p>
+<p><b>Exemplo:</b></p>
+<p>Traçar com a cor chamada "hotpink":</p>
+<pre>
+...
+plt.plot(ypoints, c = 'hotpink')
+...
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_line_hotpink.png">
+<h2 align="center">Largura da Linha (Line Width)</h2>
 <p></p>
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
+<p></p>
+<p><b>Exemplo:</b></p>
+<p></p>
