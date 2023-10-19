@@ -243,3 +243,4 @@ plt.show()
 </pre>
 <p><b>Resultado:</b></p>
 <img src="matplotlib_line_two.png">
+<h1 align="center">Gráficos de Dispersão (Scatter Plots)</h1>
