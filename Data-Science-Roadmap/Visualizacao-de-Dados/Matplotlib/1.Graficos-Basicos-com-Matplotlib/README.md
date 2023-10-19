@@ -94,3 +94,64 @@ plt.show()
 <img src="matplotlib_plotting4.png">
 <p>Os pontos no eixo x no exemplo acima são [0, 1, 2, 3, 4, 5].</p>
 <h1 align="center">Gráficos de Linha (Line Plots)</h1>
+<h2 align="center">Linestyle</h2>
+<p></p>
+<p><b>Exemplo:</b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_plotting3.png">
+<p><b>Exemplo:</b></p>
+<p></p>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_plotting3.png">
+<p>You can choose any of these styles:</p>
+<table>
+  <tr>
+    <th>Estilo</th>
+    <th>Ou</th>
+  </tr>
+  <tr>
+    <td>'solid' (Sólido)</td>
+    <td>'-'</td>
+  </tr>
+  <tr>
+    <td>'dotted' (Pontilhado)</td>
+    <td>':'</td>
+  </tr>
+  <tr>
+    <td>'dashed' ('tracejado')</td>
+    <td>'--'</td>
+  </tr>
+  <tr>
+    <td>'dashdot' ('tracejado-ponto')</td>
+    <td>'-.'</td>
+  </tr>
+  <tr>
+    <td>'None' ('Nenhum')</td>
+    <td>'' ou ' '</td>
+  </tr>
+</table>
+<h2 align="center">Shorter Syntax</h2>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p><b></b></p>
+<p></p>
+<pre>
+
+</pre>
+<p><b></b></p>
+<img src="matplotlib_plotting3.png">
+<h2 align="center">Line Color</h2>
+<p></p>
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
