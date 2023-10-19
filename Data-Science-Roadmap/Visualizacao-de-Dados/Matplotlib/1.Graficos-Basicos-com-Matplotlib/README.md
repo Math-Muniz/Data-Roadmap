@@ -143,7 +143,7 @@ plt.plot(ypoints, linestyle = 'dashed')
     <td>'' ou ' '</td>
   </tr>
 </table>
-<h2 align="center">Shorter Syntax</h2>
+<h2 align="center">Sintaxe Abreviada (Shorter Syntax)</h2>
 <p>O estilo da linha pode ser escrito em uma sintaxe mais curta:</p>
 <p>"linestyle" pode ser escrito como "ls".</p>
 <p>"dotted" pode ser escrito como ":".</p>
@@ -191,7 +191,55 @@ plt.plot(ypoints, c = 'hotpink')
 <p><b>Resultado:</b></p>
 <img src="matplotlib_line_hotpink.png">
 <h2 align="center">Largura da Linha (Line Width)</h2>
-<p></p>
-<p></p>
+<p>Você pode usar o argumento de palavra-chave linewidth ou a abreviação lw para alterar a largura da linha.</p>
+<p>O valor é um número flutuante, em pontos:</p>
 <p><b>Exemplo:</b></p>
-<p></p>
+<p>Desenhe uma linha larga de 20,5 pontos:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, linewidth = '20.5')
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_line_lw.png">
+<h2 align="center">Múltiplas Linhas (Multiple Lines)</h2>
+<p>Você pode plotar quantas linhas desejar, simplesmente adicionando mais funções plt.plot():</p>
+<p><b>Exemplo:</b></p>
+<p>Desenhe duas linhas especificando uma função plt.plot() para cada linha:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+y1 = np.array([3, 8, 1, 10])
+y2 = np.array([6, 2, 7, 11])
+
+plt.plot(y1)
+plt.plot(y2)
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_line_two.png">
+<p>Você também pode plotar muitas linhas adicionando os pontos para o eixo x e y para cada linha na mesma função plt.plot().</p>
+<p>(Nos exemplos acima, especificamos apenas os pontos no eixo y, o que significa que os pontos no eixo x receberam os valores padrão (0, 1, 2, 3).)</p>
+<p>Os valores de x e y são fornecidos em pares:</p>
+<p><b>Exemplo:</b></p>
+<p>Desenhe duas linhas especificando os valores dos pontos x e y para ambas as linhas:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x1 = np.array([0, 1, 2, 3])
+y1 = np.array([3, 8, 1, 10])
+x2 = np.array([0, 1, 2, 3])
+y2 = np.array([6, 2, 7, 11])
+
+plt.plot(x1, y1, x2, y2)
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_line_two.png">
