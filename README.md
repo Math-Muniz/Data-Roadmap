@@ -45,6 +45,8 @@
     <li>[X] <a href="https://www.amazon.com.br/gp/product/8522128146/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1">Algoritmos E Lógica Da Programação</a></li>
     <li>[X] <a href="https://www.amazon.com.br/gp/product/8575228358/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1">Programador Autodidata</a></li>
     <li>[X] <a href="https://www.amazon.com.br/gp/product/8575228374/ref=ppx_yo_dt_b_asin_title_o03_s01?ie=UTF8&psc=1">Cientista da Computação Autodidata</a></li>
+    <li>[X] <a href="https://www.amazon.com.br/Storytelling-com-Dados-Visualiza%C3%A7%C3%A3o-Profissionais/dp/8550804681/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">Storytelling com dados: um guia sobre visualização de dados para profissionais de negócios</a></li>
+    <li>[X] <a href="https://www.amazon.com.br/Pense-Python-Como-Cientista-Computa%C3%A7%C3%A3o/dp/8575225081/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=python&s=books&sr=1-4">Pense em Python: Pense Como um Cientista da Computação</a></li>
     <li>[X] <a href="https://www.amazon.com.br/gp/product/8575225634/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1">Entendendo Algoritmos: Um Guia Ilustrado Para Programadores e Outros Curiosos</a></li>
     <li>[ ] <a href="https://www.amazon.com.br/gp/product/6586057108/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1">Projetos de Ciência de Dados com Python</a></li>
     <li>[ ] <a href="https://www.amazon.com.br/gp/product/6586057752/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1">SQL para Análise de Dados: Técnicas Avançadas Para Transformar Dados em Insights</a></li>
