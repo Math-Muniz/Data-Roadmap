@@ -1,10 +1,10 @@
-<h1>Estatística</h1>
+<h1 align="center">Estatística</h1>
 <p>Agora no nosso Roadmap vamos estudar uma outra Hard Skills importante: A Estatística.</p>
 
-<h2>Como usar:</h2>
+<h2 align="center">Como usar:</h2>
 <p>Abaixo você pode ver os conteúdos disponíveis, caso você clique no capítulo irá ser redirecionado para o repositório aonde contém todos os arquivos para criação daquele capítulo.</p>
 
-<h1>Tabela de Conteúdos</h1>
+<h1 align="center">Tabela de Conteúdos</h1>
 <ul>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/1.Estatistica-Descritiva-Univariada">1. Estatística Descritiva Univariada: Média, Moda e Mediana</a></li>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica/2.Medidas-de-dispersao">2. Medidas de Dispersão: Amplitude, Desvio-Médio, Variância, Desvio-padrão, Erro-padrão</a></li>
