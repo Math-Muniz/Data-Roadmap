@@ -244,3 +244,157 @@ plt.show()
 <p><b>Resultado:</b></p>
 <img src="matplotlib_line_two.png">
 <h1 align="center">Gráficos de Dispersão (Scatter Plots)</h1>
+<h2 align="center">Criando Gráficos de Dispersão (Scatter Plots)</h2>
+<p>Com o Pyplot, você pode usar a função scatter() para desenhar um gráfico de dispersão.</p>
+<p>A função scatter() representa um ponto para cada observação. Ela requer dois arrays de comprimento igual, um para os valores do eixo x e outro para os valores no eixo y:</p>
+<p><b>Exemplo:</b></p>
+<p>Um gráfico de dispersão simples:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
+y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+
+plt.scatter(x, y)
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_scatter.png">
+<p>A observação no exemplo acima é o resultado de 13 carros passando.</p>
+<p>O eixo X mostra a idade do carro.</p>
+<p>O eixo Y mostra a velocidade do carro ao passar.</p>
+<p>Existem alguma relação entre as observações?</p>
+<p>Parece que quanto mais novo o carro, mais rápido ele anda, mas isso poderia ser uma coincidência, afinal, só registramos 13 carros.</p>
+<h2 align="center">Comparar Gráficos</h2>
+<p>No exemplo acima, parece haver uma relação entre a velocidade e a idade, mas e se plotarmos as observações de outro dia também? O gráfico de dispersão nos dirá algo diferente?</p>
+<p><b>Exemplo:</b></p>
+<p>Desenhe dois gráficos na mesma figura:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+#day one, the age and speed of 13 cars:
+x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
+y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+plt.scatter(x, y)
+
+#day two, the age and speed of 15 cars:
+x = np.array([2,2,8,1,15,8,12,9,7,3,11,4,7,14,12])
+y = np.array([100,105,84,105,90,99,90,95,94,100,79,112,91,80,85])
+plt.scatter(x, y)
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_scatter_compare.png">
+<p><b>Observação:</b> Os dois gráficos são plotados com cores diferentes, por padrão azul e laranja. Você aprenderá a alterar as cores mais tarde neste capítulo.</p>
+<p>Comparando os dois gráficos, acredito que é seguro dizer que ambos nos dão a mesma conclusão: quanto mais novo o carro, mais rápido ele anda.</p>
+<h2 align="center">Cores</h2>
+<p>Comparando os dois gráficos, acredito que é seguro dizer que ambos nos dão a mesma conclusão: quanto mais novo o carro, mais rápido ele anda.</p>
+<p><b>Exemplo:</b></p>
+<p>Defina sua própria cor para os marcadores:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
+y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+plt.scatter(x, y, color = 'hotpink')
+
+x = np.array([2,2,8,1,15,8,12,9,7,3,11,4,7,14,12])
+y = np.array([100,105,84,105,90,99,90,95,94,100,79,112,91,80,85])
+plt.scatter(x, y, color = '#88c999')
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_scatter_color.png">
+<h2 align="center">Colorir Cada Ponto</h2>
+<p>Você pode até definir uma cor específica para cada ponto usando um array de cores como valor para o argumento c:</p>
+<p><b>Observação: </b>Você não pode usar o argumento color para isso, apenas o argumento c.</p>
+<p><b>Exemplo:</b></p>
+<p>Defina sua própria cor para os marcadores:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
+y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+colors = np.array(["red","green","blue","yellow","pink","black","orange","purple","beige","brown","gray","cyan","magenta"])
+
+plt.scatter(x, y, c=colors)
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_scatter_colors2.png">
+<h2 align="center">Mapa de Cores</h2>
+<p>O módulo Matplotlib possui vários mapas de cores disponíveis.</p>
+<p>Um mapa de cores é como uma lista de cores, onde cada cor possui um valor que varia de 0 a 100.</p>
+<p>Aqui está um exemplo de um mapa de cores:</p>
+<img src="colorbar.png">
+<p>Este mapa de cores é chamado 'viridis' e, como você pode ver, varia de 0, que é uma cor roxa, até 100, que é uma cor amarela.</p>
+<h3 align="center">Como Usar o Mapa de Cores</h3>
+<p>Você pode especificar o mapa de cores com o argumento de palavra-chave cmap com o valor do mapa de cores, neste caso 'viridis', que é um dos mapas de cores incorporados disponíveis no Matplotlib.</p>
+<p>Além disso, você deve criar um array com valores (de 0 a 100), um valor para cada ponto no gráfico de dispersão:</p>
+<p><b>Exemplo:</b></p>
+<p>Crie um array de cores e especifique um mapa de cores no gráfico de dispersão:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
+y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+colors = np.array([0, 10, 20, 30, 40, 45, 50, 55, 60, 70, 80, 90, 100])
+
+plt.scatter(x, y, c=colors, cmap='viridis')
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_scatter_colormap1.png">
+<p>Você pode incluir o mapa de cores no desenho incluindo a declaração plt.colorbar():</p>
+<p><b>Exemplo:</b></p>
+<p>Inclua o mapa de cores real:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
+y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+colors = np.array([0, 10, 20, 30, 40, 45, 50, 55, 60, 70, 80, 90, 100])
+
+plt.scatter(x, y, c=colors, cmap='viridis')
+
+plt.colorbar()
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_scatter_colormap2.png">
+<h3 align="center">Mapas de Cores Disponíveis</h3>
+<p>Você pode escolher qualquer um dos mapas de cores incorporados:</p>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Reverse</th>
+  </tr>
+  <tr>
+    <td>Accent</td>
+    <td>Accent_r</td>
+  </tr>
+  <tr>
+    <td>Blues</td>
+    <td>Blues_r</td>
+  </tr>
+  <tr>
+    <td>BrBG</td>
+    <td>BrBG_r</td>
+  </tr>
+  <tr>
+    <td>BuGn</td>
+    <td>BuGn_r</td>
+  </tr>
+  <!-- E assim por diante, você pode copiar e colar o restante das linhas -->
+</table>
