@@ -717,3 +717,63 @@ plt.show()
     <td>winter_r</td>
   </tr>
 </table>
+<h2 align="center">Tamanho</h2>
+<p>Você pode alterar o tamanho dos pontos com o argumento s.</p>
+<p>Assim como as cores, certifique-se de que o array de tamanhos tenha o mesmo comprimento dos arrays para os eixos x e y:</p>
+<p><b>Exemplo:</b></p>
+<p>Defina o seu próprio tamanho para os marcadores:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
+y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+sizes = np.array([20,50,100,200,500,1000,60,90,10,300,600,800,75])
+
+plt.scatter(x, y, s=sizes)
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_scatter_size.png">
+<h2 align="center">Alfa (Alpha)</h2>
+<p>Você pode ajustar a transparência dos pontos com o argumento alfa.</p>
+<p>Assim como as cores, certifique-se de que o array de tamanhos tenha o mesmo comprimento dos arrays para os eixos x e y:</p>
+<p><b>Exemplo:</b></p>
+<p>Defina a sua própria transparência para os marcadores:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
+y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+sizes = np.array([20,50,100,200,500,1000,60,90,10,300,600,800,75])
+
+plt.scatter(x, y, s=sizes, alpha=0.5)
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_scatter_alpha.png">
+<h2 align="center">Combine Cor, Tamanho e Alfa</h2>
+<p>Você pode combinar um mapa de cores com diferentes tamanhos dos pontos. Isso é melhor visualizado se os pontos forem transparentes:</p>
+<p><b>Exemplo:</b></p>
+<p>Crie arrays aleatórios com 100 valores para os pontos x, pontos y, cores e tamanhos:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.random.randint(100, size=(100))
+y = np.random.randint(100, size=(100))
+colors = np.random.randint(100, size=(100))
+sizes = 10 * np.random.randint(100, size=(100))
+
+plt.scatter(x, y, c=colors, s=sizes, alpha=0.5, cmap='nipy_spectral')
+
+plt.colorbar()
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_scatter_combine.png">
+<h1 align="center">Gráficos de Barras (Bar Plots)</h1>
