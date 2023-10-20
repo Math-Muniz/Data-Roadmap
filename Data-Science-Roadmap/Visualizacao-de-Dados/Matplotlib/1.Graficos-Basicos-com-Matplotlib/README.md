@@ -777,3 +777,126 @@ plt.show()
 <p><b>Resultado:</b></p>
 <img src="matplotlib_scatter_combine.png">
 <h1 align="center">Gráficos de Barras (Bar Plots)</h1>
+<h2 align="center">Criando Gráficos de Barras (Bar Plots)</h2>
+<p>Com Pyplot, você pode usar a função bar() para desenhar gráficos de barras:</p>
+<p><b>Exemplo:</b></p>
+<p>Desenhe 4 barras:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.bar(x,y)
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_bars1.png">
+<p>A função bar() aceita argumentos que descrevem o layout das barras.</p>
+<p>As categorias e seus valores são representados pelo primeiro e segundo argumentos como arrays.</p>
+<p><b>Exemplo:</b></p>
+<pre>
+x = ["APPLES", "BANANAS"]
+y = [400, 350]
+plt.bar(x, y)
+</pre>
+<h2 align="center">Barras Horizontais</h2>
+<p>Se você deseja que as barras sejam exibidas horizontalmente em vez de verticalmente, use a função barh():</p>
+<p><b>Exemplo:</b></p>
+<p>Desenhe 4 barras horizontais:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.barh(x, y)
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_bars2.png">
+<h2 align="center">Cor das Barras</h2>
+<p>As funções bar() e barh() aceitam o argumento de palavra-chave color para definir a cor das barras:</p>
+<p><b>Exemplo:</b></p>
+<p>Desenhe 4 barras vermelhas:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.bar(x, y, color = "red")
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_bars_red.png">
+<h2 align="center">Nomes das Cores</h2>
+<p>Você pode usar qualquer um dos 140 nomes de cores suportados.</p>
+<p><b>Exemplo:</b></p>
+<p>Desenhe 4 barras "rosa quente":</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.bar(x, y, color = "hotpink")
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_bars_hotpink.png">
+<h2 align="center">Cores em Hexadecimal</h2>
+<p>Ou você pode usar valores de cores em hexadecimal:</p>
+<p><b>Exemplo:</b></p>
+<p>Desenhe 4 barras com uma bela cor verde:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.bar(x, y, color = "#4CAF50")
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_bars_green.png">
+<h2 align="center">Largura das Barras</h2>
+<p>A função bar() aceita o argumento de palavra-chave width para definir a largura das barras:</p>
+<p><b>Exemplo:</b></p>
+<p>Desenhe 4 barras muito finas:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.bar(x, y, width = 0.1)
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_bars_thin.png">
+<p>O valor padrão de largura é 0.8</p>
+<p><b>Observação:</b> Para barras horizontais, use height em vez de width.</p>
+<h2 align="center">Altura das Barras</h2>
+<p>A função barh() aceita o argumento de palavra-chave height para definir a altura das barras:</p>
+<p><b>Exemplo:</b></p>
+<p>Desenhe 4 barras muito finas:</p>
+<pre>
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.barh(x, y, height = 0.1)
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_barh_height.png">
+<p>O valor padrão de altura é 0.8</p>
