@@ -300,3 +300,4 @@ plt.show()
 </pre>
 <p><b>Resultado:</b></p>
 <img src="matplotlib_marker_hotpink.png">
+<h1 align="center">Rótulos e Legendas (Labels)</h1>
