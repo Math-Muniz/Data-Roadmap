@@ -386,3 +386,99 @@ plt.show()
 </pre>
 <p><b>Resultado:</b></p>
 <img src="matplotlib_title_loc.png">
+<h1 align="center">Grade (Grid)</h1>
+<h2 align="center">Adicionar Linhas de Grade a um Gráfico</h2>
+<p>Com o Pyplot, você pode usar a função grid() para adicionar linhas de grade ao gráfico.</p>
+<p><b>Exemplo:</b></p>
+<p>Adicione linhas de grade ao gráfico:</p>
+<pre>
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
+y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
+
+plt.title("Sports Watch Data")
+plt.xlabel("Average Pulse")
+plt.ylabel("Calorie Burnage")
+
+plt.plot(x, y)
+
+plt.grid()
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_grid.png">
+<h2 align="center">Especificar Quais Linhas de Grade Exibir</h2>
+<p>Você pode usar o parâmetro axis na função grid() para especificar quais linhas de grade exibir.</p>
+<p>Os valores permitidos são: 'x', 'y' e 'both' (ambos). O valor padrão é 'both' (ambos).</p>
+<p><b>Exemplo:</b></p>
+<p>Exibir somente linhas de grade para o eixo x:</p>
+<pre>
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
+y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
+
+plt.title("Sports Watch Data")
+plt.xlabel("Average Pulse")
+plt.ylabel("Calorie Burnage")
+
+plt.plot(x, y)
+
+plt.grid(axis = 'x')
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_grid_axisx.png">
+<p><b>Exemplo:</b></p>
+<p>Display only grid lines for the y-axis:</p>
+<pre>
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
+y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
+
+plt.title("Sports Watch Data")
+plt.xlabel("Average Pulse")
+plt.ylabel("Calorie Burnage")
+
+plt.plot(x, y)
+
+plt.grid(axis = 'y')
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_grid_axisy.png">
+<h2 align="center">Definir Propriedades das Linhas de Grade</h2>
+<p>Você também pode definir as propriedades das linhas de grade, como: grid(color = 'cor', linestyle = 'estilo_de_linha', linewidth = número).</p>
+<p><b>Exemplo:</b></p>
+<p>Definir as propriedades das linhas de grade:</p>
+<pre>
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
+y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
+
+plt.title("Sports Watch Data")
+plt.xlabel("Average Pulse")
+plt.ylabel("Calorie Burnage")
+
+plt.plot(x, y)
+
+plt.grid(color = 'green', linestyle = '--', linewidth = 0.5)
+
+plt.show()
+</pre>
+<p><b>Resultado:</b></p>
+<img src="matplotlib_grid_kwargs.png">
+<h2 align="center">Refêrencias:</h2>
+<p>https://www.w3schools.com/python/matplotlib_markers.asp</p>
+<p>https://www.w3schools.com/python/matplotlib_labels.asp</p>
+<p>https://www.w3schools.com/python/matplotlib_grid.asp</p>
