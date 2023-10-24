@@ -166,3 +166,5 @@ plt.show()
 </pre>
 <p><b>Resultado:</b></p>
 <img src="matplotlib_subplots5.png">
+<h2 align="center">Refêrencias:</h2>
+<p>https://www.w3schools.com/python/matplotlib_subplot.asp</p>
