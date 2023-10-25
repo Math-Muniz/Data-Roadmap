@@ -62,4 +62,21 @@
    <li><a href="https://www.datahackers.com.br/podcast">Data Hackers</a></li>
 </ul>
 
+<h2 align="center">Youtube</h2>
+<p>Abaixo coloquei alguns canais do Youtube sobre a <b>Área de Dados</b>, alguns são em inglês então não se assuste.</p>
+<ul>
+   <li><a href="https://www.youtube.com/@pizzadedados">Pizza de Dados (Português)</a> - Assunto: É mais um podcast porém focado em Ciência de Dados.</li>
+   <li><a href="https://www.youtube.com/@HashtagProgramacao">Hashtag Programação (Português)</a> - Assunto: Voltado a vários cursos e assuntos de programação diferentes, porém tem bastante conteúdo sobre a <b>Área de Dados</b>.</li>
+   <li><a href="https://www.youtube.com/@statquest">StatQuest with Josh Starmer (Inglês)</a> - Assunto: Estatistica, Machine Learning e Data Science</li>
+   <li><a href="https://www.youtube.com/@DarshilParmar">Darshil Parmar (Inglês)</a> - Assunto: Engenharia de Dados e Arquitetura de Soluções</li>
+   <li><a href="https://www.youtube.com/@SeattleDataGuy">Seattle Data Guy (Inglês)</a> - Assunto: Engenharia de dados.</li>
+</ul>
+
+<h2 align="center">Jogos</h2>
+<p>Abaixo coloquei um jogo sobre a <b>Área de Dados</b>.No jogo você é um especialista em Machine Learning e cria redes neurais para aprender a linguagem do seu gato. Este jogo é consiste em vários quebra-cabeças centrado em <b>Data Science.</b></p>
+<ul>
+   <li><a href="https://store.steampowered.com/app/619150/while_True_learn/">while True: learn()</a></li>
+   <li><a href="https://store.steampowered.com/app/1026800/while_True_learn_Mega_Map_of_Machine_Learning/"> while True: learn() Mega Map of Machine Learning (DLC - Expansão do Jogo)</a></li>
+</ul>
+
 <h2 align="center">🚧  Data Roadmap 🚀 Em construção...  🚧</h2>
