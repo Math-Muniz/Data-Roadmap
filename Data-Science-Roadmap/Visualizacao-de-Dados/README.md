@@ -10,6 +10,6 @@
 
 <h1 align="center">Tabela de Conteúdos</h1>
 <ul>
-   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados/Matplotlib">Matplotlib</a></li>
-   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados/Seaborn">Seaborn</a></li>
+   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados/Matplotlib">1. Matplotlib</a></li>
+   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados/Seaborn">2. Seaborn</a></li>
 </ul>
