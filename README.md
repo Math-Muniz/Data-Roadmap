@@ -65,11 +65,12 @@
 <h2 align="center">Youtube</h2>
 <p>Abaixo coloquei alguns canais do Youtube sobre a <b>Área de Dados</b>, alguns são em inglês então não se assuste.</p>
 <ul>
-   <li><a href="https://www.youtube.com/@pizzadedados">Pizza de Dados (Português)</a> - Assunto: É mais um podcast porém focado em Ciência de Dados.</li>
-   <li><a href="https://www.youtube.com/@HashtagProgramacao">Hashtag Programação (Português)</a> - Assunto: Voltado a vários cursos e assuntos de programação diferentes, porém tem bastante conteúdo sobre a <b>Área de Dados</b>.</li>
-   <li><a href="https://www.youtube.com/@statquest">StatQuest with Josh Starmer (Inglês)</a> - Assunto: Estatistica, Machine Learning e Data Science</li>
-   <li><a href="https://www.youtube.com/@DarshilParmar">Darshil Parmar (Inglês)</a> - Assunto: Engenharia de Dados e Arquitetura de Soluções</li>
-   <li><a href="https://www.youtube.com/@SeattleDataGuy">Seattle Data Guy (Inglês)</a> - Assunto: Engenharia de dados.</li>
+   <li><a href="https://www.youtube.com/@pizzadedados">Pizza de Dados </a>(Português) - Assunto: É mais um podcast porém focado em Ciência de Dados.</li>
+   <li><a href="https://www.youtube.com/@HashtagProgramacao">Hashtag Programação </a>(Português) - Assunto: Voltado a vários cursos e assuntos de programação diferentes, porém tem bastante conteúdo sobre a <b>Área de Dados</b>.</li>
+   <li><a href="https://www.youtube.com/@statquest">StatQuest with Josh Starmer </a>(Inglês) - Assunto: Estatistica, Machine Learning e Data Science</li>
+   <li><a href="https://www.youtube.com/@campusx-official">Campus X </a>(Inglês) - Assunto: Estatistica, SQL, Python, Machine Learning e Data Science</li>
+   <li><a href="https://www.youtube.com/@DarshilParmar">Darshil Parmar </a>(Inglês) - Assunto: Engenharia de Dados e Arquitetura de Soluções</li>
+   <li><a href="https://www.youtube.com/@SeattleDataGuy">Seattle Data Guy </a>(Inglês) - Assunto: Engenharia de dados.</li>
 </ul>
 
 <h2 align="center">Jogos</h2>
