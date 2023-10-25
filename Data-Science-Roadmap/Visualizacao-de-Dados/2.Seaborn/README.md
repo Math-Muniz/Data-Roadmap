@@ -1,7 +1,7 @@
 <h1 align="center">Seaborn</h1>
 <h2 align="center">Visualize Distribuições com o Seaborn</h2>
 <p>O Seaborn é uma biblioteca que utiliza o Matplotlib por baixo para plotar gráficos.</p>
-<img src="">
+<img src="sns1.png">
 <h2 align="center">Instale o Seaborn</h2>
 <p>Se você já tem o Python e o PIP instalados em seu sistema, instale o Seaborn usando este comando:</p>
 <pre>
