@@ -73,7 +73,7 @@
 </ul>
 
 <h2 align="center">Jogos</h2>
-<p>Abaixo coloquei um jogo sobre a <b>Área de Dados</b>.No jogo você é um especialista em Machine Learning e cria redes neurais para aprender a linguagem do seu gato. Este jogo é consiste em vários quebra-cabeças centrado em <b>Data Science.</b></p>
+<p>Abaixo coloquei um jogo sobre a <b>Área de Dados</b>. No jogo você é um especialista em Machine Learning e cria redes neurais para aprender a linguagem do seu gato. Este jogo é consiste em vários quebra-cabeças centrado em <b>Data Science.</b></p>
 <ul>
    <li><a href="https://store.steampowered.com/app/619150/while_True_learn/">while True: learn()</a></li>
    <li><a href="https://store.steampowered.com/app/1026800/while_True_learn_Mega_Map_of_Machine_Learning/"> while True: learn() Mega Map of Machine Learning (DLC - Expansão do Jogo)</a></li>
