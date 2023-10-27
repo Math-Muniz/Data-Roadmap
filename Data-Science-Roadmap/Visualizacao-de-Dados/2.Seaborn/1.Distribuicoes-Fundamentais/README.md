@@ -1,5 +1,5 @@
 <h1 align="center">Distribuições Fundamentais</h1>
-<h1 align="center">Distribuição (Gaussiana) Normal (Normal Distribution)</h1>
+<h1 align="center">Distribuição (Gaussiana) Normal - (Normal Distribution)</h1>
 <p>A Distribuição Normal é uma das distribuições mais importantes.</p>
 <p>Também é chamada de Distribuição Gaussiana em homenagem ao matemático alemão Carl Friedrich Gauss.</p>
 <p>Ela se ajusta à distribuição de probabilidade de muitos eventos, como Pontuações de QI, Batimentos Cardíacos, etc.</p>
@@ -42,7 +42,7 @@ plt.show()
 <p><b>Resultado:</b></p>
 <img src="normal.png">
 <p><b>Observação:</b> A curva de uma Distribuição Normal também é conhecida como a Curva em Forma de Sino devido à sua forma de sino.</p>
-<h1 align="center">Distribuição Binomial (Binomial Distribution)</h1>
+<h1 align="center">Distribuição Binomial - (Binomial Distribution)</h1>
 <p>A Distribuição Binomial é uma Distribuição Discreta.</p>
 <p>Ela descreve o resultado de cenários binários, por exemplo, o lançamento de uma moeda, que resultará em cabeça ou coroa.</p>
 <p>Ela possui três parâmetros:</p>
@@ -89,7 +89,7 @@ plt.show()
 </pre>
 <p><b>Resultado:</b></p>
 <img src="binomial2.png">
-<h1 align="center">Distribuição Poisson (Poisson Distribution)</h1>
+<h1 align="center">Distribuição Poisson - (Poisson Distribution)</h1>
 <p>A Distribuição de Poisson é uma Distribuição Discreta.</p>
 <p>Ela estima quantas vezes um evento pode ocorrer em um período de tempo especificado. Por exemplo, se alguém come duas vezes por dia, qual é a probabilidade de que ele coma três vezes?</p>
 <p>Ela possui dois parâmetros:</p>
@@ -151,7 +151,7 @@ plt.show()
 </pre>
 <p><b>Resultado:</b></p>
 <img src="poisson3.png">
-<h1 align="center">Distribuição Uniforme (Uniform Distribution)</h1>
+<h1 align="center">Distribuição Uniforme - (Uniform Distribution)</h1>
 <p>Usada para descrever a probabilidade em que cada evento tem chances iguais de ocorrer.</p>
 <p>Por exemplo, a geração de números aleatórios.</p>
 <p>Possui três parâmetros:</p>
