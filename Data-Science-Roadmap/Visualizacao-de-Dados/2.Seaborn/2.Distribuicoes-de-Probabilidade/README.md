@@ -1,4 +1,5 @@
-<h1 align="center">Distribuição Logística</h1>
+<h1 align="center">Distribuições de Probabilidade</h1>
+<h1 align="center">Distribuição Logística (Logistic Distribution)</h1>
 <p>A Distribuição Logística é usada para descrever o crescimento.</p>
 <p>É amplamente usada em aprendizado de máquina em regressão logística, redes neurais, etc.</p>
 <p>Possui três parâmetros:</p>
