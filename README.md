@@ -13,7 +13,7 @@
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/SQL">2. SQL (Finalizado)</a></li>
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Manipulacao-de-Dados">3. Manipulação de Dados com Python (Finalizado)</a></li>
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Estatistica">4. Estatística (Finalizado)</a></li>
-           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados">5. Visualização de Dados com Python (Em progresso...)</a></li>
+           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Visualizacao-de-Dados">5. Visualização de Dados com Python (Finalizado)</a></li>
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Modelagem-de-Dados">6. Modelagem de Dados com Python (Em progresso...)</a></li>
       </ul>
    </li>
@@ -48,10 +48,10 @@
     <li>[X] <a href="https://www.amazon.com.br/Storytelling-com-Dados-Visualiza%C3%A7%C3%A3o-Profissionais/dp/8550804681/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">Storytelling com dados: um guia sobre visualização de dados para profissionais de negócios</a></li>
     <li>[X] <a href="https://www.amazon.com.br/Pense-Python-Como-Cientista-Computa%C3%A7%C3%A3o/dp/8575225081/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=python&s=books&sr=1-4">Pense em Python: Pense Como um Cientista da Computação</a></li>
     <li>[X] <a href="https://www.amazon.com.br/gp/product/8575225634/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1">Entendendo Algoritmos: Um Guia Ilustrado Para Programadores e Outros Curiosos</a></li>
-    <li>[ ] <a href="https://www.amazon.com.br/gp/product/6586057108/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1">Projetos de Ciência de Dados com Python</a></li>
+    <li>[X] <a href="https://www.amazon.com.br/gp/product/6586057108/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1">Projetos de Ciência de Dados com Python</a></li>
+    <li>[ ] <a href="https://www.amazon.com.br/gp/product/8550815489/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1">Mãos à obra: Aprendizado de máquina com Scikit-Learn, Keras & TensorFlow: Conceitos, Ferramentas e Técnicas para a Construção de Sistemas Inteligentes</a></li>
     <li>[ ] <a href="https://www.amazon.com.br/gp/product/8537818100/ref=ox_sc_act_title_4?smid=A1ZZFT5FULY4LN&psc=1">O andar do bêbado: Como o acaso determina nossas vidas</a></li>
     <li>[ ] <a href="https://www.amazon.com.br/gp/product/6586057752/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1">SQL para Análise de Dados: Técnicas Avançadas Para Transformar Dados em Insights</a></li>
-    <li>[ ] <a href="https://www.amazon.com.br/gp/product/8550815489/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1">Mãos à obra: Aprendizado de máquina com Scikit-Learn, Keras & TensorFlow: Conceitos, Ferramentas e Técnicas para a Construção de Sistemas Inteligentes</a></li>
     <li>[ ] <a href="https://www.amazon.com/gp/product/0578973839/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1">Ace the Data Science Interview: 201 Real Interview Questions Asked By FAANG, Tech Startups, & Wall Street</a></li>
 </ul>
 
