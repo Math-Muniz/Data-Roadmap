@@ -1,3 +1,4 @@
+<h1 align="center">SQL PRATICAL - Interview Questions with Answers</h1>
 <p>1. Write a SQL query to retrieve all columns from a table named "employees."</p>
 <pre>
 SELECT * FROM employees;
