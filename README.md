@@ -27,6 +27,16 @@
            </li>
        </ul>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Questoes-de-Entrevista">Questões de Entrevista</a>
+      <ul>
+         <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Questoes-de-Entrevista/Data-Science">Data Science</a></li>
+         <ul>
+            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Questoes-de-Entrevista/Data-Science/SQL">SQL</a></li>
+            <ul>
+               <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Questoes-de-Entrevista/Data-Science/SQL/Teorico">Teorico</a></li>
+               <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Questoes-de-Entrevista/Data-Science/SQL/Pratico">Pratico</a></li>
+            </ul>
+         </ul>
+      </ul>
    </li>
 </ul>
 
