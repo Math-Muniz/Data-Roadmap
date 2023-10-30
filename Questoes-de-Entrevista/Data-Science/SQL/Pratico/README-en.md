@@ -51,3 +51,7 @@ END
 </pre>
 <p>10. Write a SQL query to find the second highest salary from the "employees" table.</p>
 <pre>
+SELECT MAX(salary) AS secont_highest_salary
+FROM employees
+WHERE salary < (SELECT MAX(salary) FROM employees); 
+</pre>
