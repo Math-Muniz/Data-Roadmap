@@ -1,3 +1,7 @@
+<div align="center">
+  <a href="https://github.com/Math-Muniz/Data-Roadmap/edit/main/Questoes-de-Entrevista/Data-Science/SQL/Pratico/README-en.md">English Version</a> |
+  <a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Questoes-de-Entrevista/Data-Science/SQL/Pratico/README.md">Versão em Português</a>
+</div>
 <h1 align="center">SQL PRATICAL - Interview Questions with Answers</h1>
 <p>1. Write a SQL query to retrieve all columns from a table named "employees."</p>
 <pre>
