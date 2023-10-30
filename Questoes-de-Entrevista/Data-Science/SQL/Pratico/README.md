@@ -1,3 +1,7 @@
+<div align="center">
+  <a href="https://github.com/Math-Muniz/Data-Roadmap/edit/main/Questoes-de-Entrevista/Data-Science/SQL/Pratico/README-en.md">English Version</a> |
+  <a href="https://github.com/Math-Muniz/Data-Roadmap/blob/main/Questoes-de-Entrevista/Data-Science/SQL/Pratico/README.md">Versão em Português</a>
+</div>
 <h1 align="center">SQL PRÁTICO - Perguntas de Entrevista com Respostas</h1>
 <p>1. Escreva uma consulta(query) SQL para recuperar todas as colunas de uma tabela chamada "employees"."</p>
 <pre>
