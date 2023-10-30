@@ -17,15 +17,6 @@
            <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Data-Science-Roadmap/Modelagem-de-Dados">6. Modelagem de Dados com Python (Em progresso...)</a></li>
       </ul>
    </li>
-   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Exercicios">Exercícios</a>
-       <ul>
-           <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Exercicios/Python">Python</a>
-               <ul>
-                   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Exercicios/Python/Easy">Easy</a></li>
-                   <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Exercicios/Python/Medium">Medium</a></li>
-               </ul>
-           </li>
-       </ul>
    <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Questoes-de-Entrevista">Questões de Entrevista</a>
       <ul>
          <li><a href="https://github.com/Math-Muniz/Data-Roadmap/tree/main/Questoes-de-Entrevista/Data-Science">Data Science</a></li>
