@@ -70,9 +70,37 @@
 </ul>
 <p>Na prática, isso significa que basta calcular o logaritmo da probabilidade prevista para a classe real para cada amostra.</p>
 <p>Em seguida, você deve somar todos os valores obtidos e dividir pela quantidade de amostras.</p>
+<h3 align="center">Log Loss Durante o Treino vs Validação</h3>
+<p>A Log loss, diferente de outras métricas como acurácia e ROC AUC, pode ser usada tanto para otimizar o modelo durante o treino quanto para selecionar hiperparâmetros na validação.</p>
+<p>Ela é a métrica padrão para otimizar modelos de classificação nas bibliotecas mais populares como o scikit-learn.</p>
+<p>Durante o treino, a log loss geralmente é usada com gradiente descendente para ajustar os parâmetros internos do modelo.</p>
+<p>Na validação, ela é usada para avaliar o desempenho do modelo treinado e selecionar os melhores hiperparâmetros.</p>
+<p>Ou seja, você pode usá-la tanto diretamente na otimização do modelo sobre os dados de treino quanto na avaliação do modelo de treino em dados fora da amostra inicial.</p>
+<h1 align="center">Métricas de Avaliação de Modelos de Regressão</h1>
+<h2 align="center">R²</h2>
+<p>A métrica R², também conhecida como <b>R-dois</b> ou <b>coeficiente de determinação</b>, representa o percentual da variância dos dados que é explicado pelo modelo. Os resultados variam de 0 a 1, geralmente também são expressos em termos percentuais, ou seja, variando entre 0% e 100%. Quanto maior é o valor de R², mais explicativo é o modelo em relação aos dados previstos. Na equação 2 é mostrado o cálculo desta métrica, no qual y e ŷ os valores reais e previstos, respectivamente, e y-barra representa a média dos valores reais.</p>
+<img src="R-dois.webp">
+<p>Porém, utilizando somente esta métrica, será que um valor de 0,5 já seria o suficiente para colocar o modelo em produção? Faz-se necessário aproximar ainda mais o seu resultado para 1? Para responder a essa e outras perguntas, deve-se sempre utilizar outras métricas para se ter uma visão global sobre a performance do modelo.</p>
+<h2 align="center">Erro Médio Absoluto (MAE — Mean Absolute Error)</h2>
+<p>O erro médio absoluto (MAE — do inglês Mean Absolute Error), como demonstrado na equação 3, mede a média da diferença entre o valor real com o predito. Mas por haver valores positivos e negativos, é adicionado um módulo entre a diferença dos valores. Além disso, esta métrica não é afetada por valores discrepantes — os denominados outliers.</p>
+<img src="MAE.webp">
+<p>O valor de saída da equação tem a mesma escala dos dados utilizados para previsão, logo fica mais fácil a sua interpretação. Se o valor de MAE resultante for igual a 10,01 m, por exemplo, este resultado significa que o modelo pode estar errando em média 10,01 m para mais quanto para menos em relação ao valor correto. Por isso que para uma previsão futura, este resultado precisa ser levado em consideração para a tomada de decisão. Contudo o quanto este erro representa em relação ao valor real percentualmente?</p>
+<h2 align="center">Erro Percentual Absoluto Médio (MAPE — Mean Absolute Percentual Error)</h2>
+<p>O erro percentual absoluto médio (MAPE — do inglês Mean Absolute Percentual Error) é uma métrica que mostra a porcentagem de erro em relação aos valores reais. Na equação 4 representa o cálculo de MAPE que basicamente se parece com MAE, mas com o acréscimo de uma divisão por |y|. Então se o resultado de MAPE for igual a 40% significa que o nosso modelo faz previsões que em média a diferença entre o valor previsto e o real equivale a 40% do valor real tanto para mais quanto para menos.</p>
+<img src="MAPE.webp">
+<p>Ao observar a equação 4 nota-se que caso o valor de y seja 0, ocorrerá um erro, devido a divisão por zero. Por isso que a biblioteca scikit-learn utiliza a tratativa de colocar um número muito pequeno, representado por ε, cujo valor é 2,220446049250313e-16. A métrica MAPE é uma das métricas mais usadas para reportar a performance do modelo, trazendo uma compreensão mais abrangente do resultado de MAE.</p>
+<h2 align="center">Erro Quadrático Médio (MSE — Mean Squared Error)</h2>
+<p>O erro quadrático médio (MSE — do inglês Mean Squared Error) é uma métrica que calcula a média de diferença entre o valor predito com o real, como a métrica MAE. Entretanto, ao invés de usar o módulo do resultado entre o valor de y e ŷ, nesta métrica a diferença é elevada ao quadrado. Desta maneira penalizando valores que sejam muito diferentes entre o previsto e o real. Portanto, quanto maior é o valor de MSE, significa que o modelo não performou bem em relação as previsões.</p>
+<img src="MSE.webp">
+<p>Apesar de sua ideia poderosa, a métrica MSE apresenta um problema de interpretabilidade. Por haver a elevação ao quadrado, a unidade fica distorcida, em outras palavras, se a unidade medida for metros (m), o resultado será em m². Por isso que uma adaptação da MSE é a RMSE que será apresentada abaixo.</p>
+<h2 align="center">Raiz do Erro Quadrático Médio (RMSE — Root Mean Squared Error)</h2>
+<p>A raiz do erro quadrático médio (RMSE — do inglês, Root Mean Squared Error) é basicamente o mesmo cálculo de MSE, contendo ainda a mesma ideia de penalização entre diferenças grandes do valor previsto e o real. Porém, para lidar com o problema da diferença entre unidades, é aplicada a raiz quadrática como demonstrado na equação 6. Assim a unidade fica na mesma escala que o dado original, resultando em uma melhor interpretabilidade do resultado da métrica.</p>
+<img src="RMSE.webp">
+<p>Apesar do valor ter a mesma unidade, ele não costuma se assemelhar ao resultado encontrado de MAE, demonstrando como os outliers podem estar impactando nas previsões do modelo. Mas a sua interpretabilidade pode seguir a mesma lógica, onde o resultado da métrica sendo igual a 80,0 m, significa que o modelo pode estar errando em 80,0 m para mais ou para menos. Por essa razão, esta métrica pode ser uma boa opção quando é preciso ter uma avaliação mais criteriosa sobre as previsões do modelo.</p>
 <h3 align="center">Referências:</h3>
 <p>Trevor Hastie, Robert Tibshirani, Jerome Friedman. 2001. The Elements of Statistical Learning. New York, NY, USA: Springer New York Inc.</p>
 <p>Christopher M. Bishop. 2006. Pattern Recognition and Machine Learning (Information Science and Statistics). Springer-Verlag, Berlin, Heidelberg.</p>
 <p>Kai Ming Ting. 2011. Encyclopedia of machine learning. Springer. ISBN 978–0–387–30164–8.</p>
 <p>https://medium.com/kunumi/m%C3%A9tricas-de-avalia%C3%A7%C3%A3o-em-machine-learning-classifica%C3%A7%C3%A3o-49340dcdb198</p>
 <p>https://mariofilho.com/guia-completo-da-log-loss-perda-logaritmica-em-machine-learning/</p>
+<p>https://medium.com/data-hackers/prevendo-n%C3%BAmeros-entendendo-m%C3%A9tricas-de-regress%C3%A3o-35545e011e70</p>
