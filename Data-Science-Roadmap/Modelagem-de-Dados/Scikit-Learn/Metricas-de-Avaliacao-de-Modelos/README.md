@@ -76,6 +76,8 @@
 <p>Durante o treino, a log loss geralmente é usada com gradiente descendente para ajustar os parâmetros internos do modelo.</p>
 <p>Na validação, ela é usada para avaliar o desempenho do modelo treinado e selecionar os melhores hiperparâmetros.</p>
 <p>Ou seja, você pode usá-la tanto diretamente na otimização do modelo sobre os dados de treino quanto na avaliação do modelo de treino em dados fora da amostra inicial.</p>
+<h2 align="center">Kolmogorov Smirnov (KS)</h2>
+
 <h1 align="center">Métricas de Avaliação de Modelos de Regressão</h1>
 <h2 align="center">R²</h2>
 <p>A métrica R², também conhecida como <b>R-dois</b> ou <b>coeficiente de determinação</b>, representa o percentual da variância dos dados que é explicado pelo modelo. Os resultados variam de 0 a 1, geralmente também são expressos em termos percentuais, ou seja, variando entre 0% e 100%. Quanto maior é o valor de R², mais explicativo é o modelo em relação aos dados previstos. Na equação 2 é mostrado o cálculo desta métrica, no qual y e ŷ os valores reais e previstos, respectivamente, e y-barra representa a média dos valores reais.</p>
