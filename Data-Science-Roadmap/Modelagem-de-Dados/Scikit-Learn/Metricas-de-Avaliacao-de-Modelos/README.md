@@ -76,8 +76,47 @@
 <p>Durante o treino, a log loss geralmente é usada com gradiente descendente para ajustar os parâmetros internos do modelo.</p>
 <p>Na validação, ela é usada para avaliar o desempenho do modelo treinado e selecionar os melhores hiperparâmetros.</p>
 <p>Ou seja, você pode usá-la tanto diretamente na otimização do modelo sobre os dados de treino quanto na avaliação do modelo de treino em dados fora da amostra inicial.</p>
-<h2 align="center">Kolmogorov Smirnov (KS)</h2>
-
+<h2 align="center">Kolmogorov-Smirnov (KS)</h2>
+<h3 align="center">O que é o Teste de Kolmogorov-Smirnov (teste KS ou teste K-S)?</h3>
+<p>O teste de Kolmogorov-Smirnov (KS test ou teste K-S) é usado para comparar duas distribuições a fim de determinar se elas provêm da mesma distribuição subjacente.</p>
+<p>No caso de uso típico em aprendizado de máquina, existem duas distribuições (A e B) que você está tentando comparar. Uma distribuição A pode ser uma característica, como saldo da conta, no conjunto de dados de treinamento do modelo. A outra distribuição B pode ser a mesma característica, saldo da conta, mas agregada em um período de tempo de produção (tipicamente diário ou por hora). Como construtor de modelos, você deseja saber se o modelo implantado está sendo usado em uma distribuição de dados diferente da do conjunto de treinamento. O teste de Kolmogorov-Smirnov (KS) é um teste estatístico não paramétrico que pode ser usado para comparar A e B e ver se são diferentes.</p>
+<p>Ao contrário de outras métricas que permitem comparar distribuições, como a divergência de Jensen-Shannon (JS), PSI e a divergência de Kullback-Leibler (KL), que se baseiam na teoria da informação de Claude Shannon, o teste K-S deriva da estatística. É não paramétrico, o que significa que funciona com todos os tipos de distribuições. Portanto, não está limitado ao uso em distribuições bem conhecidas, como a normal ou binomial - seus dados podem ter qualquer forma e o teste K-S ainda funcionará. Vale ressaltar que a estatística do teste K-S também não é uma métrica no sentido formal, pois não atende à desigualdade triangular.</p>
+<p>Em aplicações de produção de aprendizado de máquina, as características podem ser de todos os tipos de distribuições, portanto, o uso de uma estatística não paramétrica é um requisito para a análise. A estatística KS é limitada em suas aplicações a variáveis numéricas, como características que são valores de ponto flutuante ou inteiros, e não funciona para características categóricas discretas.</p>
+<h3 align="center">Visão Geral da Estatística do Teste K-S (Teste de Kolmogorov-Smirnov)</h3>
+<p>O objetivo do teste K-S é determinar se duas distribuições, A e B, são diferentes. A estatística do teste K-S fornece um valor numérico relacionado a essa diferença. A estatística do teste K-S é definida como o valor máximo da diferença entre as funções de distribuição acumulada (CDF) de A e B. Em configurações de aprendizado de máquina, as CDFs são normalmente derivadas empiricamente a partir de amostras dos conjuntos de dados e seriam chamadas de eCDFs.</p>
+<img src="histogram-versus-smooth.webp">
+<p>Os dados que você coleta para uma variável ou característica, seja no treinamento ou na produção, podem se parecer com as distribuições acima. Uma eCDF empírica é criada ordenando os dados por valor e criando um gráfico em pedaços.</p>
+<img src="ks-test-math.webp">
+<p>A CDF cria uma soma cumulativa em etapas ao longo da faixa da variável de dados.</p>
+<img src="ks-statistic-example-home-loans.webp">
+<p>No exemplo acima, você pode ver a eCDF da característica saldo da conta da produção em comparação com a eCDF do saldo da conta do treinamento. A eCDF em pedaços azuis representa os dados de treinamento, enquanto a linha preta representa os dados de produção. A seta vermelha representa a estatística do teste K-S, que é a diferença máxima entre as eCDFs.</p>
+<img src="k-s-test-equation-math.webp">
+<img src="ks-test-statistic-math-2.webp">
+<h3 align="center">Qual é a Diferença Entre o Teste K-S de Uma Amostra e o Teste K-S de Duas Amostras?</h3>
+<p>Existem duas versões do teste K-S, o de uma amostra e o de duas amostras (não deve ser confundido com um lado e dois lados). Os exemplos acima são do teste K-S de duas amostras, em que ambas as distribuições são empíricas e derivadas de dados reais.</p>
+<ul>
+  <li>Dois Amostras: eCDF de A comparada com eCDF de B</li>
+  <li>Uma Amostra: eCDF de A comparada com CDF de B</li>
+</ul>
+<p>O teste K-S de uma amostra é quase nunca usado na produção de aprendizado de máquina. O teste K-S de uma amostra é usado quando você está comparando uma única amostra empírica com uma distribuição teórica parametrizada. Um exemplo disso pode ser testar se o valor do saldo da conta no treinamento (distribuição A) segue uma distribuição normal (distribuição B).</p>
+<h3 align="center">Distribuição de Kolmogorov e Boa Adequação</h3>
+<p>A estatística do teste K-S, que é o valor alcançado medindo a diferença máxima entre as duas eCDFs, representa apenas uma única amostra. A distribuição de Kolmogorov é a distribuição das estatísticas do teste K-S se você fosse pegar um grande número de amostras da mesma distribuição.</p>
+<p>Para criar a distribuição de Kolmogorov:</p>
+<ul>
+  <li>Você pode usar dados de inicialização ou reunir outra eCDF</li>
+  <li>Execute 500 vezes para gerar 500 eCDFs</li>
+  <li>Calcule o K-S para cada eCDF</li>
+  <li>Trace todos os 500 valores de K-S como uma distribuição</li>
+</ul>
+<img src="ks-measurements-example.webp">
+<p>O que foi mencionado acima é como a distribuição do teste K-S se parece com tamanhos de amostra de N. Cada amostra que você coleta terá um valor de K-S diferente.</p>
+<p>Andrey Kolmogorov observa em seu artigo original sobre o assunto que a distribuição dos valores de K-S de múltiplas amostras adquire uma forma específica, que é agora chamada de distribuição de Kolmogorov.</p>
+<img src="ks-metric-auc-one.webp">
+<p>Essa distribuição possui uma equação de forma fechada que depende apenas do número de amostras que foram usadas na geração da eCDF. Uma distribuição de Kolmogorov é diferente de uma distribuição gaussiana, mas ainda é possível aplicar alguns dos mesmos conceitos de valor p. O valor p retornado em Python pelo "ks_2samp" está apenas analisando essa distribuição com base no número de amostras e na estatística do teste K-S medida. O código determina a probabilidade do valor da estatística do teste K-S amostrada, assumindo que o K-S é distribuído como uma distribuição de Kolmogorov. Isso é o teste de boa adequação. Para obter detalhes adicionais, o StatsExchange oferece uma ótima análise técnica aprofundada sobre este tópico.</p>
+<h3 align="center">Como Monitorar o Teste K-S ao Longo do Tempo?</h3>
+<p>No uso típico do teste K-S em livros de estatística, trata-se de uma comparação estática entre duas distribuições A e B. No caso de uso de monitoramento, geramos eCDFs periodicamente, medindo K-S periodicamente. Acompanhamos a estatística do teste K-S ao longo do tempo como um indicador de que a distribuição se moveu. O K-S e o teste de boa adequação são usados como um teste em cada amostra para definir um limiar de alerta.</p>
+<p>O diagrama acima ilustra o uso ativo do K-S no monitoramento de modelos de características, onde um teste é executado diariamente em uma característica para garantir que ela esteja dentro da distribuição.</p>
+<p>Vale ressaltar que executar isso na prática em um ambiente operacional de aprendizado de máquina em larga escala não é tão simples quanto executar um teste de boa adequação diariamente em um trabalho. Quando ocorre um alerta, o trabalho está apenas começando, frequentemente, descobrir rapidamente o que mudou e como isso está relacionado aos dados é fundamental para gerenciar dezenas a milhares de modelos e mais de 100 características.</p>
 <h1 align="center">Métricas de Avaliação de Modelos de Regressão</h1>
 <h2 align="center">R²</h2>
 <p>A métrica R², também conhecida como <b>R-dois</b> ou <b>coeficiente de determinação</b>, representa o percentual da variância dos dados que é explicado pelo modelo. Os resultados variam de 0 a 1, geralmente também são expressos em termos percentuais, ou seja, variando entre 0% e 100%. Quanto maior é o valor de R², mais explicativo é o modelo em relação aos dados previstos. Na equação 2 é mostrado o cálculo desta métrica, no qual y e ŷ os valores reais e previstos, respectivamente, e y-barra representa a média dos valores reais.</p>
@@ -106,3 +145,4 @@
 <p>https://medium.com/kunumi/m%C3%A9tricas-de-avalia%C3%A7%C3%A3o-em-machine-learning-classifica%C3%A7%C3%A3o-49340dcdb198</p>
 <p>https://mariofilho.com/guia-completo-da-log-loss-perda-logaritmica-em-machine-learning/</p>
 <p>https://medium.com/data-hackers/prevendo-n%C3%BAmeros-entendendo-m%C3%A9tricas-de-regress%C3%A3o-35545e011e70</p>
+<p>https://arize.com/blog-course/kolmogorov-smirnov-test/#what-is-ks-test</p>
