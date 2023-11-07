@@ -1,6 +1,6 @@
 <h1 align="center">Regularização L1 e L2</h1>
 <h2 align="center">Regularização</h2>
-<p>Regularização é uma técnica para análises estatísticas que aparecem em algumas aplicações, uma delas talvez mais conhecida é a regularização l1 e l2 para machine learning, também conhecida como Laço e Ridge regression.</p>
+<p>Regularização é uma técnica para análises estatísticas que aparecem em algumas aplicações, uma delas talvez mais conhecida é a regularização L1 e L2 para machine learning, também conhecida como Lasso e Ridge regression.</p>
 <p>A regularização é importante principalmente para lidar com bastante variáveis para determinar os melhores parâmetros num aprendizado de máquina, onde a ideia é deixar menos propenso ao overfitting. E como ele faz isso?</p>
 <p>Imagine que o seu conjunto de treino tem apenas 2 linhas, a melhor função da reta onde minimiza o erro é traçar uma reta entre esses dois pontos, oque daria 0 de erro. Mas se adicionar mais pontos você vai perceber que a mesma reta traçada não se ajusta aos novos dados, isso é chamado de high variance (Variância Alta), pois o resultado entre o treino e teste varia bastante.</p>
 <img src="ridge.webp">
