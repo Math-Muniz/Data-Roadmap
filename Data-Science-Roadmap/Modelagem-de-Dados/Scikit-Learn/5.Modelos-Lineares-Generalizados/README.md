@@ -143,7 +143,7 @@ plt.plot(predPD["YOB"].unique(), predDefault, "o-", color = "tan", label = "Pred
 plt.legend()
 plt.show()
 </pre>
-<img src="grafico.webp">
+<img src="grafico.png">
 <h2 align="center">2. Definições das Colunas</h2>
 <p><b>YOB (anos nos livros)</b> - neste conjunto de dados, as informações do YOB são as mesmas que a idade do empréstimo. Todos os empréstimos começam com um YOB de 1. Outra variável frequentemente usada é o tempo que cada empréstimo foi observado (Anos Observados), que é o valor final da variável anos nos livros (YOB). Esses anos observados geralmente representam o número de anos até a inadimplência, ou até o final do período de observação (12 anos), ou até que o empréstimo seja retirado da amostra devido a pré-pagamento.</p>
 <p><b>Nível de Risco (Risk level)</b> - os produtos da carteira têm diferentes níveis de risco, baixo, médio ou alto. Os empréstimos mais arriscados são os empréstimos pessoais de crédito ruim, empréstimos de consolidação de crédito ruim, empréstimos de pagamento de salário, empréstimos com título de automóvel.</p>
