@@ -36,14 +36,12 @@ combinedHistory = pd.merge(myLoanHistory, FedHistory, on = "Year")
 # O intercepto é o valor previsto das variáveis dependentes, quando todas as variáveis independentes / Nível de risco, YOB, DJX, PIB / são 0.
 # Você também pode tentar a família Tweedie com sua função de link neste caso
 
-model = smf.glm(formula = "Default ~ RiskLevel + YOB + DJX_Return + GDP", 
-                data = combinedHistory, 
-                family = sm.families.Binomial())
+model = smf.glm(formula = "Default ~ RiskLevel + YOB + DJX_Return + GDP", data = combinedHistory, family = sm.families.Binomial())
 
-#de um Fit no modelo
+# de um Fit no modelo
 result = model.fit()
-#Exibir e interpretar os resultados
+# Exibir e interpretar os resultados
 print(result.summary())
-#Probabilidades estimadas de inadimplência
+# Probabilidades estimadas de inadimplência
 predictions = result.predict()
 </pre>
