@@ -30,11 +30,14 @@ FedHistory = pd.read_csv("Simplified_FedHistory.csv")
 <p>Combine os dois conjuntos de dados, crie o modelo GLM e exiba os resultados. Você pode escolher entre as famílias GLM da biblioteca Statsmodels, Binomial, Tweedie ou Poisson, estas 3 fornecerão um ajuste muito bom. A diferença não é crítica, no entanto, Tweedie é recentemente considerado o mais projetado para questões de risco coletivo. A função de link do Tweedie não é logit, mas log.</p>
 <pre>
 # Combine os dois conjuntos de dados para obter as variáveis para os valores históricos em 1 quadro de dados
+
 combinedHistory = pd.merge(myLoanHistory, FedHistory, on = "Year")
-# Criar MODELO LINEAR GENERALIZADO
-# fórmula: Default representa o intercepto (variável dependente)
-# O intercepto é o valor previsto das variáveis dependentes, quando todas as variáveis independentes / Nível de risco, YOB, DJX, PIB / são 0.
-# Você também pode tentar a família Tweedie com sua função de link neste caso
+
+#Criar MODELO LINEAR GENERALIZADO
+
+#fórmula: Default representa o intercepto (variável dependente)
+#O intercepto é o valor previsto das variáveis dependentes, quando todas as variáveis independentes / Nível de risco, YOB, DJX, PIB / são 0.
+#Você também pode tentar a família Tweedie com sua função de link neste caso
 
 model = smf.glm(formula = "Default ~ RiskLevel + YOB + DJX_Return + GDP", data = combinedHistory, family = sm.families.Binomial())
 
