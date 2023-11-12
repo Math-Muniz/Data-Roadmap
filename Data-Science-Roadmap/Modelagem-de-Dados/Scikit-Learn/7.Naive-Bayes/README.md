@@ -79,58 +79,77 @@ df = pd.read_csv('Iris.csv')
 <pre>
 df.head()
 </pre>
-  <table>
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>SepalLengthCm</th>
-        <th>SepalWidthCm</th>
-        <th>PetalLengthCm</th>
-        <th>PetalWidthCm</th>
-        <th>Species</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>5.1</td>
-        <td>3.5</td>
-        <td>1.4</td>
-        <td>0.2</td>
-        <td>Iris-setosa</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>4.9</td>
-        <td>3.0</td>
-        <td>1.4</td>
-        <td>0.2</td>
-        <td>Iris-setosa</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>4.7</td>
-        <td>3.2</td>
-        <td>1.3</td>
-        <td>0.2</td>
-        <td>Iris-setosa</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>4.6</td>
-        <td>3.1</td>
-        <td>1.5</td>
-        <td>0.2</td>
-        <td>Iris-setosa</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>5.0</td>
-        <td>3.6</td>
-        <td>1.4</td>
-        <td>0.2</td>
-        <td>Iris-setosa</td>
-      </tr>
-    </tbody>
-  </table>
-  <p>Note que as features são valores contínuos (o comprimento da pétala da flor, por exemplo). Por isso, vamos utilizar um modelo capaz de lidar com valores contínuos: o GaussianNB, que utiliza uma distribuição normal (contínua) para modelar as features.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>SepalLengthCm</th>
+      <th>SepalWidthCm</th>
+      <th>PetalLengthCm</th>
+      <th>PetalWidthCm</th>
+      <th>Species</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>5.1</td>
+      <td>3.5</td>
+      <td>1.4</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>4.9</td>
+      <td>3.0</td>
+      <td>1.4</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4.7</td>
+      <td>3.2</td>
+      <td>1.3</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>4.6</td>
+      <td>3.1</td>
+      <td>1.5</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>5.0</td>
+      <td>3.6</td>
+      <td>1.4</td>
+      <td>0.2</td>
+      <td>Iris-setosa</td>
+    </tr>
+  </tbody>
+</table>
+<p>Note que as features são valores contínuos (o comprimento da pétala da flor, por exemplo). Por isso, vamos utilizar um modelo capaz de lidar com valores contínuos: o GaussianNB, que utiliza uma distribuição normal (contínua) para modelar as features.</p>
+<pre>
+# Seleção das features e target
+x = df[['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']]
+y = df['Species']
+</pre>
+<pre>
+from sklearn.naive_bayes import GaussianNB
+
+gnb = GaussianNB()
+cross_val_score(gnb, x, y, cv=10).mean()
+</pre>
+<p>0.9533333333333334</p>
+<p>Com o algoritmo de naive bayes, conseguimos uma acurácia de 95,3%.</p>
+<p>Como já falamos nesse post, a distribuição normal depende de:</p>
+<ul>
+  <li>\mu_{iy}, a média da feature i nas observações de classe y</li>
+  <li></li>
+</ul>
+<p></p>
