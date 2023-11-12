@@ -149,7 +149,7 @@ cross_val_score(gnb, x, y, cv=10).mean()
 <p>Com o algoritmo de naive bayes, conseguimos uma acurácia de 95,3%.</p>
 <p>Como já falamos nesse post, a distribuição normal depende de:</p>
 <ul>
-  <li><math xmlns="http://www.w3.org/1998/Math/MathML">, a média da feature i nas observações de classe y</li>
-  <li></li>
+  <li>, a média da feature i nas observações de classe y</li>
+  <li>σ<sub>xy</sub> o desvio padrão da feature nas observações de classe y</li>
 </ul>
 <p></p>
