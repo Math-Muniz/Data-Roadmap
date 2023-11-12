@@ -234,4 +234,8 @@ desv_padrao
     </tr>
   </tbody>
 </table>
-
+<h2 align="center">Conclusão</h2>
+<p>Embora assuma independência entre as features e não proporcione estimativa de probabilidade muito boa, o classificador de Naive Bayes é um potente modelo de predição.</p>
+<p>Isso porque não necessita de muitos dados, e na prática, funciona mesmo em alguns casos onde não há independência entre as features. Por esses motivos, é frequentemente implementado em aplicações, desde analise de textos até mecanismos de recomendação.</p>
+<h2 align="center">Programação</h2>
+<p>https://medium.com/turing-talks/turing-talks-16-modelo-de-predi%C3%A7%C3%A3o-naive-bayes-6a3e744e7986</p>
