@@ -200,4 +200,38 @@ media
 # Desvios padrões
 desv_padrao
 </pre>
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>SepalLengthCm</th>
+      <th>SepalWidthCm</th>
+      <th>PetalLengthCm</th>
+      <th>PetalWidthCm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Iris-setosa</td>
+      <td>0.121764</td>
+      <td>0.142276</td>
+      <td>0.029504</td>
+      <td>0.011264</td>
+    </tr>
+    <tr>
+      <td>Iris-versicolor</td>
+      <td>0.261104</td>
+      <td>0.096500</td>
+      <td>0.216400</td>
+      <td>0.038324</td>
+    </tr>
+    <tr>
+      <td>Iris-virginica</td>
+      <td>0.396256</td>
+      <td>0.101924</td>
+      <td>0.298496</td>
+      <td>0.073924</td>
+    </tr>
+  </tbody>
+</table>
 
