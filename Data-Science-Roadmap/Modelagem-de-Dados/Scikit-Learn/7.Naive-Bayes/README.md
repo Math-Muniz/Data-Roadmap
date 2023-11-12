@@ -149,7 +149,55 @@ cross_val_score(gnb, x, y, cv=10).mean()
 <p>Com o algoritmo de naive bayes, conseguimos uma acurácia de 95,3%.</p>
 <p>Como já falamos nesse post, a distribuição normal depende de:</p>
 <ul>
-  <li>, a média da feature i nas observações de classe y</li>
+  <li>µ<sub>xy</sub>, a média da feature i nas observações de classe y</li>
   <li>σ<sub>xy</sub> o desvio padrão da feature nas observações de classe y</li>
 </ul>
-<p></p>
+<p>Abaixo, podemos ver os valores calculados pelo algoritmo.</p>
+<pre>
+gnb.fit(x, y)
+media = pd.DataFrame(gnb.theta_, columns=x.columns, index=gnb.classes_)
+desv_padrao = pd.DataFrame(gnb.sigma_, columns=x.columns, index=gnb.classes_) 
+</pre>
+<pre>
+# Médias
+media
+</pre>
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>SepalLengthCm</th>
+      <th>SepalWidthCm</th>
+      <th>PetalLengthCm</th>
+      <th>PetalWidthCm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Iris-setosa</td>
+      <td>5.006</td>
+      <td>3.418</td>
+      <td>1.464</td>
+      <td>0.244</td>
+    </tr>
+    <tr>
+      <td>Iris-versicolor</td>
+      <td>5.936</td>
+      <td>2.770</td>
+      <td>4.260</td>
+      <td>1.326</td>
+    </tr>
+    <tr>
+      <td>Iris-virginica</td>
+      <td>6.588</td>
+      <td>2.974</td>
+      <td>5.552</td>
+      <td>2.026</td>
+    </tr>
+  </tbody>
+</table>
+<pre>
+# Desvios padrões
+desv_padrao
+</pre>
+
