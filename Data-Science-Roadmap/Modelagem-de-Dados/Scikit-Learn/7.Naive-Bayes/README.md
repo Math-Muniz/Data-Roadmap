@@ -5,7 +5,7 @@
 <p>Digamos que estamos lidando com uma base de dados com apenas 1 feature composta por 0 ou 1 e a label pode ser 0 ou 1 também.</p>
 <p>A tabela de probabilidade é montada da seguinte maneira:</p>
 <img src="probabilidade.webp">
-<p>Para classificar, num caso geral com n features e m classificações, o algoritmo pegará os valores (x1, x2, …, xn) das features e calculará P(Y=y1 | X=x1, x2, x3, …, xn), P(Y=y2 | X=x1, x2, x3, …, xn), …, P(Y=ym | X=x1, x2, x3, …, xn). Ele escolherá o yk, 0 \< k \< m + 1, cuja probabilidade for maior. Como esse processo funciona será explicado a seguir.</p>
+<p>Para classificar, num caso geral com n features e m classificações, o algoritmo pegará os valores (x1, x2, …, xn) das features e calculará P(Y=y1 | X=x1, x2, x3, …, xn), P(Y=y2 | X=x1, x2, x3, …, xn), …, P(Y=ym | X=x1, x2, x3, …, xn). Ele escolherá o yk, 0 < k < m + 1, cuja probabilidade for maior. Como esse processo funciona será explicado a seguir.</p>
 <h2 align="center">Introdução ao Algoritmo Naive Bayes</h2>
 <p></p>
 <p></p>
