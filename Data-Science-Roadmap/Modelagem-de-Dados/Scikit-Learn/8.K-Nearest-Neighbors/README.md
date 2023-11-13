@@ -62,3 +62,86 @@
 <h2 align="center">Desvantagens do K-Nearest Neighbors (KNN):</h2>
 <p>Apesar das vantagens, o KNN não é isento de limitações. Uma desvantagem notável é sua sensibilidade a valores atípicos (outliers). Pontos de dados extremos podem afetar adversamente as previsões do KNN, tornando-o menos adequado para dados com valores discrepantes. Além disso, o KNN requer armazenamento dos dados de treinamento para realizar previsões, o que pode ser desafiador quando o conjunto de treinamento é extenso.</p>
 <p>KNN também sofre da chamada “maldição da dimensionalidade.” À medida que a dimensionalidade dos dados aumenta, o espaço de características se torna cada vez mais esparsamente povoado, o que pode levar a previsões menos precisas. Essa é uma desvantagem particularmente relevante ao lidar com dados de alta dimensionalidade.</p>
+<h2 align="center">Implementação do K-Nearest Neighbors (KNN):</h2>
+<p>Vamos começar a aplicação importando todos os pacotes necessários. Em seguida, leia o arquivo de dados de telecomunicações usando a função read_csv().</p>
+<pre>
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.ticker import NullFormatter
+import pandas as pd
+import matplotlib.ticker as ticker
+%matplotlib inline
+df = pd.read_csv('Telecustomers.csv')
+df.head()
+</pre>
+<img src="table-1.webp">
+<p>Como você pode ver, existem 12 colunas, a saber, região (region), tempo de permanência (tenure), idade (age), estado civil (marital), endereço (address), renda (income), educação (ed), emprego (employ), aposentadoria (retire), gênero (gender), residência (reside) e custcat. Temos uma coluna alvo, 'custcat', que categoriza os clientes em quatro grupos:</p>
+<ul>
+  <li>1- Serviço Básico (Basic Service)</li>
+  <li>2- E-Serviço (E-Service)</li>
+  <li>3- Serviço a mais (Plus Service)</li>
+  <li>4- Serviço Total (Total Service)</li>
+</ul>
+<pre>
+X = df.drop(['custcat'], axis = 1)
+y = df['custcat']
+from sklearn import preprocessing
+X = preprocessing.StandardScaler().fit(X).transform(X.astype(float))
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split( X, y, test_size=0.2, random_state=4)
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn import metrics
+#Treine o modelo Model e faça um Predict
+k = 4  
+neigh = KNeighborsClassifier(n_neighbors = k).fit(X_train,y_train)
+Pred_y = neigh.predict(X_test)
+print("Acurácia do modelo quando K=4 é",metrics.accuracy_score(y_test, Pred_y))
+</pre>
+<pre>
+Acurácia do modelo quando K=4 é 0.32
+</pre>
+<ul>
+  <li>Coletamos todas as características independentes dos dados no quadro de dados X e o campo alvo em um quadro de dados y. Em seguida, manipulamos os dados e os normalizamos. </li>
+  <li>Após dividir os dados, pegamos 80% dos dados para treinamento e o restante para fins de teste.</li>
+  <li>Importamos o modelo de classificador da biblioteca sklearn e ajustamos o modelo inicializando K=4. Assim, alcançamos uma precisão de 0.32 aqui.</li>
+</ul>
+<p>Agora é hora de melhorar o modelo e encontrar um melhor valor de k.</p>
+<pre>
+error_rate = []
+for i in range(1,40):
+ knn = KNeighborsClassifier(n_neighbors=i)
+ knn.fit(X_train,y_train)
+ pred_i = knn.predict(X_test)
+ error_rate.append(np.mean(pred_i != y_test))
+plt.figure(figsize=(10,6))
+plt.plot(range(1,40),error_rate,color='blue', linestyle='dashed', 
+         marker='o',markerfacecolor='red', markersize=10)
+plt.title('Error Rate vs. K Value')
+plt.xlabel('K')
+plt.ylabel('Error Rate')
+print("Minimum error:-",min(error_rate),"at K =",error_rate.index(min(error_rate)))
+</pre>
+<img src="grafico-1.webp">
+<p>No gráfico, você pode ver que o menor erro que obtivemos é 0.59 em K=37. Além disso, visualizamos o gráfico entre precisão e valor de K.</p>
+<pre>
+acc = []
+# Will take some time
+from sklearn import metrics
+for i in range(1,40):
+    neigh = KNeighborsClassifier(n_neighbors = i).fit(X_train,y_train)
+    yhat = neigh.predict(X_test)
+    acc.append(metrics.accuracy_score(y_test, yhat))
+    
+plt.figure(figsize=(10,6))
+plt.plot(range(1,40),acc,color = 'blue',linestyle='dashed', 
+         marker='o',markerfacecolor='red', markersize=10)
+plt.title('accuracy vs. K Value')
+plt.xlabel('K')
+plt.ylabel('Accuracy')
+print("Maximum accuracy:-",max(acc),"at K =",acc.index(max(acc)))
+</pre>
+<img src="grafico-2.webp">
+<p>Agora você vê os resultados melhorados. Obtivemos uma precisão de 0.41 em K=37. Como já derivamos o gráfico de erro e obtivemos o erro mínimo em k=37, teremos uma eficiência melhor nesse valor de K.</p>
+<h2 align="center">Refêrencias:</h2>
+<p>https://medium.com/@math-muniz/desafio-ifood-construindo-um-algoritmo-k-nearest-neighbors-do-zero-para-prever-net-promoter-score-2e9ed41290d5</p>
+<p>https://medium.com/swlh/k-nearest-neighbor-ca2593d7a3c4</p>
