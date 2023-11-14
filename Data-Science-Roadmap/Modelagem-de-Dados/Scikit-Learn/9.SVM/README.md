@@ -69,6 +69,7 @@ iris.head()
   </thead>
   <tbody>
     <tr>
+      <td class="highlight">0</td>
       <td>5.1</td>
       <td>3.5</td>
       <td>1.4</td>
@@ -76,6 +77,7 @@ iris.head()
       <td>0</td>
     </tr>
     <tr>
+      <td class="highlight">1</td>
       <td>4.9</td>
       <td>3.0</td>
       <td>1.4</td>
@@ -83,6 +85,7 @@ iris.head()
       <td>0</td>
     </tr>
     <tr>
+      <td class="highlight">2</td>
       <td>4.7</td>
       <td>3.2</td>
       <td>1.3</td>
@@ -90,6 +93,7 @@ iris.head()
       <td>0</td>
     </tr>
     <tr>
+      <td class="highlight">3</td>
       <td>4.6</td>
       <td>3.1</td>
       <td>1.5</td>
@@ -97,6 +101,7 @@ iris.head()
       <td>0</td>
     </tr>
     <tr>
+      <td class="highlight">4</td>
       <td>5.0</td>
       <td>3.6</td>
       <td>1.4</td>
