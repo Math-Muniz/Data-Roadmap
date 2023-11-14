@@ -60,6 +60,7 @@ iris.head()
 <table>
   <thead>
     <tr>
+      <th></th>
       <th>sepal length (cm)</th>
       <th>sepal width (cm)</th>
       <th>petal length (cm)</th>
