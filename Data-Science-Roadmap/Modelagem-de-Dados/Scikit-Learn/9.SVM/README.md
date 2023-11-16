@@ -2,7 +2,7 @@
 <p>O SVM (Support Vector Machine), é um algoritmo de aprendizado supervisionado muito utilizado quando se quer classificar dados em grupos diferentes — mas que também pode ser utilizado para regressão.</p>
 <h2 align="center">O que é o SVM?</h2>
 <p>O SVM é um algoritmo que busca uma linha de separação entre duas classes distintas analisando os dois pontos, um de cada grupo, mais próximos da outra classe. Isto é, o SVM escolhe a reta — também chamada de hiperplano em maiores dimensões— entre dois grupos que se distancia mais de cada um (no caso abaixo, a reta vermelha).</p>
-<img src="grafico-01.webp">
+<img src="grafico-01.png">
 <p>A reta ótima (H3) é a mais distante dos dois grupos, considerando apenas os pontos de cada grupo mais próximos à reta (como indicado pelas linhas cinzas).</p>
 <p>Após descoberta essa reta, o programa conseguirá predizer a qual classe pertence um novo dado ao checar de qual lado da reta ele está.</p>
 <h2 align="center">SVM Multiclasse</h2>
@@ -13,7 +13,7 @@
 <img src="grafico-02.webp">
 <p>No entanto, existem grupos que não podem ser separados somente por hiperplanos, como os da imagem ao lado. Nesses casos, utilizamos o SVM não linear para delimitar as duas classes, que traçará uma ou mais linhas retas ou curvas para separar as classes da melhor forma possível.</p>
 <p>Para separar esses tipos de exemplos, o algoritmo primeiro faz uma transformação não-linear do espaço para depois poder separar os grupos com um SVM linear. Dessa forma, apesar da separação ser um hiperplano no espaço das features (como chamamos o espaço depois da transformação), no espaço das entradas (como chamamos o espaço inicial) a separação é não-linear.</p>
-<img src="grafico-03.webp">
+<img src="grafico-03.png">
 <h2 align="center">Regressão por SVM</h2>
 <p>Apesar de ser mais comumente utilizado para classificação, o SVM também pode ser utilizado para regressão, ou seja, para prever valores contínuos com base nos dados em vez de prever as classes às quais os dados pertencem.</p>
 <p>Nesse caso, nosso objetivo é achar o hiperplano que mais se aproxime dos dados. Novamente, o SVM considera apenas um subconjunto dos dados. Se na classificação ele considera apenas os pontos mais próximos ao hiperplano, na regressão, ele considera apenas os pontos mais distantes. Isso quer dizer que, dada uma tolerância épsilon (Ɛ), o SVM considera apenas os pontos que estão a uma distância maior que épsilon do hiperplano. O objetivo é, então, encontrar o hiperplano mais próximo desses pontos. Para casos não lineares, podemos também usar a mesma técnica de transformação do SVM não-linear para fazer uma regressão não-linear.</p>
@@ -33,7 +33,7 @@
 <p>Mas por que “w·x + b = 0” forma um hiperplano? Bem, “w·x” é o produto escalar do vetor w com o vetor x (distância da origem até x), que será igual a zero quando w e x forem ortogonais. Dessa forma, os pontos x que satisfazem “w·x = 0” formarão um hiperplano que passa pela origem. Ao adicionar o b à equação, criaremos novos hiperplanos de mesma direção porém deslocados pra fora da origem.</p>
 <p>E, como nosso alvo é achar o hiperplano que melhor separe as duas classes, isso significa que, matematicamente, precisamos encontrar o w e o b ideais.</p>
 <p>Agora, para determinar o hiperplano ideal de separação entre duas classes, primeiro é necessário encontrar os hiperplanos que estão no limite de cada grupo (as margens). Para tal, utilizaremos os support vectors — os pontos de cada classe mais próximos do hiperplano de separação—por onde as margens devem passar. As representações destes são “w·x + b = 1” e “w·x + b = −1” para suas respectivas classes, como mostrado na imagem abaixo.</p>
-<img src="grafico-06.webp">
+<img src="grafico-06.png">
 <p>O hiperplano de separação está em vermelho, as margens em linhas tracejadas, e os support vectors são os 3 pontos que estão em cima das margens.</p>
 <p>Assim, todos os dados da classe 1 satisfazem a inequação “w·x + b ≥ 1” e todos os dados da classe −1 satisfazem a inequação “w·x + b ≤ −1”. Juntando essas duas inequações temos que “yᵢ · (w·xᵢ + b) ≥ 1”.</p>
 <p>Como a distância de um hiperplano até a origem é dada por b/|w|, a distância entre nossos dois hiperplanos será “(1 − b)/|w| − (−1 − b)/|w|”, cujo resultado é “2/|w|”. Já que o hiperplano ideal é aquele cuja distância a cada grupo é a maior possível, nosso w ideal é aquele valor para o qual “2/|w|” seja máximo.</p>
@@ -243,7 +243,7 @@ array([2])
 <img src="grafico-07.webp">
 <p>Scatter plot das flores da base de dados ( sepal length x petal width)</p>
 <p>Depois, para encontrar as delineações e separar as classes, ele transforma não linearmente a entrada para depois separá-la por um hiperplano. Assim, as delimitações no espaço das entradas, mostrado na imagem abaixo, são não lineares, como visto anteriormente.</p>
-<img src="grafico-08.webp">
+<img src="grafico-08.png">
 <p>Por fim, ele consegue predizer a qual grupo pertencerá um novo dado com base na área na qual ele se encontra.</p>
 <h2 align="center">Conclusão</h2>
 <p>Com as informações desse post você já consegue criar seu primeiro modelo de classificação! Mas se o SVM não atender suas necessidades, dê uma olhada nos outros modelos disponiveis nos tutoriais.</p>
