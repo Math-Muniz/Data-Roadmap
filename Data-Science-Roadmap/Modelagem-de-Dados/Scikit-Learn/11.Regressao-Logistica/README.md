@@ -4,7 +4,7 @@
 <p>Vamos analisar brevemente um dos modelos de classificação que vimos nas últimas semanas: o <b>SVM</b>. De forma simplificada, em um problema de classificação binária com 2 features, o SVM tenta achar curvas que separem os pontos de acordo com sua classificação. Com isso, podemos predizer a classificação de um ponto arbitrário olhando em qual lado da reta ele está.</p>
 <p>No entanto, em geral, os modelos cometerão erros. Às vezes, pode ser importante ter uma ideia da confiança do modelo na predição feita. Nesses casos, poderíamos usar a distância do ponto à reta como uma medida de confiança. Uma medida ainda melhor seria se a saída do modelo fosse a probabilidade da observação ter classe 1 (supondo um problema de classificação binária, com classes 0 e 1). É exatamente esse tipo de modelo que vamos construir no resto desse post.</p>
 <img src="grafico-01.webp">
-<p>O SVM simplesmente separa as duas classes de pontos. Já a regressão logística prediz a probabilidade dos pontos pertencerem a cada uma das classes.</p>]
+<p>O SVM simplesmente separa as duas classes de pontos. Já a regressão logística prediz a probabilidade dos pontos pertencerem a cada uma das classes.</p>
 <h2 align="center">Matematicamente, o que o modelo faz?</h2>
 <p>A partir daqui, vamos tentar entender como a regressão logística funciona matematicamente. Recomendamos fortemente que você tente entender o modelo, mas se você não estiver interessado na parte matemática, é só pular para a parte 6.</p>
 <h3 align="center">Noções de Probabilidade</h3>
@@ -76,4 +76,14 @@ P(chover ou não chover) = P(chover) + P(não chover) = 1
 <p>No gráfico da direita, todos os pontos com x > 0 são positivos, enquanto os pontos com x < 0 são negativos. Dessa forma, p é quase sempre 0 ou 1 (alta confiança) e vai de 0 para 1 muito rapidamente, o que corresponde a uma baixa entropia.</p>
 <p>Já no gráfico da esquerda, os dados estão muito mais espalhados e misturados (por exemplo, há uma observação positiva no meio de observações negativas). Isso significa que o modelo não consegue aprender tão bem e p passa mais lentamente de 0 para 1, correspondendo a uma maior entropia.</p>
 <p>Agora que temos uma boa função de custo, o treinamento consiste em achar os parâmetros wi que minimizam o custo², ou seja, aqueles que maximizam a certeza (entropia) do modelo. Isso pode ser feito utilizando gradiente descendente ou outras técnicas, como IRLS.</p>
-<h2 align="center">Treinando o Modelo</h2>
+<h2 align="center">Regressão Logística × SVM Linear, qual é melhor?</h2>
+<p>Visto que tanto a regressão logística como o SVM linear são modelos que separam as classes com retas, você pode estar se perguntando qual a diferença entre eles. Abaixo, listamos algumas dessas diferenças conceituais:</p>
+<ul>
+  <li>Enquanto o SVM simplesmente prediz a classe da observação, a regressão logística prediz também a probabilidade de cada classe.</li>
+  <li>A regressão logística considera todas as observações no treinamento. Em contrapartida, o SVM considera apenas os pontos mais próximos à reta, o que pode melhorar a capacidade de generalização do modelo.</li>
+</ul>
+<p>Na prática, ambos os modelos apresentam resultados similares. Nesse caso, a regressão logística pode ser melhor, uma vez que fornece as probabilidades das classes. No entanto, em um problema que não é linearmente separável, ou seja, no qual não há uma reta ou plano que separe as classes, um SVM não linear apresentará resultados muito melhores.</p>
+<h2 align="center">Regressão Logística na Prática com Scikit-learn</h2>
+<p>Agora que já entendemos como funciona a regressão linear, é hora de aplicá-la em algum dataset. Utilizando a biblioteca scikit-learn, o código fica bem parecido com o dos últimos modelos.</p>
+<h2 align="center">Referências</h2>
+<p>https://medium.com/turing-talks/turing-talks-14-modelo-de-predi%C3%A7%C3%A3o-regress%C3%A3o-log%C3%ADstica-7b70a9098e43</p>
