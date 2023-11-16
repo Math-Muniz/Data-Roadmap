@@ -200,5 +200,84 @@ titanic.head()
     <td>S</td>
   </tr>
 </table>
+<pre>
+titanic.info()
+</pre>
+<pre>
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 12 columns):
+PassengerId    891 non-null int64
+Survived       891 non-null int64
+Pclass         891 non-null int64
+Name           891 non-null object
+Sex            891 non-null object
+Age            714 non-null float64
+SibSp          891 non-null int64
+Parch          891 non-null int64
+Ticket         891 non-null object
+Fare           891 non-null float64
+Cabin          204 non-null object
+Embarked       889 non-null object
+dtypes: float64(2), int64(5), object(5)
+memory usage: 83.6+ KB
+</pre>
+<p>Observe que há pessoas com idade desconhecida. Para que possamos aplicar o nosso modelo, é necessário lidar com isso. Nesse exemplo, vamos simplesmente ignorar as pessoas cuja idade não sabemos.</p>
+<pre>
+# Remove as linhas com idade faltando. O parâmetro subset=['Age'] significa
+# que só vamos considerar a coluna 'Age' (as linhas com 'Cabin' faltando não
+# serão removidas)
+titanic = titanic.dropna(subset=['Age'])
+
+x = titanic[['Age', 'Fare']]
+y = titanic['Survived']
+</pre>
+<h3 align="center">Aplicação do Modelo</h3>
+<p>A utilização do modelo é parecida com a dos outros modelos (SVM, regressão linear, ...). Abaixo, criamos um modelo de regressão logística e realizamos validação cruzada.</p>
+<pre>
+# O parâmetro 'liblinear' especifica como o sklearn deve
+# encontrar os parâmetros que minimizam o custo.
+lr = LogisticRegression(solver='liblinear')
+scores = cross_val_score(lr, x, y, cv=10, scoring='accuracy')
+print('Acurácia média:', scores.mean())
+</pre>
+<pre>
+Acurácia média: 0.6568661971830986
+</pre>
+<h3 align="center">Visualização do Modelo</h3>
+<p>No gráfico abaixo, podemos ter uma ideia da distribuição dos dados. Como há muitos pontos próximos, utilizamos o parâmetro alpha=.4, que faz com que os pontos fiquem parciamente transparentes. Assim, conseguimos ter uma ideia de onde há mais pontos, mesmo que eles estejam acumulados um em cima do outro.</p>
+<pre>
+def plot_scatter():
+    plt.scatter(x['Age'][y == 0], x['Fare'][y == 0], alpha=.4, label='Não sobreviveu')
+    plt.scatter(x['Age'][y == 1], x['Fare'][y == 1], alpha=.4, label='Sobreviveu')
+    plt.legend()
+    plt.xlabel('Age')
+    plt.ylabel('Fare')
+plot_scatter()
+</pre>
+<img src="grafico-05.png">
+<p>Agora podemos testar o nosso modelo com algumas pessoas aleatórias.</p>
+<pre>
+pessoas = [[20, 500], # pessoa 1
+           [75, 100]] # pessoa 2
+lr.fit(x, y)
+print('Classificações:', lr.predict(pessoas))
+print('Probabilidades:\n', lr.predict_proba(pessoas))
+</pre>
+<pre>
+Classificações: [1 0]
+Probabilidades:
+ [[3.92078070e-04 9.99607922e-01]
+ [5.06575178e-01 4.93424822e-01]]
+</pre>
+<p>O nosso modelo prediz que a primeira pessoa (20 anos, pagou 500) sobreviveu e a segunda (100 anos, pagou 100) não sobreviveu. Além disso, a probabilidade da pessoa 1 sobreviver é de 99%, enquanto a probabilidade da pessoa 2 morrer é de apenas 50,6%.</p>
+<p>Abaixo, colocamos essas pessoas junto com o dataset no scatterplot.</p>
+<pre>
+plt.scatter([20, 75], [500, 100], c='red', s=50)
+plt.annotate('Pessoa 1', (15, 520))
+plt.annotate('Pessoa 2', (70, 120))
+plot_scatter()
+</pre>
+<img src="grafico-06.png">
 <h2 align="center">Referências</h2>
 <p>https://medium.com/turing-talks/turing-talks-14-modelo-de-predi%C3%A7%C3%A3o-regress%C3%A3o-log%C3%ADstica-7b70a9098e43</p>
