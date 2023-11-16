@@ -85,5 +85,114 @@ P(chover ou não chover) = P(chover) + P(não chover) = 1
 <p>Na prática, ambos os modelos apresentam resultados similares. Nesse caso, a regressão logística pode ser melhor, uma vez que fornece as probabilidades das classes. No entanto, em um problema que não é linearmente separável, ou seja, no qual não há uma reta ou plano que separe as classes, um SVM não linear apresentará resultados muito melhores.</p>
 <h2 align="center">Regressão Logística na Prática com Scikit-learn</h2>
 <p>Agora que já entendemos como funciona a regressão linear, é hora de aplicá-la em algum dataset. Utilizando a biblioteca scikit-learn, o código fica bem parecido com o dos últimos modelos.</p>
+<pre>
+# Primeiramente, importamos as bibliotecas que vamos usar:
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import LogisticRegression
+
+%matplotlib inline
+</pre>
+<p>O dataset no qual vamos testar o modelo é o do Titanic. Esse dataset tem várias informações sobre os passageiros do Titanic e o objetivo é identificar quais passageiros sobreviveram. Nesse exemplo, vamos utilizar apenas as seguintes variáveis:</p>
+<ul>
+  <li>Age: idade do passageiro (em anos)</li>
+  <li>Fare: custo da passagem</li>
+  <li>Survived: 1 se o passageiro sobreviveu, 0 caso contrário</li>
+</ul>
+<pre>
+# Carregar o dataset e remover passageiros cuja idade ou
+# o custo da passagem são desconhecidos.
+titanic = pd.read_csv('train.csv')
+</pre>
+<pre>
+titanic.head()
+</pre>
+<table border="1">
+  <tr>
+    <th>PassengerId</th>
+    <th>Survived</th>
+    <th>Pclass</th>
+    <th>Name</th>
+    <th>Sex</th>
+    <th>Age</th>
+    <th>SibSp</th>
+    <th>Parch</th>
+    <th>Ticket</th>
+    <th>Fare</th>
+    <th>Cabin</th>
+    <th>Embarked</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+    <td>3</td>
+    <td>Braund, Mr. Owen Harris</td>
+    <td>male</td>
+    <td>22.0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>A/5 21171</td>
+    <td>7.2500</td>
+    <td>NaN</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>1</td>
+    <td>1</td>
+    <td>Cumings, Mrs. John Bradley (Florence Briggs Thayer)</td>
+    <td>female</td>
+    <td>38.0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>PC 17599</td>
+    <td>71.2833</td>
+    <td>C85</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>1</td>
+    <td>3</td>
+    <td>Heikkinen, Miss. Laina</td>
+    <td>female</td>
+    <td>26.0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>STON/O2. 3101282</td>
+    <td>7.9250</td>
+    <td>NaN</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>1</td>
+    <td>1</td>
+    <td>Futrelle, Mrs. Jacques Heath (Lily May Peel)</td>
+    <td>female</td>
+    <td>35.0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>113803</td>
+    <td>53.1000</td>
+    <td>C123</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>0</td>
+    <td>3</td>
+    <td>Allen, Mr. William Henry</td>
+    <td>male</td>
+    <td>35.0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>373450</td>
+    <td>8.0500</td>
+    <td>NaN</td>
+    <td>S</td>
+  </tr>
+</table>
 <h2 align="center">Referências</h2>
 <p>https://medium.com/turing-talks/turing-talks-14-modelo-de-predi%C3%A7%C3%A3o-regress%C3%A3o-log%C3%ADstica-7b70a9098e43</p>
