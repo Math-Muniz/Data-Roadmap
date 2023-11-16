@@ -240,7 +240,7 @@ array([2])
 <p>Pronto. De acordo com nosso modelo, podemos afirmar que essa flor é da espécie 2!</p>
 <h2 align="center">Visualização da classificação com SVM no Iris</h2>
 <p>Primeiro, o algoritmo recebe os dados das flores em um formato similar ao do gráfico abaixo (só que em mais dimensões).</p>
-<img src="grafico-07.webp">
+<img src="grafico-07.png">
 <p>Scatter plot das flores da base de dados ( sepal length x petal width)</p>
 <p>Depois, para encontrar as delineações e separar as classes, ele transforma não linearmente a entrada para depois separá-la por um hiperplano. Assim, as delimitações no espaço das entradas, mostrado na imagem abaixo, são não lineares, como visto anteriormente.</p>
 <img src="grafico-08.png">
