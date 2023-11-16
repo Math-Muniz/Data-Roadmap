@@ -110,6 +110,7 @@ titanic.head()
 </pre>
 <table border="1">
   <tr>
+    <th></th>
     <th>PassengerId</th>
     <th>Survived</th>
     <th>Pclass</th>
@@ -124,6 +125,7 @@ titanic.head()
     <th>Embarked</th>
   </tr>
   <tr>
+    <td class="highlight">0</td>
     <td>1</td>
     <td>0</td>
     <td>3</td>
@@ -138,6 +140,7 @@ titanic.head()
     <td>S</td>
   </tr>
   <tr>
+    <td class="highlight">1</td>
     <td>2</td>
     <td>1</td>
     <td>1</td>
@@ -152,6 +155,7 @@ titanic.head()
     <td>C</td>
   </tr>
   <tr>
+    <td class="highlight">2</td>
     <td>3</td>
     <td>1</td>
     <td>3</td>
@@ -166,6 +170,7 @@ titanic.head()
     <td>S</td>
   </tr>
   <tr>
+    <td class="highlight">3</td>
     <td>4</td>
     <td>1</td>
     <td>1</td>
@@ -180,6 +185,7 @@ titanic.head()
     <td>S</td>
   </tr>
   <tr>
+    <td class="highlight">4</td>
     <td>5</td>
     <td>0</td>
     <td>3</td>
