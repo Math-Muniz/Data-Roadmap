@@ -27,28 +27,28 @@ def build_tree(data, labels, tree, depth = 1):
     classes, counts = np.unique(labels, return_counts=True)
     n_classes = classes.shape[0]
 
-    # criétio de parada
+    #criétio de parada
     if not stopping_criterion(n_classes, depth, tree.max_depth):
         node = Node()
 
-        # encontra melhor ponto de corte dado a região atual do espaço
+        #encontra melhor ponto de corte dado a região atual do espaço
         # de acordo com critério de impureza escolhido
         feature, threshold = find_cut_point(data, labels, 
                                             tree.impurity_criterion)
         
-        # aplicando o limiar para particionar o espaço
+        #aplicando o limiar para particionar o espaço
         mask = data[:, feature] <= threshold
         
-        # contruindo árvore recursivamente para
-        # os sub-espaço da direita e da esquerda.
+        #contruindo árvore recursivamente para
+        #os sub-espaço da direita e da esquerda.
         left = build_tree(data[mask], labels[mask], tree, depth + 1)
         right = build_tree(data[~mask], labels[~mask], tree, depth + 1)
      
         return Node(feature=feature, threshold=threshold, left=left, right=right)
 
-    # calcula a quantidade de exemplos por classe nesse nó folha
-    # e instancia um nó folha com essas quantidades, lembre-se que isso
-    # será usado para predição. 
+    #calcula a quantidade de exemplos por classe nesse nó folha
+    #e instancia um nó folha com essas quantidades, lembre-se que isso
+    #será usado para predição. 
     values = np.zeros(tree.n_classes)
     values[classes] = counts
     return Node(is_leaf=True, counts=values)
@@ -76,18 +76,18 @@ def find_cut_point(data, labels, impurity_criterion = gini_criterion):
   feat_id = 0
   best_threshold = 0
 
-  # pré-calculando a impureza da região atual
+  #pré-calculando a impureza da região atual
   H_parent = impurity_criterion(data, labels)
-  # para cada um dos atributos
-  # vamos tentar encontrar o limiar que maximiza o ganho de informação
+  #para cada um dos atributos
+  #vamos tentar encontrar o limiar que maximiza o ganho de informação
   for j in range(n_features):
     # só nos interessa os valores ordenados únicos 
     # do atributo j nessa região do espaço
     values = np.unique(data[:, j])
     
     for i in range(values.shape[0] - 1):
-      # usamos o ponto médio dos valores possíveis
-      # como limiar candidato para o ponto de corte
+      #usamos o ponto médio dos valores possíveis
+      #como limiar candidato para o ponto de corte
       threshold = (values[i] + values[i + 1]) / 2.
 
       mask = data[:, j] <= threshold
