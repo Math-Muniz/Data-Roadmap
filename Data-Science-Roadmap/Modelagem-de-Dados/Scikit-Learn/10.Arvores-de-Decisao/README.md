@@ -63,8 +63,8 @@ def find_cut_point(data, labels, impurity_criterion = gini_criterion):
   #data: numpy array-like = [n_samples, n_features]
   #labels: numpy array-like, shape = [n_samples]
   #impurity_criterion: callable, default=gini_criterion
+    
   #Return
-  ------
   #feature, threshold
   """
 
@@ -151,11 +151,11 @@ InfoGain = 0.66 - (50*0 + 100*0.50) / 150 = 0.16
 def entropy_criterion(data, labels):
   """ #Entropy
   #Parameters
-  ----------
+
   #data: numpy array-like = [n_samples, n_features]
   #labels: numpy array-like, shape = [n_samples]
+  
   #Return
-  ------
   #entropy: float
   """
   classes = np.unique(labels)
@@ -173,13 +173,11 @@ def entropy_criterion(data, labels):
   
   #Parameters
   
-  ----------
   #data: numpy array-like = [n_samples, n_features]
   #labels: numpy array-like, shape = [n_samples]
   
   #Return
   
-  ------
   #gini: float
   """
   classes = np.unique(labels)
