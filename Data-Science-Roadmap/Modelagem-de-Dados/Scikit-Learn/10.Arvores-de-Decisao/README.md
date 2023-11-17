@@ -58,18 +58,16 @@ def build_tree(data, labels, tree, depth = 1):
 <p>Para encontrar melhor ponto de corte, nós temos de testar todos os possíveis, ou seja, para cada atributo e valores possíveis calcular o ganho de informação (quão pura a divisão torna o espaço) para cada um dos pontos de corte candidatos. Após essa etapa, nós escolhemos o candidato com maior ganho de informação para ser o ponto de corte do nó em questão. O código para isso ficaria o seguinte.</p>
 <pre>
 def find_cut_point(data, labels, impurity_criterion = gini_criterion):
-  """ find the best cut point
-
-    Parameters
-  ----------
-  data: numpy array-like = [n_samples, n_features]
-  labels: numpy array-like, shape = [n_samples]
-  impurity_criterion: callable, default=gini_criterion
-  
-      Return
+  """#Procurando o melhor "ponto" de corte
+    #Parametros
+  #data: numpy array-like = [n_samples, n_features]
+  #labels: numpy array-like, shape = [n_samples]
+  #impurity_criterion: callable, default=gini_criterion
+  #Return
   ------
-  feature, threshold
+  #feature, threshold
   """
+
   n_samples, n_features = data.shape
 
   max_info_gain = np.iinfo(np.int32).min
