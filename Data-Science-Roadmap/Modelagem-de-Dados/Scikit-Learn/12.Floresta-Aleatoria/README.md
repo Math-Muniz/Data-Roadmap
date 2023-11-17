@@ -69,3 +69,168 @@
         <td>3. A floresta aleatória seleciona aleatoriamente observações, constrói uma árvore de decisão e obtém o resultado médio. Não utiliza nenhum conjunto de fórmulas.</td>
     </tr>
 </table>
+<p>Assim, as florestas aleatórias são muito mais bem-sucedidas do que árvores de decisão apenas se as árvores forem diversas e aceitáveis.</p>
+<h2 align="center">Hiperparâmetros Importantes em Random Forest</h2>
+<p>Hiperparâmetros são usados em florestas aleatórias para melhorar o desempenho e o poder preditivo dos modelos ou para tornar o modelo mais rápido.</p>
+<h3 align="center">Hiperparâmetros para Aumentar o Poder Preditivo</h3>
+<ul>
+  <li><b>n_estimators:</b> Número de árvores que o algoritmo constrói antes de fazer a média das previsões.</li>
+  <li><b>max_features:</b> Número máximo de características que a floresta aleatória considera ao dividir um nó.</li>
+  <li><b>min_samples_leaf:</b> Determina o número mínimo de folhas necessárias para dividir um nó interno.</li>
+  <li><b>criterion:</b> Como dividir o nó em cada árvore? (Impureza de Entropia/Gini/Perda Logarítmica)</li>
+  <li><b>max_leaf_nodes:</b> Número máximo de folhas em cada árvore.</li>
+</ul>
+<h3 align="center">Hiperparâmetros para Aumentar a Velocidade</h3>
+<ul>
+  <li><b>n_jobs:</b> Indica ao mecanismo quantos processadores ele pode usar. Se o valor for 1, ele usará apenas um processador, mas se o valor for -1, não há limite.</li>
+  <li><b>random_state:</b> Controla a aleatoriedade da amostra. O modelo sempre produzirá os mesmos resultados se tiver um valor definido para o estado aleatório e receber os mesmos hiperparâmetros e dados de treinamento.</li>
+  <li><b>oob_score:</b> OOB significa out of bag. É um método de validação cruzada para florestas aleatórias. Neste método, um terço da amostra não é usado para treinar os dados; em vez disso, é usado para avaliar o desempenho. Essas amostras são chamadas de amostras out-of-bag.</li>
+</ul>
+<h2 align="center">Hiperparâmetros Importantes em Random Forest</h2>
+<p>Agora vamos implementar a Random Forest no scikit-learn.</p>
+<h3 align="center">1. Importando as Bibliotecas</h3>
+<pre>
+# Importando as Bibliotecas Necessárias
+import pandas as pd, numpy as np
+import matplotlib.pyplot as plt, seaborn as sns
+%matplotlib inline
+</pre>
+<h3 align="center">2. Importando o Dataset</h3>
+<pre>
+df = pd.read_csv('heart_v2.csv')
+print(df.head())
+</pre>
+<img src="r6.png">
+<h3 align="center">3. Colocando a Variável de Característica em X e a Variável-Alvo em Y.</h3>
+<pre>
+#Colocando a variável de característica em X
+X = df.drop('heart disease', axis=1)
+# Colocando a variável de resposta em y
+y = df['heart disease']
+</pre>
+<h3 align="center">4. Realizando a Divisão Treino-Teste</h3>
+<pre>
+#Agora vamos dividir os dados em treino e teste
+from sklearn.model_selection import train_test_split
+
+#Dividindo os dados em treino e teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.7, random_state=42)
+X_train.shape, X_test.shape
+</pre>
+<pre>
+((189, 4), (81, 4))
+</pre>
+<h3 align="center">5. Importando RandomForestClassifier e ajustando os dados.</h3>
+<pre>
+from sklearn.ensemble import RandomForestClassifier
+
+classifier_rf = RandomForestClassifier(random_state=42, n_jobs=-1, max_depth=5,
+                                       n_estimators=100, oob_score=True)
+
+%%time
+classifier_rf.fit(X_train, y_train)
+</pre>
+<pre>
+Wall Time: 241 ms
+RandomForestClassifier(max_depth=5, n_jobs=-1, oob_score=True, random_state=42)
+</pre>
+<pre>
+#Verificando o oob score
+classifier_rf.oob_score_
+</pre>
+<pre>
+0.656084656084656
+</pre>
+<h3 align="center">6. Ajustando os hiperparâmetros para Random Forest usando GridSearchCV e ajustando os dados.</h3>
+<pre>
+rf = RandomForestClassifier(random_state=42, n_jobs=-1)
+
+params = {
+    'max_depth': [2,3,5,10,20],
+    'min_samples_leaf': [5,10,20,50,100,200],
+    'n_estimators': [10,25,30,50,100,200]
+}
+
+from sklearn.model_selection import GridSearchCV
+
+#Instanciando o modelo de grid search
+grid_search = GridSearchCV(estimator=rf,
+                           param_grid=params,
+                           cv = 4,
+                           n_jobs=-1, verbose=1, scoring="accuracy")
+
+%%time
+grid_search.fit(X_train, y_train)
+</pre>
+<img src="r7.png">
+<pre>
+grid_search.best_score_
+</pre>
+<pre>
+0.698582602836879
+</pre>
+<pre>
+rf_best = grid_search.best_estimator_
+rf_best
+</pre>
+<pre>
+RandomForestClassifier(max_depth=5, min_samples_leaf=10, n_estimators=10, n_jobs=-1, random_state=42)
+</pre>
+<p>A partir da sintonização de hiperparâmetros, podemos obter o melhor estimador, conforme mostrado. O melhor conjunto de parâmetros identificado foi max_depth=5, min_samples_leaf=10, n_estimators=10.</p>
+<h3 align="center">7. Agora, Vamos Visualizar.</h3>
+<pre>
+from sklearn.tree import plot_tree
+plt.figure(figsize=(80,40))
+plot_tree(rf_best.estimators_[5], feature_names = X.columns,class_names=['Disease', "No Disease"],filled=True);
+</pre>
+<img src="r8.png">
+<pre>
+from sklearn.tree import plot_tree
+plt.figure(figsize=(80,40))
+plot_tree(rf_best.estimators_[7], feature_names = X.columns,class_names=['Disease', "No Disease"],filled=True);
+</pre>
+<img src="r9.png">
+<p>As árvores criadas pelos estimadores_[5] e estimadores_[7] são diferentes. Assim, podemos dizer que cada árvore é independente da outra.</p>
+<h3 align="center">8. Agora, vamos ordenar os dados com a ajuda da importância das características.</h3>
+<pre>
+rf_best.feature_importances_
+</pre>
+<pre>
+array([0.46128487, 0.2180848 , 0.13174619 , 0.18888413])
+</pre>
+<pre>
+imp_df = pd.DataFrame({
+    "Varname": X_train.columns,
+    "Imp": rf_best.feature_importances_
+})
+
+imp_df.sort_values(by="Imp", ascending=False)
+</pre>
+<img src="r10.png">
+<h2 align="center">Vantagens e Desvantagens do Algoritmo Random Forest</h2>
+<h3 align="center">Vantagens:</h3>
+<ul>
+  <li>Pode ser usado em problemas de classificação e regressão.</li>
+  <li>Resolve o problema de overfitting, pois a saída é baseada em votação majoritária ou média.</li>
+  <li>Desempenha bem mesmo se os dados contiverem valores nulos/ausentes.</li>
+  <li>Cada árvore de decisão criada é independente das outras; assim, exibe a propriedade de paralelização.</li>
+  <li>É altamente estável, pois as respostas médias dadas por um grande número de árvores são consideradas.</li>
+  <li>Mantém a diversidade, pois nem todos os atributos são considerados ao criar cada árvore de decisão, embora isso não seja verdade em todos os casos.</li>
+  <li>É imune à maldição da dimensionalidade. Como cada árvore não considera todos os atributos, o espaço de características é reduzido.</li>
+  <li>Não é necessário segregar dados em treino e teste, pois sempre haverá 30% dos dados, que não são vistos pela árvore de decisão feita a partir do bootstrap.</li>
+</ul>
+<h3 align="center">Desvantagens:</h3>
+<ul>
+  <li>A floresta aleatória é altamente complexa em comparação com árvores de decisão, onde as decisões podem ser tomadas seguindo o caminho da árvore.</li>
+  <li>O tempo de treinamento é maior do que outros modelos devido à sua complexidade. Sempre que precisa fazer uma previsão, cada árvore de decisão precisa gerar a saída para os dados de entrada fornecidos.</li>
+</ul>
+<h2 align="center">Conclusão</h2>
+<p>Random Forest é uma ótima escolha se alguém quiser construir o modelo de maneira rápida e eficiente, pois uma das melhores características da Random Forest é que ela pode lidar com valores ausentes. É uma das melhores técnicas com alto desempenho, amplamente utilizada em várias indústrias por sua eficiência. Pode lidar com dados binários, contínuos e categóricos. No geral, Random Forest é um modelo rápido, simples, flexível e robusto, com algumas limitações.</p>
+<h3 align="center">Principais Conclusões</h3>
+<ul>
+  <li>O algoritmo Random Forest é uma técnica de aprendizado em conjunto que combina inúmeros classificadores para aprimorar o desempenho de um modelo.</li>
+  <li>Random Forest é um algoritmo de aprendizado de máquina supervisionado composto por árvores de decisão.</li>
+  <li>Random Forest é utilizado tanto para problemas de classificação quanto de regressão</li>
+</ul>
+<h2 align="center">Referências:</h2>
+<p>https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/</p>
