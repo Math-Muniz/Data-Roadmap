@@ -149,15 +149,14 @@ InfoGain = 0.66 - (50*0 + 100*0.50) / 150 = 0.16
 <p>As implementações desses critérios de impureza seriam:</p>
 <pre>
 def entropy_criterion(data, labels):
-  """ Entropy
-  Parameters
+  """ #Entropy
+  #Parameters
   ----------
-  data: numpy array-like = [n_samples, n_features]
-  labels: numpy array-like, shape = [n_samples]
-  
-  Return
+  #data: numpy array-like = [n_samples, n_features]
+  #labels: numpy array-like, shape = [n_samples]
+  #Return
   ------
-  entropy: float
+  #entropy: float
   """
   classes = np.unique(labels)
   
@@ -168,17 +167,20 @@ def entropy_criterion(data, labels):
     
   return s
   
-
-def gini_criterion(data, labels):
-  """ Gini Index
-  Parameters
-  ----------
-  data: numpy array-like = [n_samples, n_features]
-  labels: numpy array-like, shape = [n_samples]
+  def gini_criterion(data, labels):
   
-  Return
+  """ #Gini Index
+  
+  #Parameters
+  
+  ----------
+  #data: numpy array-like = [n_samples, n_features]
+  #labels: numpy array-like, shape = [n_samples]
+  
+  #Return
+  
   ------
-  gini: float
+  #gini: float
   """
   classes = np.unique(labels)
   
