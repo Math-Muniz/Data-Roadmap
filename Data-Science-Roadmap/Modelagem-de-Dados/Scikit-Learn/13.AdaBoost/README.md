@@ -154,3 +154,18 @@ plt.ylabel(f"Feature {feature2 + 1}")
 plt.title("AdaBoost Classifier Decision Boundary")
 plt.show()
 </pre>
+<ul>
+  <li>Importamos as bibliotecas necessárias, incluindo NumPy, Matplotlib, datasets do scikit-learn, AdaBoostClassifier, train_test_split e accuracy_score.</li>
+  <li>Carregamos o conjunto de dados Iris e o dividimos em conjuntos de treinamento e teste.</li>
+  <li>Criamos um AdaBoostClassifier com 50 estimadores base (você pode ajustar esse número conforme necessário).</li>
+  <li>Ajustamos o classificador aos dados de treinamento e fazemos previsões nos dados de teste.</li>
+  <li>Calculamos a precisão (accuracy) do classificador.</li>
+  <li>Criamos uma grade de malha para plotar a fronteira de decisão e a usamos para visualizar as regiões de decisão do classificador.</li>
+  <li>Finalmente, plotamos a fronteira de decisão junto com os pontos de dados.</li>
+</ul>
+<p>Certifique-se de ter o scikit-learn e outras bibliotecas necessárias instaladas em seu ambiente Python para executar este código com sucesso. Você pode instalar o scikit-learn usando pip install scikit-learn.</p>
+<h2 align="center">Conclusão</h2>
+<p>O AdaBoost é um algoritmo notável no conjunto de ferramentas de aprendizado de máquina, destacando o poder dos métodos de conjunto na melhoria da precisão do modelo. Sua capacidade de transformar learners fracos em classificadores fortes o tornou um recurso valioso na resolução de problemas de classificação complexos em diversos campos. À medida que a tecnologia continua a avançar, a adaptabilidade e eficácia do AdaBoost provavelmente garantirão seu lugar como uma ferramenta vital no cenário em constante evolução do aprendizado de máquina e inteligência artificial.</p>
+<h2 align="center">Referências</h2>
+<p>https://medium.com/@curryrowan/adaboost-explained-92408a6713da</p>
+<p>https://medium.com/@evertongomede/adaboost-boosting-the-power-of-machine-learning-6c23315e0d8e</p>
