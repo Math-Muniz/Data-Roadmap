@@ -66,3 +66,91 @@
 <p>Você pode estar se perguntando — uma vez que todos os tocos realizaram a classificação, como esta floresta de tocos decide a classificação final para cada amostra? Aqui está como funciona para uma amostra. Vamos assumir que a variável-alvo tinha duas respostas possíveis, assim como nossos dados de exemplo — 'Sim' e 'Não'.</p>
 <p>Primeiro, somamos a quantidade de influência para todos os tocos que classificaram como 'Sim'. Em seguida, fazemos o mesmo para todos os tocos que classificaram como 'Não'. A soma que for maior vence como a classificação final da amostra.</p>
 <p>Esse processo é realizado para todas as amostras no conjunto de dados de teste. Uma vez concluído esse processo, a classificação do AdaBoost também está concluída."</p>
+<h2 align="center">Conceitos Fundamentais</h2>
+<ul>
+  <li>Aprendizados Fracos (Weak Learners): O AdaBoost opera principalmente com uma classe de algoritmos chamada 'learners fracos'. Learners fracos são modelos que têm um desempenho ligeiramente melhor do que o palpite aleatório, mas ainda estão longe de ser classificadores precisos. Estes podem ser tocos de decisão (árvores de decisão simples com uma única divisão), modelos lineares ou outros algoritmos simples.</li>
+  <li>Aprendizado de Conjunto (Ensemble Learning): O AdaBoost pertence à categoria de aprendizado de conjunto. Métodos de conjunto combinam vários modelos de aprendizado de máquina para criar um modelo mais forte e preciso do que qualquer um de seus componentes individuais. O AdaBoost alcança isso treinando iterativamente learners fracos e atribuindo pesos com base em seu desempenho.</li>
+</ul>
+<h2 align="center">Conclusões sobre como o AdaBoost Funciona</h2>
+<p>O AdaBoost opera em uma série de iterações, ou rounds, para construir um classificador forte. Aqui está uma visão geral passo a passo de como o AdaBoost funciona:</p>
+<ul>
+  <li>Inicializar Pesos (Initialize Weights): Na primeira rodada, todos os exemplos de treinamento recebem pesos iguais. O objetivo é classificar esses exemplos corretamente.</li>
+  <li>Treinar um Learner Fraco (Train a Weak Learner): O AdaBoost seleciona um learner fraco e o treina nos dados de treinamento, dando mais peso aos exemplos classificados incorretamente na rodada anterior.</li>
+  <li>Calcular Erro (Calculate Error): Após o treinamento, o AdaBoost calcula o erro do learner fraco. O erro é a soma dos pesos dos exemplos classificados incorretamente dividida pelo peso total.</li>
+  <li>Atualizar Pesos (Update Weights): O AdaBoost aumenta os pesos dos exemplos classificados incorretamente, tornando-os mais importantes na próxima rodada. Isso coloca maior ênfase nos pontos de dados que foram desafiadores anteriormente.</li>
+  <li>Iterar (Iterate): Os passos 2 a 4 são repetidos por um número predefinido de rodadas ou até atingir um certo nível de precisão.</li>
+  <li>Combinação de Learners Fracos (Combine Weak Learners): Finalmente, o AdaBoost combina as previsões dos learners fracos atribuindo pesos a cada learner com base em seu desempenho. Learners mais fortes recebem pesos mais altos, contribuindo mais para a previsão final.</li>
+  <li>Fazer Previsões (Make Predictions): Para fazer previsões em novos dados, o AdaBoost calcula a soma ponderada das previsões dos learners fracos, sendo que cada learner tem seu peso determinado pelo seu desempenho durante o treinamento.</li>
+</ul>
+<h2 align="center">Aplicações do AdaBoost</h2>
+<p>O AdaBoost encontrou aplicações em uma ampla gama de campos, incluindo:</p>
+<ul>
+  <li>Detecção de Rosto: O AdaBoost é amplamente utilizado em visão computacional para detecção de rostos, onde ajuda a identificar rostos em imagens e vídeos com precisão.</li>
+  <li>Classificação de Texto: Em processamento de linguagem natural, o AdaBoost é usado em tarefas de classificação de texto, como detecção de e-mails de spam e análise de sentimentos.</li>
+  <li>Bioinformática: O AdaBoost foi aplicado à análise de dados biológicos, incluindo perfil de expressão gênica e previsão de função proteica.</li>
+  <li>Diagnóstico Médico: Na indústria de saúde, o AdaBoost auxilia em tarefas de diagnóstico médico, como detecção de doenças com base em dados do paciente.</li>
+  <li>Detecção de Anomalias: O AdaBoost é empregado na detecção de anomalias em vários domínios, incluindo segurança de rede e detecção de fraudes.</li>
+</ul>
+<h2 align="center">Código em Python</h2>
+<p>Aqui está um exemplo completo de código em Python do AdaBoost com um conjunto de dados e gráficos. Utilizaremos o famoso conjunto de dados Iris para este exemplo, que é um problema de classificação multiclasse.</p>
+<pre>
+#Importamos as bibliotecas necessárias
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_iris
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+
+#Carregamos o conjunto de dados Iris
+iris = load_iris()
+X = iris.data
+y = iris.target
+
+#dividimos em conjuntos de treinamento e teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+#Criamos um AdaBoostClassifier com 50 estimadores
+clf = AdaBoostClassifier(n_estimators=50, random_state=42)
+
+#Ajustamos (Fit) o classificador aos dados de treinamento
+clf.fit(X_train, y_train)
+
+#fazemos previsões nos dados de teste.
+y_pred = clf.predict(X_test)
+
+#Plotar a fronteira de decisão usando as duas primeiras características
+feature1 = 0  #Escolha os índices das características que você deseja plotar
+feature2 = 1
+
+#Extrair as características selecionadas do conjunto de dados
+X_subset = X[:, [feature1, feature2]]
+
+#Criamos um AdaBoostClassifier com 50 estimadores
+clf = AdaBoostClassifier(n_estimators=50, random_state=42)
+
+#Ajustamos (Fit) o classificador aos dados de treinamento
+clf.fit(X_train[:, [feature1, feature2]], y_train)
+
+#fazemos previsões nos dados de teste.
+y_pred = clf.predict(X_test[:, [feature1, feature2]])
+
+#Calcular a precisão (accuracy)
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Accuracy: {accuracy:.2f}")
+
+#Plotar a fronteira de decisão
+x_min, x_max = X_subset[:, 0].min() - 1, X_subset[:, 0].max() + 1
+y_min, y_max = X_subset[:, 1].min() - 1, X_subset[:, 1].max() + 1
+xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.1), np.arange(y_min, y_max, 0.1))
+
+Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])
+Z = Z.reshape(xx.shape)
+
+plt.contourf(xx, yy, Z, alpha=0.4)
+plt.scatter(X_subset[:, 0], X_subset[:, 1], c=y, marker='o', s=25)
+plt.xlabel(f"Feature {feature1 + 1}")
+plt.ylabel(f"Feature {feature2 + 1}")
+plt.title("AdaBoost Classifier Decision Boundary")
+plt.show()
+</pre>
