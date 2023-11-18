@@ -29,7 +29,7 @@
 <pre align="center"><i><b>E = {2, 4, 6}</b></i></pre>
 <p>O seu <b>número de elementos</b> é n(E) = 3.</p>
 <p>Os <b>eventos</b> que possuem apenas um elemento (ponto amostral) são chamados de simples. Quando o evento é igual ao <b>espaço amostral</b>, ele é chamado de evento certo e sua <b>probabilidade</b> de ocorrência é de 100%. Quando um evento é igual ao conjunto vazio, ele é chamado de evento impossível e possui 0% de chances de ocorrência.</p>
-<h2 align="center">Operaçõees com Eventos</h2>
+<h2 align="center">Operações com Eventos</h2>
 <p>Operações com eventos são uma parte fundamental da introdução à teoria da probabilidade. Eles oferecem uma estrutura para operar com conjuntos. Da mesma forma que podemos operar com outros tipos de elementos, também podemos fazê-lo com probabilidades.</p>
 <p>Dentro das operações com eventos, existem vários que vale a pena conhecer. Todos eles são desenvolvidos em nosso dicionário. Desenvolvido, explicado e com exemplos trabalhados.</p>
 <p>Para simplificar a explicação, vamos supor que temos dois eventos A e B.</p>
