@@ -41,7 +41,7 @@ Podemos entender a necessidade de boosting por meio de um exemplo simples de cla
 <p>O algoritmo de boosting cria novos aprendizes fracos (modelos) e combina sequencialmente suas previsões para melhorar o desempenho geral do modelo. Para qualquer previsão incorreta, são atribuídos pesos maiores às amostras classificadas incorretamente e menores às amostras classificadas corretamente. Modelos de aprendizes fracos que se saem melhor têm pesos mais altos no modelo de conjunto final. O boosting nunca altera o preditor anterior e apenas corrige o próximo preditor aprendendo com os erros. Como o boosting é ganancioso, é recomendável definir um critério de parada, como o desempenho do modelo (parada precoce) ou várias etapas (por exemplo, profundidade da árvore em aprendizes baseados em árvore) para evitar o overfitting dos dados de treinamento. A primeira implementação do boosting foi chamada de AdaBoost (Adaptive Boosting) que já vimos nos estudos passados.</p>
 <img src="formula-01.webp">
 <pre>
-Capital F(i) is current model, F(i-1) is previous model and small f(i) represents a weak model
+Capital F(i) é o modelo atual, F(i-1) é o modelo anterior e f(i) representa um modelo fraco.
 </pre>
 <img src="grafico-02.webp">
 <p>Se sentindo confiante? Dê uma olhada em mais dois algoritmos (CART e Gradient Boosting) para entender a mecânica do XGBoost antes de aprofundarmos mais no tópico.</p>
@@ -63,7 +63,7 @@ w representa o vetor de pesos, η é a taxa de aprendizado.
 <h2 align="center">XGBOOST em ação</h2>
 <p>O que torna o XGBoost um algoritmo essencial para ganhar em Machine Learning e competições Kaggle?</p>
 <img src="grafico-04.webp">
-<h3 align="center">Recursos do XGBOOST</h3>v
+<h3 align="center">Recursos do XGBOOST</h3>
 <p>Não é interessante ver uma única ferramenta para lidar com todos os nossos problemas de impulso! Aqui estão os recursos com detalhes e como eles são incorporados no XGBoost para torná-lo robusto.</p>
 <h3 align="center">Processo de Gradient Boosting:</h3>
 <ul>
