@@ -139,16 +139,207 @@ print("Best RMSE as a function of ridge regression (L2 regularization):")
 print(pd.DataFrame(list(zip(reg_params, ridge_regression)), columns=["l2", "rmse"]))
 </pre>
 <img src="table-02.webp">
-<p></p>
-<p>2.</p>
-<p></p>
+<p>DMatrix é uma estrutura de dados interna usada pelo XGBoost, otimizada para eficiência de memória e velocidade de treinamento. Precisamos transformar nosso array numpy de dados usando DMatrix para que ele possa ser posteriormente utilizado nos parâmetros dtrain e dtest de suas funções integradas.</p>
+<p>2. k-fold Cross-validation — Na validação cruzada k-fold, os dados são embaralhados e divididos em k subamostras de tamanhos iguais. Uma das k subamostras é usada como conjunto de teste/validação, e as restantes (k - 1) subamostras são agrupadas para serem usadas como dados de treinamento. Em seguida, ajustamos um modelo usando dados de treinamento e o avaliamos usando o conjunto de teste. Esse processo é repetido k vezes, de modo que cada ponto de dados permaneça no conjunto de validação exatamente uma vez. Os k resultados de cada modelo devem ser médios para obter a estimativa final. A vantagem desse método é que reduzimos significativamente o viés, a variância e aumentamos a robustez do modelo.</p>
+<p>Validação cruzada k-fold usando sklearn no XGBoost:</p>
 <pre>
+from sklearn.model_selection import KFold, cross_val_score
 
+kfold = KFold(n_splits=15)
+xgboost_score = cross_val_score(xg_cl, X, y, cv=kfold)
 </pre>
-<h3 align="center">Cross-validation (Validação Cruzada):</h3>
-<p></p>
-<p>1.</p>
-<p>2.</p>
+<h3 align="center">Tunando como um profissional!</h3>
+<p>O ajuste de modelo no XGBoost pode ser implementado por estratégias de validação cruzada como GridSearchCV e RandomizedSearchCV.</p>
+<p>1. Grid Search — Passamos um dicionário de parâmetros para a função e comparamos a pontuação de validação cruzada para cada combinação de parâmetros (muitos para muitos) no dicionário e retornamos o conjunto com os melhores parâmetros.</p>
+<p>2. Random Search — Selecionamos um valor aleatório durante cada iteração a partir do intervalo de valores especificados para cada hiperparâmetro pesquisado e avaliamos um modelo com esses hiperparâmetros. Após completar todas as iterações, ele escolhe a configuração de hiperparâmetros com a melhor pontuação.</p>
 <pre>
+import xgboost as xgb
+import numpy as np
+from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import RandomizedSearchCV
+from sklearn.datasets import load_boston
 
+#Carrega o conjunto de dados de Boston para regressão
+X, y = load_boston(return_X_y=True)
+
+#Converte os dados para uma estrutura otimizada para XGBoost (DMatrix)
+dmatrix = xgb.DMatrix(data=X, label=y)
+
+#Parâmetros para Grid Search
+grid_search_params = {
+    'colsample_bytree': [0.3, 0.7],
+    'learning_rate': [0.01, 0.1, 0.2, 0.5],
+    'n_estimators': [100],
+    'subsample': [0.2, 0.5, 0.8],
+    'max_depth': [2, 3, 5]
+}
+
+#Instancia um regressor XGBoost para Grid Search
+xg_grid_reg = xgb.XGBRegressor(objective= "reg:squarederror")
+
+#Configura o Grid Search com os parâmetros especificados
+grid = GridSearchCV(estimator=xg_grid_reg, param_grid=grid_search_params, scoring='neg_mean_squared_error',
+                    cv=4, verbose=1, iid=True)
+                    
+#Executa o Grid Search no conjunto de dados
+grid.fit(X, y)
+print("GridSearchCV")
+print("Best parameters found: ", grid.best_params_)
+print("Lowest RMSE found: ", np.sqrt(np.abs(grid.best_score_)))
+
+#Parâmetros para Random Search
+params_random_search = {
+    'learning_rate': np.arange(0.01, 1.01, 0.01),
+    'n_estimators': [200],
+    'max_depth': range(2, 12),
+    'subsample': np.arange(0.02, 1.02, 0.02)
+}
+
+#Instancia um regressor XGBoost para Random Search
+xg_random_reg = xgb.XGBRegressor(objective= "reg:squarederror")
+
+#Configura o Random Search com os parâmetros especificados
+randomized_mse = RandomizedSearchCV(param_distributions=params_random_search, estimator=xg_random_reg,
+                                    scoring="neg_mean_squared_error", n_iter=5, cv=4, verbose=1, iid=True)
+
+#Executa o Random Search no conjunto de dados                                    
+randomized_mse.fit(X, y)
+
+print("Randomize Search Cross Validation")
+print("Best parameters found: ", randomized_mse.best_params_)
+print("Lowest RMSE found: ", np.sqrt(np.abs(randomized_mse.best_score_)))
 </pre>
+<p>Output usando Grid Search</p>
+<img src="table-03.webp">
+<p>Outuput usando Random Serch</p>
+<img src="table-04.webp">
+<p>Configurações totais no Grid Search → 2*4*1*3*3 = 72</p>
+<p>Configurações totais no Random Search → 100*1*10*50 = 50000</p>
+<h3 align="center">Extensibilidade:</h3>
+<h3 align="center">1. Classificação usando XGBoost</h3>
+<pre>
+import numpy as np
+from numpy import loadtxt
+import xgboost as xgb
+from matplotlib import pyplot
+from sklearn.model_selection import train_test_split
+
+#Carrega os dados a partir de um arquivo CSV 
+df = loadtxt('./dataset.csv', delimiter=",")
+
+#Divide os dados em matrizes de características (X) e rótulos (y)
+X = df[:, 0:8]
+y = df[:, 8]
+
+#Divide os dados em conjuntos de treinamento e teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=123)
+
+#Instancia um classificador XGBoost para classificação binária
+xg_cl = xgb.XGBClassifier(objective='binary:logistic', n_estimators=100, seed=123)
+
+#Define o conjunto de avaliação para monitorar o desempenho durante o treinamento
+eval_set = [(X_train, y_train), (X_test, y_test)]
+
+#Treina o classificador no conjunto de treinamento
+xg_cl.fit(X_train, y_train, eval_metric=["error"], eval_set=eval_set, verbose=True)
+
+#Obtém os resultados da avaliação durante o treinamento
+results = xg_cl.evals_result()
+
+#Faz previsões no conjunto de teste
+predictions = xg_cl.predict(X_test)
+
+#Calcula a acurácia do modelo
+accuracy = float(np.sum(predictions == y_test))/y_test.shape[0]
+print("accuracy: %f" % (accuracy*100))
+
+#Plota a curva de erro de classificação ao longo do treinamento
+epochs = len(results['validation_0']['error'])
+x_axis = range(0, epochs)
+fig, ax = pyplot.subplots()
+ax.plot(x_axis, results['validation_0']['error'], label='Train')
+ax.plot(x_axis, results['validation_1']['error'], label='Test')
+</pre>
+<img src="table-05.webp">
+<img src="grafico-05.webp">
+<h3 align="center">2. Regressão usando XGBoost:</h3>
+<h3 align="center">2.1. Aprendizado Base com Árvore de Decisão</h3>
+<pre>
+import xgboost as xgb
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import explained_variance_score
+
+#Dados da casa KC
+df = pd.read_csv('./kc_house_data.csv')
+df_train = df[['bedrooms', 'bathrooms', 'sqft_living', 'floors', 'waterfront', 'view', 'grade', 'lat', 'yr_built', 'sqft_living15']]
+
+X = df_train.values
+y = df.price.values
+
+#Divide os dados em conjuntos de treinamento e teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=123)
+
+#Ajustando o modelo de regressão XGB e o aprendizado base padrão é a Árvore de Decisão
+xgb_reg = xgb.XGBRegressor(objective="reg:linear", n_estimators=75, subsample=0.75, max_depth=7)
+xgb_reg.fit(X_train, y_train)
+
+#Fazendo previsões
+predictions = xgb_reg.predict(X_test)
+
+#Pontuação de variância
+print((explained_variance_score(predictions, y_test)))
+
+#Para converter a tabela de dados em uma matriz
+kc_dmatrix = xgb.DMatrix(data=X, label=y, feature_names=df_train)
+
+#Criar o dicionário de parâmetros: params
+params = {"objective": "reg:linear", "max_depth": 2}
+
+#Treinar o modelo: xg_reg
+xg_reg = xgb.train(params=params, dtrain=kc_dmatrix, num_boost_round=10)
+
+#Plotar a primeira árvore com num_trees = 0 e a importância das features
+xgb.plot_tree(xg_reg, num_trees=0)
+xgb.plot_importance(xg_reg)
+</pre>
+<img src="table-06.webp">
+<img src="grafico-06.webp">
+<h3 align="center">2.2. Aprendizado Base Linear</h3>
+<pre>
+import numpy as np
+import xgboost as xgb
+from sklearn.datasets import load_boston
+from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import train_test_split
+
+#Aprendizado Base Linear
+#Carrega o conjunto de dados de Boston para regressão
+X, y = load_boston(return_X_y=True)
+
+#Divide os dados em conjuntos de treinamento e teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=123)
+
+#Converte os conjuntos de treinamento e teste em DMatrixes
+boston_train = xgb.DMatrix(data=X_train, label=y_train)
+boston_test = xgb.DMatrix(data=X_test, label=y_test)
+
+#Parâmetros com o impulsionador (booster) definido como gblinear para o aprendizado base linear
+params = {"booster": "gblinear", "objective": "reg:linear"}
+
+#Treina o modelo: xg_reg
+xg_reg = xgb.train(params=params, dtrain=boston_train, num_boost_round=5)
+
+#Realiza previsões
+predictions = xg_reg.predict(boston_test)
+
+#Calcula o Erro Quadrático Médio (RMSE)
+print("RMSE: %f" % (np.sqrt(mean_squared_error(y_test, predictions))))
+</pre>
+<img src="table-07.webp">
+<h3 align="center">Módulo de Plotagem de Importância:</h3>
+<p>A biblioteca XGBoost fornece uma função incorporada para plotar características ordenadas por sua importância. A função é plot_importance(model), e ela recebe o modelo treinado como seu parâmetro. A função gera um gráfico de barras informativo representando a significância de cada característica e as nomeia de acordo com seu índice no conjunto de dados. A importância é calculada com base em uma variável importance_type, que aceita os parâmetros:</p>
+<pre>
+xgb.plot_importance(model)
+</pre>
+<img src="grafico-07.webp">
