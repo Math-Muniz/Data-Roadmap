@@ -33,7 +33,7 @@
   <li>5. O algoritmo termina quando todos os pontos tiverem sido classificados corretamente.</li>
 </ul>
 <p>Um conceito muito importante a ser mencionado no método DBSCAN é o de Densidade Alcançável. Pode se dizer que um ponto possui uma densidade alcançável direta de outro se e apenas se a distância entre os mesmos estiver dentro de um raio Eps, porém um dos pontos deve ser um núcleo. Já pontos do tipo borda podem ser incluídos em clusters quando possuem densidade alcançável de um ponto que faz parte de uma cadeia de núcleos com densidade alcançável direta. Pontos que são núcleos podem alcançar pontos não-núcleos, porém pontos não-núcleos por mais que alcancem núcleos, não podem ser alcançados por outros pontos. Observe a imagem abaixo para facilitar o entendimento:</p>
-<img src="grafico-02.webp">
+<img src="grafico-02.png">
 <h3 align="center">Implementação</h3>
 <p>Observe abaixo como implementar a técnica DBSCAN utilizando a biblioteca sklearn do Python. Cada gráfico representa a atuação do DBSCAN em agrupar dados em diferentes em datasets exemplo da própria biblioteca:</p>
 <pre>
