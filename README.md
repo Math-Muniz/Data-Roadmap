@@ -53,7 +53,7 @@
     <li>[X] <a href="https://www.amazon.com.br/gp/product/6586057108/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1">Projetos de Ciência de Dados com Python</a></li>
     <li>[X] <a href="https://www.amazon.com.br/gp/product/8537818100/ref=ox_sc_act_title_4?smid=A1ZZFT5FULY4LN&psc=1">O andar do bêbado: Como o acaso determina nossas vidas</a></li>
     <li>[ ] <a href="https://www.amazon.com.br/gp/product/8550815489/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1">Mãos à obra: Aprendizado de máquina com Scikit-Learn, Keras & TensorFlow: Conceitos, Ferramentas e Técnicas para a Construção de Sistemas Inteligentes</a></li>
-    <li>[ ] <a href="https://www.amazon.com.br/dp/6555110058?psc=1&ref=ppx_yo2ov_dt_b_product_details">Ultra-aprendizado: domine habilidades valiosas, seja mais esperto que a competição e dê um impulso na sua carreira</a></li>
+    <li>[X] <a href="https://www.amazon.com.br/dp/6555110058?psc=1&ref=ppx_yo2ov_dt_b_product_details">Ultra-aprendizado: domine habilidades valiosas, seja mais esperto que a competição e dê um impulso na sua carreira</a></li>
     <li>[ ] <a href="https://www.amazon.com.br/gp/product/6586057752/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1">SQL para Análise de Dados: Técnicas Avançadas Para Transformar Dados em Insights</a></li>
     <li>[ ] <a href="https://www.amazon.com/gp/product/0578973839/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1">Ace the Data Science Interview: 201 Real Interview Questions Asked By FAANG, Tech Startups, & Wall Street</a></li>
     <li>[ ] <a href="https://www.amazon.com.br/gp/product/B00A3D1A44/ref=ppx_yo_dt_b_d_asin_title_351_o00?ie=UTF8&psc=1">Rápido e devagar: Duas formas de pensar</a></li>
