@@ -13,7 +13,7 @@
 <p>Para compreender melhor quais são as medidas de dispersão, é importante focar em um exemplo. Levando em consideração alguns estudantes de Ensino Fundamental e suas notas, precisamos calcular sua amplitude. A média final da escola é 7 e, portanto, precisa ser atingida.</p>
 <p>Márcia tirou as seguintes notas: 9,0 – 7,0 – 8,0 – 6,0</p>
 <p>Eduardo tirou as seguintes notas: 5,0 – 5,0 – 9,0 – 10,0</p>
-<p>Com relação à nota de Márcia, a amplitude foi de 9,0 (maior nota) – 6 (menor nota) = 2. Sendo assim, a amplitude de Eduardo foi de 10 (maior nota) – 5 (menor nota) = 6. No entanto, levando em consideração esse índice, não é possível dizer quem teve o melhor desempenho.</p>
+<p>Com relação à nota de Márcia, a amplitude foi de 9,0 (maior nota) – 6 (menor nota) = 3. Sendo assim, a amplitude de Eduardo foi de 10 (maior nota) – 5 (menor nota) = 5. No entanto, levando em consideração esse índice, não é possível dizer quem teve o melhor desempenho.</p>
 
 <h1>Desvio Absoluto Médio (DAM)</h1>
 <p>O Desvio Absoluto Médio (DAM) de um conjunto de dados é a média das distâncias entre cada dado e a média. Ele nos dá uma noção da variabilidade em um conjunto de dados.</p>
