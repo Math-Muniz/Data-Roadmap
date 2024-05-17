@@ -26,7 +26,7 @@
 <p><b>g1 < 0, a distribuição é assimétrica negativa (à esquerda).</b></p>
 <p>É desejável que a assimetria dos nossos dados esteja próxima da normal, isto é, no intervalo [-1, +1].</p>
 <p>Na tabela inicial desse post temos a <b>assimetria de 2,78</b> para uma variável hipotética “Z”  apresentada no Excel (que utiliza o coeficiente de Fisher para encontrar a assimetria). Podemos fazer a seguinte interpretação: o sinal positivo significa que a distribuição é assimétrica à direita e como 2,78 é maior que o intervalo de referência, os dados apresentam alto grau de assimetria.</p>
-<p>Para encontrar a assimetria no Excel, se usa a função <b>DISTORÇÃO</b> ou através do <b>suplemento Análise de Dados</b>. Acesse este post para aprender como instalar o suplemento e saber como acessar a tabela com as estatísticas descritivas dos seus dados.</p>
+<p>Para encontrar a assimetria no Excel, se usa a função <b>DISTORÇÃO</b> ou através do <b>suplemento Análise de Dados</b>.
 <h2>O que é Curtose(Kurtosis)?</h2>
 <p>A curtose (kurtosis em inglês) representa o grau de achatamento da distribuição, isto é, quão espalhados os dados estão em torno da média. Novamente, usamos a curva normal padrão como referência e podemos interpretar a curtose por meio de gráficos ou numericamente. Pode ser classficada em três tipos:</p>
 <p>a) <b>Mesocúrtica</b>: que é própria curva normal padrão </p>
